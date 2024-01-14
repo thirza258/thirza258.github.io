@@ -11,6 +11,22 @@
     text-align: center;
 }
 
-#brief-description {
-    text-align: center;
+#home {
+    margin-top: -10vh;
+    /* Adjust this value based on your design */
+    background-image: url('assets/new_frame_hero.png');
+    background-position: bottom;
+    background-size: cover;
+}
+
+#tye {
+    color: #0B1957;
+    font-weight: bold;
+}
+
+#experiences {
+    /* Adjust this value based on your design */
+    background-image: url('assets/project.png');
+    background-position: left;
+    background-size: cover;
 }
