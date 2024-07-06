@@ -13,7 +13,6 @@ const CardPort = () => {
     const minFontSize = 16; // min font size in pixels
 
     const calculateFontSize = () => {
-        const range = maxFontSize - minFontSize;
         const fontSize = baseFontSize - Math.floor(numSkills / 2); // Adjust baseFontSize based on the number of skills
         return Math.max(minFontSize, Math.min(maxFontSize, fontSize)); // Ensure font size is within range
     };
@@ -95,8 +94,22 @@ const CardPort = () => {
                 })}
             </div>
         </div>
+        
 
   </div>
+  <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4`}>
+    {list_frameworks.map((framework, index) => {
+        return (
+            <div key={index}>
+                <div className="flex items-end justify-between">
+                    <h4 className={`font-body font-semibold ${getRandomColor()} text-lg`}>
+                        {framework}
+                    </h4>
+                </div>
+            </div>
+        );
+    })};       
+    </div>
 </div>
     )
 }
