@@ -1,9 +1,12 @@
+import front_end_logo from "../assets/front_end_logo.png";
+import backend_dev_logo from "../assets/backend_dev_logo.png";
+
 const Skills = () => {
   const skills = [
     {
-      icon: "/assets/img/icon-development-white.svg",
-      title: "Front End DEVELOPMENT",
+      icon: front_end_logo,
       text: "Mendesain Website dan Memprogram Website ",
+      title: "Front End Development",
       framework: [
         "React",
         "Typescript",
@@ -20,7 +23,7 @@ const Skills = () => {
       framework: ["Flutter", "Java", "Dart", "XML"],
     },
     {
-      icon: "/assets/img/icon-development-white.svg",
+      icon: backend_dev_logo,
       title: "BACK END DEVELOPMENT",
       text: "Memprogram Server, Database dan Membuat API",
       framework: [
@@ -85,7 +88,7 @@ const Skills = () => {
                   </div>
                   <div className="block group-hover:hidden">
                     <img
-                      src="/assets/img/icon-development-black.svg"
+                      src={`${skill.icon}`}
                       alt="development icon"
                     />
                   </div>

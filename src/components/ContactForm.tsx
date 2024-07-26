@@ -24,7 +24,7 @@ const ContactForm = () => {
         </button>
       </form>
       <div className="flex flex-col pt-16 lg:flex-row">
-        <div className="w-full lg:w-1/3 border border-gray-300 px-6 py-6 sm:py-8">
+        <div className="w-full lg:w-1/2 border border-gray-300 px-6 py-6 sm:py-8">
           <div className="flex items-center">
             <i className="bx bx-phone text-2xl text-gray-400"></i>
             <p className="pl-2 font-body font-bold uppercase text-gray-400 lg:text-lg">
@@ -32,10 +32,10 @@ const ContactForm = () => {
             </p>
           </div>
           <p className="pt-2 text-left font-body font-bold text-primary lg:text-lg">
-            (+881) 111 222 333
+            (+62) 812-9076-5711
           </p>
         </div>
-        <div className="w-full lg:w-1/3 border border-gray-300 px-6 py-6 sm:py-8 mt-6 lg:mt-0 lg:border-l-0 lg:border-t lg:border-r">
+        <div className="w-full lg:w-1/2 border border-gray-300 px-6 py-6 sm:py-8 mt-6 lg:mt-0 lg:border-l-0 lg:border-t lg:border-r">
           <div className="flex items-center">
             <i className="bx bx-envelope text-2xl text-gray-400"></i>
             <p className="pl-2 font-body font-bold uppercase text-gray-400 lg:text-lg">
@@ -43,18 +43,7 @@ const ContactForm = () => {
             </p>
           </div>
           <p className="pt-2 text-left font-body font-bold text-primary lg:text-lg">
-            name@mydomain.com
-          </p>
-        </div>
-        <div className="w-full lg:w-1/3 border border-gray-300 px-6 py-6 sm:py-8 mt-6 lg:mt-0 lg:border-l-0 lg:border-t lg:border-r">
-          <div className="flex items-center">
-            <i className="bx bx-map text-2xl text-gray-400"></i>
-            <p className="pl-2 font-body font-bold uppercase text-gray-400 lg:text-lg">
-              My Address
-            </p>
-          </div>
-          <p className="pt-2 text-left font-body font-bold text-primary lg:text-lg">
-            123 New York D Block 1100, 2011 USA
+            thirzahmad@gmail.com
           </p>
         </div>
       </div>

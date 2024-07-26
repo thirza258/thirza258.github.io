@@ -2,10 +2,20 @@ import frame from "../assets/new_frame_hero.png";
 
 const Header = () => {
   return (
-    <div
-      className="bg-cover bg-center bg-no-repeat w-full h-[100vh]"
-      style={{ backgroundImage: `url(${frame})` }}
-    >
+    <div className="relative w-full h-[100vh]">
+      
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url(${frame})`,
+          zIndex: -1,
+        }}
+      ></div>
+
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70"></div>
+
+      {/* Content */}
       <div className="relative flex flex-col items-center justify-center h-full">
         <div className="flex flex-col items-center justify-center lg:flex-row">
           <div className="rounded-full border-8 border-primary shadow-xl">
