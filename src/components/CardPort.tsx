@@ -12,6 +12,7 @@ const CardPort = () => {
     "C#",
     "Go",
   ];
+
   const list_frameworks = [
     "React",
     "Flutter",
@@ -53,7 +54,7 @@ const CardPort = () => {
       <div className="container flex flex-col items-center py-16 md:py-20 lg:flex-row">
         <div className="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
           <h4 className="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-            Saya Thirza, seorang Full Stack Developer dan Mahasiswa
+            I'm Thirza, a Full Stack Developer and Student
           </h4>
           <p className="pt-6 font-body leading-relaxed text-grey-20">
             Enthusiastic, self motivated, and hard working student. Currently an
@@ -124,7 +125,7 @@ const CardPort = () => {
         {list_frameworks.map((framework, index) => {
           return (
             <div key={index}>
-              <div className="flex items-end justify-between">
+              <div className="flex items-center justify-center">
                 <h4
                   className={`font-body font-semibold ${getRandomColor()} text-lg`}
                 >
