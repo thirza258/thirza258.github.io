@@ -119,7 +119,9 @@ const ContactForm = () => {
           <p className="pt-2 text-left font-body font-bold text-primary lg:text-lg">
             thirzahmad@gmail.com
           </p>
+          
         </div>
+        <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="thirza-ahmad" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://id.linkedin.com/in/thirza-ahmad/en?trk=profile-badge"></a></div>
       </div>
     </div>
     

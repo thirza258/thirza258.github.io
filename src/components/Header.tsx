@@ -5,7 +5,7 @@ const Header = () => {
     <div className="relative w-full h-[100vh]">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slide"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url(${frame})`,
           zIndex: -1,
@@ -50,6 +50,7 @@ const Header = () => {
                   <i className="bx bx-chevron-right text-3xl text-yellow"></i>
                 </div>
               </div>
+              
               <div className="flex items-center justify-center sm:justify-start ">
                 <a
                   href="https://www.linkedin.com/in/thirza-ahmad"
