@@ -2,16 +2,6 @@ import React from 'react';
 // Make sure this import path is correct for your project structure
 import { thirzaAhmadTsaqifEnglish } from '../cv/cv';
 
-interface Experience {
-  title: string;
-  company: string;
-  startDate: string;
-  endDate:string;
-  photo: string;
-  description?: string;
-  responsibilities: string[];
-}
-
 const Experiences: React.FC = () => {
   const experiences = thirzaAhmadTsaqifEnglish.experiences;
 

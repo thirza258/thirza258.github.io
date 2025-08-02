@@ -1,9 +1,5 @@
 import React from 'react';
 
-// --- ASSUMPTIONS ---
-// 1. You have saved your images in a folder, for example: 'src/assets/'
-// 2. You might need to adjust the path based on your project structure.
-import rectorateBuilding from '../assets/rectorate_building.png';
 import universityLogo from '../assets/makara.png'; // or .svg
 
 const Education: React.FC = () => {
