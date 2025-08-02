@@ -6,15 +6,18 @@ import Portfolio from "./components/Portfolio";
 import Experiences from "./components/Experiences";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import Education from "./components/Education";
 
 function App() {
   return (
     <div>
+      <Navbar />
       <Header />
       <CardPort />
-      <Skills />
       <Portfolio />
       <Experiences />
+      <Education />
       <ContactForm />
       <Footer />
     </div>

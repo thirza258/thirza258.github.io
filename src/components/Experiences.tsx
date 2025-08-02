@@ -1,61 +1,107 @@
-const Experiences = () => {
+import React from 'react';
+// Make sure this import path is correct for your project structure
+import { thirzaAhmadTsaqifEnglish } from '../cv/cv';
+
+interface Experience {
+  title: string;
+  company: string;
+  startDate: string;
+  endDate:string;
+  photo: string;
+  description?: string;
+  responsibilities: string[];
+}
+
+const Experiences: React.FC = () => {
+  const experiences = thirzaAhmadTsaqifEnglish.experiences;
+
+  /**
+   * Safely parses a date string like "June 2025" and formats it to "Mon YYYY".
+   * @param dateStr The date string to format (e.g., "June 2025" or "Present").
+   * @returns The formatted date string or "Present".
+   */
+  const formatExperienceDate = (dateStr: string): string => {
+    // If the date is "Present", return it as is.
+    if (dateStr === 'Present') {
+      return 'Present';
+    }
+
+    // Add a day to the string to make parsing more reliable (e.g., "June 2025" -> "June 1 2025")
+    const date = new Date(`${dateStr} 1`);
+
+    // Check if the created date is valid. If not, return the original string as a fallback.
+    if (isNaN(date.getTime())) {
+      return dateStr; 
+    }
+
+    return date.toLocaleString('en-US', { month: 'short', year: 'numeric' });
+  };
+
   return (
-<div>
-  <div className="w-full py-16 md:py-20" id="work">
-    <h2 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
-      My work experience
-    </h2>
-    <h3 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-      Here's what I did before freelancing
-    </h3>
-
-    <div className="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
-      <span className="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
-
-      <div className="mt-8 flex flex-col text-center md:flex-row md:text-left">
-        <div className="md:w-2/5">
-          <div className="flex justify-center md:justify-start">
-            <span className="shrink-0">
-              <img
-                src="/assets/img/logo-spotify.svg"
-                className="h-auto w-32"
-                alt="company logo"
-              />
-            </span>
-            <div className="relative ml-3 hidden w-full md:block">
-              <span className="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
-            </div>
-          </div>
+    <div className="container mx-auto px-10 py-8">
+      <div className="z-10 mb-12">
+          <h2 className="font-bold text-5xl md:text-6xl">Career Highlights</h2>
+          <p className="text-lg text-gray-600 mt-2">The only source of knowledge is experience.</p>
+          <p className="text-sm text-gray-500 mt-1">- Albert Einstein</p>
         </div>
-        <div className="md:w-3/5">
-          <div className="relative flex md:pl-18">
-            <span className="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+      <div className="relative">
+        <div 
+          className="absolute h-full w-0.5 bg-gray-300" 
+          style={{ left: '20px' }} 
+        >
 
-            <div className="mt-1 flex">
-              <i className="bx bxs-right-arrow hidden text-primary md:block"></i>
-              <div className="md:-mt-1 md:pl-8">
-                <span className="block font-body font-bold text-grey-40">
-                  Apr 2015 - Mar 2018
-                </span>
-                <span className="block pt-2 font-header text-xl font-bold uppercase text-primary">
-                  Frontend Developer
-                </span>
-                <div className="pt-2">
-                  <span className="block font-body text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vestibulum mattis felis vitae risus pulvinar tincidunt.
-                    Nam ac venenatis enim.
-                  </span>
+        </div>
+
+        
+
+        {experiences.map((exp, index) => (
+          <div key={index} className="relative mb-10">
+            {/* Timeline Pill (Date Marker) */}
+            <div 
+              className="absolute z-10 bg-gray-800 rounded-full flex items-center justify-center py-1 px-3"
+              style={{ 
+                left: '20px',
+                top: '50%',
+                transform: 'translate(-50%, -50%)'
+              }}
+            >
+              <span className="text-white text-xs font-semibold whitespace-nowrap">
+                {/* Use the new helper function for safe formatting */}
+                {formatExperienceDate(exp.startDate)} - {formatExperienceDate(exp.endDate)}
+              </span>
+            </div>
+
+            {/* Experience Card */}
+            <div className="ml-24"> 
+              <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200">
+                <div className="flex items-start mb-4">
+                  <img 
+                    src={exp.photo} 
+                    alt={`${exp.company} logo`} 
+                    className="w-12 h-12 mr-4 object-contain" 
+                  />
+                  <div>
+                    <h3 className="font-bold text-gray-900 text-xl">{exp.title}</h3>
+                    <p className="text-sm font-semibold text-blue-600">{exp.company}</p>
+          
+                  </div>
                 </div>
+
+                {exp.description && (
+                  <p className="text-sm text-gray-700 mb-4">{exp.description}</p>
+                )}
+
+                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+                  {exp.responsibilities.map((resp, i) => (
+                    <li key={i}>{resp}</li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
-  </div>
-</div>
-
   );
 };
 

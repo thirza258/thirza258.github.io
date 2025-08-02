@@ -17,6 +17,15 @@ export default {
       animation: {
         slide: 'slide 10s ease-in-out infinite',
       },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 40s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      }
     },
   },
   plugins: [],

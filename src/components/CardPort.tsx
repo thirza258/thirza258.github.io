@@ -1,142 +1,85 @@
-const CardPort = () => {
-  const list_skills = [
-    "Python",
-    "Java",
-    "Typescript",
-    "SQL",
-    "Git",
-    "HTML",
-    "CSS",
-    "Javascript",
-    "Dart",
-    "C#",
-    "Go",
-  ];
+import React from 'react';
+import myPhoto from '../assets/my_photo.png'; // Update this path to your photo
 
-  const list_frameworks = [
-    "React",
-    "Flutter",
-    "Django",
-    "Express",
-    "ASP.NET",
-    "PostgreSQL",
-    "MongoDB",
-    "Firebase",
-    "Jupyter",
-  ];
+// Define a type for the props if you plan to pass any
+type PortfolioGridProps = {};
 
-  const getRandomColor = () => {
-    const colors = [
-      "text-red-500",
-      "text-blue-500",
-      "text-green-500",
-      "text-yellow-500",
-      "text-purple-500",
-      "text-pink-500",
-      "text-indigo-500",
-      "text-gray-500",
-    ];
-    return colors[Math.floor(Math.random() * colors.length)];
-  };
+// A small reusable component for the grid items
+const Card: React.FC<{ children: React.ReactNode; className?: string }> = ({ children, className = "" }) => (
+  <div className={`bg-transparent rounded-2xl p-6 border-2 border-black transition-all duration-300 hover:border-gray-600 ${className}`}>
+    {children}
+  </div>
+);
 
-  const numSkills = list_skills.length;
-  const baseFontSize = 24; // base font size in pixels
-  const maxFontSize = 36; // max font size in pixels
-  const minFontSize = 16; // min font size in pixels
-
-  const calculateFontSize = () => {
-    const fontSize = baseFontSize - Math.floor(numSkills / 2); // Adjust baseFontSize based on the number of skills
-    return Math.max(minFontSize, Math.min(maxFontSize, fontSize)); // Ensure font size is within range
-  };
+const CardPort: React.FC<PortfolioGridProps> = () => {
+    const list_skills = ["Python", "Java", "Typescript", "SQL", "Git", "HTML", "CSS", "Javascript", "Dart", "C#", "Go"];
+    const list_frameworks = ["React", "Flutter", "Django", "Express", "ASP.NET", "PostgreSQL", "MongoDB", "Firebase", "Jupyter"];
+    const allSkills = [...list_skills, ...list_frameworks];
 
   return (
-    <div className="bg-grey-50 px-10 w-[100wh] h-[100vh]" id="about">
-      <div className="container flex flex-col items-center py-16 md:py-20 lg:flex-row">
-        <div className="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
-          <h4 className="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-            I'm Thirza, a Full Stack Developer and Student
-          </h4>
-          <p className="pt-6 font-body leading-relaxed text-grey-20">
-            Enthusiastic, self motivated, and hard working student. Currently an
-            Information System student in University of Indonesia. Creative
-            person who likes programming and design. Seeking a position as a
-            software engineer to gain experience and enhance problem solving
-            skills.
-          </p>
-          
-          <div className="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
-            <div className="flex items-center justify-center sm:justify-start">
-              <p className="font-body text-lg font-semibold uppercase text-grey-20">
-                Connect with me
-              </p>
-              <div className="hidden sm:block">
-                <i className="bx bx-chevron-right text-2xl text-primary"></i>
-              </div>
-            </div>
-            <div className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
-              <a
-                href="https://www.linkedin.com/in/thirza-ahmad"
-                className="pl-4"
-              >
-                <i className="bx bxl-linkedin text-2xl text-black hover:text-yellow"></i>
-              </a>
-              <a href="https://github.com/thirza258" className="pl-4">
-                <i className="bx bxl-github text-2xl text-black hover:text-yellow"></i>
-              </a>
-              <a href="https://dev.to/thirza258" className="pl-4">
-                <i className="bx bxl-dev-to text-2xl text-black hover:text-yellow"></i>
-              </a>
-              <a href="https://dev.to/thirza258" className="pl-4">
-                <i className="bx bxl-medium-square text-2xl text-black hover:text-yellow"></i>
-              </a>
-            </div>
-          </div>
-        </div>
+    <div className="text-black min-h-screen font-sans p-4 sm:p-6 lg:p-8">
+      <div className="max-w-7xl mx-auto">
 
-        <div className="w-full pl-0 pt-10 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
-          <div
-            className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4`}
-          >
-            {list_skills.map((skill, index) => {
-              const fontSize = `${calculateFontSize()}px`;
-              return (
-                <div key={index}>
-                  <div className="flex items-end justify-between">
-                    <h4
-                      className={`font-body font-semibold ${getRandomColor()} text-lg`}
-                      style={{ fontSize }}
-                    >
-                      {skill}
-                    </h4>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-      <div>
-        <h3 className="text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-          Frameworks I've worked with
-        </h3>
-      </div>
-      
-      <div
-        className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-10`}
-      >
-        {list_frameworks.map((framework, index) => {
-          return (
-            <div key={index}>
-              <div className="flex items-center justify-center">
-                <h4
-                  className={`font-body font-semibold ${getRandomColor()} text-lg`}
-                >
-                  {framework}
-                </h4>
-              </div>
+        {/* Main Grid Layout */}
+        <main id="about" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
+
+          {/* Profile Card */}
+          <Card className="lg:col-span-2 flex flex-col sm:flex-row items-center gap-6">
+            <img src={myPhoto} alt="Thirza" className="w-32 h-32 rounded-xl object-cover" />
+            <div className="text-center sm:text-left">
+              <p className="text-black text-sm">A FULL STACK DEVELOPER</p>
+              <h2 className="text-3xl font-bold mt-1">Thirza</h2>
+              <p className="text-black mt-2">Enthusiastic, self motivated, and hard working student. Currently an
+Information System student in University of Indonesia. Creative
+person who likes programming and design. Seeking a position as a
+software engineer to gain experience and enhance problem solving
+skills.</p>
             </div>
-          );
-        })}
+          </Card>
+
+
+          {/* Social Profiles Card */}
+          <Card>
+            <p className="text-black text-sm">Lets Connect!</p>
+            <h3 className="text-2xl font-semibold mt-2">Profiles</h3>
+            <div className="flex items-center space-x-4 mt-4">
+                <a href="https://www.linkedin.com/in/thirza-ahmad" className="pl-0"><i className="bx bxl-linkedin text-3xl text-black hover:text-blue-400"></i></a>
+                <a href="https://github.com/thirza258" className="pl-0"><i className="bx bxl-github text-3xl text-black hover:text-gray-600"></i></a>
+                <a href="https://dev.to/thirza258" className="pl-0"><i className="bx bxl-dev-to text-3xl text-black hover:text-gray-600"></i></a>
+                <a href="https://medium.com/@thirza258" className="pl-0"><i className="bx bxl-medium-square text-3xl text-black hover:text-gray-600"></i></a>
+            </div>
+          </Card>
+
+          <Card className="flex flex-col items-center justify-center text-center">
+            <p className="text-5xl font-semibold">+15</p>
+            <p className="text-black mt-2 leading-tight">TOTAL PROJECTS</p>
+          </Card>
+          {/* Let's Work Together Card */}
+          <Card className="lg:col-span-2 flex flex-col justify-between items-start">
+            <div id="contact">
+              <p className="text-5xl font-bold">Let's</p>
+              <p className="text-5xl font-bold">work <span className="text-blue-400">together.</span></p>
+            </div>
+             <div className="flex justify-end w-full">
+                <i className='bx bx-right-arrow-alt text-4xl text-black'></i>
+             </div>
+          </Card>
+
+        </main>
+        
+        {/* Horizontal Skills Carousel */}
+        <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] mt-12">
+            <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+                {allSkills.map((skill, index) => (
+                    <li key={`skill-a-${index}`} className="text-black text-lg font-semibold">{skill}</li>
+                ))}
+            </ul>
+             <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+                {allSkills.map((skill, index) => (
+                    <li key={`skill-b-${index}`} className="text-black text-lg font-semibold">{skill}</li>
+                ))}
+            </ul>
+        </div>
       </div>
     </div>
   );
