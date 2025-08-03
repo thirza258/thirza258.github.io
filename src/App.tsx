@@ -10,7 +10,7 @@ import Education from "./components/Education";
 
 function App() {
   return (
-    <div>
+    <div className="bg-white dark:bg-slate-900 transition-colors duration-300">
       <Navbar />
       <Header />
       <CardPort />

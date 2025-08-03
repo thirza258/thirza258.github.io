@@ -8,7 +8,7 @@ const Header: React.FC<HeaderProps> = () => {
   return (
     // Set a minimum height of the screen to ensure it fills the viewport
     // on all devices. Padding is adjusted for different screen sizes.
-    <div className="min-h-screen w-full p-6 sm:p-8 md:p-12 lg:p-16 flex flex-col justify-center bg-white">
+    <div className="min-h-screen w-full p-6 sm:p-8 md:p-12 lg:p-16 flex flex-col justify-center">
       
       {/* 
         Main content container.

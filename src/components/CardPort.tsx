@@ -1,7 +1,7 @@
 import React from 'react';
 import myPhoto from '../assets/my_photo.png'; // Update this path to your photo
+import { thirzaAhmadTsaqifEnglish } from '../cv/cv';
 
-// Define a type for the props if you plan to pass any
 type PortfolioGridProps = {};
 
 // A small reusable component for the grid items
@@ -12,6 +12,7 @@ const Card: React.FC<{ children: React.ReactNode; className?: string }> = ({ chi
 );
 
 const CardPort: React.FC<PortfolioGridProps> = () => {
+    const myHeader = thirzaAhmadTsaqifEnglish.summary;
     const list_skills = ["Python", "Java", "Typescript", "SQL", "Git", "HTML", "CSS", "Javascript", "Dart", "C#", "Go"];
     const list_frameworks = ["React", "Flutter", "Django", "Express", "ASP.NET", "PostgreSQL", "MongoDB", "Firebase", "Jupyter"];
     const allSkills = [...list_skills, ...list_frameworks];
@@ -29,11 +30,7 @@ const CardPort: React.FC<PortfolioGridProps> = () => {
             <div className="text-center sm:text-left">
               <p className="text-black text-sm">A FULL STACK DEVELOPER</p>
               <h2 className="text-3xl font-bold mt-1">Thirza</h2>
-              <p className="text-black mt-2">Enthusiastic, self motivated, and hard working student. Currently an
-Information System student in University of Indonesia. Creative
-person who likes programming and design. Seeking a position as a
-software engineer to gain experience and enhance problem solving
-skills.</p>
+              <p className="text-black mt-2">{myHeader}</p>
             </div>
           </Card>
 
