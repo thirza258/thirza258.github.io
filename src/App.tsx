@@ -7,6 +7,7 @@ import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Education from "./components/Education";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Portfolio />
       <Experiences />
       <Education />
+      <Skills />
       <ContactForm />
       <Footer />
     </div>

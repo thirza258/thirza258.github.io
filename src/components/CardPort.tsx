@@ -1,6 +1,7 @@
 import React from 'react';
 import myPhoto from '../assets/my_photo.png'; // Update this path to your photo
 import { thirzaAhmadTsaqifEnglish } from '../cv/cv';
+import devpost from '../assets/devpost.png';
 
 type PortfolioGridProps = {};
 
@@ -44,6 +45,15 @@ const CardPort: React.FC<PortfolioGridProps> = () => {
                 <a href="https://github.com/thirza258" className="pl-0"><i className="bx bxl-github text-3xl text-black hover:text-gray-600"></i></a>
                 <a href="https://dev.to/thirza258" className="pl-0"><i className="bx bxl-dev-to text-3xl text-black hover:text-gray-600"></i></a>
                 <a href="https://medium.com/@thirza258" className="pl-0"><i className="bx bxl-medium-square text-3xl text-black hover:text-gray-600"></i></a>
+                <a
+              href="https://devpost.com/thirza258?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black hover:text-gray-600 transition-colors"
+              aria-label="Devpost Profile"
+            >
+              <img src={devpost} alt="Devpost" className="w-8 h-8" />
+            </a>
             </div>
           </Card>
 
@@ -57,9 +67,12 @@ const CardPort: React.FC<PortfolioGridProps> = () => {
               <p className="text-5xl font-bold">Let's</p>
               <p className="text-5xl font-bold">work <span className="text-blue-400">together.</span></p>
             </div>
-             <div className="flex justify-end w-full">
-                <i className='bx bx-right-arrow-alt text-4xl text-black'></i>
-             </div>
+            <div className="flex items-center justify-end w-full gap-2 mt-4">
+              <a href="/CV_ThirzaAhmadTsaqif.pdf" download className="flex items-center gap-2 hover:text-gray-600">
+                <span className="text-lg font-bold">Download My CV</span>
+                <i className='bx bx-download text-2xl'></i>
+              </a>
+            </div>
           </Card>
 
         </main>

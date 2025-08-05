@@ -1,115 +1,96 @@
-import front_end_logo from "../assets/front_end_logo.png";
-import backend_dev_logo from "../assets/backend_dev_logo.png";
-import mobile_dev_logo from "../assets/mobile_dev_logo.png";
-import blender_logo from "../assets/blender_icon.png";
+import React, { useState } from 'react';
+import { thirzaAhmadTsaqifEnglish } from '../cv/cv';
 
-const Skills = () => {
-  const skills = [
-    {
-      icon: front_end_logo,
-      text: "Mendesain Website dan Memprogram Website ",
-      title: "Front End Development",
-      framework: [
-        "React",
-        "Typescript",
-        "Javascript",
-        "TailwindCSS",
-        "Bootstrap",
-        "Material-UI",
-      ],
-    },
-    {
-      icon: mobile_dev_logo,
-      title: "Mobile Development",
-      text: "Memprogram Aplikasi Mobile",
-      framework: ["Flutter", "Java", "Dart", "XML"],
-    },
-    {
-      icon: backend_dev_logo,
-      title: "BACK END DEVELOPMENT",
-      text: "Memprogram Server, Database dan Membuat API",
-      framework: [
-        "NodeJS",
-        "Express",
-        "MongoDB",
-        "Firebase",
-        "PostgreSQL",
-        "ASP.NET",
-        "Django",
-        "Go",
-      ],
-    },
-    // {
-    //   icon: "/assets/img/icon-development-white.svg",
-    //   title: "Desktop DEVELOPMENT",
-    //   text: "Memprogram Aplikasi Desktop",
-    //   framework: ["C#", "C++", "Qt", ".NET"],
-    // },
-    // {
-    //   icon: "/assets/img/icon-development-white.svg",
-    //   title: "Data Analysis",
-    //   text: "Menganalisis Data dan Membuat Visualisasi Data",
-    //   framework: [
-    //     "Python",
-    //     "Pandas",
-    //     "Numpy",
-    //     "Matplotlib",
-    //     "Seaborn",
-    //     "Jupyter",
-    //     "SQL",
-    //   ],
-    // },
-    {
-      icon: blender_logo,
-      title: "3D Design",
-      text: "Mendesain Objek 3D",
-      framework: ["Blender"],
-    },
-  ];
+
+
+const ChevronIcon = ({ isOpen }: { isOpen: boolean }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className={`h-6 w-6 transform text-gray-400 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth={2}
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+  </svg>
+);
+
+
+// --- SkillCard Component (Internal to this file) ---
+interface SkillCardProps {
+  skill: TechnicalSkill;
+}
+
+interface TechnicalSkill {
+  skill: string;
+  details: string[];
+  images?: { src: string; alt: string }[];
+}
+
+const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
-  <div className="container py-16 md:py-20 mx-auto" id="services">
-    <h2 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
-      Here's what I'm good at
-    </h2>
-    <h3 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-      Ini adalah jasa yang saya tawarkan
-    </h3>
-
-    <div className="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
-      {skills.map((skill, index) => (
-        <div
-          key={index}
-          className="group rounded px-8 py-12 shadow hover:bg-primary flex flex-col items-center text-center"
-        >
-          <div className="h-24 w-24 xl:h-28 xl:w-28">
-            <div className="hidden group-hover:block">
-              <img src={`${skill.icon}`} alt="development icon" />
-            </div>
-            <div className="block group-hover:hidden">
-              <img src={`${skill.icon}`} alt="development icon" />
-            </div>
-          </div>
-          <h3 className="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
-            {skill.title}
-          </h3>
-          <p className="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-            {skill.text}
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 group-hover:text-white">
-            {skill.framework.map((framework, index) => (
-              <div key={index} className="flex items-center justify-center">
-                <h4 className="font-body font-semibold text-lg">{framework}</h4>
-              </div>
+    <div className="border-2 border-gray-300 rounded-lg mb-4 overflow-hidden dark:bg-slate-800 dark:text-white bg-white text-black shadow-xl hover:shadow-2xl transition-all duration-300 hover:border-blue-500 w-full">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="bg-white dark:bg-slate-800 w-full flex justify-between items-center p-5 text-left font-semibold text-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+        aria-expanded={isOpen}
+      >
+        <span>{skill.skill}</span>
+        <ChevronIcon isOpen={isOpen} />
+      </button>
+      {/* Collapsible Content */}
+      <div
+        className={`transition-max-height duration-500 ease-in-out overflow-hidden ${isOpen ? 'max-h-screen' : 'max-h-0'}`}
+      >
+        <div className="px-5 pb-5 pt-2">
+          <ul className="list-disc list-outside ml-5 space-y-3 text-gray-700">
+            {skill.details.map((detail, index) => (
+              <li key={index}>{detail}</li>
             ))}
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</div>
+          </ul>
 
+          {skill.images && skill.images.length > 0 && (
+            <div className="mt-6">
+              <h4 className="font-semibold mb-4 text-lg text-gray-900">Related Projects & Certificates:</h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {skill.images.map((image, index) => (
+                  <img
+                    key={index}
+                    src={image.src}
+                    alt={image.alt}
+                    className="rounded-md object-cover w-full h-auto shadow-lg border-2 border-gray-300 hover:border-blue-400 transition-all duration-300"
+                  />
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+// --- Main Skills Component (Exported) ---
+const Skills = () => {
+  const skills = thirzaAhmadTsaqifEnglish.technicalSkills;
+
+  return (
+    <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-center text-4xl font-extrabold text-white mb-10">
+          Technical Skills
+        </h2>
+        <div className="space-y-4">
+          {skills.map((skill: TechnicalSkill) => (
+            <SkillCard key={skill.skill} skill={skill} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 

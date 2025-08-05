@@ -1,5 +1,6 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
+import devpost from '../assets/devpost.png';
 
 // It's good practice to define props, even if they are empty for now.
 interface HeaderProps {}
@@ -96,6 +97,15 @@ const Header: React.FC<HeaderProps> = () => {
               aria-label="Medium Profile"
             >
               <i className="bx bxl-medium-square text-3xl"></i>
+            </a>
+            <a
+              href="https://devpost.com/thirza258?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black hover:text-gray-600 transition-colors"
+              aria-label="Devpost Profile"
+            >
+              <img src={devpost} alt="Devpost" className="w-8 h-8" />
             </a>
           </div>
         </div>
