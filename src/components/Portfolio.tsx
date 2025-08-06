@@ -93,11 +93,11 @@ const Portfolio = () => {
                   />
                   
                   <div className="absolute bottom-0 left-0 w-full h-[40%] bg-white/20 backdrop-blur-lg p-6 flex flex-col justify-center z-10">
-                    <h3 className="text-white text-2xl md:text-4xl font-bold drop-shadow-lg">
+                    <h3 className="text-gray-900 text-2xl md:text-4xl font-bold drop-shadow-lg">
                       {project.name}
                     </h3>
                     {isCurrent && (
-                      <p className="text-white/90 text-sm md:text-base mt-2 drop-shadow-md">
+                      <p className="text-gray-900 text-sm md:text-base mt-2 drop-shadow-md">
                         {project.description.join(' ').substring(0, 150)}...
                       </p>
                     )}

@@ -8,6 +8,16 @@ import befasilkomLogo from "../assets/bem_faculty.jpeg";
 import ddp0Logo from "../assets/ddp0.png";
 import perakLogo from "../assets/perak.png";
 
+import sitMainPhoto from "../assets/portfolio/sit/image.png";
+import oprecMainPhoto from "../assets/portfolio/oprec/image.png";
+import ragreaderMainPhoto from "../assets/portfolio/ragreader/original.png";
+import lpjOnlineMainPhoto from "../assets/portfolio/lpj/image.png";
+import chattydeskMainPhoto from "../assets/portfolio/chattydesk/gallery.jpg";
+
+
+import ragreaderHighlightPhoto1 from "../assets/portfolio/ragreader/gallery.jpg";
+import chattydeskHighlightPhoto1 from "../assets/portfolio/chattydesk/gallery (1).jpg";
+
 export const thirzaAhmadTsaqifEnglish = {
   "personalInfo": {
     "name": "Thirza Ahmad Tsaqif",
@@ -157,12 +167,12 @@ export const thirzaAhmadTsaqifEnglish = {
       "name": "Integrated Information Systems (SIT)",
       "organization": "BEM UI",
       "description": [
-        "Developed and maintained a comprehensive website that managed BEM UI's affairs—social media publications, financial processes (reimbursement and income/expenditure), and partnership/sponsorship documentation—improving operational efficiency.",
+        "Developed and maintained a comprehensive website that managed BEM UI's affairs, social media publications, financial processes (reimbursement and income/expenditure), and partnership/sponsorship documentation, thus improving operational efficiency.",
         "Implemented the system using the Django Framework with Firebase, streamlining functionality and authentication processes for enhancement in user access speed and security.",
         "Deployed the project project on Railway.",
         "Developed and maintained a LINE Messaging API to facilitate organizational mail and publication tasks, reducing communication delays and enabling direct access to features, benefiting over 200 active users."
       ],
-      "mainPhoto": "main_photo_url",
+      "mainPhoto": sitMainPhoto,
       "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
       "Programming language used or technology used": ["Django", "Firebase", "Railway", "LINE Messaging API"],
       "affiliation": "BEM UI"
@@ -175,7 +185,7 @@ export const thirzaAhmadTsaqifEnglish = {
         "Built using Go with the Gin framework and PostgreSQL.",
         "Adhere to API Documentation and contract to increasing integration with Frontend"
       ],
-      "mainPhoto": "main_photo_url",
+      "mainPhoto": oprecMainPhoto,
       "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
       "Programming language used or technology used": ["Go", "Gin", "PostgreSQL"],
       "affiliation": "BEM Fasilkom UI"
@@ -194,8 +204,8 @@ export const thirzaAhmadTsaqifEnglish = {
         "Implemented LangChain as the RAG pipeline for efficient retrieval-augmented generation.",
         "Integrated multiple generative AI models, including OpenAI, Claude, and Mistral, to enhance response quality."
       ],
-      "mainPhoto": "main_photo_url",
-      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
+      "mainPhoto": ragreaderMainPhoto,
+      "highlightPhoto": [ragreaderHighlightPhoto1],
       "Programming language used or technology used": ["Django REST Framework", "Vite", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Claude", "Mistral"],
       "affiliation": "NextAI Hackathon Submission"
     },
@@ -208,7 +218,7 @@ export const thirzaAhmadTsaqifEnglish = {
         "Ensured strict adherence to the API Contract, resulting in a seamless integration with existing systems and a 100% compatibility rate to Frontend application.",
         "Implemented SonarQube for continuous code quality monitoring."
       ],
-      "mainPhoto": "main_photo_url",
+      "mainPhoto": lpjOnlineMainPhoto,
       "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
       "Programming language used or technology used": ["Django REST Framework", "PostgreSQL", "SonarQube"],
       "affiliation": "BEM Fasilkom UI"
@@ -226,8 +236,8 @@ export const thirzaAhmadTsaqifEnglish = {
         "Backend involved designing and deploying a scalable API using Django REST Framework, Python, and PostgreSQL, hosted on DigitalOcean.",
         "Desktop application was built with Electron, React, and TypeScript, ensuring a smooth user experience across different LLM models."
       ],
-      "mainPhoto": "main_photo_url",
-      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
+      "mainPhoto": chattydeskMainPhoto,
+      "highlightPhoto": [chattydeskHighlightPhoto1],
       "Programming language used or technology used": ["Django REST Framework", "Python", "PostgreSQL", "DigitalOcean", "Electron", "React", "TypeScript", "Gemini", "Claude", "OpenAI", "Mistral"],
       "affiliation": "Dev Challenge Submission"
     },
