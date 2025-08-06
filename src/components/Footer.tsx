@@ -69,6 +69,29 @@ const Footer = () => {
             </a>
           </div>
         </div>
+            <div className="mt-4 text-center text-sm text-gray-300">
+              <p className="mb-2">Check out my creative works!</p>
+              <div className="flex items-center justify-center gap-4">
+                <a
+                  href="https://p-l-a-y2.itch.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white flex items-center gap-2 px-4 py-2 bg-[#FA5C5C] rounded-lg hover:bg-[#ff4444] transition-colors duration-300"
+                >
+                  <i className="bx bxl-itch-io text-xl"></i>
+                  <span>Assets on itch.io</span>
+                </a>
+                <a
+                  href="https://www.cgtrader.com/designers/thirzq"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white flex items-center gap-2 px-4 py-2 bg-[#4CAF50] rounded-lg hover:bg-[#45a049] transition-colors duration-300"
+                >
+                  <i className="bx bx-cube-alt text-xl"></i>
+                  <span>3D Models on CGTrader</span>
+                </a>
+              </div>
+            </div>
       </div>
     </footer>
   );
