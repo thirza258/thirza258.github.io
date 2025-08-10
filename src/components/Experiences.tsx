@@ -28,15 +28,15 @@ const Experiences: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto px-10 py-8">
+    <div className="container mx-auto py-8">
       <div className="z-10 mb-12">
           <h2 className="font-bold text-5xl md:text-6xl">Career Highlights</h2>
           <p className="text-lg text-gray-600 mt-2">The only source of knowledge is experience.</p>
           <p className="text-sm text-gray-500 mt-1">- Albert Einstein</p>
         </div>
-      <div className="relative">
+      <div className="relative px-10">
         <div 
-          className="absolute h-full w-0.5 bg-gray-300" 
+          className="absolute ms-10 h-full w-0.5 bg-gray-300" 
           style={{ left: '20px' }} 
         >
 

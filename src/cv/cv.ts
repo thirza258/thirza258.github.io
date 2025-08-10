@@ -13,8 +13,13 @@ import oprecMainPhoto from "../assets/portfolio/oprec/image.png";
 import ragreaderMainPhoto from "../assets/portfolio/ragreader/original.png";
 import lpjOnlineMainPhoto from "../assets/portfolio/lpj/image.png";
 import chattydeskMainPhoto from "../assets/portfolio/chattydesk/gallery.jpg";
+import bestStaffMainPhoto from "../assets/portfolio/best_staff/image.png";
+import siinvenMainPhoto from "../assets/portfolio/siinven/image.png";
+import knowlxciMainPhoto from "../assets/portfolio/knowlxcircle/image.png";
+import researchMainPhoto from "../assets/portfolio/researchrecommendation/original (1).png";
+import ecofriendlyMainPhoto from "../assets/portfolio/ecofriendly/original.png";
 
-
+import siinvenHighlightPhoto1 from "../assets/portfolio/siinven/image2.png";
 import ragreaderHighlightPhoto1 from "../assets/portfolio/ragreader/gallery.jpg";
 import chattydeskHighlightPhoto1 from "../assets/portfolio/chattydesk/gallery (1).jpg";
 
@@ -173,9 +178,115 @@ export const thirzaAhmadTsaqifEnglish = {
         "Developed and maintained a LINE Messaging API to facilitate organizational mail and publication tasks, reducing communication delays and enabling direct access to features, benefiting over 200 active users."
       ],
       "mainPhoto": sitMainPhoto,
-      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
+      "highlightPhoto": [ sitMainPhoto, "highlight_photo_2_url"],
       "Programming language used or technology used": ["Django", "Firebase", "Railway", "LINE Messaging API"],
       "affiliation": "BEM UI"
+    },
+    {
+      "name": "Ollie Chatbot",
+      "organization": "Oppo Manufacturing Indonesia",
+      "description": [
+        "Developed an HR and employee information chatbot for Oppo Manufacturing Indonesia, integrating FaceNet-based facial recognition for secure authentication.",
+        "Implemented text-to-speech with a custom-trained with Transformers Indonesian xTTS model and speech-to-text using a local deployment of OpenAI Whisper.",
+        "Utilized RAG with Faiss and PostgreSQL for efficient information storage and retrieval, ensuring quick and accurate responses.",
+        "Integrated OpenAI GPT and Ollama for natural language generation, delivering context-aware and human-like answers."
+      ],
+      "mainPhoto": "ollie_chatbot_main_photo_url",
+      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
+      "Programming language used or technology used": ["FaceNet", "Transformers", "xTTS", "OpenAI Whisper", "RAG", "Faiss", "PostgreSQL", "OpenAI GPT", "Ollama"],
+      "affiliation": "Oppo Manufacturing Indonesia"
+    },
+    {
+      "name": "5S AI Camera",
+      "organization": "Oppo Manufacturing Indonesia",
+      "description": [
+        "Developed and trained a computer vision model using ConvNeXt with PyTorch and Transformer architecture to classify workplace images for 5S compliance.",
+        "Integrated Ollama Gemma Vision to generate and describe detected violations, LLaVA Vision Language Model to identify target objects, and OwlViT for object detection.",
+        "Built a React + TypeScript + Tailwind frontend to display live camera feeds, violation details, and itemized lists of detected issues."
+      ],
+      "mainPhoto": "5s_ai_camera_main_photo_url",
+      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
+      "Programming language used or technology used": ["ConvNeXt", "PyTorch", "Transformer", "Ollama Gemma Vision", "LLaVA Vision Language Model", "OwlViT", "React", "TypeScript", "Tailwind CSS"],
+      "affiliation": "Oppo Manufacturing Indonesia"
+    },
+    {
+      "name": "5Why AI Application",
+      "organization": "Oppo Manufacturing Indonesia",
+      "description": [
+        "Developed an AI-powered Root Cause Analysis tool leveraging Dense and Sparse RAG with Faiss and MiniLM, integrated with Deepseek LLMs to automate the “5 Whys” method from historical problem reports.",
+        "Streamlined issue resolution and improved knowledge reuse by providing automated, context-aware root cause identification.",
+        "Built the frontend using React, TypeScript, Tailwind CSS, and shadcn/ui for a modern, responsive user interface.",
+        "Implemented the backend with FastAPI and utilizing PostgreSQL as the database, ensuring secure, scalable, and low-latency API performance."
+      ],
+      "mainPhoto": "5why_ai_app_main_photo_url",
+      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
+      "Programming language used or technology used": ["RAG", "Faiss", "MiniLM", "Deepseek LLMs", "React", "TypeScript", "Tailwind CSS", "shadcn/ui", "FastAPI", "PostgreSQL"],
+      "affiliation": "Oppo Manufacturing Indonesia"
+    },
+    {
+      "name": "KJRI New York Chatbot (Maleo AI)",
+      "organization": "Aether AI",
+      "description": [
+        "Built an AI-powered chatbot for consulate-related inquiries, reducing manual inquiry handling and serving as the front-line resource for FAQ responses.",
+        "Integrated GPT with Retrieval-Augmented Generation (RAG) and Vectorshift for context-aware document retrieval.",
+        "Developed and deployed the backend using FastAPI, ensuring secure, scalable, and low-latency response handling."
+      ],
+      "mainPhoto": "kjri_chatbot_main_photo_url",
+      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
+      "Programming language used or technology used": ["GPT", "RAG", "Vectorshift", "FastAPI", "Python"],
+      "affiliation": "Aether AI"
+    },
+    {
+      "name": "PFN Chatbot",
+      "organization": "Aether AI",
+      "description": [
+        "Developed an AI chatbot that delivers information about films produced by PFN by crawling the PFN website and indexing official documents.",
+        "Integrated Vectorshift, GPT, and RAG to enable context-aware retrieval of film metadata and FAQs, improving the relevance of answers for user queries.",
+        "Built and deployed the backend with FastAPI (Python), ensuring secure, scalable, and low-latency API endpoints for real-time chat interactions."
+      ],
+      "mainPhoto": "pfn_chatbot_main_photo_url",
+      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
+      "Programming language used or technology used": ["Vectorshift", "GPT", "RAG", "FastAPI", "Python"],
+      "affiliation": "Aether AI"
+    },
+    {
+      "name": "JNE Self Kiosk Backend",
+      "organization": "Avatar Digital",
+      "description": [
+        "Developed a self-service parcel delivery backend application for JNE using Go and the Labstack Echo framework.",
+        "Implemented CI/CD pipelines with GitHub Actions, automating build, test, and deployment processes to improve development efficiency and reliability."
+      ],
+      "mainPhoto": "jne_kiosk_main_photo_url",
+      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
+      "Programming language used or technology used": ["Go", "Labstack Echo", "GitHub Actions"],
+      "affiliation": "Avatar Digital"
+    },
+    {
+      "name": "SiInven",
+      "organization": "Propensi Courses",
+      "description": [
+        "Developed and upgraded LIA’s inventory management system following full SDLC practices—from requirements gathering through interviews, to planning (PRD creation and Agile sprints), development, implementation, and user training.",
+        "Built the backend using Java Spring Boot and PostgreSQL, containerized with Docker for consistent deployment and easier maintenance.",
+        "Created the frontend with React, TypeScript, and Tailwind CSS for a responsive and user-friendly interface."
+      ],
+      "mainPhoto": siinvenMainPhoto,
+      "highlightPhoto": [siinvenHighlightPhoto1, siinvenMainPhoto],
+      "Programming language used or technology used": ["Java Spring Boot", "PostgreSQL", "Docker", "React", "TypeScript", "Tailwind CSS"],
+      "affiliation": "Propensi Courses"
+    },
+    {
+      "name": "ETL University Project",
+      "organization": "Advanced Database Courses",
+      "description": [
+        "Designed and implemented an ETL pipeline from data generation to database integration, including star schema planning for efficient analytics.",
+        "Built a data workflow from source → staging → data warehouse using Apache Airflow and MinIO for orchestration and storage.",
+        "Developed the pipeline in Python, with Apache Superset as the analytics and visualization frontend.",
+        "Containerized the entire pipeline with Docker for portability and consistent deployment."
+      ],
+      "mainPhoto": "etl_project_main_photo_url",
+      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
+      "Programming language used or technology used": ["Python", "Apache Airflow", "MinIO", "Apache Superset", "Docker"],
+      "affiliation": "Advanced Database Courses"
     },
     {
       "name": "Open Recruitment Website API",
@@ -219,7 +330,7 @@ export const thirzaAhmadTsaqifEnglish = {
         "Implemented SonarQube for continuous code quality monitoring."
       ],
       "mainPhoto": lpjOnlineMainPhoto,
-      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
+      "highlightPhoto": [lpjOnlineMainPhoto, "highlight_photo_2_url"],
       "Programming language used or technology used": ["Django REST Framework", "PostgreSQL", "SonarQube"],
       "affiliation": "BEM Fasilkom UI"
     },
@@ -249,8 +360,8 @@ export const thirzaAhmadTsaqifEnglish = {
         "Developed using Django REST Framework for robust API functionality.",
         "Ensured adherence to comprehensive API Documentation and contract standards, resulting in streamlined integration with the frontend."
       ],
-      "mainPhoto": "main_photo_url",
-      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
+      "mainPhoto": bestStaffMainPhoto,
+      "highlightPhoto": [bestStaffMainPhoto, "highlight_photo_2_url"],
       "Programming language used or technology used": ["Django REST Framework"],
       "affiliation": "BEM Fasilkom UI"
     },
@@ -281,8 +392,8 @@ export const thirzaAhmadTsaqifEnglish = {
         "Built a modern web interface using TypeScript and Tailwind CSS.",
         "Deployed the backend on Azure Cloud Services and the frontend on Vercel, Improvement in application scalability and load time, ensuring a swift and reliable user experience."
       ],
-      "mainPhoto": "main_photo_url",
-      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
+      "mainPhoto": knowlxciMainPhoto,
+      "highlightPhoto": [knowlxciMainPhoto, "highlight_photo_2_url"],
       "Programming language used or technology used": ["Google Generative AI", "Django REST Framework", "PostgreSQL", "TypeScript", "Tailwind CSS", "Azure Cloud Services", "Vercel"],
       "affiliation": "Gemini API Developer Competition Submission"
     },
@@ -304,23 +415,7 @@ export const thirzaAhmadTsaqifEnglish = {
       "Programming language used or technology used": ["Gemini", "React", "TypeScript", "AWS Amplify"],
       "affiliation": "MLH GWH Submission"
     },
-    {
-      "name": "Canva Copywriting Extensions",
-      "context": "Canva Integration Apps Hackathon Submission",
-      "links": {
-        "githubBackend": "[Github Backend]",
-        "githubFrontend": "[Github Frontend]",
-        "devpost": "[Devpost]"
-      },
-      "description": [
-        "Developed an innovative Canva extension leveraging AI algorithms to assist users in generating high-quality copywriting",
-        "Created a Canva Extensions using Gemini AI that will create Copywriting for design and using Typescript"
-      ],
-      "mainPhoto": "main_photo_url",
-      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
-      "Programming language used or technology used": ["Canva Extensions", "Gemini", "TypeScript"],
-      "affiliation": "Canva Integration Apps Hackathon Submission"
-    },
+    
     {
       "name": "LiteralStoryboard",
       "context": "AWS Game Builder Hackathon Submission",
@@ -369,8 +464,8 @@ export const thirzaAhmadTsaqifEnglish = {
         "Developed a Research Recommendation RAG-based API using the ArXiv dataset, with FAISS for retrieval and OpenAI for AI processing and Langchain as the pipeline.",
         "Utilized OpenAPI for documentation and Built the API with Django REST Framework."
       ],
-      "mainPhoto": "main_photo_url",
-      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
+      "mainPhoto": researchMainPhoto,
+      "highlightPhoto": [researchMainPhoto, "highlight_photo_2_url"],
       "Programming language used or technology used": ["RAG", "FAISS", "OpenAI", "LangChain", "OpenAPI", "Django REST Framework"],
       "affiliation": "Global Hack Week AI/ML Submission"
     },
@@ -387,8 +482,8 @@ export const thirzaAhmadTsaqifEnglish = {
         "Built the frontend with Vite, React, TypeScript, and Tailwind CSS.",
         "Developed the backend using Django REST Framework."
       ],
-      "mainPhoto": "main_photo_url",
-      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
+      "mainPhoto": ecofriendlyMainPhoto,
+      "highlightPhoto": [ecofriendlyMainPhoto, "highlight_photo_2_url"],
       "Programming language used or technology used": ["RAG", "LangChain", "FAISS", "OpenAI", "Vite", "React", "TypeScript", "Tailwind CSS", "Django REST Framework"],
       "affiliation": "Nova Hacks III Submission"
     },
@@ -513,6 +608,13 @@ export const thirzaAhmadTsaqifEnglish = {
       "details": [
         "Acquiring Flutter framework and Dart knowledge through university courses and self-study using the Flutter Apprentice (2nd edition), Flutter for Dummies, and Flutter Projects books.",
         "Developed various Flutter projects, including a Movie API application, a Result Summary component design from Frontend Mentor, and a book library application featuring authentication and API consumption, showcasing a strong understanding of cross-platform mobile app development."
+      ]
+    },
+    {
+      "skill": "Japanese Language",
+      "details": [
+        "Japanese Language Proficiency: N5 Certificate.",
+        "Completed two-semester course (UI Central Japanese Studies × AsiaToJapan) covering N4 and N5 material with native Japanese instructors, using Irodori textbooks and interactive workshops."
       ]
     }
   ],

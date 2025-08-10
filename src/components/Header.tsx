@@ -33,8 +33,12 @@ const Header: React.FC<HeaderProps> = () => {
               sequence={[
                 "Hello, I'm Thirza",
                 1000,
-                "Hello, I'm a Programmer",
-                2000,
+                "Hello, I'm a Programmer", 
+                1000,
+                "Hello, I'm Thirza",
+                1000,
+                "Hello, I'm a Developer",
+                1000,
               ]}
               wrapper="span"
               cursor={true}
