@@ -1680,8 +1680,8 @@ export const thirzaAhmadTsaqifJapanese = {
         "ArXivデータセットを使用して、検索にFAISS、AI処理にOpenAI、パイプラインとしてLangChainを使用した研究推薦RAGベースのAPIを開発しました。",
         "ドキュメント作成にOpenAPIを利用し、Django REST FrameworkでAPIを構築しました。"
       ],
-      "mainPhoto": "researchMainPhoto",
-      "highlightPhoto": ["researchMainPhoto", "highlight_photo_2_url"],
+      "mainPhoto": researchMainPhoto,
+      "highlightPhoto": [researchMainPhoto, "highlight_photo_2_url"],
       "Programming language used or technology used": ["RAG", "FAISS", "OpenAI", "LangChain", "OpenAPI", "Django REST Framework"],
       "affiliation": "グローバルハックウィークAI/ML提出物"
     },
@@ -1698,8 +1698,8 @@ export const thirzaAhmadTsaqifJapanese = {
         "フロントエンドはVite、React、TypeScript、Tailwind CSSで構築しました。",
         "バックエンドはDjango REST Frameworkを使用して開発しました。"
       ],
-      "mainPhoto": "ecofriendlyMainPhoto",
-      "highlightPhoto": ["ecofriendlyMainPhoto", "highlight_photo_2_url"],
+      "mainPhoto": ecofriendlyMainPhoto,
+      "highlightPhoto": [ecofriendlyMainPhoto, "highlight_photo_2_url"],
       "Programming language used or technology used": ["RAG", "LangChain", "FAISS", "OpenAI", "Vite", "React", "TypeScript", "Tailwind CSS", "Django REST Framework"],
       "affiliation": "Nova Hacks III提出物"
     },

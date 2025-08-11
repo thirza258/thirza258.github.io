@@ -1,14 +1,16 @@
 import { SetStateAction, useState, useEffect } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import { thirzaAhmadTsaqifEnglish } from '../cv/cv';
+import { thirzaAhmadTsaqifEnglish, thirzaAhmadTsaqifIndonesia, thirzaAhmadTsaqifJapanese } from '../cv/cv';
 import ProjectDetailPanel from './ProjectDetailPanel';
 import { Project } from '../interface/interface';
+import { useLanguage } from '../context/LanguageContext';
 
 const Portfolio = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedProject, setSelectedProject] = useState(null);
   const [hasLoaded, setHasLoaded] = useState(false); // State for entry animation
-  const projects = thirzaAhmadTsaqifEnglish.projects;
+  const { language } = useLanguage();
+  const projects = language === "ID" ? thirzaAhmadTsaqifIndonesia.projects : language === "EN" ? thirzaAhmadTsaqifEnglish.projects : thirzaAhmadTsaqifJapanese.projects;
   
   useEffect(() => {
     setHasLoaded(true);

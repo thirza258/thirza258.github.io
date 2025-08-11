@@ -1,7 +1,8 @@
 import React from 'react';
 import myPhoto from '../assets/my_photo.png'; // Update this path to your photo
-import { thirzaAhmadTsaqifEnglish } from '../cv/cv';
+import { thirzaAhmadTsaqifEnglish, thirzaAhmadTsaqifIndonesia, thirzaAhmadTsaqifJapanese } from '../cv/cv';
 import devpost from '../assets/devpost.png';
+import { useLanguage } from '../context/LanguageContext';
 
 type PortfolioGridProps = {};
 
@@ -13,7 +14,8 @@ const Card: React.FC<{ children: React.ReactNode; className?: string }> = ({ chi
 );
 
 const CardPort: React.FC<PortfolioGridProps> = () => {
-    const myHeader = thirzaAhmadTsaqifEnglish.summary;
+    const { language } = useLanguage();
+    const myHeader = language === "ID" ? thirzaAhmadTsaqifIndonesia.summary : language === "EN" ? thirzaAhmadTsaqifEnglish.summary : thirzaAhmadTsaqifJapanese.summary;
     const list_skills = ["Python", "Java", "Typescript", "SQL", "Git", "HTML", "CSS", "Javascript", "Dart", "C#", "Go"];
     const list_frameworks = ["React", "Flutter", "Django", "Express", "ASP.NET", "PostgreSQL", "MongoDB", "Firebase", "Jupyter"];
     const allSkills = [...list_skills, ...list_frameworks];

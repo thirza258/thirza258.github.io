@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { thirzaAhmadTsaqifEnglish } from '../cv/cv';
+import { thirzaAhmadTsaqifEnglish, thirzaAhmadTsaqifIndonesia, thirzaAhmadTsaqifJapanese } from '../cv/cv';
+import { useLanguage } from '../context/LanguageContext';
 
 
 
@@ -76,7 +77,8 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
 
 // --- Main Skills Component (Exported) ---
 const Skills = () => {
-  const skills = thirzaAhmadTsaqifEnglish.technicalSkills;
+  const { language } = useLanguage();
+  const skills = language === "ID" ? thirzaAhmadTsaqifIndonesia.technicalSkills : language === "EN" ? thirzaAhmadTsaqifEnglish.technicalSkills : thirzaAhmadTsaqifJapanese.technicalSkills;
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">

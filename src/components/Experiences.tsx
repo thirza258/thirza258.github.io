@@ -1,10 +1,12 @@
 import React from 'react';
 // Make sure this import path is correct for your project structure
-import { thirzaAhmadTsaqifEnglish } from '../cv/cv';
+import { thirzaAhmadTsaqifEnglish, thirzaAhmadTsaqifIndonesia, thirzaAhmadTsaqifJapanese } from "../cv/cv";
+import { useLanguage } from '../context/LanguageContext';
 
 const Experiences: React.FC = () => {
-  const experiences = thirzaAhmadTsaqifEnglish.experiences;
-
+  // const experiences = thirzaAhmadTsaqifEnglish.experiences;
+  const { language } = useLanguage();
+  const experiences = language === "ID" ? thirzaAhmadTsaqifIndonesia.experiences : language === "EN" ? thirzaAhmadTsaqifEnglish.experiences : thirzaAhmadTsaqifJapanese.experiences;
   /**
    * Safely parses a date string like "June 2025" and formats it to "Mon YYYY".
    * @param dateStr The date string to format (e.g., "June 2025" or "Present").
