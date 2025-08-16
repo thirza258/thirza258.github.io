@@ -23,10 +23,10 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div id="skills" className="border-2 border-gray-300 rounded-lg mb-4 overflow-hidden dark:bg-slate-800 dark:text-white bg-white text-black shadow-xl hover:shadow-2xl transition-all duration-300 hover:border-blue-500 w-full">
+    <div id="skills" className="border-2 border-black rounded-lg mb-4 overflow-hidden bg-white text-black hover:shadow-2xl transition-all duration-300 w-full">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="bg-white dark:bg-slate-800 w-full flex justify-between items-center p-5 text-left font-semibold text-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+        className="bg-white w-full flex justify-between items-center p-5 text-left font-semibold text-xl focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50"
         aria-expanded={isOpen}
       >
         <span>{skill.skill}</span>
@@ -37,7 +37,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
         className={`transition-max-height duration-500 ease-in-out overflow-hidden ${isOpen ? 'max-h-screen' : 'max-h-0'}`}
       >
         <div className="px-5 pb-5 pt-2">
-          <ul className="list-disc list-outside ml-5 space-y-3 text-gray-700">
+          <ul className="list-disc list-outside ml-5 space-y-3 text-black">
             {skill.details.map((detail, index) => (
               <li key={index}>{detail}</li>
             ))}
@@ -45,14 +45,14 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
 
           {skill.images && skill.images.length > 0 && (
             <div className="mt-6">
-              <h4 className="font-semibold mb-4 text-lg text-gray-900">Related Projects & Certificates:</h4>
+              <h4 className="font-semibold mb-4 text-lg text-black">Related Projects & Certificates:</h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {skill.images.map((image, index) => (
                   <img
                     key={index}
                     src={image.src}
                     alt={image.alt}
-                    className="rounded-md object-cover w-full h-auto shadow-lg border-2 border-gray-300 hover:border-blue-400 transition-all duration-300"
+                    className="rounded-md object-cover w-full h-auto border-2 border-black hover:border-gray-800 transition-all duration-300"
                   />
                 ))}
               </div>

@@ -12,14 +12,10 @@ const Writings: React.FC = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-          Technical Writings
-        </h2>
-        <p className="mt-3 text-xl text-gray-500">
-          Sharing knowledge and experiences through technical articles
-        </p>
+    <div className="max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <div className="z-10 mb-12">
+        <h2 className="font-bold text-5xl md:text-6xl">Technical Writings</h2>
+        <p className="text-lg text-gray-600 mt-2">Sharing knowledge and experiences through technical articles</p>
       </div>
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">

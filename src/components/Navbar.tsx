@@ -51,8 +51,8 @@ const Navbar = () => {
                             <button
                                 key={lang}
                                 onClick={() => setLanguage(lang as any)}
-                                className={`px-2 py-1 text-sm font-semibold rounded 
-                                    ${language === lang ? "bg-blue-500 text-white" : "bg-white/50 text-black hover:bg-gray-200"}`}
+                                className={`px-2 py-1 text-sm font-semibold rounded
+                                    ${language === lang ? "text-black outline outline-1 outline-black" : "bg-white/50 text-black hover:bg-gray-200"}`}
                             >
                                 {lang}
                             </button>

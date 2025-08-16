@@ -4,24 +4,16 @@ import { thirzaAhmadTsaqifEnglish, thirzaAhmadTsaqifIndonesia, thirzaAhmadTsaqif
 import { useLanguage } from '../context/LanguageContext';
 
 const Experiences: React.FC = () => {
-  // const experiences = thirzaAhmadTsaqifEnglish.experiences;
   const { language } = useLanguage();
   const experiences = language === "ID" ? thirzaAhmadTsaqifIndonesia.experiences : language === "EN" ? thirzaAhmadTsaqifEnglish.experiences : thirzaAhmadTsaqifJapanese.experiences;
-  /**
-   * Safely parses a date string like "June 2025" and formats it to "Mon YYYY".
-   * @param dateStr The date string to format (e.g., "June 2025" or "Present").
-   * @returns The formatted date string or "Present".
-   */
+
   const formatExperienceDate = (dateStr: string): string => {
-    // If the date is "Present", return it as is.
     if (dateStr === 'Present') {
       return 'Present';
     }
 
-    // Add a day to the string to make parsing more reliable (e.g., "June 2025" -> "June 1 2025")
     const date = new Date(`${dateStr} 1`);
 
-    // Check if the created date is valid. If not, return the original string as a fallback.
     if (isNaN(date.getTime())) {
       return dateStr; 
     }
@@ -41,14 +33,10 @@ const Experiences: React.FC = () => {
           className="absolute ms-10 h-full w-0.5 bg-gray-300" 
           style={{ left: '20px' }} 
         >
-
         </div>
-
-        
 
         {experiences.map((exp, index) => (
           <div key={index} className="relative mb-10">
-            {/* Timeline Pill (Date Marker) */}
             <div 
               className="absolute z-10 bg-gray-800 rounded-full flex items-center justify-center py-1 px-3"
               style={{ 
@@ -58,24 +46,23 @@ const Experiences: React.FC = () => {
               }}
             >
               <span className="text-white text-xs font-semibold whitespace-nowrap">
-                {/* Use the new helper function for safe formatting */}
                 {formatExperienceDate(exp.startDate)} - {formatExperienceDate(exp.endDate)}
               </span>
             </div>
 
-            {/* Experience Card */}
-            <div className="ml-24"> 
-              <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200">
+            <div 
+              className="ml-24 transition-all duration-300 ease-in-out hover:scale-105 group"
+            > 
+              <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200 relative group-hover:z-20">
                 <div className="flex items-start mb-4">
                   <img 
                     src={exp.photo} 
                     alt={`${exp.company} logo`} 
-                    className="w-12 h-12 mr-4 object-contain" 
+                    className="w-12 h-12 mr-4 object-contain"
                   />
                   <div>
                     <h3 className="font-bold text-gray-900 text-xl">{exp.title}</h3>
                     <p className="text-sm font-semibold text-blue-600">{exp.company}</p>
-          
                   </div>
                 </div>
 
