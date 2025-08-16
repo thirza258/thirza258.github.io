@@ -3,25 +3,11 @@ import React from 'react';
 const Writings: React.FC = () => {
   const writings = [
     {
-      title: "Building AI-Powered Root Cause Analysis Tools",
-      platform: "Medium",
-      date: "March 2024",
-      description: "A deep dive into developing RCA tools using RAG and LLMs",
-      link: "https://medium.com/@thirza258/building-ai-powered-root-cause-analysis-tools"
-    },
-    {
-      title: "Computer Vision for Workplace 5S Implementation",
-      platform: "Dev.to", 
-      date: "February 2024",
-      description: "How we used CV to automate 5S workplace organization assessment",
-      link: "https://dev.to/thirza258/computer-vision-5s-implementation"
-    },
-    {
-      title: "Implementing RAG with Local GPU Infrastructure",
-      platform: "Medium",
-      date: "January 2024", 
-      description: "Technical guide on self-hosting RAG systems with GPU acceleration",
-      link: "https://medium.com/@thirza258/implementing-rag-local-gpu"
+      title: "My Experiences Using Amazon Q for Creating the Literal Storyboard Game",
+      platform: "AWS Builder",
+      date: "January 2025", 
+      description: "It’s a good chatbot for a new AI. For a relatively new tool, Amazon Q shows great potential. While it excels in generating code for simpl....",
+      link: "https://builder.aws.com/content/2rbrpn8ptGnRcDOJG9iCNt0wzDw/my-experiences-using-amazon-q-for-creating-the-literal-storyboard-game"
     }
   ];
 
