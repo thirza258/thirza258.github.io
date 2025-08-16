@@ -1,11 +1,10 @@
-// /components/ProjectDetailPanel.tsx
 
-import React from 'react'; // Import React for FC type
+
+import React from 'react';
 import { FaTimes, FaLink, FaGithub } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Project } from '../interface/interface'; // Adjust the import path as needed
+import { Project, ProjectDetailPanelProps } from '../interface/interface'; 
 
-// --- Animation Variants (Unchanged) ---
 const backdropVariants = {
   visible: { opacity: 0.6, transition: { duration: 0.4 } },
   hidden: { opacity: 0, transition: { duration: 0.4 } },
@@ -33,11 +32,7 @@ const renderLink = (key: string, url: string): JSX.Element => {
     );
 };
 
-// --- Typed Component Props ---
-interface ProjectDetailPanelProps {
-  project: Project | null;
-  onClose: () => void;
-}
+
 
 // --- Fully Typed Component ---
 const ProjectDetailPanel: React.FC<ProjectDetailPanelProps> = ({ project, onClose }) => {

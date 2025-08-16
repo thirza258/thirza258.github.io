@@ -1,12 +1,27 @@
 
 
 export interface Project {
-    name: string;
-    description: string[];
-    mainPhoto: string; // From the main Portfolio component
-    "Programming language used or technology used": string[];
-    organization?: string; // Optional property
-    context?: string;      // Optional property
-    links?: Record<string, string>; // Optional object with string keys/values
-    highlightPhoto?: string[];    // Optional array of strings
-  }
+  name: string;
+  description: string[];
+  mainPhoto: string;
+  "Programming language used or technology used": string[];
+  organization?: string; 
+  context?: string;    
+  links?: Record<string, string>;
+  highlightPhoto?: string[];    
+}
+
+export interface SkillCardProps {
+  skill: TechnicalSkill;
+}
+
+export interface TechnicalSkill {
+  skill: string;
+  details: string[];
+  images?: { src: string; alt: string }[];
+}
+
+export interface ProjectDetailPanelProps {
+  project: Project | null;
+  onClose: () => void;
+}

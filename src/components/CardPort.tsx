@@ -21,7 +21,7 @@ const CardPort: React.FC<PortfolioGridProps> = () => {
     const allSkills = [...list_skills, ...list_frameworks];
 
   return (
-    <div className="text-black min-h-screen font-sans p-4 sm:p-6 lg:p-8">
+    <div id="about" className="text-black min-h-screen font-sans p-4 sm:p-6 lg:p-8">
       <div className="max-w-7xl mx-auto">
 
         {/* Main Grid Layout */}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { thirzaAhmadTsaqifEnglish, thirzaAhmadTsaqifIndonesia, thirzaAhmadTsaqifJapanese } from '../cv/cv';
 import { useLanguage } from '../context/LanguageContext';
-
+import { SkillCardProps, TechnicalSkill } from '../interface/interface';
 
 
 const ChevronIcon = ({ isOpen }: { isOpen: boolean }) => (
@@ -18,22 +18,12 @@ const ChevronIcon = ({ isOpen }: { isOpen: boolean }) => (
 );
 
 
-// --- SkillCard Component (Internal to this file) ---
-interface SkillCardProps {
-  skill: TechnicalSkill;
-}
-
-interface TechnicalSkill {
-  skill: string;
-  details: string[];
-  images?: { src: string; alt: string }[];
-}
 
 const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-2 border-gray-300 rounded-lg mb-4 overflow-hidden dark:bg-slate-800 dark:text-white bg-white text-black shadow-xl hover:shadow-2xl transition-all duration-300 hover:border-blue-500 w-full">
+    <div id="skills" className="border-2 border-gray-300 rounded-lg mb-4 overflow-hidden dark:bg-slate-800 dark:text-white bg-white text-black shadow-xl hover:shadow-2xl transition-all duration-300 hover:border-blue-500 w-full">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="bg-white dark:bg-slate-800 w-full flex justify-between items-center p-5 text-left font-semibold text-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
@@ -74,18 +64,18 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
   );
 };
 
-
-// --- Main Skills Component (Exported) ---
 const Skills = () => {
   const { language } = useLanguage();
   const skills = language === "ID" ? thirzaAhmadTsaqifIndonesia.technicalSkills : language === "EN" ? thirzaAhmadTsaqifEnglish.technicalSkills : thirzaAhmadTsaqifJapanese.technicalSkills;
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-center text-4xl font-extrabold text-white mb-10">
-          Technical Skills
-        </h2>
+      <div className="w-full">
+        <div className="z-10 mb-12">
+          <h2 className="font-bold text-5xl md:text-6xl">Technical Skills</h2>
+          <p className="text-lg text-gray-600 mt-2">The only source of knowledge is experience.</p>
+          <p className="text-sm text-gray-500 mt-1">- Albert Einstein</p>
+        </div>
         <div className="space-y-4">
           {skills.map((skill: TechnicalSkill) => (
             <SkillCard key={skill.skill} skill={skill} />

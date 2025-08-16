@@ -665,7 +665,7 @@ export const thirzaAhmadTsaqifIndonesia = {
       "company": "OPPO Manufacturing Indonesia",
       "startDate": "Juni 2025",
       "endDate": "Sekarang",
-      "photo": "oppoLogo",
+      "photo": oppoLogo,
       "responsibilities": [
         "Mengembangkan Agen AI tentang perusahaan yang menggunakan RAG dan LLM untuk informasi dan STT serta TTS untuk input dan output, dan Pengenalan Wajah untuk otentikasi karyawan, diterapkan dan dioptimalkan untuk berjalan di infrastruktur GPU lokal.",
         "Merancang dan mengimplementasikan sistem segmentasi gambar berbasis visi komputer untuk mengklasifikasikan kondisi tempat kerja sesuai dengan metodologi 5S (Sort, Set in order, Shine, Standardize, Sustain).",
@@ -677,7 +677,7 @@ export const thirzaAhmadTsaqifIndonesia = {
       "company": "Aether AI",
       "startDate": "Maret 2025",
       "endDate": "Juli 2025",
-      "photo": "aetherLogo",
+      "photo": aetherLogo,
       "responsibilities": [
         "Mengembangkan dan menerapkan sistem backend dan chatbot cerdas untuk PFN menggunakan FastAPI dan Vectorshift, mengintegrasikan model bahasa OpenAI dengan metode Retrieval-Augmented Generation (RAG) untuk memberikan informasi terkait film yang akurat.",
         "Membangun dan mengimplementasikan backend dan chatbot bertenaga AI untuk KJRI New York menggunakan FastAPI dan Vectorshift, memanfaatkan OpenAI dan pendekatan RAG untuk memberikan informasi konsuler yang real-time dan sadar konteks."
@@ -688,7 +688,7 @@ export const thirzaAhmadTsaqifIndonesia = {
       "company": "Replenish Nutraceutics",
       "startDate": "Februari 2025",
       "endDate": "Mei 2025",
-      "photo": "replenishLogo",
+      "photo": replenishLogo,
       "responsibilities": [
         "Mengembangkan Sistem Rekomendasi Dosis bertenaga AI, menciptakan sistem baru untuk organisasi, memungkinkan rekomendasi dosis berbasis data menggunakan OpenAI dan FAISS.",
         "Membangun API yang aman dengan FastAPI, menggabungkan otentikasi JWT untuk kontrol akses.",
@@ -700,7 +700,7 @@ export const thirzaAhmadTsaqifIndonesia = {
       "company": "Avatar Digital",
       "startDate": "April 2025",
       "endDate": "Mei 2025",
-      "photo": "avatarLogo",
+      "photo": avatarLogo,
       "responsibilities": [
         "Mengembangkan dan memelihara sistem backend pengiriman dan admin menggunakan Golang dengan kerangka kerja Labstack Echo, dan MariaDB/MySQL sebagai database.",
         "Memanfaatkan Docker untuk kontainerisasi dan GitHub Actions untuk otomatisasi CI/CD."
@@ -711,7 +711,7 @@ export const thirzaAhmadTsaqifIndonesia = {
       "company": "Fakultas Ilmu Komputer, Universitas Indonesia",
       "startDate": "September 2024",
       "endDate": "Desember 2024",
-      "photo": "facultyLogo",
+      "photo": facultyLogo,
       "responsibilities": [
         "Membuat tugas lab yang berkaitan dengan Linked Lists, memastikan revisi minimal selama pelaksanaan oleh mahasiswa.",
         "Merancang tugas pemrograman yang berkaitan dengan Graf, mencapai revisi minimal selama pengerjaan oleh mahasiswa.",
@@ -725,7 +725,7 @@ export const thirzaAhmadTsaqifIndonesia = {
       "startDate": "Maret 2024",
       "endDate": "Desember 2024",
       "description": "BEM Universitas adalah organisasi Universitas untuk mengakomodasi minat mahasiswa.",
-      "photo": "bemLogo",
+      "photo": bemLogo,
       "responsibilities": [
         "Pengembangan dan Bertanggung jawab atas situs web Sistem Informasi Terpadu (SIT) BEM UI, memanfaatkan Django Python untuk backend yang kuat dan membuat frontend yang responsif dengan HTML dan CSS.",
         "Mengembangkan dan memelihara situs web Sistem Informasi Terpadu (SIT) BEM UI, memanfaatkan Firebase untuk otentikasi dan manajemen database.",
@@ -739,7 +739,7 @@ export const thirzaAhmadTsaqifIndonesia = {
       "startDate": "Maret 2023",
       "endDate": "Desember 2023",
       "description": "BEM Fasilkom adalah Organisasi di dalam Fakultas untuk mengakomodasi minat mahasiswa.",
-      "photo": "befasilkomLogo",
+      "photo": befasilkomLogo,
       "responsibilities": [
         "Memelihara dan memperbarui backend situs web BEM Fasilkom UI untuk memastikan stabilitas dan keandalan kode, mendukung semua staf dan mahasiswa BEM Fakultas.",
         "Membangun dan mengimplementasikan model baru berdasarkan situs web yang didesain ulang, meningkatkan pengalaman dan fungsionalitas pengguna, menggunakan Django Python dan Go.",
@@ -754,7 +754,7 @@ export const thirzaAhmadTsaqifIndonesia = {
       "startDate": "Juni 2023",
       "endDate": "Juli 2023",
       "description": "DDP-0 adalah acara bimbingan untuk memperkenalkan kode dan fakultas kepada mahasiswa baru.",
-      "photo": "ddp0Logo",
+      "photo": ddp0Logo,
       "responsibilities": [
         "Memfasilitasi program bimbingan yang bertujuan untuk memperkenalkan mahasiswa tahun pertama pada pengkodean dan sumber daya fakultas.",
         "Memberikan instruksi pemrograman Python dasar kepada mahasiswa baru, meningkatkan pengalaman belajar awal mereka.",
@@ -768,7 +768,7 @@ export const thirzaAhmadTsaqifIndonesia = {
       "startDate": "Maret 2023",
       "endDate": "September 2023",
       "description": "PERAK adalah acara olahraga di dalam fakultas untuk mendukung minat olahraga pada mahasiswa.",
-      "photo": "perakLogo",
+      "photo": perakLogo,
       "responsibilities": [
         "Merancang poster yang menarik secara visual untuk mempromosikan kompetisi olahraga dengan Figma.",
         "Mengadaptasi desain untuk berbagai format termasuk feed Instagram, format baris, poster tradisional, unggahan Line, dan Facebook.",
@@ -786,7 +786,7 @@ export const thirzaAhmadTsaqifIndonesia = {
         "Menyebarkan proyek di Railway.",
         "Mengembangkan dan memelihara LINE Messaging API untuk memfasilitasi tugas surat dan publikasi organisasi, mengurangi penundaan komunikasi dan memungkinkan akses langsung ke fitur, yang menguntungkan lebih dari 200 pengguna aktif."
       ],
-      "mainPhoto": "sitMainPhoto",
+      "mainPhoto": sitMainPhoto,
       "highlightPhoto": ["sitMainPhoto", "highlight_photo_2_url"],
       "Programming language used or technology used": ["Django", "Firebase", "Railway", "LINE Messaging API"],
       "affiliation": "BEM UI"
@@ -827,7 +827,7 @@ export const thirzaAhmadTsaqifIndonesia = {
         "Membangun frontend menggunakan React, TypeScript, Tailwind CSS, dan shadcn/ui untuk antarmuka pengguna yang modern dan responsif.",
         "Mengimplementasikan backend dengan FastAPI dan memanfaatkan PostgreSQL sebagai database, memastikan kinerja API yang aman, dapat diskalakan, dan berlatensi rendah."
       ],
-      "mainPhoto": "5why_ai_app_main_photo_url",
+      "mainPhoto": "why_ai_app_main_photo_url",
       "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
       "Programming language used or technology used": ["RAG", "Faiss", "MiniLM", "Deepseek LLMs", "React", "TypeScript", "Tailwind CSS", "shadcn/ui", "FastAPI", "PostgreSQL"],
       "affiliation": "Oppo Manufacturing Indonesia"
@@ -878,7 +878,7 @@ export const thirzaAhmadTsaqifIndonesia = {
         "Membangun backend menggunakan Java Spring Boot dan PostgreSQL, dikontainerisasi dengan Docker untuk penerapan yang konsisten dan pemeliharaan yang lebih mudah.",
         "Membuat frontend dengan React, TypeScript, dan Tailwind CSS untuk antarmuka yang responsif dan ramah pengguna."
       ],
-      "mainPhoto": "siinvenMainPhoto",
+      "mainPhoto": siinvenMainPhoto,
       "highlightPhoto": ["siinvenHighlightPhoto1", "siinvenMainPhoto"],
       "Programming language used or technology used": ["Java Spring Boot", "PostgreSQL", "Docker", "React", "TypeScript", "Tailwind CSS"],
       "affiliation": "Mata Kuliah Propensi"
@@ -905,7 +905,7 @@ export const thirzaAhmadTsaqifIndonesia = {
         "Dibangun menggunakan Go dengan kerangka kerja Gin dan PostgreSQL.",
         "Mematuhi Dokumentasi dan kontrak API untuk meningkatkan integrasi dengan Frontend."
       ],
-      "mainPhoto": "oprecMainPhoto",
+      "mainPhoto": oprecMainPhoto,
       "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
       "Programming language used or technology used": ["Go", "Gin", "PostgreSQL"],
       "affiliation": "BEM Fasilkom UI"
@@ -924,7 +924,7 @@ export const thirzaAhmadTsaqifIndonesia = {
         "Mengimplementasikan LangChain sebagai pipeline RAG untuk pembuatan yang ditambah pengambilan yang efisien.",
         "Mengintegrasikan beberapa model AI generatif, termasuk OpenAI, Claude, dan Mistral, untuk meningkatkan kualitas respons."
       ],
-      "mainPhoto": "ragreaderMainPhoto",
+      "mainPhoto": ragreaderMainPhoto,
       "highlightPhoto": ["ragreaderHighlightPhoto1"],
       "Programming language used or technology used": ["Django REST Framework", "Vite", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Claude", "Mistral"],
       "affiliation": "Pengajuan Hackathon NextAI"
@@ -938,7 +938,7 @@ export const thirzaAhmadTsaqifIndonesia = {
         "Memastikan kepatuhan yang ketat terhadap Kontrak API, menghasilkan integrasi yang mulus dengan sistem yang ada dan tingkat kompatibilitas 100% dengan aplikasi Frontend.",
         "Mengimplementasikan SonarQube untuk pemantauan kualitas kode berkelanjutan."
       ],
-      "mainPhoto": "lpjOnlineMainPhoto",
+      "mainPhoto": lpjOnlineMainPhoto,
       "highlightPhoto": ["lpjOnlineMainPhoto", "highlight_photo_2_url"],
       "Programming language used or technology used": ["Django REST Framework", "PostgreSQL", "SonarQube"],
       "affiliation": "BEM Fasilkom UI"
@@ -956,7 +956,7 @@ export const thirzaAhmadTsaqifIndonesia = {
         "Backend melibatkan perancangan dan penerapan API yang dapat diskalakan menggunakan Django REST Framework, Python, dan PostgreSQL, yang di-host di DigitalOcean.",
         "Aplikasi desktop dibangun dengan Electron, React, dan TypeScript, memastikan pengalaman pengguna yang lancar di berbagai model LLM."
       ],
-      "mainPhoto": "chattydeskMainPhoto",
+      "mainPhoto": chattydeskMainPhoto,
       "highlightPhoto": ["chattydeskHighlightPhoto1"],
       "Programming language used or technology used": ["Django REST Framework", "Python", "PostgreSQL", "DigitalOcean", "Electron", "React", "TypeScript", "Gemini", "Claude", "OpenAI", "Mistral"],
       "affiliation": "Pengajuan Dev Challenge"
@@ -969,7 +969,7 @@ export const thirzaAhmadTsaqifIndonesia = {
         "Dikembangkan menggunakan Django REST Framework untuk fungsionalitas API yang kuat.",
         "Memastikan kepatuhan terhadap standar Dokumentasi dan kontrak API yang komprehensif, menghasilkan integrasi yang disederhanakan dengan frontend."
       ],
-      "mainPhoto": "bestStaffMainPhoto",
+      "mainPhoto": bestStaffMainPhoto,
       "highlightPhoto": ["bestStaffMainPhoto", "highlight_photo_2_url"],
       "Programming language used or technology used": ["Django REST Framework"],
       "affiliation": "BEM Fasilkom UI"
@@ -1001,7 +1001,7 @@ export const thirzaAhmadTsaqifIndonesia = {
         "Membangun antarmuka web modern menggunakan TypeScript dan Tailwind CSS.",
         "Menyebarkan backend di Azure Cloud Services dan frontend di Vercel, Peningkatan skalabilitas aplikasi dan waktu muat, memastikan pengalaman pengguna yang cepat dan andal."
       ],
-      "mainPhoto": "knowlxciMainPhoto",
+      "mainPhoto": knowlxciMainPhoto,
       "highlightPhoto": ["knowlxciMainPhoto", "highlight_photo_2_url"],
       "Programming language used or technology used": ["Google Generative AI", "Django REST Framework", "PostgreSQL", "TypeScript", "Tailwind CSS", "Azure Cloud Services", "Vercel"],
       "affiliation": "Pengajuan Kompetisi Pengembang API Gemini"
@@ -1273,7 +1273,7 @@ export const thirzaAhmadTsaqifJapanese = {
       "company": "OPPO Manufacturing Indonesia",
       "startDate": "2025年6月",
       "endDate": "現在",
-      "photo": "oppoLogo",
+      "photo": oppoLogo,
       "responsibilities": [
         "情報提供のためにRAGとLLM、入出力のためにSTTとTTS、従業員認証のために顔認識を活用した企業に関するAIエージェントを開発し、ローカルGPUインフラストラクチャで実行するために展開および最適化しました。",
         "5S（整理、整頓、清掃、清潔、躾）方法論に従って職場環境を分類するための、コンピュータビジョンベースの画像セグメンテーションシステムを設計および実装しました。",
@@ -1285,7 +1285,7 @@ export const thirzaAhmadTsaqifJapanese = {
       "company": "Aether AI",
       "startDate": "2025年3月",
       "endDate": "2025年7月",
-      "photo": "aetherLogo",
+      "photo": aetherLogo,
       "responsibilities": [
         "FastAPIとVectorshiftを使用してPFN向けのバックエンドおよびインテリジェントチャットボットシステムを開発および展開し、OpenAIの言語モデルとRetrieval-Augmented Generation（RAG）手法を統合して、正確な映画関連情報を提供しました。",
         "FastAPIとVectorshiftを使用してニューヨークのインドネシア総領事館（KJRI New York）向けのバックエンドおよびAI搭載チャットボットを構築および実装し、OpenAIとRAGアプローチを活用してリアルタイムで文脈に応じた領事情報を提供しました。"
@@ -1296,7 +1296,7 @@ export const thirzaAhmadTsaqifJapanese = {
       "company": "Replenish Nutraceutics",
       "startDate": "2025年2月",
       "endDate": "2025年5月",
-      "photo": "replenishLogo",
+      "photo": replenishLogo,
       "responsibilities": [
         "AIを活用した投与量推奨システムを開発し、組織に新しいシステムを導入しました。OpenAIとFAISSを使用して、データ駆動型の投与量推奨を可能にしました。",
         "FastAPIで安全なAPIを構築し、アクセス制御のためにJWT認証を組み込みました。",
@@ -1308,7 +1308,7 @@ export const thirzaAhmadTsaqifJapanese = {
       "company": "Avatar Digital",
       "startDate": "2025年4月",
       "endDate": "2025年5月",
-      "photo": "avatarLogo",
+      "photo": avatarLogo,
       "responsibilities": [
         "Labstack Echoフレームワークを使用したGolang、およびデータベースとしてMariaDB/MySQLを使用して、出荷および管理者向けバックエンドシステムを開発および維持しました。",
         "コンテナ化のためにDockerを、CI/CD自動化のためにGitHub Actionsを利用しました。"
@@ -1319,7 +1319,7 @@ export const thirzaAhmadTsaqifJapanese = {
       "company": "インドネシア大学コンピュータサイエンス学部",
       "startDate": "2024年9月",
       "endDate": "2024年12月",
-      "photo": "facultyLogo",
+      "photo": facultyLogo,
       "responsibilities": [
         "連結リストに関するラボ課題を作成し、学生の実施中の修正を最小限に抑えました。",
         "グラフに関するプログラミング課題を設計し、学生の作業中の修正を最小限に抑えました。",
@@ -1333,7 +1333,7 @@ export const thirzaAhmadTsaqifJapanese = {
       "startDate": "2024年3月",
       "endDate": "2024年12月",
       "description": "BEM Universitasは、学生の興味関心を支援するための大学組織です。",
-      "photo": "bemLogo",
+      "photo": bemLogo,
       "responsibilities": [
         "BEM UI統合情報システム（SIT）ウェブサイトの開発と責任者を務め、堅牢なバックエンドのためにDjango Pythonを活用し、HTMLとCSSでレスポンシブなフロントエンドを作成しました。",
         "認証とデータベース管理のためにFirebaseを利用して、BEM UI統合情報システム（SIT）ウェブサイトを開発および維持しました。",
@@ -1347,7 +1347,7 @@ export const thirzaAhmadTsaqifJapanese = {
       "startDate": "2023年3月",
       "endDate": "2023年12月",
       "description": "BEM Fasilkomは、学生の興味関心を支援するための学部内の組織です。",
-      "photo": "befasilkomLogo",
+      "photo": befasilkomLogo,
       "responsibilities": [
         "BEM Fasilkom UIウェブサイトのバックエンドを維持および更新し、コードの安定性と信頼性を確保し、すべてのBEM学部のスタッフと学生をサポートしました。",
         "再設計されたウェブサイトに基づいて新しいモデルを構築および実装し、Django PythonとGoを利用してユーザーエクスペリエンスと機能性を向上させました。",
@@ -1362,7 +1362,7 @@ export const thirzaAhmadTsaqifJapanese = {
       "startDate": "2023年6月",
       "endDate": "2023年7月",
       "description": "DDP-0は、新入生にコーディングと学部を紹介するためのメンタリングイベントです。",
-      "photo": "ddp0Logo",
+      "photo": ddp0Logo,
       "responsibilities": [
         "1年生にコーディングと学部のリソースを紹介することを目的としたメンタリングプログラムを促進しました。",
         "新入生に基礎的なPythonプログラミング指導を提供し、初期の学習体験を向上させました。",
@@ -1376,7 +1376,7 @@ export const thirzaAhmadTsaqifJapanese = {
       "startDate": "2023年3月",
       "endDate": "2023年9月",
       "description": "PERAKは、学生のスポーツへの関心を支援するための学部内のスポーツイベントです。",
-      "photo": "perakLogo",
+      "photo": perakLogo,
       "responsibilities": [
         "Figmaを使用してスポーツ大会を宣伝するための視覚的に魅力的なポスターをデザインしました。",
         "Instagramフィード、列形式、伝統的なポスター、Line、Facebookの投稿など、さまざまな形式にデザインを適応させました。",
@@ -1394,7 +1394,7 @@ export const thirzaAhmadTsaqifJapanese = {
         "プロジェクトをRailwayに展開しました。",
         "組織のメールや出版業務を容易にするLINE Messaging APIを開発・維持し、通信の遅延を削減し、機能への直接アクセスを可能にし、200人以上のアクティブユーザーに利益をもたらしました。"
       ],
-      "mainPhoto": "sitMainPhoto",
+      "mainPhoto": sitMainPhoto,
       "highlightPhoto": ["sitMainPhoto", "highlight_photo_2_url"],
       "Programming language used or technology used": ["Django", "Firebase", "Railway", "LINE Messaging API"],
       "affiliation": "BEM UI"
@@ -1486,7 +1486,7 @@ export const thirzaAhmadTsaqifJapanese = {
         "Java Spring BootとPostgreSQLを使用してバックエンドを構築し、一貫したデプロイメントと容易なメンテナンスのためにDockerでコンテナ化しました。",
         "レスポンシブで使いやすいインターフェースのために、React、TypeScript、Tailwind CSSでフロントエンドを作成しました。"
       ],
-      "mainPhoto": "siinvenMainPhoto",
+      "mainPhoto": siinvenMainPhoto,
       "highlightPhoto": ["siinvenHighlightPhoto1", "siinvenMainPhoto"],
       "Programming language used or technology used": ["Java Spring Boot", "PostgreSQL", "Docker", "React", "TypeScript", "Tailwind CSS"],
       "affiliation": "Propensiコース"
@@ -1513,7 +1513,7 @@ export const thirzaAhmadTsaqifJapanese = {
         "GinフレームワークとPostgreSQLを使用してGoで構築しました。",
         "フロントエンドとの統合を強化するために、APIドキュメントと契約を遵守しました。"
       ],
-      "mainPhoto": "oprecMainPhoto",
+      "mainPhoto": oprecMainPhoto,
       "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
       "Programming language used or technology used": ["Go", "Gin", "PostgreSQL"],
       "affiliation": "BEM Fasilkom UI"
@@ -1532,7 +1532,7 @@ export const thirzaAhmadTsaqifJapanese = {
         "効率的な検索拡張生成のためにLangChainをRAGパイプラインとして実装しました。",
         "応答品質を向上させるために、OpenAI、Claude、Mistralを含む複数の生成AIモデルを統合しました。"
       ],
-      "mainPhoto": "ragreaderMainPhoto",
+      "mainPhoto": ragreaderMainPhoto,
       "highlightPhoto": ["ragreaderHighlightPhoto1"],
       "Programming language used or technology used": ["Django REST Framework", "Vite", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Claude", "Mistral"],
       "affiliation": "NextAIハッカソン提出物"
@@ -1546,7 +1546,7 @@ export const thirzaAhmadTsaqifJapanese = {
         "API契約への厳格な遵守を保証し、既存のシステムとのシームレスな統合とフロントエンドアプリケーションへの100％の互換性を実現しました。",
         "継続的なコード品質監視のためにSonarQubeを実装しました。"
       ],
-      "mainPhoto": "lpjOnlineMainPhoto",
+      "mainPhoto": lpjOnlineMainPhoto,
       "highlightPhoto": ["lpjOnlineMainPhoto", "highlight_photo_2_url"],
       "Programming language used or technology used": ["Django REST Framework", "PostgreSQL", "SonarQube"],
       "affiliation": "BEM Fasilkom UI"
@@ -1564,7 +1564,7 @@ export const thirzaAhmadTsaqifJapanese = {
         "バックエンドでは、Django REST Framework、Python、PostgreSQLを使用してスケーラブルなAPIを設計・展開し、DigitalOceanでホストしました。",
         "デスクトップアプリケーションはElectron、React、TypeScriptで構築され、さまざまなLLMモデルでスムーズなユーザーエクスペリエンスを保証しました。"
       ],
-      "mainPhoto": "chattydeskMainPhoto",
+      "mainPhoto": chattydeskMainPhoto,
       "highlightPhoto": ["chattydeskHighlightPhoto1"],
       "Programming language used or technology used": ["Django REST Framework", "Python", "PostgreSQL", "DigitalOcean", "Electron", "React", "TypeScript", "Gemini", "Claude", "OpenAI", "Mistral"],
       "affiliation": "Dev Challenge提出物"
@@ -1577,7 +1577,7 @@ export const thirzaAhmadTsaqifJapanese = {
         "堅牢なAPI機能のためにDjango REST Frameworkを使用して開発しました。",
         "包括的なAPIドキュメントと契約基準への遵守を保証し、フロントエンドとの合理化された統合を実現しました。"
       ],
-      "mainPhoto": "bestStaffMainPhoto",
+      "mainPhoto": bestStaffMainPhoto,
       "highlightPhoto": ["bestStaffMainPhoto", "highlight_photo_2_url"],
       "Programming language used or technology used": ["Django REST Framework"],
       "affiliation": "BEM Fasilkom UI"
@@ -1609,8 +1609,8 @@ export const thirzaAhmadTsaqifJapanese = {
         "TypeScriptとTailwind CSSを使用して最新のウェブインターフェースを構築しました。",
         "バックエンドをAzure Cloud Servicesに、フロントエンドをVercelに展開し、アプリケーションのスケーラビリティと読み込み時間を改善し、迅速で信頼性の高いユーザーエクスペリエンスを保証しました。"
       ],
-      "mainPhoto": "knowlxciMainPhoto",
-      "highlightPhoto": ["knowlxciMainPhoto", "highlight_photo_2_url"],
+      "mainPhoto": knowlxciMainPhoto,
+      "highlightPhoto": [knowlxciMainPhoto, "highlight_photo_2_url"],
       "Programming language used or technology used": ["Google Generative AI", "Django REST Framework", "PostgreSQL", "TypeScript", "Tailwind CSS", "Azure Cloud Services", "Vercel"],
       "affiliation": "Gemini API開発者コンペティション提出物"
     },

@@ -4,7 +4,7 @@ import universityLogo from '../assets/makara.png'; // or .svg
 
 const Education: React.FC = () => {
     return (
-      <section className="flex flex-col md:flex-row w-full min-h-screen bg-white">
+      <section id="education" className="flex flex-col md:flex-row w-full min-h-screen bg-white">
         {/* University Logo - Shows first on mobile */}
         <div className="w-full md:w-1/2 flex items-center justify-center order-first md:order-last p-6 md:p-8">
           <img

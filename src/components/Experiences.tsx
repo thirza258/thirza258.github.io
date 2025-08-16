@@ -30,7 +30,7 @@ const Experiences: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto py-8">
+    <div className="container mx-auto py-8" id="experiences">
       <div className="z-10 mb-12">
           <h2 className="font-bold text-5xl md:text-6xl">Career Highlights</h2>
           <p className="text-lg text-gray-600 mt-2">The only source of knowledge is experience.</p>

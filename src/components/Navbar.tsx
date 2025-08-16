@@ -24,20 +24,23 @@ const Navbar = () => {
                         ${isMenuOpen ? 'block' : 'hidden'} md:block
                     `}>
                         <div className="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 p-4 md:p-0">
-                            <a href="#home" className="text-black hover:text-primary font-medium">
+                            <a href="#header" className="text-black hover:text-primary font-medium">
                                 Home
                             </a>
-                            <a href="#projects" className="text-black hover:text-primary font-medium">
+                            <a href="#portfolio" className="text-black hover:text-primary font-medium">
                                 Projects
                             </a>
                             <a href="#experiences" className="text-black hover:text-primary font-medium">
                                 Experiences
                             </a>
+                            <a href="#education" className="text-black hover:text-primary font-medium">
+                                Education
+                            </a>
                             <a href="#skills" className="text-black hover:text-primary font-medium">
                                 Skills
                             </a>
-                            <a href="#about" className="text-black hover:text-primary font-medium">
-                                About
+                            <a href="#contact" className="text-black hover:text-primary font-medium">
+                                Contact
                             </a>
                         </div>
                     </div>
@@ -49,7 +52,7 @@ const Navbar = () => {
                                 key={lang}
                                 onClick={() => setLanguage(lang as any)}
                                 className={`px-2 py-1 text-sm font-semibold rounded 
-                                    ${language === lang ? "bg-primary text-white" : "bg-white/50 text-black hover:bg-gray-200"}`}
+                                    ${language === lang ? "bg-blue-500 text-white" : "bg-white/50 text-black hover:bg-gray-200"}`}
                             >
                                 {lang}
                             </button>

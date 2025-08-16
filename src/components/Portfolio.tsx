@@ -35,7 +35,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className='p-4'>
+    <div id="portfolio" className='p-4'>
       <div className="z-10 mb-6 p-6">
         <h2 className="font-bold text-5xl md:text-6xl">Selected Works</h2>
         <p className="text-lg text-gray-600 mt-2">Every project has challenges, and every project has its rewards.</p>
