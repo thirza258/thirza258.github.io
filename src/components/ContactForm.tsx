@@ -23,7 +23,10 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
     emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target as HTMLFormElement, 'YOUR_USER_ID')
+      .sendForm(import.meta.env.VITE_SERVICE_ID, 
+        import.meta.env.VITE_TEMPLATE_ID,
+        e.target as HTMLFormElement, 
+        import.meta.env.VITE_USER_ID)
       .then(
         () => {
           setSubmissionStatus('Message sent successfully!');

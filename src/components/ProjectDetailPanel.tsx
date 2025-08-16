@@ -3,7 +3,7 @@
 import React from 'react';
 import { FaTimes, FaLink, FaGithub } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Project, ProjectDetailPanelProps } from '../interface/interface'; 
+import { ProjectDetailPanelProps } from '../interface/interface'; 
 
 const backdropVariants = {
   visible: { opacity: 0.6, transition: { duration: 0.4 } },
