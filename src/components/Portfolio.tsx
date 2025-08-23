@@ -52,7 +52,6 @@ const Portfolio = () => {
             const isPrev = index === (currentIndex - 1 + projects.length) % projects.length;
             const isNext = index === (currentIndex + 1) % projects.length;
 
-            let transform = '';
             let zIndex = 0;
             let opacity = 0;
             let filter = 'blur(8px)';
