@@ -58,18 +58,15 @@ const Portfolio = () => {
             let display = 'none';
 
             if (isCurrent) {
-              transform = 'translateX(0) scale(1)';
               zIndex = 20;
               opacity = 1;
               filter = 'blur(0px)';
               display = 'block';
             } else if (isPrev) {
-              transform =  'translateX(-90%) scale(0.75)';
               zIndex = 10;
               opacity = 0.5;
               display = 'block';
             } else if (isNext) {
-              transform = 'translateX(90%) scale(0.75)';
               zIndex = 10;
               opacity = 0.5;
               display = 'block';
