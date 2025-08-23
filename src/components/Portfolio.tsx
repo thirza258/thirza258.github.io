@@ -11,7 +11,7 @@ const Portfolio = () => {
   const [hasLoaded, setHasLoaded] = useState(false); // State for entry animation
   const { language } = useLanguage();
   const projects = language === "ID" ? thirzaAhmadTsaqifIndonesia.projects : language === "EN" ? thirzaAhmadTsaqifEnglish.projects : thirzaAhmadTsaqifJapanese.projects;
-  
+
   useEffect(() => {
     setHasLoaded(true);
     console.log(hasLoaded)
@@ -41,8 +41,8 @@ const Portfolio = () => {
         <p className="text-lg text-gray-600 mt-2">Every project has challenges, and every project has its rewards.</p>
         <p className="text-sm text-gray-500 mt-1">- Stephen Schwartz</p>
       </div>
-  
-      <div className="relative w-full min-h-screen flex flex-col items-center justify-center text-black overflow-hidden">
+
+      <div className="relative w-full flex flex-col items-center justify-center text-black overflow-hidden">
         <div className="absolute inset-0 z-0"></div>
 
         {/* Carousel Container */}
@@ -65,7 +65,7 @@ const Portfolio = () => {
               filter = 'blur(0px)';
               display = 'block';
             } else if (isPrev) {
-              transform = 'translateX(-90%) scale(0.75)';
+              transform =  'translateX(-90%) scale(0.75)';
               zIndex = 10;
               opacity = 0.5;
               display = 'block';
@@ -75,17 +75,35 @@ const Portfolio = () => {
               opacity = 0.5;
               display = 'block';
             }
-            
+
             return (
               <div
                 key={project.name}
-                className={`absolute w-4/5 md:w-[80%] h-full transition-all duration-500 ease-in-out ${isCurrent ? 'cursor-pointer hover:scale-105' : ''}`}
-                style={{ transform, zIndex, opacity, filter, display }}
+                className={`absolute w-[80%] md:w-[70%] h-full transition-all duration-500 ease-in-out ${isCurrent ? 'cursor-pointer hover:scale-105' : ''
+                  }`}
+                style={{
+                  transform:
+                    isCurrent
+                      ? 'translateX(0) scale(1)'
+                      : isPrev
+                        ? 'translateX(-40%) scale(0.8)' // smaller shift on mobile
+                        : isNext
+                          ? 'translateX(40%) scale(0.8)'
+                          : '',
+                  zIndex,
+                  opacity,
+                  filter,
+                  display,
+                }}
                 onClick={isCurrent ? () => handleCardClick(project as Project) : undefined}
                 aria-label={isCurrent ? `View details for ${project.name}` : ''}
                 role={isCurrent ? 'button' : undefined}
                 tabIndex={isCurrent ? 0 : -1}
-                onKeyDown={isCurrent ? (e) => e.key === 'Enter' && handleCardClick(project as Project) : undefined}
+                onKeyDown={
+                  isCurrent
+                    ? (e) => e.key === 'Enter' && handleCardClick(project as Project)
+                    : undefined
+                }
               >
                 <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl border border-gray-200">
                   <img
@@ -93,19 +111,20 @@ const Portfolio = () => {
                     alt={project.name}
                     className="absolute inset-0 w-full h-full object-cover z-0"
                   />
-                  
-                  <div className="absolute bottom-0 left-0 w-full h-[40%] bg-white/20 backdrop-blur-lg p-6 flex flex-col justify-center z-10">
-                    <h3 className="text-gray-900 text-2xl md:text-4xl font-bold drop-shadow-lg">
+
+                  <div className="absolute bottom-0 left-0 w-full h-full md:h-[40%] bg-white/20 backdrop-blur-lg p-2 md:p-6 flex flex-col justify-end md:justify-center z-10">
+                    <h3 className="text-gray-900 text-xl md:text-4xl font-bold drop-shadow-lg">
                       {project.name}
                     </h3>
                     {isCurrent && (
-                      <p className="text-gray-900 text-sm md:text-base mt-2 drop-shadow-md">
+                      <p className="text-gray-900 text-sm md:text-base mt-2 mb-2 md:mb-0 drop-shadow-md">
                         {project.description.join(' ').substring(0, 150)}...
                       </p>
                     )}
                   </div>
                 </div>
               </div>
+
             );
           })}
         </div>
@@ -113,7 +132,7 @@ const Portfolio = () => {
         {/* Navigation Buttons */}
         <button
           onClick={handlePrev}
-          className="group absolute top-1/2 left-4 md:left-8 transform -translate-y-1/2 z-30 flex items-center justify-center w-14 h-14 bg-gray-100 border border-gray-200 rounded-full hover:bg-gray-200 transition-all duration-300"
+          className="group absolute top-1/2 left-2 md:left-8 transform -translate-y-1/2 z-30 flex items-center justify-center w-10 h-10 md:w-14 md:h-14 bg-gray-100 border border-gray-200 rounded-full hover:bg-gray-200 transition-all duration-300"
           aria-label="Previous Project"
         >
           <FaChevronLeft className="text-gray-600 text-xl group-hover:scale-110 transition-transform" />

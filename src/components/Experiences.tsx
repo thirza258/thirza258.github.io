@@ -51,7 +51,7 @@ const Experiences: React.FC = () => {
             </div>
 
             <div 
-              className="ml-24 transition-all duration-300 ease-in-out hover:scale-105 group"
+              className="ml-24 z-100 transition-all duration-300 ease-in-out hover:scale-105 group"
             > 
               <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200 relative group-hover:z-20">
                 <div className="flex items-start mb-4">
