@@ -155,12 +155,13 @@ function App() {
       <section id="education">
         <Education />
       </section>
-      <section id="skills">
-        <Skills />
-      </section>
       <section id="writings">
         <Writings />
       </section>
+      <section id="skills">
+        <Skills />
+      </section>
+      
       <section id="contact">
         <ContactForm />
       </section>

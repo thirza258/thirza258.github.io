@@ -8,4 +8,7 @@
 @tailwind utilities;
 @tailwind base;
 
+html {
+  scroll-behavior: smooth;
+}
 

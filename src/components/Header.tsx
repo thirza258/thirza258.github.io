@@ -29,7 +29,23 @@ const Header: React.FC<HeaderProps> = () => {
               style={{ display: 'inline-block' }}
             />
           </h1>
+
+      
+          <div className="mt-8">
+            <button
+            onClick={() => {
+              document.getElementById('cardport')?.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+              });
+            }}
+            className="inline-flex items-center justify-center px-6 py-3 text-base sm:text-lg font-semibold text-black
+                      border-2 border-black rounded-xl hover:bg-black hover:text-white transition-all duration-200">
+            About Me
+          </button>
+          </div>
         </div>
+
         <div className="w-full md:w-auto mt-12 md:mt-0 md:pb-2 text-left md:text-right">
           <p className="text-base sm:text-lg">
             Let's connect

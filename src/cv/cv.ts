@@ -51,15 +51,26 @@ export const thirzaAhmadTsaqifEnglish = {
   ],
   "experiences": [
     {
+      "title": "Web Developer, Internship",
+      "company": "IR-NLP Lab, Faculty of Computer Science, Universitas Indonesia",
+      "startDate": "September 2025",
+      "endDate": "December 2025",
+      "photo": facultyLogo,
+      "responsibilities": [
+        "Redeveloped the lab's landing page using Django, upgrading it from a static site to a dynamic platform and a comprehensive admin dashboard.",
+        "Architected an automated ETL pipeline to aggregate research publications, managing the workflow from raw scraping and blob storage to final processing and website integration"
+      ]
+    },
+    {
       "title": "Software Engineer, Internship",
       "company": "OPPO Manufacturing Indonesia",
       "startDate": "June 2025",
-      "endDate": "Present",
+      "endDate": "September 2025",
       "photo": oppoLogo,
       "responsibilities": [
-        "Developed a AI Agent about company utilizing RAG and LLM for the information and STT and TTS for the input and output, and Face Recognition for employee authentication, deployed and optimized to run on local GPU infrastructure.",
+        "Developed an AI Agent about company utilizing RAG and LLM for information and STT and TTS for input and output, and Face Recognition for employee authentication, deployed and optimized to run on local GPU infrastructure.",
         "Designed and implemented a computer vision-based image segmentation system to classify workplace conditions according to 5S (Sort, Set in order, Shine, Standardize, Sustain) methodology.",
-        "Developed an AI-driven Root Cause Analysis tool using RAG and LLMs to automate the “5 Whys” technique based on historical problem reports, streamlining issue resolution and knowledge reuse. fully self-hosted with local GPU resources to ensure data security and performance."
+        "Developed an AI-driven Root Cause Analysis tool using RAG and LLMs to automate the \"5 Whys\" technique based on historical problem reports, streamlining issue resolution and knowledge reuse. Fully self-hosted with local GPU resources to ensure data security and performance."
       ]
     },
     {
@@ -168,6 +179,24 @@ export const thirzaAhmadTsaqifEnglish = {
   ],
 
   "projects": [
+    {
+      "name": "RAGReader",
+      "context": "NextAI Hackathon Submission",
+      "links": {
+        "github": "https://github.com/thirza258/RagReader",
+        "devpost": "[Devpost]"
+      },
+      "description": [
+        "Developed a RAG-based website that retrieves content from a provided URL or file and generates responses based on user prompts.",
+        "Built the backend using Django REST Framework and the frontend with Vite, React, TypeScript, and Tailwind CSS",
+        "Implemented LangChain as the RAG pipeline for efficient retrieval-augmented generation.",
+        "Integrated multiple generative AI models, including OpenAI, Claude, and Mistral, to enhance response quality."
+      ],
+      "mainPhoto": ragreaderMainPhoto,
+      "highlightPhoto": [ragreaderHighlightPhoto1],
+      "Programming language used or technology used": ["Django REST Framework", "Vite", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Claude", "Mistral"],
+      "affiliation": "NextAI Hackathon Submission"
+    },
     {
       "name": "Integrated Information Systems (SIT)",
       "organization": "BEM UI",
@@ -301,25 +330,7 @@ export const thirzaAhmadTsaqifEnglish = {
       "Programming language used or technology used": ["Go", "Gin", "PostgreSQL"],
       "affiliation": "BEM Fasilkom UI"
     },
-    {
-      "name": "RAGReader",
-      "context": "NextAI Hackathon Submission",
-      "links": {
-        "githubBackend": "[Github Backend]",
-        "githubFrontend": "[Github Frontend]",
-        "devpost": "[Devpost]"
-      },
-      "description": [
-        "Developed a RAG-based website that retrieves content from a provided URL or file and generates responses based on user prompts.",
-        "Built the backend using Django REST Framework and the frontend with Vite, React, TypeScript, and Tailwind CSS",
-        "Implemented LangChain as the RAG pipeline for efficient retrieval-augmented generation.",
-        "Integrated multiple generative AI models, including OpenAI, Claude, and Mistral, to enhance response quality."
-      ],
-      "mainPhoto": ragreaderMainPhoto,
-      "highlightPhoto": [ragreaderHighlightPhoto1],
-      "Programming language used or technology used": ["Django REST Framework", "Vite", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Claude", "Mistral"],
-      "affiliation": "NextAI Hackathon Submission"
-    },
+    
     {
       "name": "API LPJ Online",
       "organization": "BEM Fasilkom UI",

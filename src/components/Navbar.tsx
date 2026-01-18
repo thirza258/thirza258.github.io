@@ -12,6 +12,7 @@ const Navbar = () => {
                     {/* Mobile menu button */}
                     <button 
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
+                        title='Mobile Menu'
                         className="md:hidden text-black hover:text-primary"
                     >
                         <i className={`bx ${isMenuOpen ? 'bx-x' : 'bx-menu'} text-2xl`}></i>
@@ -24,8 +25,8 @@ const Navbar = () => {
                         ${isMenuOpen ? 'block' : 'hidden'} md:block
                     `}>
                         <div className="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 p-4 md:p-0">
-                            <a href="#header" className="text-black hover:text-primary font-medium">
-                                Home
+                            <a href="#cardport" className="text-black hover:text-primary font-medium">
+                                About Me
                             </a>
                             <a href="#portfolio" className="text-black hover:text-primary font-medium">
                                 Projects
@@ -35,6 +36,9 @@ const Navbar = () => {
                             </a>
                             <a href="#education" className="text-black hover:text-primary font-medium">
                                 Education
+                            </a>
+                            <a href="#writings" className="text-black hover:text-primary font-medium">
+                                Writings
                             </a>
                             <a href="#skills" className="text-black hover:text-primary font-medium">
                                 Skills
