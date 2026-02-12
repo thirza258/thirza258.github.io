@@ -1,0 +1,139 @@
+name: Deploy to Pages and Server
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'deployments'
+  cancel-in-progress: true
+
+jobs:
+  # ------------------------------------------------------------------
+  # JOB 1: Deploy to GitHub Pages (Static Content)
+  # ------------------------------------------------------------------
+  deploy-gh-pages:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+        env:
+          VITE_SERVICE_ID: ${{ secrets.VITE_SERVICE_ID }}
+          VITE_TEMPLATE_ID: ${{ secrets.VITE_TEMPLATE_ID }}
+          VITE_PUBLIC_KEY: ${{ secrets.VITE_PUBLIC_KEY }}
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  # ------------------------------------------------------------------
+  # JOB 2: Deploy to Custom Server (Docker)
+  # ------------------------------------------------------------------
+  deploy-server:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 1. Setup Docker environment
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      # 2. Build and Push the Frontend Image
+      # We pass the VITE_ secrets as build-args so they are baked into the Docker image
+      - name: Build and push Frontend Docker Image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/my-app-frontend:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          build-args: |
+            VITE_SERVICE_ID=${{ secrets.VITE_SERVICE_ID }}
+            VITE_TEMPLATE_ID=${{ secrets.VITE_TEMPLATE_ID }}
+            VITE_PUBLIC_KEY=${{ secrets.VITE_PUBLIC_KEY }}
+
+      # 3. Setup SSH connection tools
+      - name: Install cloudflared
+        run: |
+          curl -L -o cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
+          sudo dpkg -i cloudflared.deb
+
+      - name: Install sshpass
+        run: sudo apt-get install -y sshpass
+
+      # 4. SSH into Server and Deploy
+      - name: Deploy to server
+        run: |
+          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh \
+            -o StrictHostKeyChecking=no \
+            -o ServerAliveInterval=30 \
+            -o ServerAliveCountMax=5 \
+            -o ProxyCommand="/usr/bin/cloudflared access ssh --hostname %h --id ${{ secrets.CF_CLIENT_ID }} --secret ${{ secrets.CF_CLIENT_SECRET }}" \
+            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
+          
+          set -e
+          
+          # Directory for your app
+          APP_DIR=~/my_frontend_app
+          mkdir -p $APP_DIR
+          cd $APP_DIR
+
+          # Create docker-compose.yml
+          # This pulls the image we just built and runs it on port 8080 (change as needed)
+          cat > docker-compose.yml <<COMPOSE
+          services:
+            frontend:
+              image: ${{ secrets.DOCKER_USERNAME }}/my-app-frontend:latest
+              container_name: my_app_frontend
+              restart: unless-stopped
+              ports:
+                - "5177:80" 
+          COMPOSE
+
+          # Pull new image and restart
+          docker pull ${{ secrets.DOCKER_USERNAME }}/my-app-frontend:latest
+          docker compose down
+          docker compose up -d
+
+          # Clean up old images
+          docker image prune -f
+          
+          EOF
