@@ -1,5 +1,4 @@
 import React from 'react';
-// Make sure this import path is correct for your project structure
 import { thirzaAhmadTsaqifEnglish, thirzaAhmadTsaqifIndonesia, thirzaAhmadTsaqifJapanese } from "../cv/cv";
 import { useLanguage } from '../context/LanguageContext';
 
@@ -22,8 +21,8 @@ const Experiences: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto py-8" id="experiences">
-      <div className="z-10 mb-12">
+    <div className="p-4" id="experiences">
+      <div className="z-10 mb-6 p-6">
           <h2 className="font-bold text-5xl md:text-6xl">Career Highlights</h2>
           <p className="text-lg text-gray-600 mt-2">The only source of knowledge is experience.</p>
           <p className="text-sm text-gray-500 mt-1">- Albert Einstein</p>

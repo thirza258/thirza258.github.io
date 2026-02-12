@@ -120,18 +120,6 @@ const CardPort: React.FC<PortfolioGridProps> = () => {
             <ul className="mt-4 space-y-3 text-black">
               <li className="flex items-center justify-between">
                 <a
-                  href="https://thirzq.email"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-medium hover:text-blue-400 transition-colors"
-                >
-                  thirzq.email
-                </a>
-                <span className="text-xs text-gray-600">Active</span>
-              </li>
-
-              <li className="flex items-center justify-between">
-                <a
                   href="https://nevatal.tech"
                   target="_blank"
                   rel="noopener noreferrer"
