@@ -132,10 +132,40 @@ const CardPort: React.FC<PortfolioGridProps> = () => {
             </ul>
 
             <p className="mt-4 text-sm text-gray-700">
-              Self-hosted on a personal home server and securely exposed via
-              Cloudflare Tunnel, enabling private ingress, DNS-based routing,
-              and zero open inbound ports.
+              Self-hosted on a personal home server with OS Ubuntu Server and
+              securely exposed via Cloudflare Tunnel, enabling private ingress,
+              DNS-based routing, and zero open inbound ports.
             </p>
+
+            {/* Service buttons */}
+            <div className="mt-5 grid grid-cols-1 sm:grid-cols-3 gap-2">
+              <a
+                href="https://netdata.nevatal.tech"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-center text-sm font-medium px-3 py-2 rounded-lg bg-gray-900 text-white hover:bg-gray-800 transition"
+              >
+                Monitor Server
+              </a>
+
+              <a
+                href="https://wordpress.nevatal.tech"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-center text-sm font-medium px-3 py-2 rounded-lg bg-gray-900 text-white hover:bg-gray-800 transition"
+              >
+                WordPress
+              </a>
+
+              <a
+                href="https://chat.nevatal.tech"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-center text-sm font-medium px-3 py-2 rounded-lg bg-gray-900 text-white hover:bg-gray-800 transition"
+              >
+                AI Chat
+              </a>
+            </div>
           </Card>
 
           {/* Let's Work Together Card */}
@@ -157,8 +187,6 @@ const CardPort: React.FC<PortfolioGridProps> = () => {
               </a>
             </div>
           </Card>
-
-          
         </main>
 
         {/* Horizontal Skills Carousel */}
