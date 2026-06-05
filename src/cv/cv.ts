@@ -24,6 +24,8 @@ import ragreaderHighlightPhoto1 from "../assets/portfolio/ragreader/highlight1.p
 import ragreaderHighlightPhoto2 from "../assets/portfolio/ragreader/highlight2.png";
 import ragreaderHighlightPhoto3 from "../assets/portfolio/ragreader/highlight3.png";
 
+import urlShortenerHighlightPhoto1 from "../assets/portfolio/url_shortener/gallery.png";
+
 import cragHighlightPhoto1 from "../assets/portfolio/crag/crag_main.png";
 import cragHighlightPhoto2 from "../assets/portfolio/crag/gallery1.png";
 import cragHighlightPhoto3 from "../assets/portfolio/crag/gallery2.png";
@@ -288,7 +290,7 @@ export const thirzaAhmadTsaqifEnglish = {
       ],
       "mainPhoto": ollieChatbotHighlightPhoto1,
       "highlightPhoto": [ollieChatbotHighlightPhoto1],
-      "Programming language used or technology used": ["FaceNet", "Transformers", "xTTS", "OpenAI Whisper", "RAG", "Faiss", "PostgreSQL", "OpenAI GPT", "Ollama"],
+      "Programming language used or technology used": ["FaceNet", "Transformers", "xTTS", "OpenAI Whisper", "STT", "TTS", "RAG", "Faiss", "PostgreSQL", "OpenAI GPT", "Ollama", "Voice Assistant"],
       "affiliation": "Oppo Manufacturing Indonesia"
     },
     {
@@ -367,7 +369,7 @@ export const thirzaAhmadTsaqifEnglish = {
       ],
       "mainPhoto": pasalMainPhoto,
       "highlightPhoto": [pasalMainPhoto],
-      "Programming language used or technology used": ["Ollama", "RAG", "OpenAI Whisper", "RAG", "Transformers", "PyTorch", "Gemma", "ChromaDB"],
+      "Programming language used or technology used": ["Ollama", "RAG", "Voice Assistant", "STT", "TTS", "OpenAI Whisper", "RAG", "Transformers", "PyTorch", "Gemma", "ChromaDB"],
       "affiliation": "Personal Project"
     },
     {
@@ -382,6 +384,24 @@ export const thirzaAhmadTsaqifEnglish = {
       "mainPhoto": genshinImpactHighlightPhoto1,
       "highlightPhoto": [genshinImpactHighlightPhoto1, genshinImpactHighlightPhoto2],
       "Programming language used or technology used": ["Tailwind CSS", "Vite", "React", "MinIO", "Javascript", "FastAPI", "Pillow"],
+      "affiliation": "Personal Project"
+    },
+    {
+      "name": "URL Shortener",
+      "organization": "Personal Project",
+      "links": {
+        "github": "https://github.com/thirza258/freecodecamp_url_shortener",
+        "demo":  "https://url.nevatal.tech/"
+      },
+      "description": [
+  "Developed a production-ready URL Shortener platform using Django, PostgreSQL, and Redis, enabling custom and auto-generated short links with collision-resistant slug generation and duplicate prevention.",
+  "Implemented Redis-backed rate limiting, URL validation, and security protections to mitigate abuse, ensure data integrity, and improve platform reliability.",
+  "Built analytics and tracking capabilities including click counts, referrer logging, user-agent monitoring, and access statistics for URL performance insights.",
+  "Containerized the application with Docker and Docker Compose, integrating PostgreSQL 16 and Redis to support scalable deployment and streamlined infrastructure management."
+],
+      "mainPhoto": urlShortenerHighlightPhoto1,
+      "highlightPhoto": [urlShortenerHighlightPhoto1],
+      "Programming language used or technology used": ["Django", "PostgreSQL", "Redis", "Docker", "Docker Compose"],
       "affiliation": "Personal Project"
     },
     {
