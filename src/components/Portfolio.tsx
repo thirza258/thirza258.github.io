@@ -1,153 +1,331 @@
-import { SetStateAction, useState, useEffect } from 'react';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { useEffect, useState, useMemo } from 'react';
 import { thirzaAhmadTsaqifEnglish, thirzaAhmadTsaqifIndonesia, thirzaAhmadTsaqifJapanese } from '../cv/cv';
 import ProjectDetailPanel from './ProjectDetailPanel';
 import { Project } from '../interface/interface';
 import { useLanguage } from '../context/LanguageContext';
+import SafeImage from './SafeImage';
 
-const Portfolio = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedProject, setSelectedProject] = useState(null);
-  const [hasLoaded, setHasLoaded] = useState(false); // State for entry animation
-  const { language } = useLanguage();
-  const projects = language === "ID" ? thirzaAhmadTsaqifIndonesia.projects : language === "EN" ? thirzaAhmadTsaqifEnglish.projects : thirzaAhmadTsaqifJapanese.projects;
+// ── Keyword pill ──────────────────────────────────────────────────────────────
+type PillProps = {
+  label: string;
+  active: boolean;
+  onClick: () => void;
+};
 
-  useEffect(() => {
-    setHasLoaded(true);
-    console.log(hasLoaded)
-  }, []);
+const Pill = ({ label, active, onClick }: PillProps) => (
+  <button
+    onClick={onClick}
+    className={`px-4 py-1.5 rounded-full text-sm font-medium border transition-all duration-200 whitespace-nowrap
+      ${active
+        ? 'bg-gray-900 text-white border-gray-900 shadow-sm'
+        : 'bg-white text-gray-600 border-gray-200 hover:border-gray-400 hover:text-gray-900'
+      }`}
+  >
+    {label}
+  </button>
+);
 
-  const handlePrev = (e: { stopPropagation: () => void; }) => {
-    e.stopPropagation();
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? projects.length - 1 : prevIndex - 1));
-  };
+// ── Project card ──────────────────────────────────────────────────────────────
+type ProjectCardProps = {
+  project: Project;
+  onClick: () => void;
+};
 
-  const handleNext = (e: { stopPropagation: () => void; }) => {
-    e.stopPropagation();
-    setCurrentIndex((prevIndex) => (prevIndex === projects.length - 1 ? 0 : prevIndex + 1));
-  };
-  const handleCardClick = (project: Project) => {
-    setSelectedProject(project as unknown as SetStateAction<null>);
-  };
+const ProjectCard = ({ project, onClick }: ProjectCardProps) => (
+  <article
+    role="button"
+    tabIndex={0}
+    onClick={onClick}
+    onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClick(); } }}
+    className="group relative flex flex-col rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+    aria-label={`View details for ${project.name}`}
+  >
+    {/* Thumbnail */}
+    <div className="relative w-full aspect-video overflow-hidden bg-gray-100">
+      <SafeImage
+        src={project.mainPhoto}
+        alt={project.name}
+        imgClassName="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        fallbackClassName="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-slate-100 via-white to-slate-200 text-slate-500 text-sm text-center px-4"
+        fallbackLabel="Preview unavailable"
+      />
+    </div>
 
-  const handleClosePanel = () => {
-    setSelectedProject(null);
-  };
+    {/* Content */}
+    <div className="flex flex-col flex-grow p-5 gap-3">
+      <div>
+        <p className="text-xs font-medium text-gray-400 uppercase tracking-widest mb-1">
+          {project.organization || project.context}
+        </p>
+        <h3 className="text-lg font-bold text-gray-900 leading-snug group-hover:text-blue-600 transition-colors duration-200">
+          {project.name}
+        </h3>
+      </div>
+
+      <p className="text-sm text-gray-500 line-clamp-3 leading-relaxed flex-grow">
+        {project.description[0]}
+      </p>
+
+      {/* Tech tags — show first 4 */}
+      <div className="flex flex-wrap gap-1.5 mt-auto pt-2 border-t border-gray-100">
+        {project['Programming language used or technology used'].slice(0, 4).map((tech) => (
+          <span
+            key={tech}
+            className="bg-blue-50 text-blue-700 text-xs font-medium px-2 py-0.5 rounded-md"
+          >
+            {tech}
+          </span>
+        ))}
+        {project['Programming language used or technology used'].length > 4 && (
+          <span className="text-xs text-gray-400 self-center">
+            +{project['Programming language used or technology used'].length - 4} more
+          </span>
+        )}
+      </div>
+    </div>
+  </article>
+);
+
+const PAGE_SIZE = 6;
+
+// ── Pagination bar ─────────────────────────────────────────────────────────────
+type PaginationProps = {
+  current: number;
+  total: number;
+  onChange: (page: number) => void;
+};
+
+const Pagination = ({ current, total, onChange }: PaginationProps) => {
+  if (total <= 1) return null;
+
+  // Build page number list with ellipsis
+  const pages: (number | '…')[] = [];
+  if (total <= 7) {
+    for (let i = 1; i <= total; i++) pages.push(i);
+  } else {
+    pages.push(1);
+    if (current > 3) pages.push('…');
+    for (let i = Math.max(2, current - 1); i <= Math.min(total - 1, current + 1); i++) pages.push(i);
+    if (current < total - 2) pages.push('…');
+    pages.push(total);
+  }
+
+  const btnBase =
+    'flex items-center justify-center w-9 h-9 rounded-lg text-sm font-medium transition-all duration-150 select-none';
 
   return (
-    <div id="portfolio" className='p-4'>
-      <div className="z-10 mb-6 p-6">
-        <h2 className="font-bold text-5xl md:text-6xl">Selected Works</h2>
-        <p className="text-lg text-gray-600 mt-2">Every project has challenges, and every project has its rewards.</p>
-        <p className="text-sm text-gray-500 mt-1">- Stephen Schwartz</p>
-      </div>
+    <nav className="flex items-center gap-1 mt-10 justify-center" aria-label="Pagination">
+      <button
+        onClick={() => onChange(current - 1)}
+        disabled={current === 1}
+        className={`${btnBase} border border-gray-200 text-gray-500 hover:bg-gray-100 disabled:opacity-30 disabled:cursor-not-allowed`}
+        aria-label="Previous page"
+      >
+        ‹
+      </button>
 
-      <div className="relative w-full flex flex-col items-center justify-center text-black overflow-hidden">
-        <div className="absolute inset-0 z-0"></div>
+      {pages.map((p, i) =>
+        p === '…' ? (
+          <span key={`ellipsis-${i}`} className="w-9 text-center text-gray-400 text-sm select-none">
+            …
+          </span>
+        ) : (
+          <button
+            key={p}
+            onClick={() => onChange(p as number)}
+            aria-current={p === current ? 'page' : undefined}
+            className={`${btnBase} border ${
+              p === current
+                ? 'bg-gray-900 text-white border-gray-900 shadow-sm'
+                : 'border-gray-200 text-gray-600 hover:bg-gray-100'
+            }`}
+          >
+            {p}
+          </button>
+        )
+      )}
 
-        {/* Carousel Container */}
-        <div className="relative w-full h-[350px] md:h-[500px] flex items-center justify-center z-10">
-          {projects.map((project, index) => {
-            const isCurrent = index === currentIndex;
-            const isPrev = index === (currentIndex - 1 + projects.length) % projects.length;
-            const isNext = index === (currentIndex + 1) % projects.length;
-
-            let zIndex = 0;
-            let opacity = 0;
-            let filter = 'blur(8px)';
-            let display = 'none';
-
-            if (isCurrent) {
-              zIndex = 20;
-              opacity = 1;
-              filter = 'blur(0px)';
-              display = 'block';
-            } else if (isPrev) {
-              zIndex = 10;
-              opacity = 0.5;
-              display = 'block';
-            } else if (isNext) {
-              zIndex = 10;
-              opacity = 0.5;
-              display = 'block';
-            }
-
-            return (
-              <div
-                key={project.name}
-                className={`absolute w-[80%] md:w-[70%] h-full transition-all duration-500 ease-in-out ${isCurrent ? 'cursor-pointer hover:scale-105' : ''
-                  }`}
-                style={{
-                  transform:
-                    isCurrent
-                      ? 'translateX(0) scale(1)'
-                      : isPrev
-                        ? 'translateX(-40%) scale(0.8)' // smaller shift on mobile
-                        : isNext
-                          ? 'translateX(40%) scale(0.8)'
-                          : '',
-                  zIndex,
-                  opacity,
-                  filter,
-                  display,
-                }}
-                onClick={isCurrent ? () => handleCardClick(project as Project) : undefined}
-                aria-label={isCurrent ? `View details for ${project.name}` : ''}
-                role={isCurrent ? 'button' : undefined}
-                tabIndex={isCurrent ? 0 : -1}
-                onKeyDown={
-                  isCurrent
-                    ? (e) => e.key === 'Enter' && handleCardClick(project as Project)
-                    : undefined
-                }
-              >
-                <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl border border-gray-200">
-                  <img
-                    src={project.mainPhoto}
-                    alt={project.name}
-                    className="absolute inset-0 w-full h-full object-cover z-0"
-                  />
-
-                  <div className="absolute bottom-0 left-0 w-full h-full md:h-[40%] bg-white/20 backdrop-blur-lg p-2 md:p-6 flex flex-col justify-end md:justify-center z-10">
-                    <h3 className="text-gray-900 text-xl md:text-4xl font-bold drop-shadow-lg">
-                      {project.name}
-                    </h3>
-                    {isCurrent && (
-                      <p className="text-gray-900 text-sm md:text-base mt-2 mb-2 md:mb-0 drop-shadow-md">
-                        {project.description.join(' ').substring(0, 150)}...
-                      </p>
-                    )}
-                  </div>
-                </div>
-              </div>
-
-            );
-          })}
-        </div>
-
-        {/* Navigation Buttons */}
-        <button
-          onClick={handlePrev}
-          className="group absolute top-1/2 left-2 md:left-8 transform -translate-y-1/2 z-30 flex items-center justify-center w-10 h-10 md:w-14 md:h-14 bg-gray-100 border border-gray-200 rounded-full hover:bg-gray-200 transition-all duration-300"
-          aria-label="Previous Project"
-        >
-          <FaChevronLeft className="text-gray-600 text-xl group-hover:scale-110 transition-transform" />
-        </button>
-
-        <button
-          onClick={handleNext}
-          className="group absolute top-1/2 right-4 md:right-8 transform -translate-y-1/2 z-30 flex items-center justify-center w-14 h-14 bg-gray-100 border border-gray-200 rounded-full hover:bg-gray-200 transition-all duration-300"
-          aria-label="Next Project"
-        >
-          <FaChevronRight className="text-gray-600 text-xl group-hover:scale-110 transition-transform" />
-        </button>
-      </div>
-
-      {/* RENDER THE PANEL conditionally */}
-      {selectedProject && <ProjectDetailPanel project={selectedProject} onClose={handleClosePanel} />}
-    </div>
+      <button
+        onClick={() => onChange(current + 1)}
+        disabled={current === total}
+        className={`${btnBase} border border-gray-200 text-gray-500 hover:bg-gray-100 disabled:opacity-30 disabled:cursor-not-allowed`}
+        aria-label="Next page"
+      >
+        ›
+      </button>
+    </nav>
   );
 };
 
+// ── Main portfolio ─────────────────────────────────────────────────────────────
+const Portfolio = () => {
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [search, setSearch] = useState('');
+  const [activeKeyword, setActiveKeyword] = useState<string | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const { language } = useLanguage();
+
+  const projects: Project[] =
+    language === 'ID'
+      ? thirzaAhmadTsaqifIndonesia.projects
+      : language === 'EN'
+        ? thirzaAhmadTsaqifEnglish.projects
+        : thirzaAhmadTsaqifJapanese.projects;
+
+  // Reset on language change
+  useEffect(() => {
+    setSearch('');
+    setActiveKeyword(null);
+    setSelectedProject(null);
+    setCurrentPage(1);
+  }, [language]);
+
+  // Collect unique tech keywords across all projects
+  const allKeywords = useMemo(() => {
+    const set = new Set<string>();
+    projects.forEach((p) =>
+      p['Programming language used or technology used'].forEach((t) => set.add(t))
+    );
+    return Array.from(set).sort();
+  }, [projects]);
+
+  // Filter logic
+  const filtered = useMemo(() => {
+    const q = search.trim().toLowerCase();
+    return projects.filter((p) => {
+      const matchesKeyword =
+        !activeKeyword ||
+        p['Programming language used or technology used']
+          .map((t) => t.toLowerCase())
+          .includes(activeKeyword.toLowerCase());
+
+      if (!q) return matchesKeyword;
+
+      const inName = p.name.toLowerCase().includes(q);
+      const inDesc = p.description.some((d) => d.toLowerCase().includes(q));
+      const inTech = p['Programming language used or technology used'].some((t) =>
+        t.toLowerCase().includes(q)
+      );
+      const inOrg = (p.organization || p.context || '').toLowerCase().includes(q);
+
+      return matchesKeyword && (inName || inDesc || inTech || inOrg);
+    });
+  }, [projects, search, activeKeyword]);
+
+  // Reset to page 1 whenever filters change
+  useEffect(() => { setCurrentPage(1); }, [filtered]);
+
+  const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
+  const paginated = filtered.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
+
+  const handlePillClick = (kw: string) =>
+    setActiveKeyword((prev) => (prev === kw ? null : kw));
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+  };
+
+  return (
+    <div className="p-4 " id="portfolio">
+      <div className="z-10 mb-6 p-6">
+        <h2 className="font-bold text-5xl md:text-6xl">Selected Works</h2>
+        <p className="text-lg text-gray-600 mt-2">
+          Every project has challenges, and every project has its rewards.
+        </p>
+        <p className="text-sm text-gray-500 mt-1">— Stephen Schwartz</p>
+      </div>
+
+      {/* Search bar */}
+      <div className="relative mb-4">
+        <svg
+          className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4 pointer-events-none"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={2}
+          viewBox="0 0 24 24"
+        >
+          <circle cx="11" cy="11" r="8" />
+          <path d="m21 21-4.35-4.35" />
+        </svg>
+        <input
+          type="search"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          placeholder="Search projects, technologies, organizations…"
+          className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200 bg-white text-sm text-gray-800 placeholder-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent transition"
+          aria-label="Search projects"
+        />
+        {search && (
+          <button
+            onClick={() => setSearch('')}
+            className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-700 transition"
+            aria-label="Clear search"
+          >
+            ✕
+          </button>
+        )}
+      </div>
+
+      {/* Keyword pills */}
+      <div className="flex flex-wrap gap-2 mb-6">
+        {allKeywords.map((kw) => (
+          <Pill
+            key={kw}
+            label={kw}
+            active={activeKeyword === kw}
+            onClick={() => handlePillClick(kw)}
+          />
+        ))}
+        {activeKeyword && (
+          <button
+            onClick={() => setActiveKeyword(null)}
+            className="px-4 py-1.5 rounded-full text-sm font-medium text-red-500 border border-red-200 hover:bg-red-50 transition"
+          >
+            Clear filter
+          </button>
+        )}
+      </div>
+
+      {/* Result count */}
+      <p className="text-sm text-gray-400 mb-4">
+        {filtered.length} project{filtered.length !== 1 ? 's' : ''} found
+        {totalPages > 1 && ` · page ${currentPage} of ${totalPages}`}
+      </p>
+
+      {/* Grid */}
+      {paginated.length > 0 ? (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {paginated.map((project) => (
+            <ProjectCard
+              key={project.name}
+              project={project}
+              onClick={() => setSelectedProject(project)}
+            />
+          ))}
+        </div>
+      ) : (
+        <div className="flex flex-col items-center justify-center py-24 text-center text-gray-400">
+          <svg className="w-12 h-12 mb-4 opacity-40" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.35-4.35" />
+          </svg>
+          <p className="text-lg font-medium">No projects match your search.</p>
+          <p className="text-sm mt-1">Try a different keyword or clear the filter.</p>
+        </div>
+      )}
+
+      {/* Pagination */}
+      <Pagination current={currentPage} total={totalPages} onChange={handlePageChange} />
+
+      {/* Detail panel */}
+      {selectedProject && (
+        <ProjectDetailPanel
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
+      )}
+    </div>
+  );
+};
 
 export default Portfolio;

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -19,30 +19,32 @@ const ContactForm = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    emailjs
-      .sendForm(import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
-        e.target as HTMLFormElement,
-        import.meta.env.VITE_PUBLIC_KEY)
-      .then(
-        () => {
-          setSubmissionStatus('Message sent successfully!');
-          setFormData({ name: '', email: '', message: '' }); // Clear form fields
-        },
-        (_) => {
-          setSubmissionStatus('An error occurred. Please try again.');
-        }
-      )
-      .finally(() => {
-        setIsSubmitting(false);
-      });
+    const serviceId = import.meta.env.VITE_SERVICE_ID;
+    const templateId = import.meta.env.VITE_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      setSubmissionStatus('Contact form is not configured yet.');
+      setIsSubmitting(false);
+      return;
+    }
+
+    try {
+      await emailjs.sendForm(serviceId, templateId, e.currentTarget, publicKey);
+      setSubmissionStatus('Message sent successfully!');
+      setFormData({ name: '', email: '', message: '' });
+    } catch (_) {
+      setSubmissionStatus('An error occurred. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 md:py-20 bg-white" id="contact">
+    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 md:py-20 bg-white">
       <h2 className="text-center font-header text-4xl sm:text-5xl lg:text-6xl font-semibold uppercase text-primary">
         Here's a contact form
       </h2>
@@ -124,7 +126,6 @@ const ContactForm = () => {
           </p>
 
         </div>
-        <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="thirza-ahmad" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://id.linkedin.com/in/thirza-ahmad/en?trk=profile-badge"></a></div>
       </div>
     </div>
 

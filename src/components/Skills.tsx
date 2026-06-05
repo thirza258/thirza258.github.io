@@ -23,7 +23,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div id="skills" className="border-2 border-black rounded-lg mb-4 overflow-hidden bg-white text-black hover:shadow-2xl transition-all duration-300 w-full">
+    <div className="border-2 border-black rounded-lg mb-4 overflow-hidden bg-white text-black hover:shadow-2xl transition-all duration-300 w-full">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="bg-white w-full flex justify-between items-center p-5 text-left font-semibold text-xl focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50"

@@ -1,7 +1,7 @@
 // src/context/LanguageContext.tsx
 import { createContext, useContext, useState, ReactNode } from "react";
 
-type Language = "ID" | "EN" | "JP";
+export type Language = "ID" | "EN" | "JP";
 
 interface LanguageContextProps {
   language: Language;

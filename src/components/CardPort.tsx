@@ -57,16 +57,10 @@ const CardPort: React.FC<PortfolioGridProps> = () => {
   const allSkills = [...list_skills, ...list_frameworks];
 
   return (
-    <div
-      id="about"
-      className="text-black min-h-screen font-sans p-4 sm:p-6 lg:p-8"
-    >
+    <div className="text-black min-h-screen font-sans p-4 sm:p-6 lg:p-8">
       <div className="max-w-7xl mx-auto">
         {/* Main Grid Layout */}
-        <main
-          id="about"
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8"
-        >
+        <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
           {/* Profile Card */}
           <Card className="lg:col-span-2 flex flex-col sm:flex-row items-center gap-6">
             <img
@@ -129,6 +123,17 @@ const CardPort: React.FC<PortfolioGridProps> = () => {
                 </a>
                 <span className="text-xs text-gray-600">Active</span>
               </li>
+              <li className="flex items-center justify-between">
+                <a
+                  href="https://nevatal.dpdns.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium hover:text-blue-400 transition-colors"
+                >
+                  nevatal.dpdns.org
+                </a>
+                <span className="text-xs text-gray-600">Active</span>
+              </li>
             </ul>
 
             <p className="mt-4 text-sm text-gray-700">
@@ -149,12 +154,12 @@ const CardPort: React.FC<PortfolioGridProps> = () => {
               </a>
 
               <a
-                href="https://wordpress.nevatal.tech"
+                href="https://dev.to/thirza258"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-center text-sm font-medium px-3 py-2 rounded-lg bg-gray-900 text-white hover:bg-gray-800 transition"
               >
-                WordPress
+                Dev Blog
               </a>
 
               <a
@@ -168,15 +173,25 @@ const CardPort: React.FC<PortfolioGridProps> = () => {
             </div>
           </Card>
 
-          {/* Let's Work Together Card */}
           <Card className="lg:col-span-2 flex flex-col justify-between items-start">
-            <div id="contact">
+            <div>
               <p className="text-5xl font-bold">Let's</p>
               <p className="text-5xl font-bold">
                 work <span className="text-blue-400">together.</span>
               </p>
             </div>
-            <div className="flex items-center justify-end w-full gap-2 mt-4">
+
+            <div className="flex items-center justify-between w-full mt-4">
+              {/* See My Project */}
+              <a
+                href="#portfolio"
+                className="flex items-center gap-2 hover:text-gray-600"
+              >
+                <span className="text-lg font-bold">See My Project</span>
+                <i className="bx bx-folder-open text-2xl"></i>
+              </a>
+
+              {/* Download CV */}
               <a
                 href="/CV_ThirzaAhmadTsaqif.pdf"
                 download

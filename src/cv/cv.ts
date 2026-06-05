@@ -10,7 +10,7 @@ import perakLogo from "../assets/perak.png";
 
 import sitMainPhoto from "../assets/portfolio/sit/image.png";
 import oprecMainPhoto from "../assets/portfolio/oprec/image.png";
-import ragreaderMainPhoto from "../assets/portfolio/ragreader/original.png";
+import ragreaderMainPhoto from "../assets/portfolio/ragreader/gallery.png";
 import lpjOnlineMainPhoto from "../assets/portfolio/lpj/image.png";
 import chattydeskMainPhoto from "../assets/portfolio/chattydesk/gallery.jpg";
 import bestStaffMainPhoto from "../assets/portfolio/best_staff/image.png";
@@ -20,8 +20,36 @@ import researchMainPhoto from "../assets/portfolio/researchrecommendation/origin
 import ecofriendlyMainPhoto from "../assets/portfolio/ecofriendly/original.png";
 
 import siinvenHighlightPhoto1 from "../assets/portfolio/siinven/image2.png";
-import ragreaderHighlightPhoto1 from "../assets/portfolio/ragreader/gallery.jpg";
+import ragreaderHighlightPhoto1 from "../assets/portfolio/ragreader/highlight1.png";
+import ragreaderHighlightPhoto2 from "../assets/portfolio/ragreader/highlight2.png";
+import ragreaderHighlightPhoto3 from "../assets/portfolio/ragreader/highlight3.png";
+
+import cragHighlightPhoto1 from "../assets/portfolio/crag/crag_main.png";
+import cragHighlightPhoto2 from "../assets/portfolio/crag/gallery1.png";
+import cragHighlightPhoto3 from "../assets/portfolio/crag/gallery2.png";
+import cragHighlightPhoto4 from "../assets/portfolio/crag/gallery3.png";
+import cragHighlightPhoto5 from "../assets/portfolio/crag/gallery4.png";
+
+import myHearingHighlightPhoto1 from "../assets/portfolio/myhearing/gallery.png";
+
 import chattydeskHighlightPhoto1 from "../assets/portfolio/chattydesk/gallery (1).jpg";
+
+import pasalMainPhoto from "../assets/portfolio/pasal/gallery.png";
+
+import ollieChatbotHighlightPhoto1 from "../assets/portfolio/ollie/Picture7.png";
+
+import fiveSHighlightPhoto1 from "../assets/portfolio/5s/Picture3.png";
+import fiveSHighlightPhoto2 from "../assets/portfolio/5s/Picture2.png";
+
+import fiveWhyHighlightPhoto1 from "../assets/portfolio/5why/Picture5.png";
+import fiveWhyHighlightPhoto2 from "../assets/portfolio/5why/Picture6.png";
+
+import genshinImpactHighlightPhoto1 from "../assets/portfolio/genshin/gallery.png";
+import genshinImpactHighlightPhoto2 from "../assets/portfolio/genshin/gallery(2).png";
+
+import nevatalMainPhoto from "../assets/portfolio/nevatal/gallery (2).jpg";
+import nevatalHighlightPhoto1 from "../assets/portfolio/nevatal/gallery (1).jpg";
+import nevatalHighlightPhoto2 from "../assets/portfolio/nevatal/gallery.jpg";
 
 export const thirzaAhmadTsaqifEnglish = {
   "personalInfo": {
@@ -184,18 +212,56 @@ export const thirzaAhmadTsaqifEnglish = {
       "context": "NextAI Hackathon Submission",
       "links": {
         "github": "https://github.com/thirza258/RagReader",
-        "devpost": "[Devpost]"
+        "devpost": "https://devpost.com/software/ragreader-kauodp?ref_content=user-portfolio&ref_feature=in_progress",
+        "demo":  "https://rag.nevatal.tech/"
       },
       "description": [
-        "Developed a RAG-based website that retrieves content from a provided URL or file and generates responses based on user prompts.",
-        "Built the backend using Django REST Framework and the frontend with Vite, React, TypeScript, and Tailwind CSS",
-        "Implemented LangChain as the RAG pipeline for efficient retrieval-augmented generation.",
-        "Integrated multiple generative AI models, including OpenAI, Claude, and Mistral, to enhance response quality."
+        "Built RAGReader, an evaluation platform for comparing and identifying the most effective Retrieval-Augmented Generation (RAG) pipeline for custom document collections.",
+        "Developed the backend using Django REST Framework, Celery, and Docker to support scalable asynchronous document ingestion, embedding, retrieval, reranking, and evaluation workflows.",
+        "Implemented multiple dense retrieval pipelines using OpenAI embedding models via OpenRouter and OpenAI APIs, with LangChain for document chunking and text splitting.",
+        "Integrated reranking models including Cross-Encoder MiniLM-L2, alongside LLM providers such as Claude, Gemini, and OpenAI, to benchmark retrieval quality and answer generation performance.",
+        "Used Chroma as the vector database for embedding persistence, chunk storage, metadata management, and experiment tracking.",
+        "Designed an evaluation framework leveraging BERT-based metrics and LLM-as-a-judge methodologies to compare retrieval, reranking, and generation configurations.",
+        "Built the frontend using React, Vite, and Tailwind CSS to provide interactive experiment configuration and result visualization."
       ],
       "mainPhoto": ragreaderMainPhoto,
-      "highlightPhoto": [ragreaderHighlightPhoto1],
-      "Programming language used or technology used": ["Django REST Framework", "Vite", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Claude", "Mistral"],
+      "highlightPhoto": [ragreaderHighlightPhoto1, ragreaderHighlightPhoto2, ragreaderHighlightPhoto3],
+      "Programming language used or technology used": ["Django REST Framework", "ChromaDB", "Github Actions", "RAG", "OpenRouter", "Vite", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Claude", "Mistral"],
       "affiliation": "NextAI Hackathon Submission"
+    },
+    {
+      "name": "Multi Hop Corrective with Reranker RAG Pipeline",
+      "context": "Campus Final Project",
+      "links": {
+        "github": "https://github.com/thirza258/nevatal",
+        "devpost": "https://devpost.com/software/chattywhole",
+        "demo":  "https://chat.nevatal.tech/"
+      },
+      "description": [
+        "Designed and implemented a Multi-Hop RAG pipeline combining Hybrid Retrieval (Dense + Sparse) and reranking models to support complex reasoning tasks.",
+        "Engineered a Corrective RAG (CRAG) framework that dynamically evaluates retrieved context, reducing retrieval noise and mitigating LLM hallucinations.",
+        "Benchmarked system performance using Hit Rate, MAP, MRR, RAGAS Faithfulness, Answer Relevancy, and BERTScore metrics.",
+        "Developed retrieval and generation backend services using Python, Django, LangChain, ChromaDB, PostgreSQL, and Redis.",
+        "Containerized and orchestrated the application stack with Docker to enable reproducible experimentation and deployment."
+      ],
+      "mainPhoto": cragHighlightPhoto1,
+      "highlightPhoto": [cragHighlightPhoto1, cragHighlightPhoto2, cragHighlightPhoto3, cragHighlightPhoto4, cragHighlightPhoto5],
+      "Programming language used or technology used": ["Django REST Framework",  "ChromaDB", "PyTorch", "Hugging Face Transformers", "LLM", "RAGAs", "RAG", "OpenRouter", "Vite", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Deepseek LLMs", "ChromaDB", "PostgreSQL", "Redis", "Celery", "Transformers"],
+      "affiliation": "Campus Final Project"
+    },
+     {
+      "name": "Nevatal",
+      "context": "Google Chrome Built-in AI Challenge 2025 Submission",
+      "description": [
+        "Developed a full-stack AI platform integrating Gemini-powered prompt generation, text utilities, document RAG, and image generation capabilities.",
+        "Built scalable backend services with Django REST Framework and PostgreSQL, alongside a React, TypeScript, Vite, and Tailwind CSS frontend.",
+        "Implemented RAG pipelines using Gemini embeddings and configurable model parameters to enhance contextual understanding and response quality.",
+        "Dockerized the complete application stack to support reproducible deployments and self-hosted usage with user-provided Gemini API credentials."
+      ],
+      "mainPhoto": nevatalMainPhoto,
+      "highlightPhoto": [nevatalHighlightPhoto1, nevatalHighlightPhoto2],
+      "Programming language used or technology used": ["Django REST Framework",  "LLM",  "RAG", "OpenRouter", "Vite", "React", "TypeScript", "Tailwind CSS", ],
+      "affiliation": "Google Chrome Built-in AI Challenge 2025 Submission"
     },
     {
       "name": "Integrated Information Systems (SIT)",
@@ -220,8 +286,8 @@ export const thirzaAhmadTsaqifEnglish = {
         "Utilized RAG with Faiss and PostgreSQL for efficient information storage and retrieval, ensuring quick and accurate responses.",
         "Integrated OpenAI GPT and Ollama for natural language generation, delivering context-aware and human-like answers."
       ],
-      "mainPhoto": "ollie_chatbot_main_photo_url",
-      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
+      "mainPhoto": ollieChatbotHighlightPhoto1,
+      "highlightPhoto": [ollieChatbotHighlightPhoto1],
       "Programming language used or technology used": ["FaceNet", "Transformers", "xTTS", "OpenAI Whisper", "RAG", "Faiss", "PostgreSQL", "OpenAI GPT", "Ollama"],
       "affiliation": "Oppo Manufacturing Indonesia"
     },
@@ -233,8 +299,8 @@ export const thirzaAhmadTsaqifEnglish = {
         "Integrated Ollama Gemma Vision to generate and describe detected violations, LLaVA Vision Language Model to identify target objects, and OwlViT for object detection.",
         "Built a React + TypeScript + Tailwind frontend to display live camera feeds, violation details, and itemized lists of detected issues."
       ],
-      "mainPhoto": "5s_ai_camera_main_photo_url",
-      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
+      "mainPhoto": fiveSHighlightPhoto1,
+      "highlightPhoto": [fiveSHighlightPhoto1, fiveSHighlightPhoto2],
       "Programming language used or technology used": ["ConvNeXt", "PyTorch", "Transformer", "Ollama Gemma Vision", "LLaVA Vision Language Model", "OwlViT", "React", "TypeScript", "Tailwind CSS"],
       "affiliation": "Oppo Manufacturing Indonesia"
     },
@@ -247,8 +313,8 @@ export const thirzaAhmadTsaqifEnglish = {
         "Built the frontend using React, TypeScript, Tailwind CSS, and shadcn/ui for a modern, responsive user interface.",
         "Implemented the backend with FastAPI and utilizing PostgreSQL as the database, ensuring secure, scalable, and low-latency API performance."
       ],
-      "mainPhoto": "5why_ai_app_main_photo_url",
-      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
+      "mainPhoto": fiveWhyHighlightPhoto1,
+      "highlightPhoto": [fiveWhyHighlightPhoto1, fiveWhyHighlightPhoto2],
       "Programming language used or technology used": ["RAG", "Faiss", "MiniLM", "Deepseek LLMs", "React", "TypeScript", "Tailwind CSS", "shadcn/ui", "FastAPI", "PostgreSQL"],
       "affiliation": "Oppo Manufacturing Indonesia"
     },
@@ -289,6 +355,45 @@ export const thirzaAhmadTsaqifEnglish = {
       "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
       "Programming language used or technology used": ["Go", "Labstack Echo", "GitHub Actions"],
       "affiliation": "Avatar Digital"
+    },
+    {
+      "name": "Pasal Voice Assistant",
+      "context": "Personal Project",
+      "description": [
+        "Create Fully self-hosted voice assistant deployed on Indonesian TTS and STT models, utilizing Ollama for LLM integration and RAG for contextual information retrieval, providing a privacy-focused alternative to mainstream voice assistants.",
+        "Using Facebook-mms-tts-ind for TTS and Whisper with Indonesian Configuration for STT",
+        "Using Ollama GemmaEmbedding and Gemma 3 for RAG and LLM processing, ensuring all data and interactions are processed locally without reliance on external APIs.",
+        "Using Self Hosted Dockerized ChromaDB for vector storage and retrieval, enabling efficient and secure management of contextual data for the voice assistant."
+      ],
+      "mainPhoto": pasalMainPhoto,
+      "highlightPhoto": [pasalMainPhoto],
+      "Programming language used or technology used": ["Ollama", "RAG", "OpenAI Whisper", "RAG", "Transformers", "PyTorch", "Gemma", "ChromaDB"],
+      "affiliation": "Personal Project"
+    },
+    {
+      "name": "Daily Task Wallpaper Generator with Genshin Impact Theme",
+      "context": "Personal Project",
+      "description": [
+        "Created a daily task wallpaper generator with a Genshin Impact theme, providing users with visually appealing and personalized wallpapers to organize their daily tasks.",
+        "Built the backend using FastAPI and Pillow for image processing, allowing users to input their tasks and generate customized wallpapers.",
+        "Dockerized the application for easy deployment and scalability, enabling users to run the generator on their local machines or cloud platforms.",
+        "Designed a frontend with React, Vite, and Tailwind CSS to provide an intuitive interface for task input and wallpaper generation."
+      ],
+      "mainPhoto": genshinImpactHighlightPhoto1,
+      "highlightPhoto": [genshinImpactHighlightPhoto1, genshinImpactHighlightPhoto2],
+      "Programming language used or technology used": ["Tailwind CSS", "Vite", "React", "MinIO", "Javascript", "FastAPI", "Pillow"],
+      "affiliation": "Personal Project"
+    },
+    {
+      "name": "My Hearing",
+      "context": "Faculty of Public Health Universitas Indonesia Final Project for Client",
+      "description": [
+        "Developed a hearing health management application that provides users with personalized hearing care recommendations and resources.",
+      ],
+      "mainPhoto": myHearingHighlightPhoto1,
+      "highlightPhoto": [myHearingHighlightPhoto1],
+      "Programming language used or technology used": ["Tailwind CSS", "Vite", "React", "MinIO", "Javascript", "FastAPI", "Pillow"],
+      "affiliation": "Faculty of Public Health Universitas Indonesia Final Project for Client"
     },
     {
       "name": "SiInven",
@@ -412,9 +517,8 @@ export const thirzaAhmadTsaqifEnglish = {
       "name": "Gemini Japanese",
       "context": "MLH GWH Submission",
       "links": {
-        "githubBackend": "[Github Backend]",
-        "githubFrontend": "[Github Frontend]",
-        "devpost": "[Devpost]"
+        "github": "https://github.com/thirza258/gemini_japanese",
+        "devpost": "https://devpost.com/software/gemini-japanese-translator"
       },
       "description": [
         "Developed a Japanese translation application that provides users with both romaji and translations by integrating the Gemini AI API, increasing translation accuracy with any japanese format.",
@@ -431,9 +535,8 @@ export const thirzaAhmadTsaqifEnglish = {
       "name": "LiteralStoryboard",
       "context": "AWS Game Builder Hackathon Submission",
       "links": {
-        "githubBackend": "[Github Backend]",
-        "githubFrontend": "[Github Frontend]",
-        "devpost": "[Devpost]"
+        "github": "https://github.com/thirza258/literal-storyboard",
+        "devpost": "https://devpost.com/software/literal-storyboard"
       },
       "description": [
         "Created a game website that combines board game and story.",

@@ -11,18 +11,26 @@ import Navbar from "./components/Navbar";
 import Writings from "./components/Writings";
 import "./index.css";
 
+const SECTION_IDS = [
+  "header",
+  "cardport",
+  "portfolio",
+  "experiences",
+  "education",
+  "writings",
+  "skills",
+  "contact",
+] as const;
+
 function App() {
   const currentIndexRef = useRef(0);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const isUserScrollingRef = useRef(false);
-  const sectionsRef = useRef<NodeListOf<Element> | null>(null);
 
   useEffect(() => {
-    sectionsRef.current = document.querySelectorAll("section");
-    const sections = sectionsRef.current;
-
-    if (sections.length === 0) return;
+    const shouldAutoScroll =
+      !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     const clearAllTimers = () => {
       if (intervalRef.current) {
@@ -35,48 +43,56 @@ function App() {
       }
     };
 
-    const startAutoScroll = () => {
-      clearAllTimers();
-      
-      intervalRef.current = setInterval(() => {
-        if (isUserScrollingRef.current) return; // Don't auto-scroll if user is scrolling
-        
-        currentIndexRef.current = (currentIndexRef.current + 1) % sections.length;
-        sections[currentIndexRef.current].scrollIntoView({ 
-          behavior: "smooth",
-          block: "start"
-        });
-      }, 8000); // Increased from 5000ms to 8000ms for slower auto-scroll
-    };
+    const getSectionElements = () =>
+      SECTION_IDS
+        .map((id) => document.getElementById(id))
+        .filter((element): element is HTMLElement => element !== null);
 
     const updateCurrentSection = () => {
-      const scrollTop = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight;
-      
-      // If at bottom of page, set to last section
-      if (scrollTop + windowHeight >= documentHeight - 50) {
-        currentIndexRef.current = sections.length - 1;
-        return;
-      }
+      const sections = getSectionElements();
 
-      // Find which section is most visible
-      let maxVisibleArea = 0;
-      let mostVisibleIndex = 0;
+      if (sections.length === 0) return;
+
+      const viewportCenter = window.scrollY + window.innerHeight / 2;
+      let closestIndex = 0;
+      let closestDistance = Number.POSITIVE_INFINITY;
 
       sections.forEach((section, index) => {
         const rect = section.getBoundingClientRect();
-        const visibleTop = Math.max(0, -rect.top);
-        const visibleBottom = Math.min(rect.height, windowHeight - rect.top);
-        const visibleArea = Math.max(0, visibleBottom - visibleTop);
-        
-        if (visibleArea > maxVisibleArea) {
-          maxVisibleArea = visibleArea;
-          mostVisibleIndex = index;
+        const sectionCenter = window.scrollY + rect.top + rect.height / 2;
+        const distance = Math.abs(sectionCenter - viewportCenter);
+
+        if (distance < closestDistance) {
+          closestDistance = distance;
+          closestIndex = index;
         }
       });
 
-      currentIndexRef.current = mostVisibleIndex;
+      currentIndexRef.current = closestIndex;
+    };
+
+    const scrollToSection = (index: number) => {
+      const sectionId = SECTION_IDS[index];
+      const section = document.getElementById(sectionId);
+
+      if (!section) return;
+
+      section.scrollIntoView({
+        behavior: shouldAutoScroll ? "smooth" : "auto",
+        block: "start",
+      });
+    };
+
+    const startAutoScroll = () => {
+      clearAllTimers();
+
+      if (!shouldAutoScroll) return;
+
+      intervalRef.current = setInterval(() => {
+        if (isUserScrollingRef.current) return; // Don't auto-scroll if user is scrolling
+        currentIndexRef.current = (currentIndexRef.current + 1) % SECTION_IDS.length;
+        scrollToSection(currentIndexRef.current);
+      }, 8000);
     };
 
     let scrollTimeout: ReturnType<typeof setTimeout> | null = null;
@@ -94,43 +110,32 @@ function App() {
       // Set user scrolling to false after scrolling stops
       scrollTimeout = setTimeout(() => {
         isUserScrollingRef.current = false;
-        
-        // Restart auto-scroll after user stops scrolling for 15 seconds
         timeoutRef.current = setTimeout(() => {
           if (!isUserScrollingRef.current) {
             startAutoScroll();
           }
-        }, 15000); // Increased from 10000ms to 15000ms
-      }, 150); // Wait 150ms after scroll stops
+        }, 15000);
+      }, 150);
     };
 
-    // Handle wheel events to detect user scrolling
-    const handleWheel = () => {
-      isUserScrollingRef.current = true;
+    const handleResize = () => {
+      updateCurrentSection();
     };
 
-    // Handle touch events for mobile
-    const handleTouchStart = () => {
-      isUserScrollingRef.current = true;
-    };
-
-    // Add event listeners
     window.addEventListener("scroll", handleScroll, { passive: true });
-    window.addEventListener("wheel", handleWheel, { passive: true });
-    window.addEventListener("touchstart", handleTouchStart, { passive: true });
+    window.addEventListener("resize", handleResize, { passive: true });
 
-    // Start auto-scroll initially
     const initialTimeout = setTimeout(() => {
       if (!isUserScrollingRef.current) {
         startAutoScroll();
       }
-    }, 2000); // Start after 2 seconds
+    }, 2000);
 
-    // Cleanup function
+    updateCurrentSection();
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("wheel", handleWheel);
-      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("resize", handleResize);
       clearAllTimers();
       if (scrollTimeout) clearTimeout(scrollTimeout);
       clearTimeout(initialTimeout);
