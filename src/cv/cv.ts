@@ -234,11 +234,7 @@ export const thirzaAhmadTsaqifEnglish = {
     {
       "name": "Multi Hop Corrective with Reranker RAG Pipeline",
       "context": "Campus Final Project",
-      "links": {
-        "github": "https://github.com/thirza258/nevatal",
-        "devpost": "https://devpost.com/software/chattywhole",
-        "demo":  "https://chat.nevatal.tech/"
-      },
+      
       "description": [
         "Designed and implemented a Multi-Hop RAG pipeline combining Hybrid Retrieval (Dense + Sparse) and reranking models to support complex reasoning tasks.",
         "Engineered a Corrective RAG (CRAG) framework that dynamically evaluates retrieved context, reducing retrieval noise and mitigating LLM hallucinations.",
@@ -254,6 +250,11 @@ export const thirzaAhmadTsaqifEnglish = {
      {
       "name": "Nevatal",
       "context": "Google Chrome Built-in AI Challenge 2025 Submission",
+      "links": {
+        "github": "https://github.com/thirza258/nevatal",
+        "devpost": "https://devpost.com/software/chattywhole",
+        "demo":  "https://chat.nevatal.tech/"
+      },
       "description": [
         "Developed a full-stack AI platform integrating Gemini-powered prompt generation, text utilities, document RAG, and image generation capabilities.",
         "Built scalable backend services with Django REST Framework and PostgreSQL, alongside a React, TypeScript, Vite, and Tailwind CSS frontend.",
