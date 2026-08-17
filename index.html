@@ -2,38 +2,481 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Thirza Ahmad Tsaqif | AI & Full-Stack Software Engineer Portfolio</title>
+    <meta name="title" content="Thirza Ahmad Tsaqif | AI & Full-Stack Software Engineer Portfolio" />
+    <meta name="description" content="Explore the portfolio of Thirza Ahmad Tsaqif, an AI & Full-Stack Software Engineer from Universitas Indonesia specializing in RAG (RAGReader, Corrective RAG), LLM systems, computer vision, Django, FastAPI, Go, and React." />
+    <meta name="keywords" content="Thirza Ahmad Tsaqif, Thirza Ahmad, thirza258, AI Engineer, Full Stack Developer, Software Engineer, Retrieval-Augmented Generation, RAG, CRAG, Corrective RAG, RAGReader, Nevatal, Ollie Chatbot, 5S AI Camera, 5Why AI, LangChain, ChromaDB, Faiss, PyTorch, Transformers, OpenAI, Google Gemini, Anthropic Claude, Django, Django REST Framework, FastAPI, Go, Golang, Spring Boot, React, TypeScript, Tailwind CSS, Docker, Universitas Indonesia, Jakarta Indonesia, Software Engineer Portfolio" />
+    <meta name="author" content="Thirza Ahmad Tsaqif" />
+    <meta name="creator" content="Thirza Ahmad Tsaqif" />
+    <meta name="publisher" content="Thirza Ahmad Tsaqif" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="color-scheme" content="light dark" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://thirza258.github.io/" />
+
+    <!-- AI & Machine-Readable Discovery Tags -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+    <link rel="author" href="https://github.com/thirza258" />
+    <link rel="help" href="/llms.txt" type="text/plain" title="LLM documentation" />
+    <link rel="alternate" href="/llms-full.txt" type="text/plain" title="Full LLM Documentation" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/profile.png" />
+    <link rel="apple-touch-icon" href="/profile.png" />
+
+    <!-- Open Graph / Facebook / LinkedIn / Discord -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://thirza258.github.io/" />
+    <meta property="og:title" content="Thirza Ahmad Tsaqif | AI & Full-Stack Software Engineer" />
+    <meta property="og:description" content="Portfolio of Thirza Ahmad Tsaqif — AI and Full-Stack Software Engineer specializing in RAG architectures, LLM systems, computer vision, Django, FastAPI, Go, and modern React." />
+    <meta property="og:image" content="https://thirza258.github.io/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Thirza Ahmad Tsaqif - AI & Full-Stack Software Engineer Portfolio" />
+    <meta property="og:site_name" content="Thirza Ahmad Tsaqif Portfolio" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="profile:first_name" content="Thirza Ahmad" />
+    <meta property="profile:last_name" content="Tsaqif" />
+    <meta property="profile:username" content="thirza258" />
+    <meta property="profile:gender" content="male" />
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://thirza258.github.io/" />
+    <meta name="twitter:title" content="Thirza Ahmad Tsaqif | AI & Full-Stack Software Engineer" />
+    <meta name="twitter:description" content="Portfolio of Thirza Ahmad Tsaqif — AI and Full-Stack Software Engineer specializing in RAG architectures, LLM systems, Django, FastAPI, Go, and React." />
+    <meta name="twitter:image" content="https://thirza258.github.io/og-image.png" />
+    <meta name="twitter:image:alt" content="Thirza Ahmad Tsaqif Portfolio Showcase" />
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
     <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/icon?family=Material+Icons"
-  />
-  <link
-    crossorigin="crossorigin"
-    href="https://fonts.gstatic.com"
-    rel="preconnect"
-  />
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-  <link
-    as="style"
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
-    rel="preload"
-  />
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
-
-  <link
-    href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-    rel="stylesheet"
-  />
-
+    <!-- Structured Data (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://thirza258.github.io/#website",
+          "url": "https://thirza258.github.io/",
+          "name": "Thirza Ahmad Tsaqif Portfolio",
+          "description": "Portfolio of Thirza Ahmad Tsaqif showcasing AI, RAG, LLM, and full-stack software development projects.",
+          "publisher": {
+            "@id": "https://thirza258.github.io/#person"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "ProfilePage",
+          "@id": "https://thirza258.github.io/#webpage",
+          "url": "https://thirza258.github.io/",
+          "name": "Thirza Ahmad Tsaqif | AI & Full-Stack Software Engineer Portfolio",
+          "isPartOf": {
+            "@id": "https://thirza258.github.io/#website"
+          },
+          "about": {
+            "@id": "https://thirza258.github.io/#person"
+          },
+          "mainEntity": {
+            "@id": "https://thirza258.github.io/#person"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://thirza258.github.io/#person",
+          "name": "Thirza Ahmad Tsaqif",
+          "alternateName": ["Thirza Ahmad", "thirza258"],
+          "jobTitle": "AI Engineer & Full-Stack Software Developer",
+          "description": "Information Systems student at Universitas Indonesia with deep expertise in Retrieval-Augmented Generation (RAG), Large Language Models, computer vision, Django, FastAPI, Go, and React.",
+          "url": "https://thirza258.github.io/",
+          "image": "https://thirza258.github.io/profile.png",
+          "email": "mailto:thirzahmad@gmail.com",
+          "nationality": "Indonesian",
+          "alumniOf": [
+            {
+              "@type": "EducationalOrganization",
+              "name": "Universitas Indonesia",
+              "department": "Faculty of Computer Science",
+              "url": "https://www.ui.ac.id"
+            }
+          ],
+          "knowsAbout": [
+            "Retrieval-Augmented Generation (RAG)",
+            "Corrective RAG (CRAG)",
+            "Large Language Models (LLM)",
+            "Artificial Intelligence",
+            "Computer Vision",
+            "Python",
+            "Django",
+            "Django REST Framework",
+            "FastAPI",
+            "Go",
+            "React.js",
+            "TypeScript",
+            "ChromaDB",
+            "Faiss",
+            "LangChain",
+            "PyTorch",
+            "Docker",
+            "PostgreSQL",
+            "Redis"
+          ],
+          "sameAs": [
+            "https://github.com/thirza258",
+            "https://www.linkedin.com/in/thirza-ahmad",
+            "https://dev.to/thirza258",
+            "https://medium.com/@thirza258",
+            "https://devpost.com/thirza258"
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://thirza258.github.io/#project-list",
+          "name": "Featured Software & AI Projects by Thirza Ahmad Tsaqif",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "SoftwareApplication",
+                "name": "RAGReader",
+                "applicationCategory": "DeveloperApplication",
+                "operatingSystem": "Cross-platform",
+                "url": "https://rag.nevatal.tech/",
+                "codeRepository": "https://github.com/thirza258/RagReader",
+                "description": "An evaluation platform for benchmarking and identifying the most effective Retrieval-Augmented Generation (RAG) pipeline configurations using Django REST Framework, Celery, ChromaDB, LangChain, OpenAI, Claude, Mistral, and Cross-Encoder MiniLM-L2 reranker.",
+                "programmingLanguage": ["Python", "TypeScript", "React", "Tailwind CSS"],
+                "author": { "@id": "https://thirza258.github.io/#person" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "SoftwareSourceCode",
+                "name": "Multi Hop Corrective with Reranker RAG Pipeline (CRAG)",
+                "description": "Multi-Hop RAG pipeline combining Hybrid Retrieval (Dense + Sparse) with Corrective RAG (CRAG) dynamic context evaluation to minimize hallucinations and optimize retrieval metrics (Hit Rate, MAP, MRR, RAGAS, BERTScore).",
+                "programmingLanguage": ["Python", "Django", "PyTorch", "Transformers", "ChromaDB", "TypeScript", "React"],
+                "author": { "@id": "https://thirza258.github.io/#person" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@type": "SoftwareApplication",
+                "name": "Nevatal",
+                "applicationCategory": "WebApplication",
+                "operatingSystem": "Web",
+                "url": "https://chat.nevatal.tech/",
+                "codeRepository": "https://github.com/thirza258/nevatal",
+                "description": "Full-stack AI platform developed for Google Chrome Built-in AI Challenge 2025 integrating Gemini-powered prompt engineering, text utilities, document RAG, and multimodal image generation.",
+                "programmingLanguage": ["Python", "Django REST Framework", "TypeScript", "React", "Tailwind CSS"],
+                "author": { "@id": "https://thirza258.github.io/#person" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "item": {
+                "@type": "SoftwareSourceCode",
+                "name": "Ollie Chatbot",
+                "description": "HR and employee assistant chatbot for OPPO Manufacturing Indonesia integrating FaceNet facial biometrics, custom Indonesian xTTS synthesis, OpenAI Whisper STT, and Faiss RAG.",
+                "programmingLanguage": ["Python", "PyTorch", "Transformers", "Faiss", "PostgreSQL"],
+                "author": { "@id": "https://thirza258.github.io/#person" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "item": {
+                "@type": "SoftwareSourceCode",
+                "name": "5S AI Camera",
+                "description": "Real-time industrial computer vision 5S compliance monitoring system using ConvNeXt, PyTorch, Ollama Gemma Vision, LLaVA VLM, and OwlViT.",
+                "programmingLanguage": ["Python", "PyTorch", "TypeScript", "React", "Tailwind CSS"],
+                "author": { "@id": "https://thirza258.github.io/#person" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "item": {
+                "@type": "SoftwareSourceCode",
+                "name": "5Why AI Application",
+                "description": "Automated Root Cause Analysis tool leveraging Dense & Sparse RAG with Faiss, MiniLM, and DeepSeek LLMs for automated 5-Whys diagnostic workflows.",
+                "programmingLanguage": ["Python", "FastAPI", "TypeScript", "React", "Tailwind CSS"],
+                "author": { "@id": "https://thirza258.github.io/#person" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "item": {
+                "@type": "SoftwareApplication",
+                "name": "URL Shortener",
+                "applicationCategory": "WebApplication",
+                "operatingSystem": "Web",
+                "url": "https://url.nevatal.tech/",
+                "codeRepository": "https://github.com/thirza258/freecodecamp_url_shortener",
+                "description": "Production-ready URL Shortener platform built with Django, PostgreSQL, Redis rate-limiting, and comprehensive click analytics.",
+                "programmingLanguage": ["Python", "Django", "PostgreSQL", "Redis", "Docker"],
+                "author": { "@id": "https://thirza258.github.io/#person" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "item": {
+                "@type": "SoftwareApplication",
+                "name": "Pasal Voice Assistant",
+                "applicationCategory": "VoiceApplication",
+                "operatingSystem": "Linux, Docker",
+                "description": "Self-hosted, privacy-focused Indonesian voice assistant with Indonesian TTS/STT, Gemma 3, Ollama GemmaEmbedding, and ChromaDB.",
+                "programmingLanguage": ["Python", "PyTorch", "Transformers", "ChromaDB", "Ollama"],
+                "author": { "@id": "https://thirza258.github.io/#person" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "item": {
+                "@type": "SoftwareApplication",
+                "name": "ChattyDesk",
+                "applicationCategory": "DesktopApplication",
+                "operatingSystem": "Windows, macOS, Linux",
+                "description": "Cross-platform desktop application enabling unified chat with Gemini, Claude, GPT, and Mistral LLMs built with Electron, React, TypeScript, and Django REST Framework.",
+                "programmingLanguage": ["TypeScript", "React", "Electron", "Python", "Django REST Framework"],
+                "author": { "@id": "https://thirza258.github.io/#person" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "item": {
+                "@type": "SoftwareApplication",
+                "name": "Integrated Information Systems (SIT)",
+                "applicationCategory": "BusinessApplication",
+                "operatingSystem": "Web",
+                "description": "Comprehensive enterprise system and LINE Bot for BEM Universitas Indonesia managing finance, publications, and affairs for 200+ members.",
+                "programmingLanguage": ["Python", "Django", "Firebase", "LINE Messaging API"],
+                "author": { "@id": "https://thirza258.github.io/#person" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "item": {
+                "@type": "SoftwareApplication",
+                "name": "SiInven",
+                "applicationCategory": "BusinessApplication",
+                "operatingSystem": "Web",
+                "description": "Enterprise inventory management system developed with Java Spring Boot, PostgreSQL, Docker, React, and Tailwind CSS.",
+                "programmingLanguage": ["Java", "Spring Boot", "PostgreSQL", "React", "TypeScript"],
+                "author": { "@id": "https://thirza258.github.io/#person" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 12,
+              "item": {
+                "@type": "SoftwareSourceCode",
+                "name": "JNE Self Kiosk Backend",
+                "description": "Self-service parcel delivery backend API service developed with Go (Labstack Echo) and automated GitHub Actions CI/CD.",
+                "programmingLanguage": ["Go", "Labstack Echo", "GitHub Actions"],
+                "author": { "@id": "https://thirza258.github.io/#person" }
+              }
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://thirza258.github.io/#articles",
+          "name": "Technical Articles by Thirza Ahmad Tsaqif",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "BlogPosting",
+                "headline": "How I SSH the Cloudflare Tunnel–Based Home Server",
+                "url": "https://dev.to/thirza258/how-i-ssh-the-cloudflare-tunnel-based-home-server-2fpj",
+                "datePublished": "2025-01-15",
+                "author": { "@id": "https://thirza258.github.io/#person" },
+                "publisher": { "@type": "Organization", "name": "dev.to" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "BlogPosting",
+                "headline": "How I Handle Dynamic IP for My Home Server",
+                "url": "https://dev.to/thirza258/how-i-handle-dynamic-ip-for-my-home-server-40np",
+                "datePublished": "2025-01-20",
+                "author": { "@id": "https://thirza258.github.io/#person" },
+                "publisher": { "@type": "Organization", "name": "dev.to" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@type": "BlogPosting",
+                "headline": "Nevatal Joins Hacktoberfest 2025: Build the Future of AI Functions Hub",
+                "url": "https://dev.to/thirza258/nevatal-joins-hacktoberfest-2025-build-the-future-of-ai-functions-hub-49ai",
+                "datePublished": "2025-10-01",
+                "author": { "@id": "https://thirza258.github.io/#person" },
+                "publisher": { "@type": "Organization", "name": "dev.to" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "item": {
+                "@type": "BlogPosting",
+                "headline": "My Experiences Using Amazon Q for Creating the Literal Storyboard Game",
+                "url": "https://builder.aws.com/content/2rbrpn8ptGnRcDOJG9iCNt0wzDw/my-experiences-using-amazon-q-for-creating-the-literal-storyboard-game",
+                "datePublished": "2025-01-10",
+                "author": { "@id": "https://thirza258.github.io/#person" },
+                "publisher": { "@type": "Organization", "name": "AWS Builder" }
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
+    <!-- Accessibility & Machine-Readable Crawler Fallback Content -->
+    <noscript>
+      <header>
+        <h1>Thirza Ahmad Tsaqif — AI Engineer & Full-Stack Software Developer</h1>
+        <p>Information Systems student at Universitas Indonesia specializing in Retrieval-Augmented Generation (RAG), Large Language Models (LLM), Computer Vision, and Full-Stack Engineering.</p>
+        <nav aria-label="Social and Portfolio Links">
+          <ul>
+            <li><a href="https://github.com/thirza258">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/thirza-ahmad">LinkedIn Profile</a></li>
+            <li><a href="https://devpost.com/thirza258">Devpost Profile</a></li>
+            <li><a href="https://dev.to/thirza258">Dev.to Articles</a></li>
+            <li><a href="https://medium.com/@thirza258">Medium Profile</a></li>
+            <li><a href="/CV_ThirzaAhmadTsaqif.pdf">Download Curriculum Vitae (PDF)</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section id="static-projects">
+          <h2>Featured AI & Software Engineering Projects</h2>
+          
+          <article>
+            <h3>RAGReader (NextAI Hackathon Submission)</h3>
+            <p>Evaluation platform for benchmarking and identifying the most effective Retrieval-Augmented Generation (RAG) pipeline for custom document collections.</p>
+            <p><strong>Technologies:</strong> Django REST Framework, ChromaDB, Celery, LangChain, OpenAI, Claude, Mistral, Cross-Encoder MiniLM-L2, React, TypeScript, Tailwind CSS.</p>
+            <p>Links: <a href="https://github.com/thirza258/RagReader">GitHub Repository</a> | <a href="https://rag.nevatal.tech/">Live Demo</a> | <a href="https://devpost.com/software/ragreader-kauodp">Devpost</a></p>
+          </article>
+
+          <article>
+            <h3>Multi Hop Corrective with Reranker RAG Pipeline (CRAG)</h3>
+            <p>Designed and implemented a Multi-Hop RAG pipeline combining Hybrid Retrieval (Dense + Sparse) and reranking models with Corrective RAG (CRAG) to mitigate LLM hallucinations.</p>
+            <p><strong>Technologies:</strong> Django REST Framework, ChromaDB, PyTorch, Hugging Face Transformers, RAGAs, PostgreSQL, Redis, Celery, React, TypeScript.</p>
+          </article>
+
+          <article>
+            <h3>Nevatal (Google Chrome Built-in AI Challenge 2025)</h3>
+            <p>Full-stack AI platform integrating Gemini-powered prompt generation, document RAG, and image generation capabilities.</p>
+            <p><strong>Technologies:</strong> Django REST Framework, Gemini API, RAG, React, TypeScript, Vite, Tailwind CSS, Docker.</p>
+            <p>Links: <a href="https://github.com/thirza258/nevatal">GitHub Repository</a> | <a href="https://chat.nevatal.tech/">Live Demo</a> | <a href="https://devpost.com/software/chattywhole">Devpost</a></p>
+          </article>
+
+          <article>
+            <h3>Ollie Chatbot (OPPO Manufacturing Indonesia)</h3>
+            <p>HR and employee chatbot with FaceNet facial recognition authentication, custom Indonesian xTTS, OpenAI Whisper STT, and Faiss/PostgreSQL RAG.</p>
+            <p><strong>Technologies:</strong> FaceNet, Transformers, xTTS, OpenAI Whisper, Faiss, PostgreSQL, OpenAI GPT, Ollama.</p>
+          </article>
+
+          <article>
+            <h3>5S AI Camera (OPPO Manufacturing Indonesia)</h3>
+            <p>Computer vision system using ConvNeXt, PyTorch, Ollama Gemma Vision, LLaVA VLM, and OwlViT for real-time 5S factory compliance monitoring.</p>
+            <p><strong>Technologies:</strong> ConvNeXt, PyTorch, Ollama Gemma Vision, LLaVA, OwlViT, React, TypeScript, Tailwind CSS.</p>
+          </article>
+
+          <article>
+            <h3>5Why AI Application (OPPO Manufacturing Indonesia)</h3>
+            <p>AI-powered Root Cause Analysis tool leveraging Dense & Sparse RAG with Faiss and MiniLM, integrated with DeepSeek LLMs to automate the 5-Whys methodology.</p>
+            <p><strong>Technologies:</strong> FastAPI, PostgreSQL, Faiss, MiniLM, DeepSeek LLM, React, TypeScript, Tailwind CSS, shadcn/ui.</p>
+          </article>
+
+          <article>
+            <h3>KJRI New York Chatbot (Maleo AI) & PFN Chatbot (Aether AI)</h3>
+            <p>AI-powered consular and film archive FAQ chatbots using GPT, RAG, Vectorshift, and FastAPI.</p>
+            <p><strong>Technologies:</strong> FastAPI, Python, Vectorshift, OpenAI GPT, RAG.</p>
+          </article>
+
+          <article>
+            <h3>URL Shortener</h3>
+            <p>Production-grade short link platform with Redis rate-limiting, click analytics, referrer tracking, and PostgreSQL.</p>
+            <p><strong>Technologies:</strong> Django, PostgreSQL, Redis, Docker, Docker Compose.</p>
+            <p>Links: <a href="https://github.com/thirza258/freecodecamp_url_shortener">GitHub Repository</a> | <a href="https://url.nevatal.tech/">Live Demo</a></p>
+          </article>
+
+          <article>
+            <h3>Pasal Voice Assistant</h3>
+            <p>Completely self-hosted Indonesian voice assistant with Indonesian TTS/STT, Gemma 3, Ollama GemmaEmbedding, and ChromaDB.</p>
+            <p><strong>Technologies:</strong> Ollama, Gemma, ChromaDB, OpenAI Whisper, Facebook MMS, PyTorch, Transformers.</p>
+          </article>
+
+          <article>
+            <h3>Integrated Information Systems (SIT) (BEM UI)</h3>
+            <p>Enterprise student affairs and finance system with LINE Messaging Bot using Django, Firebase, and Railway.</p>
+            <p><strong>Technologies:</strong> Django, Firebase, Railway, LINE Messaging API.</p>
+          </article>
+        </section>
+
+        <section id="static-skills">
+          <h2>Core Technical Competencies</h2>
+          <ul>
+            <li><strong>AI / LLM / Vision:</strong> Retrieval-Augmented Generation (RAG), CRAG, GraphRAG, LangChain, ChromaDB, Faiss, PyTorch, Transformers, OpenAI, Google Gemini, Anthropic Claude, Ollama, Whisper STT, xTTS, ConvNeXt, OwlViT.</li>
+            <li><strong>Backend:</strong> Python (Django, FastAPI), Go (Gin, Echo), Java (Spring Boot), Node.js (Express), PostgreSQL, Redis, Firebase, Celery.</li>
+            <li><strong>Frontend:</strong> React, TypeScript, Vite, Tailwind CSS, Material-UI, Vue.js, Electron.</li>
+            <li><strong>DevOps & Tools:</strong> Docker, GitHub Actions CI/CD, Linux, Railway, Vercel, AWS Amplify, Azure Cloud, MinIO, SonarQube, Cloudflare Tunnels.</li>
+          </ul>
+        </section>
+      </main>
+    </noscript>
+
+    <!-- Main React Application Mount Point -->
     <div id="root"></div>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

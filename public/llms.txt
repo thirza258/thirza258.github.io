@@ -1,0 +1,57 @@
+# Thirza Ahmad Tsaqif — AI & Full-Stack Software Engineer
+
+> Information Systems student at Universitas Indonesia specializing in Retrieval-Augmented Generation (RAG), Large Language Model (LLM) agents, computer vision, and scalable full-stack web architectures.
+
+- **Name**: Thirza Ahmad Tsaqif
+- **Role**: AI Engineer & Full-Stack Developer
+- **Location**: Jakarta, Indonesia
+- **Email**: thirzahmad@gmail.com
+- **Website**: https://thirza258.github.io/
+- **GitHub**: https://github.com/thirza258
+- **LinkedIn**: https://www.linkedin.com/in/thirza-ahmad
+- **Dev.to**: https://dev.to/thirza258
+- **Medium**: https://medium.com/@thirza258
+- **Devpost**: https://devpost.com/thirza258
+
+---
+
+## Featured AI & Software Projects
+
+- **[RAGReader](https://github.com/thirza258/RagReader)**: Evaluation & benchmarking platform for custom Retrieval-Augmented Generation (RAG) pipelines. Uses Django REST Framework, Celery, ChromaDB, LangChain, OpenAI, Claude, Mistral, Cross-Encoder MiniLM-L2 reranker, and React. (Demo: https://rag.nevatal.tech/ | Devpost: https://devpost.com/software/ragreader-kauodp)
+- **[Multi-Hop Corrective with Reranker RAG Pipeline (CRAG)](https://thirza258.github.io/#portfolio)**: Multi-hop reasoning framework combining Hybrid Retrieval (Dense + Sparse), Corrective RAG (CRAG) evaluation to eliminate hallucinations, ChromaDB, PyTorch, Hugging Face Transformers, RAGAs, PostgreSQL, Redis, and Celery.
+- **[Nevatal](https://github.com/thirza258/nevatal)**: Full-stack AI workspace integrating Google Gemini prompt orchestration, document RAG, text utilities, and image generation. Built for Google Chrome Built-in AI Challenge 2025. (Demo: https://chat.nevatal.tech/ | Devpost: https://devpost.com/software/chattywhole)
+- **[Ollie Chatbot](https://thirza258.github.io/#portfolio)**: HR & employee assistant for OPPO Manufacturing Indonesia. Features FaceNet facial verification, custom Indonesian xTTS text-to-speech, local OpenAI Whisper STT, and Faiss/PostgreSQL RAG.
+- **[5S AI Camera](https://thirza258.github.io/#portfolio)**: Computer vision compliance system for OPPO Manufacturing Indonesia using ConvNeXt, PyTorch, Ollama Gemma Vision, LLaVA VLM, and OwlViT for real-time factory 5S inspection.
+- **[5Why AI Application](https://thirza258.github.io/#portfolio)**: Root Cause Analysis engine automating the "5 Whys" methodology for OPPO Manufacturing Indonesia using Dense & Sparse RAG, Faiss, MiniLM, Deepseek LLMs, and FastAPI.
+- **[Pasal Voice Assistant](https://thirza258.github.io/#portfolio)**: Completely self-hosted, privacy-first voice assistant with Indonesian TTS/STT, Gemma 3, Ollama GemmaEmbedding, and ChromaDB.
+- **[KJRI New York Chatbot (Maleo AI)](https://thirza258.github.io/#portfolio)**: Consulate-services AI chatbot for Indonesian Consulate General in New York using GPT, RAG, Vectorshift, and FastAPI.
+- **[PFN Chatbot](https://thirza258.github.io/#portfolio)**: Film metadata and documentation retrieval assistant for Produksi Film Negara (PFN) using Vectorshift, GPT, and RAG.
+- **[URL Shortener](https://github.com/thirza258/freecodecamp_url_shortener)**: Production-grade short link platform with Redis rate-limiting, click analytics, and PostgreSQL. (Demo: https://url.nevatal.tech/)
+- **[ChattyDesk](https://thirza258.github.io/#portfolio)**: Cross-platform desktop app for multi-LLM workflows (Gemini, Claude, GPT, Mistral) built with Electron, React, TypeScript, and Django REST Framework.
+- **[Integrated Information Systems (SIT)](https://thirza258.github.io/#portfolio)**: Enterprise management portal and LINE Bot for BEM Universitas Indonesia with Django, Firebase, and Railway.
+- **[SiInven](https://thirza258.github.io/#portfolio)**: Enterprise inventory management platform built with Java Spring Boot, PostgreSQL, Docker, React, and Tailwind CSS.
+- **[JNE Self Kiosk Backend](https://thirza258.github.io/#portfolio)**: Parcel self-service delivery backend service built with Go (Labstack Echo) and GitHub Actions CI/CD.
+
+---
+
+## Technical Skills
+
+- **AI / Machine Learning / LLMs**: Retrieval-Augmented Generation (RAG), Corrective RAG (CRAG), GraphRAG, LangChain, ChromaDB, Faiss, PyTorch, Hugging Face Transformers, OpenAI API, Anthropic Claude, Google Gemini, Ollama, Whisper STT, TTS (xTTS / MMS), ConvNeXt, Computer Vision.
+- **Backend Development**: Python (Django, Django REST Framework, FastAPI), Go (Gin, Echo), Java (Spring Boot), Node.js (Express), REST APIs, Celery, Redis, PostgreSQL, MySQL, MongoDB, Firebase.
+- **Frontend Development**: React.js, TypeScript, JavaScript, Vite, Next.js, Tailwind CSS, Material-UI, Vue.js, Electron.
+- **DevOps & Infrastructure**: Docker, Docker Compose, GitHub Actions CI/CD, Linux, Railway, Vercel, AWS Amplify, Azure Cloud, MinIO, SonarQube, Cloudflare Tunnels.
+
+---
+
+## Technical Publications & Articles
+
+- **[How I SSH the Cloudflare Tunnel–Based Home Server](https://dev.to/thirza258/how-i-ssh-the-cloudflare-tunnel-based-home-server-2fpj)** (dev.to)
+- **[How I Handle Dynamic IP for My Home Server](https://dev.to/thirza258/how-i-handle-dynamic-ip-for-my-home-server-40np)** (dev.to)
+- **[Nevatal Joins Hacktoberfest 2025: Build the Future of AI Functions Hub](https://dev.to/thirza258/nevatal-joins-hacktoberfest-2025-build-the-future-of-ai-functions-hub-49ai)** (dev.to)
+- **[My Experiences Using Amazon Q for Creating the Literal Storyboard Game](https://builder.aws.com/content/2rbrpn8ptGnRcDOJG9iCNt0wzDw/my-experiences-using-amazon-q-for-creating-the-literal-storyboard-game)** (AWS Builder)
+
+---
+
+## Complete Project & Resume Documentation
+
+For full architectural deep dives and detailed project specs, see [llms-full.txt](https://thirza258.github.io/llms-full.txt).

@@ -1,0 +1,141 @@
+# Thirza Ahmad Tsaqif — Comprehensive AI & Software Engineering Portfolio
+
+## Personal Overview
+- **Full Name**: Thirza Ahmad Tsaqif
+- **Title**: AI Engineer, Full-Stack Software Developer, Information Systems Specialist
+- **Education**: Bachelor of Computer Science in Information Systems, Universitas Indonesia (2022 - Present)
+- **Location**: Jakarta, Indonesia
+- **Contact Email**: thirzahmad@gmail.com
+- **Website**: https://thirza258.github.io/
+- **GitHub**: https://github.com/thirza258
+- **LinkedIn**: https://www.linkedin.com/in/thirza-ahmad
+- **Devpost**: https://devpost.com/thirza258
+- **Dev.to**: https://dev.to/thirza258
+- **Medium**: https://medium.com/@thirza258
+
+---
+
+## Detailed Project Catalog
+
+### 1. RAGReader (NextAI Hackathon Submission)
+- **Repository**: https://github.com/thirza258/RagReader
+- **Live Demo**: https://rag.nevatal.tech/
+- **Devpost**: https://devpost.com/software/ragreader-kauodp
+- **Summary**: An interactive evaluation and benchmarking platform created to compare, analyze, and identify the most effective Retrieval-Augmented Generation (RAG) configuration for custom document collections.
+- **Key Capabilities**:
+  - Scalable asynchronous document ingestion and parsing pipeline using Django REST Framework, Celery, and Docker.
+  - Multi-pipeline dense retrieval benchmarking supporting OpenAI embedding models via OpenRouter and LangChain text chunkers.
+  - Integration of cross-encoder rerankers (MiniLM-L2) alongside LLMs from Anthropic (Claude), Google (Gemini), and OpenAI.
+  - Vector embedding persistence, metadata filtering, and chunk storage powered by ChromaDB.
+  - BERTScore and LLM-as-a-judge evaluation frameworks for objective quantitative scoring.
+  - Modern reactive user interface built with React, Vite, TypeScript, and Tailwind CSS.
+- **Tech Stack**: Django REST Framework, ChromaDB, Celery, Redis, Docker, LangChain, OpenRouter, OpenAI API, Anthropic Claude, Mistral, Cross-Encoder MiniLM-L2, React, TypeScript, Tailwind CSS, GitHub Actions.
+
+### 2. Multi-Hop Corrective with Reranker RAG Pipeline (CRAG)
+- **Context**: Final Academic Research Project, Universitas Indonesia
+- **Summary**: Advanced multi-hop reasoning architecture designed to solve multi-step question answering while aggressively mitigating model hallucinations and retrieval noise.
+- **Key Capabilities**:
+  - Hybrid retrieval combining dense vector embeddings and BM25 sparse keyword searches.
+  - Corrective RAG (CRAG) mechanism dynamically assessing relevance of retrieved contexts before passing to generation.
+  - Quantitative benchmarking with Hit Rate, Mean Average Precision (MAP), Mean Reciprocal Rank (MRR), RAGAS Faithfulness, Answer Relevancy, and BERTScore.
+  - Low-latency backend infrastructure containerized with Docker.
+- **Tech Stack**: Python, Django REST Framework, ChromaDB, PyTorch, Hugging Face Transformers, DeepSeek LLMs, OpenAI, RAGAs, PostgreSQL, Redis, Celery, React, TypeScript, Tailwind CSS.
+
+### 3. Nevatal
+- **Repository**: https://github.com/thirza258/nevatal
+- **Live Demo**: https://chat.nevatal.tech/
+- **Devpost**: https://devpost.com/software/chattywhole
+- **Context**: Google Chrome Built-in AI Challenge 2025 Submission
+- **Summary**: Full-stack AI workspace integrating prompt engineering, text manipulation utilities, document RAG, and multimodal image synthesis.
+- **Key Capabilities**:
+  - Gemini embeddings and prompt orchestration for context-aware Q&A over local documents.
+  - Production-ready Django REST Framework backend with PostgreSQL.
+  - Responsive frontend interface built with React, TypeScript, Vite, and Tailwind CSS.
+  - Docker Compose setup enabling simple self-hosting with personal API keys.
+- **Tech Stack**: Django REST Framework, Google Gemini API, OpenRouter, PostgreSQL, Vite, React, TypeScript, Tailwind CSS, Docker.
+
+### 4. Ollie Chatbot (OPPO Manufacturing Indonesia)
+- **Context**: Enterprise Internship Project at OPPO Manufacturing Indonesia
+- **Summary**: Intelligent internal HR and employee assistant incorporating biometrics and conversational AI.
+- **Key Capabilities**:
+  - FaceNet-based biometric facial recognition for secure automated employee authentication.
+  - Indonesian text-to-speech utilizing a fine-tuned xTTS model and speech-to-text with local OpenAI Whisper.
+  - Fast knowledge retrieval across HR policies using Faiss vector indexes and PostgreSQL.
+  - Natural conversation synthesis powered by OpenAI GPT and locally hosted Ollama instances.
+- **Tech Stack**: FaceNet, PyTorch, Hugging Face Transformers, xTTS, OpenAI Whisper, Faiss, PostgreSQL, OpenAI GPT, Ollama.
+
+### 5. 5S AI Camera (OPPO Manufacturing Indonesia)
+- **Context**: Enterprise Industrial Computer Vision Project at OPPO
+- **Summary**: Real-time factory floor compliance monitoring system based on 5S lean manufacturing principles.
+- **Key Capabilities**:
+  - Image classification using ConvNeXt architecture trained with PyTorch.
+  - Vision Language Models (Ollama Gemma Vision & LLaVA) and OwlViT for automated object detection and violation description generation.
+  - Operator dashboard built with React, TypeScript, and Tailwind CSS for live video feeds and violation alerts.
+- **Tech Stack**: ConvNeXt, PyTorch, Ollama Gemma Vision, LLaVA VLM, OwlViT, React, TypeScript, Tailwind CSS.
+
+### 6. 5Why AI Application (OPPO Manufacturing Indonesia)
+- **Context**: Quality Engineering & Root Cause Analysis Tool
+- **Summary**: Automated "5 Whys" root cause analysis system extracting insights from historical factory incident logs.
+- **Key Capabilities**:
+  - Dense and Sparse hybrid RAG utilizing Faiss vector search and MiniLM embeddings.
+  - DeepSeek LLM reasoning pipelines for contextual diagnostic tree generation.
+  - High-performance asynchronous backend developed with FastAPI and PostgreSQL.
+  - Sleek modern interface built with React, TypeScript, Tailwind CSS, and shadcn/ui.
+- **Tech Stack**: FastAPI, Python, Faiss, MiniLM, DeepSeek LLM, PostgreSQL, React, TypeScript, Tailwind CSS, shadcn/ui.
+
+### 7. KJRI New York Chatbot (Maleo AI) & PFN Chatbot (Aether AI)
+- **Context**: AI Consultancy & Government Client Engagements at Aether AI
+- **Summary**: Production conversational assistants for the Indonesian Consulate General in New York and Produksi Film Negara (PFN).
+- **Key Capabilities**:
+  - Automated consular service inquiries and film archives document crawling.
+  - Document chunking, vector indexing with Vectorshift, and GPT-powered RAG.
+  - Scalable backend APIs deployed with FastAPI.
+- **Tech Stack**: FastAPI, Python, Vectorshift, OpenAI GPT, RAG.
+
+### 8. Pasal Voice Assistant
+- **Summary**: An open, self-hosted, privacy-respecting Indonesian voice assistant.
+- **Key Capabilities**:
+  - Indonesian TTS via Facebook MMS-TTS and STT via OpenAI Whisper.
+  - Local inference with Gemma 3 and GemmaEmbedding running under Ollama.
+  - Persistent vector storage using self-hosted ChromaDB in Docker.
+- **Tech Stack**: Ollama, Gemma, ChromaDB, OpenAI Whisper, Facebook MMS, PyTorch, Transformers, Docker.
+
+### 9. URL Shortener Platform
+- **Repository**: https://github.com/thirza258/freecodecamp_url_shortener
+- **Live Demo**: https://url.nevatal.tech/
+- **Summary**: High-performance URL shortener with rate limiting, slug generation, analytics tracking (clicks, referrers, user agents), and Docker Compose deployment.
+- **Tech Stack**: Django, PostgreSQL 16, Redis, Docker.
+
+### 10. ChattyDesk
+- **Summary**: Cross-platform desktop application unifying multiple LLMs (Gemini, Claude, GPT, Mistral) in a single workflow.
+- **Tech Stack**: Electron, React, TypeScript, Django REST Framework, PostgreSQL, DigitalOcean.
+
+### 11. Integrated Information Systems (SIT) (BEM Universitas Indonesia)
+- **Summary**: Organization portal for 200+ student leaders managing finances, reimbursements, publications, and integrated LINE Messaging API bot.
+- **Tech Stack**: Django, Firebase, Railway, HTML/CSS, LINE Messaging API.
+
+### 12. SiInven & Open Recruitment & LPJ Online (BEM Fasilkom UI / Academic)
+- **Summary**: Full-lifecycle software engineering projects including inventory management with Spring Boot & React, and microservices for recruitment & financial reporting with Go (Gin) & Django.
+
+---
+
+## Experience & Internships
+1. **IR-NLP Lab, Faculty of Computer Science, Universitas Indonesia** (Web Developer Intern, Sept 2025 - Dec 2025)
+   - Redeveloped lab portal using Django with dynamic admin dashboard.
+   - Built automated ETL publication scraping pipeline to blob storage and database.
+2. **OPPO Manufacturing Indonesia** (Software Engineer Intern, June 2025 - Sept 2025)
+   - Built Ollie Voice Assistant, 5S AI Camera compliance system, and 5Why AI Root Cause Analysis platform.
+3. **Aether AI** (AI Engineer Intern)
+   - Developed Maleo AI for KJRI New York and PFN Chatbot using FastAPI and RAG.
+4. **Avatar Digital** (Backend Developer Intern)
+   - Developed Go Labstack Echo backend for JNE Self Kiosk parcel shipping.
+5. **BEM Universitas Indonesia & BEM Fasilkom UI**
+   - Head developer and backend engineer for student enterprise platforms (SIT, LPJ Online, Oprec).
+
+---
+
+## Technical Writings
+1. *How I SSH the Cloudflare Tunnel–Based Home Server* (dev.to) — Practical walkthrough on secure homelab SSH without port forwarding.
+2. *How I Handle Dynamic IP for My Home Server* (dev.to) — Dynamic DNS and resilient homelab network configuration.
+3. *Nevatal Joins Hacktoberfest 2025: Build the Future of AI Functions Hub* (dev.to) — Open-source AI tools collaboration.
+4. *My Experiences Using Amazon Q for Creating the Literal Storyboard Game* (AWS Builder) — Generative AI development review.
