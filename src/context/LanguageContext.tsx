@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 // src/context/LanguageContext.tsx
 import { createContext, useContext, useState, ReactNode } from "react";
 

@@ -5,7 +5,9 @@ export interface Project {
   "Programming language used or technology used": string[];
   organization?: string; 
   context?: string;    
-  links?: Record<string, string | undefined> ;
+  affiliation?: string;
+  liveUrl?: string;
+  links?: Record<string, string | undefined>;
   highlightPhoto?: string[];    
 }
 

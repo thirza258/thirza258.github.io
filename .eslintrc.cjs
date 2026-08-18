@@ -13,10 +13,6 @@ module.exports = {
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
-      { allowNamedExport: true},
-      { allowDefaultExport: true},
-      { allowDirectExport: true},
-
     ],
     'no-unused-vars': 'off',
   },

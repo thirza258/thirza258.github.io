@@ -1,3 +1,4 @@
+import backendDevLogo from "../assets/backend_dev_logo.png";
 import oppoLogo from "../assets/oppo-seeklogo.svg";
 import aetherLogo from "../assets/aetherai.jpeg";
 import avatarLogo from "../assets/avatar_digital_.jpeg";
@@ -80,6 +81,17 @@ export const thirzaAhmadTsaqifEnglish = {
     }
   ],
   "experiences": [
+    {
+      "title": "Backend Engineer",
+      "company": "Ternak Klip",
+      "startDate": "June 2026",
+      "endDate": "Present",
+      "photo": backendDevLogo,
+      "responsibilities": [
+        "Mainly developing and maintaining core application backend services with Go for a platform serving more than 500,000 users, ensuring high concurrency, scalability, and system reliability.",
+        "Designing and developing internal applications and tools to streamline workflows and support internal employees."
+      ]
+    },
     {
       "title": "Web Developer, Internship",
       "company": "IR-NLP Lab, Faculty of Computer Science, Universitas Indonesia",
@@ -212,6 +224,7 @@ export const thirzaAhmadTsaqifEnglish = {
     {
       "name": "RAGReader",
       "context": "NextAI Hackathon Submission",
+      "liveUrl": "https://rag.nevatal.tech/",
       "links": {
         "github": "https://github.com/thirza258/RagReader",
         "devpost": "https://devpost.com/software/ragreader-kauodp?ref_content=user-portfolio&ref_feature=in_progress",
@@ -234,6 +247,10 @@ export const thirzaAhmadTsaqifEnglish = {
     {
       "name": "Multi Hop Corrective with Reranker RAG Pipeline",
       "context": "Campus Final Project",
+      "liveUrl": "https://crag.nevatal.tech/",
+      "links": {
+        "demo": "https://crag.nevatal.tech/"
+      },
       
       "description": [
         "Designed and implemented a Multi-Hop RAG pipeline combining Hybrid Retrieval (Dense + Sparse) and reranking models to support complex reasoning tasks.",
@@ -250,6 +267,7 @@ export const thirzaAhmadTsaqifEnglish = {
      {
       "name": "Nevatal",
       "context": "Google Chrome Built-in AI Challenge 2025 Submission",
+      "liveUrl": "https://chat.nevatal.tech/",
       "links": {
         "github": "https://github.com/thirza258/nevatal",
         "devpost": "https://devpost.com/software/chattywhole",
@@ -376,6 +394,10 @@ export const thirzaAhmadTsaqifEnglish = {
     {
       "name": "Daily Task Wallpaper Generator with Genshin Impact Theme",
       "context": "Personal Project",
+      "liveUrl": "https://genshinwallpaper.nevatal.tech/",
+      "links": {
+        "demo": "https://genshinwallpaper.nevatal.tech/"
+      },
       "description": [
         "Created a daily task wallpaper generator with a Genshin Impact theme, providing users with visually appealing and personalized wallpapers to organize their daily tasks.",
         "Built the backend using FastAPI and Pillow for image processing, allowing users to input their tasks and generate customized wallpapers.",
@@ -390,6 +412,7 @@ export const thirzaAhmadTsaqifEnglish = {
     {
       "name": "URL Shortener",
       "organization": "Personal Project",
+      "liveUrl": "https://url.nevatal.tech/",
       "links": {
         "github": "https://github.com/thirza258/freecodecamp_url_shortener",
         "demo":  "https://url.nevatal.tech/"
@@ -408,6 +431,10 @@ export const thirzaAhmadTsaqifEnglish = {
     {
       "name": "My Hearing",
       "context": "Faculty of Public Health Universitas Indonesia Final Project for Client",
+      "liveUrl": "https://sdidtk.id/",
+      "links": {
+        "demo": "https://sdidtk.id/"
+      },
       "description": [
         "Developed a hearing health management application that provides users with personalized hearing care recommendations and resources.",
       ],
@@ -478,7 +505,10 @@ export const thirzaAhmadTsaqifEnglish = {
         "githubBackend": "[Github Backend]",
         "githubFrontend": "[Github Frontend]",
         "devpost": "[Devpost]"
+      ,
+        "demo": "https://chatty.nevatal.tech/"
       },
+      "liveUrl": "https://chatty.nevatal.tech/",
       "description": [
         "Developed a cross-platform desktop application enabling seamless multi-LLM chat that is Gemini, Claude, Open AI GPT, and Mistral.",
         "Backend involved designing and deploying a scalable API using Django REST Framework, Python, and PostgreSQL, hosted on DigitalOcean.",
@@ -540,7 +570,10 @@ export const thirzaAhmadTsaqifEnglish = {
       "links": {
         "github": "https://github.com/thirza258/gemini_japanese",
         "devpost": "https://devpost.com/software/gemini-japanese-translator"
+      ,
+        "demo": "https://translate.nevatal.tech/"
       },
+      "liveUrl": "https://translate.nevatal.tech/",
       "description": [
         "Developed a Japanese translation application that provides users with both romaji and translations by integrating the Gemini AI API, increasing translation accuracy with any japanese format.",
         "Utilized React with TypeScript for the frontend to create a dynamic and intuitive user interface,",
@@ -558,7 +591,10 @@ export const thirzaAhmadTsaqifEnglish = {
       "links": {
         "github": "https://github.com/thirza258/literal-storyboard",
         "devpost": "https://devpost.com/software/literal-storyboard"
+      ,
+        "demo": "https://story.nevatal.tech/"
       },
+      "liveUrl": "https://story.nevatal.tech/",
       "description": [
         "Created a game website that combines board game and story.",
         "Developed using Vite React Typescript and Tailwind CSS and utilizing Gemini API as the story generator and",
@@ -594,7 +630,10 @@ export const thirzaAhmadTsaqifEnglish = {
         "githubBackend": "[Github Backend]",
         "githubFrontend": "[Github Frontend]",
         "devpost": "[Devpost]"
+      ,
+        "demo": "https://recommendica.nevatal.tech/"
       },
+      "liveUrl": "https://recommendica.nevatal.tech/",
       "description": [
         "Developed a Research Recommendation RAG-based API using the ArXiv dataset, with FAISS for retrieval and OpenAI for AI processing and Langchain as the pipeline.",
         "Utilized OpenAPI for documentation and Built the API with Django REST Framework."
@@ -796,6 +835,17 @@ export const thirzaAhmadTsaqifIndonesia = {
   ],
   "experiences": [
     {
+      "title": "Backend Engineer",
+      "company": "Ternak Klip",
+      "startDate": "Juni 2026",
+      "endDate": "Sekarang",
+      "photo": backendDevLogo,
+      "responsibilities": [
+        "Utamanya mengembangkan dan memelihara backend aplikasi menggunakan Go untuk platform dengan lebih dari 500.000 pengguna, memastikan performa tinggi, skalabilitas, dan keandalan sistem.",
+        "Mengembangkan aplikasi internal untuk membantu efisiensi dan operasional kerja karyawan internal."
+      ]
+    },
+    {
       "title": "Insinyur Perangkat Lunak, Magang",
       "company": "OPPO Manufacturing Indonesia",
       "startDate": "Juni 2025",
@@ -912,6 +962,120 @@ export const thirzaAhmadTsaqifIndonesia = {
     }
   ],
   "projects": [
+    {
+      "name": "RAGReader",
+      "context": "Pengajuan Hackathon NextAI",
+      "liveUrl": "https://rag.nevatal.tech/",
+      "links": {
+        "github": "https://github.com/thirza258/RagReader",
+        "devpost": "https://devpost.com/software/ragreader-kauodp?ref_content=user-portfolio&ref_feature=in_progress",
+        "demo": "https://rag.nevatal.tech/"
+      },
+      "description": [
+        "Membangun RAGReader, platform evaluasi untuk membandingkan dan mengidentifikasi pipeline Retrieval-Augmented Generation (RAG) paling efektif untuk koleksi dokumen khusus.",
+        "Mengembangkan backend menggunakan Django REST Framework, Celery, dan Docker untuk mendukung penyerapan dokumen asinkron yang dapat diskalakan, embedding, pengambilan, reranking, dan alur kerja evaluasi.",
+        "Mengimplementasikan beberapa pipeline pengambilan padat menggunakan model embedding OpenAI melalui OpenRouter dan API OpenAI, dengan LangChain untuk chunking dokumen dan pemisahan teks.",
+        "Mengintegrasikan model reranking termasuk Cross-Encoder MiniLM-L2, bersama penyedia LLM seperti Claude, Gemini, dan OpenAI, untuk mengukur kualitas pengambilan dan kinerja pembuatan jawaban.",
+        "Menggunakan Chroma sebagai database vektor untuk persistensi embedding, penyimpanan potongan, manajemen metadata, dan pelacakan eksperimen.",
+        "Merancang kerangka kerja evaluasi yang memanfaatkan metrik berbasis BERT dan metodologi LLM-as-a-judge untuk membandingkan konfigurasi pengambilan, reranking, dan generasi.",
+        "Membangun frontend menggunakan React, Vite, dan Tailwind CSS untuk menyediakan konfigurasi eksperimen interaktif dan visualisasi hasil."
+      ],
+      "mainPhoto": ragreaderMainPhoto,
+      "highlightPhoto": [ragreaderHighlightPhoto1, ragreaderHighlightPhoto2, ragreaderHighlightPhoto3],
+      "Programming language used or technology used": ["Django REST Framework", "ChromaDB", "Github Actions", "RAG", "OpenRouter", "Vite", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Claude", "Mistral"],
+      "affiliation": "Pengajuan Hackathon NextAI"
+    },
+    {
+      "name": "Multi Hop Corrective with Reranker RAG Pipeline",
+      "context": "Tugas Akhir Kampus",
+      "liveUrl": "https://crag.nevatal.tech/",
+      "links": {
+        "demo": "https://crag.nevatal.tech/"
+      },
+      "description": [
+        "Merancang dan mengimplementasikan pipeline Multi-Hop RAG yang menggabungkan Hybrid Retrieval (Dense + Sparse) dan model reranking untuk mendukung penalaran kompleks.",
+        "Mengembangkan framework Corrective RAG (CRAG) yang secara dinamis mengevaluasi konteks yang diambil, mengurangi noise pengambilan dan memitigasi halusinasi LLM.",
+        "Menguji performa sistem menggunakan metrik Hit Rate, MAP, MRR, RAGAS Faithfulness, Answer Relevancy, dan BERTScore.",
+        "Mengembangkan layanan backend pengambilan dan pembuatan menggunakan Python, Django, LangChain, ChromaDB, PostgreSQL, dan Redis.",
+        "Mengontainerisasi tumpukan aplikasi dengan Docker untuk eksperimentasi dan deployment yang dapat direproduksi."
+      ],
+      "mainPhoto": cragHighlightPhoto1,
+      "highlightPhoto": [cragHighlightPhoto1, cragHighlightPhoto2, cragHighlightPhoto3, cragHighlightPhoto4, cragHighlightPhoto5],
+      "Programming language used or technology used": ["Django REST Framework", "ChromaDB", "PyTorch", "Hugging Face Transformers", "LLM", "RAGAs", "RAG", "OpenRouter", "Vite", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Deepseek LLMs", "ChromaDB", "PostgreSQL", "Redis", "Celery", "Transformers"],
+      "affiliation": "Tugas Akhir Kampus"
+    },
+    {
+      "name": "Nevatal",
+      "context": "Pengajuan Google Chrome Built-in AI Challenge 2025",
+      "liveUrl": "https://chat.nevatal.tech/",
+      "links": {
+        "github": "https://github.com/thirza258/nevatal",
+        "devpost": "https://devpost.com/software/chattywhole",
+        "demo": "https://chat.nevatal.tech/"
+      },
+      "description": [
+        "Mengembangkan platform AI full-stack yang mengintegrasikan pembuatan prompt bertenaga Gemini, utilitas teks, RAG dokumen, dan kemampuan pembuatan gambar.",
+        "Membangun layanan backend yang dapat diskalakan dengan Django REST Framework dan PostgreSQL, bersama dengan frontend React, TypeScript, Vite, dan Tailwind CSS.",
+        "Mengimplementasikan pipeline RAG menggunakan embedding Gemini dan parameter model yang dapat dikonfigurasi untuk meningkatkan pemahaman kontekstual dan kualitas respons.",
+        "Mendockerisasi tumpukan aplikasi lengkap untuk mendukung penerapan yang dapat direproduksi dan penggunaan yang di-host sendiri dengan kredensial API Gemini pengguna."
+      ],
+      "mainPhoto": nevatalMainPhoto,
+      "highlightPhoto": [nevatalHighlightPhoto1, nevatalHighlightPhoto2],
+      "Programming language used or technology used": ["Django REST Framework", "LLM", "RAG", "OpenRouter", "Vite", "React", "TypeScript", "Tailwind CSS"],
+      "affiliation": "Pengajuan Google Chrome Built-in AI Challenge 2025"
+    },
+    {
+      "name": "Daily Task Wallpaper Generator with Genshin Impact Theme",
+      "context": "Proyek Pribadi",
+      "liveUrl": "https://genshinwallpaper.nevatal.tech/",
+      "links": {
+        "demo": "https://genshinwallpaper.nevatal.tech/"
+      },
+      "description": [
+        "Membuat generator wallpaper tugas harian dengan tema Genshin Impact, memberi pengguna wallpaper yang menarik secara visual dan dipersonalisasi untuk mengatur tugas sehari-hari.",
+        "Membangun backend menggunakan FastAPI dan Pillow untuk pemrosesan gambar, memungkinkan pengguna memasukkan tugas dan menghasilkan wallpaper khusus.",
+        "Mengontainerisasi aplikasi dengan Docker untuk penerapan dan skalabilitas yang mudah.",
+        "Merancang antarmuka frontend dengan React, Vite, dan Tailwind CSS untuk memberikan antarmuka yang intuitif."
+      ],
+      "mainPhoto": genshinImpactHighlightPhoto1,
+      "highlightPhoto": [genshinImpactHighlightPhoto1, genshinImpactHighlightPhoto2],
+      "Programming language used or technology used": ["Tailwind CSS", "Vite", "React", "MinIO", "Javascript", "FastAPI", "Pillow"],
+      "affiliation": "Proyek Pribadi"
+    },
+    {
+      "name": "URL Shortener",
+      "organization": "Proyek Pribadi",
+      "liveUrl": "https://url.nevatal.tech/",
+      "links": {
+        "github": "https://github.com/thirza258/freecodecamp_url_shortener",
+        "demo": "https://url.nevatal.tech/"
+      },
+      "description": [
+        "Mengembangkan platform pemendek URL siap produksi menggunakan Django, PostgreSQL, dan Redis, memungkinkan tautan pendek kustom dan otomatis dengan pembuatan slug tahan benturan.",
+        "Menerapkan pembatasan laju dengan Redis, validasi URL, dan perlindungan keamanan untuk mengurangi penyalahgunaan dan meningkatkan keandalan.",
+        "Membangun analitik dan pelacakan termasuk jumlah klik, log perujuk, pemantauan agen pengguna, dan statistik akses.",
+        "Mengontainerisasi aplikasi dengan Docker dan Docker Compose, mengintegrasikan PostgreSQL 16 dan Redis."
+      ],
+      "mainPhoto": urlShortenerHighlightPhoto1,
+      "highlightPhoto": [urlShortenerHighlightPhoto1],
+      "Programming language used or technology used": ["Django", "PostgreSQL", "Redis", "Docker", "Docker Compose"],
+      "affiliation": "Proyek Pribadi"
+    },
+    {
+      "name": "My Hearing",
+      "context": "Proyek Klien Tugas Akhir Fakultas Kesehatan Masyarakat Universitas Indonesia",
+      "liveUrl": "https://sdidtk.id/",
+      "links": {
+        "demo": "https://sdidtk.id/"
+      },
+      "description": [
+        "Mengembangkan aplikasi manajemen kesehatan pendengaran yang memberikan rekomendasi perawatan pendengaran dan sumber daya yang dipersonalisasi kepada pengguna."
+      ],
+      "mainPhoto": myHearingHighlightPhoto1,
+      "highlightPhoto": [myHearingHighlightPhoto1],
+      "Programming language used or technology used": ["Tailwind CSS", "Vite", "React", "MinIO", "Javascript", "FastAPI", "Pillow"],
+      "affiliation": "Proyek Klien Tugas Akhir FKM UI"
+    },
     {
       "name": "Sistem Informasi Terpadu (SIT)",
       "organization": "BEM UI",
@@ -1045,26 +1209,7 @@ export const thirzaAhmadTsaqifIndonesia = {
       "Programming language used or technology used": ["Go", "Gin", "PostgreSQL"],
       "affiliation": "BEM Fasilkom UI"
     },
-    {
-      "name": "RAGReader",
-      "context": "Pengajuan Hackathon NextAI",
-      "links": {
-        "githubBackend": "[Github Backend]",
-        "githubFrontend": "[Github Frontend]",
-        "devpost": "[Devpost]"
-      },
-      "description": [
-        "Mengembangkan situs web berbasis RAG yang mengambil konten dari URL atau file yang disediakan dan menghasilkan respons berdasarkan permintaan pengguna.",
-        "Membangun backend menggunakan Django REST Framework dan frontend dengan Vite, React, TypeScript, dan Tailwind CSS.",
-        "Mengimplementasikan LangChain sebagai pipeline RAG untuk pembuatan yang ditambah pengambilan yang efisien.",
-        "Mengintegrasikan beberapa model AI generatif, termasuk OpenAI, Claude, dan Mistral, untuk meningkatkan kualitas respons."
-      ],
-      "mainPhoto": ragreaderMainPhoto,
-      "highlightPhoto": ["ragreaderHighlightPhoto1"],
-      "Programming language used or technology used": ["Django REST Framework", "Vite", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Claude", "Mistral"],
-      "affiliation": "Pengajuan Hackathon NextAI"
-    },
-    {
+        {
       "name": "API LPJ Online",
       "organization": "BEM Fasilkom UI",
       "description": [
@@ -1085,7 +1230,10 @@ export const thirzaAhmadTsaqifIndonesia = {
         "githubBackend": "[Github Backend]",
         "githubFrontend": "[Github Frontend]",
         "devpost": "[Devpost]"
+      ,
+        "demo": "https://chatty.nevatal.tech/"
       },
+      "liveUrl": "https://chatty.nevatal.tech/",
       "description": [
         "Mengembangkan aplikasi desktop lintas platform yang memungkinkan obrolan multi-LLM yang lancar yaitu Gemini, Claude, Open AI GPT, dan Mistral.",
         "Backend melibatkan perancangan dan penerapan API yang dapat diskalakan menggunakan Django REST Framework, Python, dan PostgreSQL, yang di-host di DigitalOcean.",
@@ -1144,10 +1292,11 @@ export const thirzaAhmadTsaqifIndonesia = {
     {
       "name": "Gemini Japanese",
       "context": "Pengajuan MLH GWH",
+      "liveUrl": "https://translate.nevatal.tech/",
       "links": {
-        "githubBackend": "[Github Backend]",
-        "githubFrontend": "[Github Frontend]",
-        "devpost": "[Devpost]"
+        "github": "https://github.com/thirza258/gemini_japanese",
+        "devpost": "https://devpost.com/software/gemini-japanese-translator",
+        "demo": "https://translate.nevatal.tech/"
       },
       "description": [
         "Mengembangkan aplikasi terjemahan bahasa Jepang yang menyediakan pengguna dengan romaji dan terjemahan dengan mengintegrasikan Gemini AI API, meningkatkan akurasi terjemahan dengan format bahasa Jepang apa pun.",
@@ -1162,10 +1311,11 @@ export const thirzaAhmadTsaqifIndonesia = {
     {
       "name": "LiteralStoryboard",
       "context": "Pengajuan Hackathon AWS Game Builder",
+      "liveUrl": "https://story.nevatal.tech/",
       "links": {
-        "githubBackend": "[Github Backend]",
-        "githubFrontend": "[Github Frontend]",
-        "devpost": "[Devpost]"
+        "github": "https://github.com/thirza258/literal-storyboard",
+        "devpost": "https://devpost.com/software/literal-storyboard",
+        "demo": "https://story.nevatal.tech/"
       },
       "description": [
         "Membuat situs web game yang menggabungkan permainan papan dan cerita.",
@@ -1202,7 +1352,10 @@ export const thirzaAhmadTsaqifIndonesia = {
         "githubBackend": "[Github Backend]",
         "githubFrontend": "[Github Frontend]",
         "devpost": "[Devpost]"
+      ,
+        "demo": "https://recommendica.nevatal.tech/"
       },
+      "liveUrl": "https://recommendica.nevatal.tech/",
       "description": [
         "Mengembangkan API berbasis RAG untuk Rekomendasi Penelitian menggunakan dataset ArXiv, dengan FAISS untuk pengambilan dan OpenAI untuk pemrosesan AI dan Langchain sebagai pipeline.",
         "Memanfaatkan OpenAPI untuk dokumentasi dan Membangun API dengan Django REST Framework."
@@ -1404,6 +1557,17 @@ export const thirzaAhmadTsaqifJapanese = {
   ],
   "experiences": [
     {
+      "title": "バックエンドエンジニア",
+      "company": "Ternak Klip",
+      "startDate": "2026年6月",
+      "endDate": "現在",
+      "photo": backendDevLogo,
+      "responsibilities": [
+        "50万人以上のユーザーを抱えるアプリケーション向けにGo言語を用いたバックエンド開発を主導し、高パフォーマンス、スケーラビリティ、システムの高信頼性を実現。",
+        "社内従業員の業務効率化とオペレーション支援のための社内向けアプリケーションおよびツールの開発。"
+      ]
+    },
+    {
       "title": "ソフトウェアエンジニア、インターンシップ",
       "company": "OPPO Manufacturing Indonesia",
       "startDate": "2025年6月",
@@ -1520,6 +1684,120 @@ export const thirzaAhmadTsaqifJapanese = {
     }
   ],
   "projects": [
+    {
+      "name": "RAGReader",
+      "context": "NextAIハッカソン提出物",
+      "liveUrl": "https://rag.nevatal.tech/",
+      "links": {
+        "github": "https://github.com/thirza258/RagReader",
+        "devpost": "https://devpost.com/software/ragreader-kauodp?ref_content=user-portfolio&ref_feature=in_progress",
+        "demo": "https://rag.nevatal.tech/"
+      },
+      "description": [
+        "カスタムドキュメントコレクションに最も効果的な検索拡張生成（RAG）パイプラインを比較および特定するための評価プラットフォームであるRAGReaderを構築しました。",
+        "スケーラブルな非同期ドキュメント取り込み、埋め込み、検索、再ランク付け、および評価ワークフローをサポートするために、Django REST Framework、Celery、およびDockerを使用してバックエンドを開発しました。",
+        "OpenRouterおよびOpenAI APIを介したOpenAI埋め込みモデルを使用し、ドキュメントのチャンク化とテキスト分割にLangChainを使用して、複数の密検索パイプラインを実装しました。",
+        "検索品質と回答生成パフォーマンスをベンチマークするために、Cross-Encoder MiniLM-L2を含む再ランク付けモデルを、Claude、Gemini、OpenAIなどのLLMプロバイダーとともに統合しました。",
+        "埋め込みの永続化、チャンクストレージ、メタデータ管理、および実験追跡のためのベクトルデータベースとしてChromaを使用しました。",
+        "BERTベースのメトリクスとLLM-as-a-judge手法を活用した評価フレームワークを設計し、検索、再ランク付け、および生成構成を比較しました。",
+        "インタラクティブな実験構成と結果の視覚化を提供するために、React、Vite、およびTailwind CSSを使用してフロントエンドを構築しました。"
+      ],
+      "mainPhoto": ragreaderMainPhoto,
+      "highlightPhoto": [ragreaderHighlightPhoto1, ragreaderHighlightPhoto2, ragreaderHighlightPhoto3],
+      "Programming language used or technology used": ["Django REST Framework", "ChromaDB", "Github Actions", "RAG", "OpenRouter", "Vite", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Claude", "Mistral"],
+      "affiliation": "NextAIハッカソン提出物"
+    },
+    {
+      "name": "Multi Hop Corrective with Reranker RAG Pipeline",
+      "context": "大学卒業プロジェクト",
+      "liveUrl": "https://crag.nevatal.tech/",
+      "links": {
+        "demo": "https://crag.nevatal.tech/"
+      },
+      "description": [
+        "複雑な推論タスクをサポートするために、ハイブリッド検索（Dense + Sparse）とリランカーモデルを組み合わせたMulti-Hop RAGパイプラインを設計および実装しました。",
+        "取得したコンテキストを動的に評価し、検索ノイズを削減してLLMの幻覚を軽減するCorrective RAG（CRAG）フレームワークを開発しました。",
+        "Hit Rate、MAP、MRR、RAGAS Faithfulness、Answer Relevancy、およびBERTScoreメトリクスを使用してシステムパフォーマンスをベンチマークしました。",
+        "Python、Django、LangChain、ChromaDB、PostgreSQL、およびRedisを使用して、検索および生成バックエンドサービスを開発しました。",
+        "再現可能な実験と展開を可能にするために、Dockerでアプリケーションスタックをコンテナ化しました。"
+      ],
+      "mainPhoto": cragHighlightPhoto1,
+      "highlightPhoto": [cragHighlightPhoto1, cragHighlightPhoto2, cragHighlightPhoto3, cragHighlightPhoto4, cragHighlightPhoto5],
+      "Programming language used or technology used": ["Django REST Framework", "ChromaDB", "PyTorch", "Hugging Face Transformers", "LLM", "RAGAs", "RAG", "OpenRouter", "Vite", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Deepseek LLMs", "ChromaDB", "PostgreSQL", "Redis", "Celery", "Transformers"],
+      "affiliation": "大学卒業プロジェクト"
+    },
+    {
+      "name": "Nevatal",
+      "context": "Google Chrome Built-in AI Challenge 2025 提出物",
+      "liveUrl": "https://chat.nevatal.tech/",
+      "links": {
+        "github": "https://github.com/thirza258/nevatal",
+        "devpost": "https://devpost.com/software/chattywhole",
+        "demo": "https://chat.nevatal.tech/"
+      },
+      "description": [
+        "Geminiを活用したプロンプト生成、テキストユーティリティ、ドキュメントRAG、画像生成機能を統合したフルスタックAIプラットフォームを開発しました。",
+        "Django REST FrameworkとPostgreSQLを使用したスケーラブルなバックエンドサービスと、React、TypeScript、Vite、Tailwind CSSフロントエンドを構築しました。",
+        "文脈の理解と応答品質を向上させるために、Gemini埋め込みと構成可能なモデルパラメータを使用してRAGパイプラインを実装しました。",
+        "再現可能なデプロイとユーザー提供のGemini API資格情報を使用したセルフホストでの利用をサポートするために、完全なアプリケーションスタックをDocker化しました。"
+      ],
+      "mainPhoto": nevatalMainPhoto,
+      "highlightPhoto": [nevatalHighlightPhoto1, nevatalHighlightPhoto2],
+      "Programming language used or technology used": ["Django REST Framework", "LLM", "RAG", "OpenRouter", "Vite", "React", "TypeScript", "Tailwind CSS"],
+      "affiliation": "Google Chrome Built-in AI Challenge 2025 提出物"
+    },
+    {
+      "name": "Daily Task Wallpaper Generator with Genshin Impact Theme",
+      "context": "個人プロジェクト",
+      "liveUrl": "https://genshinwallpaper.nevatal.tech/",
+      "links": {
+        "demo": "https://genshinwallpaper.nevatal.tech/"
+      },
+      "description": [
+        "Genshin Impactをテーマにしたデイリータスク壁紙ジェネレーターを作成し、視覚的に魅力的でパーソナライズされた壁紙を提供してタスクを整理できるようにしました。",
+        "画像処理のためにFastAPIとPillowを使用してバックエンドを構築しました。",
+        "簡単なデプロイとスケーラビリティのためにDockerでコンテナ化しました。",
+        "React、Vite、Tailwind CSSでフロントエンドを設計しました。"
+      ],
+      "mainPhoto": genshinImpactHighlightPhoto1,
+      "highlightPhoto": [genshinImpactHighlightPhoto1, genshinImpactHighlightPhoto2],
+      "Programming language used or technology used": ["Tailwind CSS", "Vite", "React", "MinIO", "Javascript", "FastAPI", "Pillow"],
+      "affiliation": "個人プロジェクト"
+    },
+    {
+      "name": "URL Shortener",
+      "organization": "個人プロジェクト",
+      "liveUrl": "https://url.nevatal.tech/",
+      "links": {
+        "github": "https://github.com/thirza258/freecodecamp_url_shortener",
+        "demo": "https://url.nevatal.tech/"
+      },
+      "description": [
+        "Django、PostgreSQL、Redisを使用して本番対応のURL短縮ツールプラットフォームを開発しました。",
+        "Redisを使用したレート制限、URL検証、セキュリティ保護を実装しました。",
+        "クリック数、リファラーログ、ユーザーエージェント監視、アクセス統計などの分析機能を構築しました。",
+        "DockerおよびDocker Composeでコンテナ化しました。"
+      ],
+      "mainPhoto": urlShortenerHighlightPhoto1,
+      "highlightPhoto": [urlShortenerHighlightPhoto1],
+      "Programming language used or technology used": ["Django", "PostgreSQL", "Redis", "Docker", "Docker Compose"],
+      "affiliation": "個人プロジェクト"
+    },
+    {
+      "name": "My Hearing",
+      "context": "インドネシア大学公衆衛生学部 クライアント向け最終プロジェクト",
+      "liveUrl": "https://sdidtk.id/",
+      "links": {
+        "demo": "https://sdidtk.id/"
+      },
+      "description": [
+        "ユーザーにパーソナライズされた聴覚ケアの推奨事項とリソースを提供する聴覚健康管理アプリケーションを開発しました。"
+      ],
+      "mainPhoto": myHearingHighlightPhoto1,
+      "highlightPhoto": [myHearingHighlightPhoto1],
+      "Programming language used or technology used": ["Tailwind CSS", "Vite", "React", "MinIO", "Javascript", "FastAPI", "Pillow"],
+      "affiliation": "インドネシア大学公衆衛生学部 クライアント向け最終プロジェクト"
+    },
     {
       "name": "統合情報システム（SIT）",
       "organization": "BEM UI",
@@ -1653,26 +1931,7 @@ export const thirzaAhmadTsaqifJapanese = {
       "Programming language used or technology used": ["Go", "Gin", "PostgreSQL"],
       "affiliation": "BEM Fasilkom UI"
     },
-    {
-      "name": "RAGReader",
-      "context": "NextAIハッカソン提出物",
-      "links": {
-        "githubBackend": "[Githubバックエンド]",
-        "githubFrontend": "[Githubフロントエンド]",
-        "devpost": "[Devpost]"
-      },
-      "description": [
-        "提供されたURLまたはファイルからコンテンツを取得し、ユーザーのプロンプトに基づいて応答を生成するRAGベースのウェブサイトを開発しました。",
-        "バックエンドはDjango REST Framework、フロントエンドはVite、React、TypeScript、Tailwind CSSで構築しました。",
-        "効率的な検索拡張生成のためにLangChainをRAGパイプラインとして実装しました。",
-        "応答品質を向上させるために、OpenAI、Claude、Mistralを含む複数の生成AIモデルを統合しました。"
-      ],
-      "mainPhoto": ragreaderMainPhoto,
-      "highlightPhoto": ["ragreaderHighlightPhoto1"],
-      "Programming language used or technology used": ["Django REST Framework", "Vite", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Claude", "Mistral"],
-      "affiliation": "NextAIハッカソン提出物"
-    },
-    {
+        {
       "name": "API LPJオンライン",
       "organization": "BEM Fasilkom UI",
       "description": [
@@ -1693,7 +1952,10 @@ export const thirzaAhmadTsaqifJapanese = {
         "githubBackend": "[Githubバックエンド]",
         "githubFrontend": "[Githubフロントエンド]",
         "devpost": "[Devpost]"
+      ,
+        "demo": "https://chatty.nevatal.tech/"
       },
+      "liveUrl": "https://chatty.nevatal.tech/",
       "description": [
         "Gemini、Claude、OpenAI GPT、Mistralなどの複数のLLMとのシームレスなチャットを可能にするクロスプラットフォームデスクトップアプリケーションを開発しました。",
         "バックエンドでは、Django REST Framework、Python、PostgreSQLを使用してスケーラブルなAPIを設計・展開し、DigitalOceanでホストしました。",
@@ -1752,10 +2014,11 @@ export const thirzaAhmadTsaqifJapanese = {
     {
       "name": "Gemini Japanese",
       "context": "MLH GWH提出物",
+      "liveUrl": "https://translate.nevatal.tech/",
       "links": {
-        "githubBackend": "[Githubバックエンド]",
-        "githubFrontend": "[Githubフロントエンド]",
-        "devpost": "[Devpost]"
+        "github": "https://github.com/thirza258/gemini_japanese",
+        "devpost": "https://devpost.com/software/gemini-japanese-translator",
+        "demo": "https://translate.nevatal.tech/"
       },
       "description": [
         "Gemini AI APIを統合することで、ユーザーにローマ字と翻訳の両方を提供する日本語翻訳アプリケーションを開発し、あらゆる日本語形式での翻訳精度を向上させました。",
@@ -1770,10 +2033,11 @@ export const thirzaAhmadTsaqifJapanese = {
     {
       "name": "LiteralStoryboard",
       "context": "AWSゲームビルダーハッカソン提出物",
+      "liveUrl": "https://story.nevatal.tech/",
       "links": {
-        "githubBackend": "[Githubバックエンド]",
-        "githubFrontend": "[Githubフロントエンド]",
-        "devpost": "[Devpost]"
+        "github": "https://github.com/thirza258/literal-storyboard",
+        "devpost": "https://devpost.com/software/literal-storyboard",
+        "demo": "https://story.nevatal.tech/"
       },
       "description": [
         "ボードゲームとストーリーを組み合わせたゲームウェブサイトを作成しました。",
@@ -1810,7 +2074,10 @@ export const thirzaAhmadTsaqifJapanese = {
         "githubBackend": "[Githubバックエンド]",
         "githubFrontend": "[Githubフロントエンド]",
         "devpost": "[Devpost]"
+      ,
+        "demo": "https://recommendica.nevatal.tech/"
       },
+      "liveUrl": "https://recommendica.nevatal.tech/",
       "description": [
         "ArXivデータセットを使用して、検索にFAISS、AI処理にOpenAI、パイプラインとしてLangChainを使用した研究推薦RAGベースのAPIを開発しました。",
         "ドキュメント作成にOpenAPIを利用し、Django REST FrameworkでAPIを構築しました。"

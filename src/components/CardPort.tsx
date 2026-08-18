@@ -8,8 +8,6 @@ import {
 import devpost from "../assets/devpost.png";
 import { useLanguage } from "../context/LanguageContext";
 
-type PortfolioGridProps = {};
-
 // A small reusable component for the grid items
 const Card: React.FC<{ children: React.ReactNode; className?: string }> = ({
   children,
@@ -22,7 +20,7 @@ const Card: React.FC<{ children: React.ReactNode; className?: string }> = ({
   </div>
 );
 
-const CardPort: React.FC<PortfolioGridProps> = () => {
+const CardPort: React.FC = () => {
   const { language } = useLanguage();
   const myHeader =
     language === "ID"
