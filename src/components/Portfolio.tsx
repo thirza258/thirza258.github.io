@@ -3,7 +3,7 @@ import { thirzaAhmadTsaqifEnglish, thirzaAhmadTsaqifIndonesia, thirzaAhmadTsaqif
 import ProjectDetailPanel from './ProjectDetailPanel';
 import { Project } from '../interface/interface';
 import { useLanguage } from '../context/LanguageContext';
-import SafeImage from './SafeImage';
+import LiveThumbnail, { getProjectLiveUrl } from './LiveThumbnail';
 import { FaGlobe } from 'react-icons/fa';
 
 // ── Keyword pill ──────────────────────────────────────────────────────────────
@@ -50,13 +50,8 @@ type ProjectCardProps = {
 };
 
 const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
-  const hasLiveUrl = Boolean(
-    project.liveUrl ||
-    project.links?.demo ||
-    project.links?.live ||
-    project.links?.liveUrl ||
-    project.links?.website
-  );
+  const liveUrl = getProjectLiveUrl(project);
+  const hasLiveUrl = Boolean(liveUrl);
 
   return (
     <article
@@ -72,24 +67,12 @@ const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
       className="group relative flex flex-col rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
       aria-label={`View details for ${project.name}`}
     >
-      {/* Thumbnail */}
-      <div className="relative w-full aspect-video overflow-hidden bg-gray-100">
-        <SafeImage
-          src={project.mainPhoto}
-          alt={project.name}
-          imgClassName="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-          fallbackClassName="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-slate-100 via-white to-slate-200 text-slate-500 text-sm text-center px-4"
-          fallbackLabel="Preview unavailable"
-        />
-
-        {/* Live View Badge */}
-        {hasLiveUrl && (
-          <div className="absolute top-3 right-3 z-10 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-slate-900/85 text-white backdrop-blur-md border border-slate-700/80 shadow-md">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span>Live View</span>
-          </div>
-        )}
-      </div>
+      {/* Live Thumbnail (interactive iframe if accessible, static photo fallback) */}
+      <LiveThumbnail
+        src={project.mainPhoto}
+        alt={project.name}
+        liveUrl={liveUrl}
+      />
 
       {/* Content */}
       <div className="flex flex-col flex-grow p-5 gap-3">
@@ -232,9 +215,7 @@ const Portfolio = () => {
 
   // Live apps count
   const liveAppsCount = useMemo(() => {
-    return projects.filter(
-      (p) => Boolean(p.liveUrl || p.links?.demo || p.links?.live || p.links?.website)
-    ).length;
+    return projects.filter((p) => Boolean(getProjectLiveUrl(p))).length;
   }, [projects]);
 
   // Collect unique tech keywords across all projects
@@ -250,9 +231,7 @@ const Portfolio = () => {
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase();
     return projects.filter((p) => {
-      const hasLive = Boolean(
-        p.liveUrl || p.links?.demo || p.links?.live || p.links?.liveUrl || p.links?.website
-      );
+      const hasLive = Boolean(getProjectLiveUrl(p));
 
       if (onlyLiveApps && !hasLive) return false;
 

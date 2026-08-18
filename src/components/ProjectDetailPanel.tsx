@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ProjectDetailPanelProps } from '../interface/interface';
 import SafeImage from './SafeImage';
 import LivePreview from './LivePreview';
+import { getProjectLiveUrl } from './LiveThumbnail';
 
 const backdropVariants = {
   visible: { opacity: 0.6, transition: { duration: 0.3 } },
@@ -56,16 +57,6 @@ const renderLink = (key: string, url: string): JSX.Element => {
       {icon} {label}
     </a>
   );
-};
-
-const getProjectLiveUrl = (project: ProjectDetailPanelProps['project']): string | undefined => {
-  if (!project) return undefined;
-  if (project.liveUrl && isValidHref(project.liveUrl)) return project.liveUrl;
-  if (project.links?.demo && isValidHref(project.links.demo)) return project.links.demo;
-  if (project.links?.live && isValidHref(project.links.live)) return project.links.live;
-  if (project.links?.liveUrl && isValidHref(project.links.liveUrl)) return project.links.liveUrl;
-  if (project.links?.website && isValidHref(project.links.website)) return project.links.website;
-  return undefined;
 };
 
 const ProjectDetailPanel = ({ project, onClose }: ProjectDetailPanelProps) => {
