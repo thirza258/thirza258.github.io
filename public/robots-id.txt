@@ -82,5 +82,4 @@ Allow: /
 
 # Sitemap and Host definition
 Sitemap: https://www.nevatal.id/sitemap.xml
-Sitemap: https://www.nevatal.tech/sitemap.xml
 Host: https://www.nevatal.id

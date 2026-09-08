@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://www.nevatal.id/</loc>
+    <loc>https://www.nevatal.tech/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://www.nevatal.id/og-image.png</image:loc>
+      <image:loc>https://www.nevatal.tech/og-image.png</image:loc>
       <image:title>Thirza Ahmad Tsaqif Portfolio</image:title>
       <image:caption>AI Engineer and Full-Stack Developer Portfolio showcasing RAG, LLMs, and Software Engineering projects</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://www.nevatal.id/profile.png</image:loc>
+      <image:loc>https://www.nevatal.tech/profile.png</image:loc>
       <image:title>Thirza Ahmad Tsaqif Profile</image:title>
       <image:caption>Thirza Ahmad Tsaqif - AI and Full-Stack Software Engineer</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://www.nevatal.id/CV_ThirzaAhmadTsaqif.pdf</loc>
+    <loc>https://www.nevatal.tech/CV_ThirzaAhmadTsaqif.pdf</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

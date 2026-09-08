@@ -6,7 +6,7 @@
 - **Role**: AI Engineer & Full-Stack Developer
 - **Location**: Jakarta, Indonesia
 - **Email**: thirzahmad@gmail.com
-- **Website**: https://thirza258.github.io/
+- **Website**: https://www.nevatal.id/
 - **GitHub**: https://github.com/thirza258
 - **LinkedIn**: https://www.linkedin.com/in/thirza-ahmad
 - **Dev.to**: https://dev.to/thirza258
@@ -18,19 +18,19 @@
 ## Featured AI & Software Projects
 
 - **[RAGReader](https://github.com/thirza258/RagReader)**: Evaluation & benchmarking platform for custom Retrieval-Augmented Generation (RAG) pipelines. Uses Django REST Framework, Celery, ChromaDB, LangChain, OpenAI, Claude, Mistral, Cross-Encoder MiniLM-L2 reranker, and React. (Demo: https://rag.nevatal.tech/ | Devpost: https://devpost.com/software/ragreader-kauodp)
-- **[Multi-Hop Corrective with Reranker RAG Pipeline (CRAG)](https://thirza258.github.io/#portfolio)**: Multi-hop reasoning framework combining Hybrid Retrieval (Dense + Sparse), Corrective RAG (CRAG) evaluation to eliminate hallucinations, ChromaDB, PyTorch, Hugging Face Transformers, RAGAs, PostgreSQL, Redis, and Celery.
+- **[Multi-Hop Corrective with Reranker RAG Pipeline (CRAG)](https://www.nevatal.id/#portfolio)**: Multi-hop reasoning framework combining Hybrid Retrieval (Dense + Sparse), Corrective RAG (CRAG) evaluation to eliminate hallucinations, ChromaDB, PyTorch, Hugging Face Transformers, RAGAs, PostgreSQL, Redis, and Celery.
 - **[Nevatal](https://github.com/thirza258/nevatal)**: Full-stack AI workspace integrating Google Gemini prompt orchestration, document RAG, text utilities, and image generation. Built for Google Chrome Built-in AI Challenge 2025. (Demo: https://chat.nevatal.tech/ | Devpost: https://devpost.com/software/chattywhole)
-- **[Ollie Chatbot](https://thirza258.github.io/#portfolio)**: HR & employee assistant for OPPO Manufacturing Indonesia. Features FaceNet facial verification, custom Indonesian xTTS text-to-speech, local OpenAI Whisper STT, and Faiss/PostgreSQL RAG.
-- **[5S AI Camera](https://thirza258.github.io/#portfolio)**: Computer vision compliance system for OPPO Manufacturing Indonesia using ConvNeXt, PyTorch, Ollama Gemma Vision, LLaVA VLM, and OwlViT for real-time factory 5S inspection.
-- **[5Why AI Application](https://thirza258.github.io/#portfolio)**: Root Cause Analysis engine automating the "5 Whys" methodology for OPPO Manufacturing Indonesia using Dense & Sparse RAG, Faiss, MiniLM, Deepseek LLMs, and FastAPI.
-- **[Pasal Voice Assistant](https://thirza258.github.io/#portfolio)**: Completely self-hosted, privacy-first voice assistant with Indonesian TTS/STT, Gemma 3, Ollama GemmaEmbedding, and ChromaDB.
-- **[KJRI New York Chatbot (Maleo AI)](https://thirza258.github.io/#portfolio)**: Consulate-services AI chatbot for Indonesian Consulate General in New York using GPT, RAG, Vectorshift, and FastAPI.
-- **[PFN Chatbot](https://thirza258.github.io/#portfolio)**: Film metadata and documentation retrieval assistant for Produksi Film Negara (PFN) using Vectorshift, GPT, and RAG.
+- **[Ollie Chatbot](https://www.nevatal.id/#portfolio)**: HR & employee assistant for OPPO Manufacturing Indonesia. Features FaceNet facial verification, custom Indonesian xTTS text-to-speech, local OpenAI Whisper STT, and Faiss/PostgreSQL RAG.
+- **[5S AI Camera](https://www.nevatal.id/#portfolio)**: Computer vision compliance system for OPPO Manufacturing Indonesia using ConvNeXt, PyTorch, Ollama Gemma Vision, LLaVA VLM, and OwlViT for real-time factory 5S inspection.
+- **[5Why AI Application](https://www.nevatal.id/#portfolio)**: Root Cause Analysis engine automating the "5 Whys" methodology for OPPO Manufacturing Indonesia using Dense & Sparse RAG, Faiss, MiniLM, Deepseek LLMs, and FastAPI.
+- **[Pasal Voice Assistant](https://www.nevatal.id/#portfolio)**: Completely self-hosted, privacy-first voice assistant with Indonesian TTS/STT, Gemma 3, Ollama GemmaEmbedding, and ChromaDB.
+- **[KJRI New York Chatbot (Maleo AI)](https://www.nevatal.id/#portfolio)**: Consulate-services AI chatbot for Indonesian Consulate General in New York using GPT, RAG, Vectorshift, and FastAPI.
+- **[PFN Chatbot](https://www.nevatal.id/#portfolio)**: Film metadata and documentation retrieval assistant for Produksi Film Negara (PFN) using Vectorshift, GPT, and RAG.
 - **[URL Shortener](https://github.com/thirza258/freecodecamp_url_shortener)**: Production-grade short link platform with Redis rate-limiting, click analytics, and PostgreSQL. (Demo: https://url.nevatal.tech/)
-- **[ChattyDesk](https://thirza258.github.io/#portfolio)**: Cross-platform desktop app for multi-LLM workflows (Gemini, Claude, GPT, Mistral) built with Electron, React, TypeScript, and Django REST Framework.
-- **[Integrated Information Systems (SIT)](https://thirza258.github.io/#portfolio)**: Enterprise management portal and LINE Bot for BEM Universitas Indonesia with Django, Firebase, and Railway.
-- **[SiInven](https://thirza258.github.io/#portfolio)**: Enterprise inventory management platform built with Java Spring Boot, PostgreSQL, Docker, React, and Tailwind CSS.
-- **[JNE Self Kiosk Backend](https://thirza258.github.io/#portfolio)**: Parcel self-service delivery backend service built with Go (Labstack Echo) and GitHub Actions CI/CD.
+- **[ChattyDesk](https://www.nevatal.id/#portfolio)**: Cross-platform desktop app for multi-LLM workflows (Gemini, Claude, GPT, Mistral) built with Electron, React, TypeScript, and Django REST Framework.
+- **[Integrated Information Systems (SIT)](https://www.nevatal.id/#portfolio)**: Enterprise management portal and LINE Bot for BEM Universitas Indonesia with Django, Firebase, and Railway.
+- **[SiInven](https://www.nevatal.id/#portfolio)**: Enterprise inventory management platform built with Java Spring Boot, PostgreSQL, Docker, React, and Tailwind CSS.
+- **[JNE Self Kiosk Backend](https://www.nevatal.id/#portfolio)**: Parcel self-service delivery backend service built with Go (Labstack Echo) and GitHub Actions CI/CD.
 
 ---
 
@@ -54,4 +54,4 @@
 
 ## Complete Project & Resume Documentation
 
-For full architectural deep dives and detailed project specs, see [llms-full.txt](https://thirza258.github.io/llms-full.txt).
+For full architectural deep dives and detailed project specs, see [llms-full.txt](https://www.nevatal.id/llms-full.txt).
