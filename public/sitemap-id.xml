@@ -3,24 +3,413 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.nevatal.id/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://www.nevatal.id/og-image.png</image:loc>
-      <image:title>Thirza Ahmad Tsaqif Portfolio</image:title>
+      <image:title>Thirza Ahmad Tsaqif Portfolio Showcase</image:title>
       <image:caption>AI Engineer and Full-Stack Developer Portfolio showcasing RAG, LLMs, and Software Engineering projects</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.nevatal.id/profile.png</image:loc>
-      <image:title>Thirza Ahmad Tsaqif Profile</image:title>
-      <image:caption>Thirza Ahmad Tsaqif - AI and Full-Stack Software Engineer</image:caption>
+      <image:title>Thirza Ahmad Tsaqif Profile Photo</image:title>
+      <image:caption>Thirza Ahmad Tsaqif - AI &amp; Full-Stack Software Engineer</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://www.nevatal.id/CV_ThirzaAhmadTsaqif.pdf</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.nevatal.id/portfolio</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/ragreader.png</image:loc>
+      <image:title>RAGReader Project Showcase</image:title>
+      <image:caption>Evaluation platform for benchmarking Retrieval-Augmented Generation pipelines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/crag.png</image:loc>
+      <image:title>Multi-Hop CRAG Pipeline Architecture</image:title>
+      <image:caption>Corrective RAG pipeline combining Hybrid Retrieval and dynamic context evaluation</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/nevatal.jpg</image:loc>
+      <image:title>Nevatal AI Workspace</image:title>
+      <image:caption>Full-stack AI platform built for Google Chrome Built-in AI Challenge 2025</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/ollie.png</image:loc>
+      <image:title>Ollie Chatbot Assistant</image:title>
+      <image:caption>HR and employee assistant with FaceNet facial verification and custom Indonesian voice</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/5s-ai-camera.png</image:loc>
+      <image:title>5S AI Camera Computer Vision</image:title>
+      <image:caption>Industrial computer vision 5S compliance monitoring using ConvNeXt and vision-language models</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/5why-ai.png</image:loc>
+      <image:title>5Why AI Root Cause Analysis</image:title>
+      <image:caption>Automated 5-Whys diagnostic engine powered by dense-sparse RAG and DeepSeek</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/pasal.png</image:loc>
+      <image:title>Pasal Voice Assistant</image:title>
+      <image:caption>Self-hosted privacy-focused Indonesian voice assistant with local LLM and speech synthesis</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/url-shortener.png</image:loc>
+      <image:title>Production URL Shortener</image:title>
+      <image:caption>High-performance short link platform with Redis rate-limiting and analytics</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/chattydesk.jpg</image:loc>
+      <image:title>ChattyDesk Desktop Application</image:title>
+      <image:caption>Cross-platform desktop application for multi-LLM workflows</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/siinven.png</image:loc>
+      <image:title>SiInven Enterprise Inventory System</image:title>
+      <image:caption>Enterprise inventory management system built with Spring Boot, PostgreSQL, and React</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/sit.png</image:loc>
+      <image:title>Integrated Information Systems BEM UI</image:title>
+      <image:caption>Enterprise portal and LINE Bot managing operations for 200+ members</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/about</loc>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.nevatal.id/profile.png</image:loc>
+      <image:title>Thirza Ahmad Tsaqif Profile</image:title>
+      <image:caption>Information Systems student at Universitas Indonesia specializing in AI and Full-Stack development</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/experiences</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/writings</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/skills</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/education</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/contact</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/CV_ThirzaAhmadTsaqif.pdf</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/llms.txt</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/llms-full.txt</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/ragreader</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/ragreader.png</image:loc>
+      <image:title>RAGReader - Benchmarking &amp; Evaluation Platform for RAG</image:title>
+      <image:caption>Evaluation platform for benchmarking and identifying the most effective Retrieval-Augmented Generation pipeline configurations</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/multi-hop-corrective-with-reranker-rag-pipeline</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/crag.png</image:loc>
+      <image:title>Multi Hop Corrective with Reranker RAG Pipeline (CRAG)</image:title>
+      <image:caption>Multi-Hop RAG pipeline combining Hybrid Retrieval with Corrective RAG dynamic context evaluation to eliminate hallucinations</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/nevatal</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/nevatal.jpg</image:loc>
+      <image:title>Nevatal - Full-Stack AI Functions Platform</image:title>
+      <image:caption>Full-stack AI platform developed for Google Chrome Built-in AI Challenge 2025 integrating Gemini and document RAG</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/integrated-information-systems-sit</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/sit.png</image:loc>
+      <image:title>Integrated Information Systems (SIT) - BEM Universitas Indonesia</image:title>
+      <image:caption>Enterprise student affairs and finance system with LINE Messaging Bot using Django, Firebase, and Railway</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/ollie-chatbot</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/ollie.png</image:loc>
+      <image:title>Ollie Chatbot - HR Assistant with Biometrics &amp; Voice</image:title>
+      <image:caption>HR and employee assistant chatbot for OPPO Manufacturing Indonesia with FaceNet facial verification, custom Indonesian xTTS, and Faiss RAG</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/5s-ai-camera</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/5s-ai-camera.png</image:loc>
+      <image:title>5S AI Camera - Factory Compliance Computer Vision</image:title>
+      <image:caption>Real-time industrial computer vision 5S compliance monitoring system using ConvNeXt, PyTorch, Ollama Gemma Vision, and OwlViT</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/5why-ai-application</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/5why-ai.png</image:loc>
+      <image:title>5Why AI Application - Automated Root Cause Analysis</image:title>
+      <image:caption>AI-powered Root Cause Analysis tool leveraging Dense and Sparse RAG with Faiss, MiniLM, and DeepSeek LLMs</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/kjri-new-york-chatbot-maleo-ai</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/pfn-chatbot</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/jne-self-kiosk-backend</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/pasal-voice-assistant</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/pasal.png</image:loc>
+      <image:title>Pasal Voice Assistant - Local Indonesian Voice AI</image:title>
+      <image:caption>Fully self-hosted Indonesian voice assistant with Indonesian TTS/STT, Gemma 3, Ollama GemmaEmbedding, and ChromaDB</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/daily-task-wallpaper-generator-with-genshin-impact-theme</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/genshin.png</image:loc>
+      <image:title>Daily Task Wallpaper Generator - Genshin Impact Theme</image:title>
+      <image:caption>Automated daily wallpaper generator syncing Google Calendar tasks with dynamic Genshin Impact desktop backgrounds</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/url-shortener</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/url-shortener.png</image:loc>
+      <image:title>Production URL Shortener Platform</image:title>
+      <image:caption>Production-ready short link service with Redis rate-limiting, click analytics, and PostgreSQL built with Django</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/my-hearing</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/myhearing.png</image:loc>
+      <image:title>My Hearing - Hearing Health Management App</image:title>
+      <image:caption>Mobile hearing health application with real-time decibel monitoring, noise hazard alerts, and audiometry tracking</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/siinven</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/siinven.png</image:loc>
+      <image:title>SiInven - Enterprise Inventory Management System</image:title>
+      <image:caption>Enterprise inventory management system developed with Java Spring Boot, PostgreSQL, Docker, React, and Tailwind CSS</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/etl-university-project</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/open-recruitment-website-api</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/oprec.png</image:loc>
+      <image:title>Open Recruitment Website API</image:title>
+      <image:caption>Recruitment portal backend handling applicant screening, document submissions, and evaluation rubrics</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/api-lpj-online</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/lpj.png</image:loc>
+      <image:title>API LPJ Online - Accountability Reporting System</image:title>
+      <image:caption>Accountability and financial reporting portal for student organizations with automated approval workflows</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/chattydesk</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/chattydesk.jpg</image:loc>
+      <image:title>ChattyDesk - Multi-LLM Cross-Platform Desktop Client</image:title>
+      <image:caption>Cross-platform desktop application for multi-LLM workflows enabling unified chat with Gemini, Claude, and GPT</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/best-staff-voting-website-api</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/best-staff.png</image:loc>
+      <image:title>Best Staff Voting Website API</image:title>
+      <image:caption>Organizational peer voting platform with secure token-based balloting and automated result tallying</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/apap-medika</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/knowlxcircle-application</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/knowlxcircle.png</image:loc>
+      <image:title>Knowlxcircle - Crowdsourced Knowledge Sharing Platform</image:title>
+      <image:caption>Crowdsourced knowledge base and interactive Q&amp;A community with category tagging and search</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/gemini-japanese</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/literalstoryboard</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/recipe-recommender</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/recommendica</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/research-recommendation.png</image:loc>
+      <image:title>Recommendica - Research Paper Recommendation RAG</image:title>
+      <image:caption>Scholarly paper discovery system using dense vector embeddings and semantic search</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/ecofriendly-recipe-recommender</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.nevatal.id/images/projects/ecofriendly.png</image:loc>
+      <image:title>Ecofriendly Recipe Recommender - Low-Carbon Cooking</image:title>
+      <image:caption>Eco-friendly recipe recommender utilizing RAG with Mistral 7B and BM25 hybrid search</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/wikipedia-based-hybrid-rag</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/dosage-recommender</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/projects/endorbit</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
 </urlset>

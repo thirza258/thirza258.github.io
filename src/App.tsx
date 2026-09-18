@@ -118,15 +118,83 @@ function App() {
       }, 150);
     };
 
+    const resolveTargetSection = () => {
+      const path = window.location.pathname.toLowerCase();
+      const hash = window.location.hash.toLowerCase().replace('#', '');
+
+      if (hash && (SECTION_IDS as readonly string[]).includes(hash)) {
+        return hash;
+      }
+      if (path.startsWith('/projects') || path.startsWith('/portfolio')) {
+        return 'portfolio';
+      }
+      if (path.startsWith('/about') || path.startsWith('/cardport')) {
+        return 'cardport';
+      }
+      if (path.startsWith('/experiences') || path.startsWith('/experience')) {
+        return 'experiences';
+      }
+      if (path.startsWith('/education')) {
+        return 'education';
+      }
+      if (path.startsWith('/writings') || path.startsWith('/articles')) {
+        return 'writings';
+      }
+      if (path.startsWith('/skills')) {
+        return 'skills';
+      }
+      if (path.startsWith('/contact')) {
+        return 'contact';
+      }
+      return null;
+    };
+
+    const targetSection = resolveTargetSection();
+    let hasExplicitTarget = false;
+
+    if (targetSection) {
+      const targetElement = document.getElementById(targetSection);
+      if (targetElement) {
+        hasExplicitTarget = true;
+        targetElement.scrollIntoView({
+          behavior: shouldAutoScroll ? 'smooth' : 'auto',
+          block: 'start',
+        });
+        const targetIndex = (SECTION_IDS as readonly string[]).indexOf(targetSection);
+        if (targetIndex !== -1) {
+          currentIndexRef.current = targetIndex;
+        }
+      }
+    }
+
+    const handleNavigation = () => {
+      const sectionId = resolveTargetSection();
+      if (sectionId) {
+        const el = document.getElementById(sectionId);
+        if (el) {
+          el.scrollIntoView({
+            behavior: shouldAutoScroll ? 'smooth' : 'auto',
+            block: 'start',
+          });
+          const idx = (SECTION_IDS as readonly string[]).indexOf(sectionId);
+          if (idx !== -1) {
+            currentIndexRef.current = idx;
+          }
+        }
+      }
+    };
+
     const handleResize = () => {
       updateCurrentSection();
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     window.addEventListener("resize", handleResize, { passive: true });
+    window.addEventListener("popstate", handleNavigation);
+    window.addEventListener("hashchange", handleNavigation);
 
     const initialTimeout = setTimeout(() => {
-      if (!isUserScrollingRef.current) {
+      if (!isUserScrollingRef.current && !hasExplicitTarget) {
         startAutoScroll();
       }
     }, 2000);
@@ -136,6 +204,8 @@ function App() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleResize);
+      window.removeEventListener("popstate", handleNavigation);
+      window.removeEventListener("hashchange", handleNavigation);
       clearAllTimers();
       if (scrollTimeout) clearTimeout(scrollTimeout);
       clearTimeout(initialTimeout);

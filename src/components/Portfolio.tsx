@@ -3,7 +3,8 @@ import { thirzaAhmadTsaqifEnglish, thirzaAhmadTsaqifIndonesia, thirzaAhmadTsaqif
 import ProjectDetailPanel from './ProjectDetailPanel';
 import { Project } from '../interface/interface';
 import { useLanguage } from '../context/LanguageContext';
-import LiveThumbnail, { getProjectLiveUrl } from './LiveThumbnail';
+import LiveThumbnail from './LiveThumbnail';
+import { getProjectSlug, getProjectLiveUrl } from '../utils/projectUtils';
 import { FaGlobe } from 'react-icons/fa';
 
 // ── Keyword pill ──────────────────────────────────────────────────────────────
@@ -204,6 +205,48 @@ const Portfolio = () => {
         ? thirzaAhmadTsaqifEnglish.projects
         : thirzaAhmadTsaqifJapanese.projects;
 
+  // Sync selected project from URL pathname (/projects/:slug or /portfolio/:slug)
+  useEffect(() => {
+    const checkUrlForProject = () => {
+      const pathname = window.location.pathname.toLowerCase();
+      const match = pathname.match(/^\/(?:projects|portfolio)\/([a-zA-Z0-9_-]+)/);
+      if (match) {
+        const targetSlug = match[1];
+        const found = projects.find((p) => {
+          const slug = getProjectSlug(p.name);
+          if (slug === targetSlug) return true;
+          if (targetSlug === 'crag' && p.name.toLowerCase().includes('corrective')) return true;
+          if (targetSlug === 'sit' && p.name.toLowerCase().includes('terpadu')) return true;
+          if (targetSlug === '5s' && p.name.toLowerCase().includes('5s')) return true;
+          if (targetSlug === '5why' && p.name.toLowerCase().includes('5why')) return true;
+          if (targetSlug === 'pasal' && p.name.toLowerCase().includes('pasal')) return true;
+          if (targetSlug === 'genshin' && p.name.toLowerCase().includes('genshin')) return true;
+          return false;
+        });
+        if (found) {
+          setSelectedProject(found);
+        }
+      }
+    };
+
+    checkUrlForProject();
+    window.addEventListener('popstate', checkUrlForProject);
+    return () => window.removeEventListener('popstate', checkUrlForProject);
+  }, [projects]);
+
+  const handleOpenProject = (project: Project) => {
+    setSelectedProject(project);
+    const slug = getProjectSlug(project.name);
+    window.history.pushState({ projectSlug: slug }, '', `/projects/${slug}`);
+  };
+
+  const handleCloseProject = () => {
+    setSelectedProject(null);
+    if (window.location.pathname.startsWith('/projects/') || window.location.pathname.startsWith('/portfolio/')) {
+      window.history.pushState(null, '', '/portfolio');
+    }
+  };
+
   // Reset on language change
   useEffect(() => {
     setSearch('');
@@ -365,7 +408,7 @@ const Portfolio = () => {
             <ProjectCard
               key={project.name}
               project={project}
-              onClick={() => setSelectedProject(project)}
+              onClick={() => handleOpenProject(project)}
             />
           ))}
         </div>
@@ -393,7 +436,7 @@ const Portfolio = () => {
       {selectedProject && (
         <ProjectDetailPanel
           project={selectedProject}
-          onClose={() => setSelectedProject(null)}
+          onClose={handleCloseProject}
         />
       )}
     </div>

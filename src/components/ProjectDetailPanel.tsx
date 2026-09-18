@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { ProjectDetailPanelProps } from '../interface/interface';
 import SafeImage from './SafeImage';
 import LivePreview from './LivePreview';
-import { getProjectLiveUrl } from './LiveThumbnail';
+import { getProjectLiveUrl } from '../utils/projectUtils';
 
 const backdropVariants = {
   visible: { opacity: 0.6, transition: { duration: 0.3 } },

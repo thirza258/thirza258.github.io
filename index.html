@@ -34,6 +34,15 @@
           }
         } catch (e) {}
       })();
+      // SPA route restoration from 404 redirect
+      (function(l) {
+        try {
+          if (l.search && l.search.indexOf('?p=/') === 0) {
+            var path = l.search.slice(4).split('&')[0].replace(/~and~/g, '&');
+            window.history.replaceState(null, null, path + (l.hash || ''));
+          }
+        } catch (e) {}
+      })(window.location);
     </script>
 
     <!-- AI & Machine-Readable Discovery Tags -->
