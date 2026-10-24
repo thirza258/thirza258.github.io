@@ -19,7 +19,7 @@
 
 ### 1. RAGReader (NextAI Hackathon Submission)
 - **Repository**: https://github.com/thirza258/RagReader
-- **Live Demo**: https://rag.nevatal.tech/
+- **Live Demo**: https://rag.nevatal.id/
 - **Devpost**: https://devpost.com/software/ragreader-kauodp
 - **Summary**: An interactive evaluation and benchmarking platform created to compare, analyze, and identify the most effective Retrieval-Augmented Generation (RAG) configuration for custom document collections.
 - **Key Capabilities**:
@@ -43,7 +43,7 @@
 
 ### 3. Nevatal
 - **Repository**: https://github.com/thirza258/nevatal
-- **Live Demo**: https://chat.nevatal.tech/
+- **Live Demo**: https://chat.nevatal.id/
 - **Devpost**: https://devpost.com/software/chattywhole
 - **Context**: Google Chrome Built-in AI Challenge 2025 Submission
 - **Summary**: Full-stack AI workspace integrating prompt engineering, text manipulation utilities, document RAG, and multimodal image synthesis.
@@ -102,7 +102,7 @@
 
 ### 9. URL Shortener Platform
 - **Repository**: https://github.com/thirza258/freecodecamp_url_shortener
-- **Live Demo**: https://url.nevatal.tech/
+- **Live Demo**: https://url.nevatal.id/
 - **Summary**: High-performance URL shortener with rate limiting, slug generation, analytics tracking (clicks, referrers, user agents), and Docker Compose deployment.
 - **Tech Stack**: Django, PostgreSQL 16, Redis, Docker.
 

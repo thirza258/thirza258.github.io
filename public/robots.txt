@@ -1,5 +1,6 @@
 # Allow all search engines and AI / LLM crawlers
 User-agent: *
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
 Allow: /
 
 # Explicit AI, LLM, and Search Crawler Permissions
@@ -82,5 +83,4 @@ Allow: /
 
 # Sitemap and Host definition
 Sitemap: https://www.nevatal.id/sitemap.xml
-Sitemap: https://www.nevatal.tech/sitemap.xml
 Host: https://www.nevatal.id

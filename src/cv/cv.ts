@@ -224,11 +224,11 @@ export const thirzaAhmadTsaqifEnglish = {
     {
       "name": "RAGReader",
       "context": "NextAI Hackathon Submission",
-      "liveUrl": "https://rag.nevatal.tech/",
+      "liveUrl": "https://rag.nevatal.id/",
       "links": {
         "github": "https://github.com/thirza258/RagReader",
         "devpost": "https://devpost.com/software/ragreader-kauodp?ref_content=user-portfolio&ref_feature=in_progress",
-        "demo":  "https://rag.nevatal.tech/"
+        "demo":  "https://rag.nevatal.id/"
       },
       "description": [
         "Built RAGReader, an evaluation platform for comparing and identifying the most effective Retrieval-Augmented Generation (RAG) pipeline for custom document collections.",
@@ -247,9 +247,9 @@ export const thirzaAhmadTsaqifEnglish = {
     {
       "name": "Multi Hop Corrective with Reranker RAG Pipeline",
       "context": "Campus Final Project",
-      "liveUrl": "https://crag.nevatal.tech/",
+      "liveUrl": "https://crag.nevatal.id/",
       "links": {
-        "demo": "https://crag.nevatal.tech/"
+        "demo": "https://crag.nevatal.id/"
       },
       
       "description": [
@@ -267,11 +267,11 @@ export const thirzaAhmadTsaqifEnglish = {
      {
       "name": "Nevatal",
       "context": "Google Chrome Built-in AI Challenge 2025 Submission",
-      "liveUrl": "https://chat.nevatal.tech/",
+      "liveUrl": "https://chat.nevatal.id/",
       "links": {
         "github": "https://github.com/thirza258/nevatal",
         "devpost": "https://devpost.com/software/chattywhole",
-        "demo":  "https://chat.nevatal.tech/"
+        "demo":  "https://chat.nevatal.id/"
       },
       "description": [
         "Developed a full-stack AI platform integrating Gemini-powered prompt generation, text utilities, document RAG, and image generation capabilities.",
@@ -394,9 +394,9 @@ export const thirzaAhmadTsaqifEnglish = {
     {
       "name": "Daily Task Wallpaper Generator with Genshin Impact Theme",
       "context": "Personal Project",
-      "liveUrl": "https://genshinwallpaper.nevatal.tech/",
+      "liveUrl": "https://genshinwallpaper.nevatal.id/",
       "links": {
-        "demo": "https://genshinwallpaper.nevatal.tech/"
+        "demo": "https://genshinwallpaper.nevatal.id/"
       },
       "description": [
         "Created a daily task wallpaper generator with a Genshin Impact theme, providing users with visually appealing and personalized wallpapers to organize their daily tasks.",
@@ -412,10 +412,10 @@ export const thirzaAhmadTsaqifEnglish = {
     {
       "name": "URL Shortener",
       "organization": "Personal Project",
-      "liveUrl": "https://url.nevatal.tech/",
+      "liveUrl": "https://url.nevatal.id/",
       "links": {
         "github": "https://github.com/thirza258/freecodecamp_url_shortener",
-        "demo":  "https://url.nevatal.tech/"
+        "demo":  "https://url.nevatal.id/"
       },
       "description": [
   "Developed a production-ready URL Shortener platform using Django, PostgreSQL, and Redis, enabling custom and auto-generated short links with collision-resistant slug generation and duplicate prevention.",
@@ -506,9 +506,9 @@ export const thirzaAhmadTsaqifEnglish = {
         "githubFrontend": "[Github Frontend]",
         "devpost": "[Devpost]"
       ,
-        "demo": "https://chatty.nevatal.tech/"
+        "demo": "https://chatty.nevatal.id/"
       },
-      "liveUrl": "https://chatty.nevatal.tech/",
+      "liveUrl": "https://chatty.nevatal.id/",
       "description": [
         "Developed a cross-platform desktop application enabling seamless multi-LLM chat that is Gemini, Claude, Open AI GPT, and Mistral.",
         "Backend involved designing and deploying a scalable API using Django REST Framework, Python, and PostgreSQL, hosted on DigitalOcean.",
@@ -571,9 +571,9 @@ export const thirzaAhmadTsaqifEnglish = {
         "github": "https://github.com/thirza258/gemini_japanese",
         "devpost": "https://devpost.com/software/gemini-japanese-translator"
       ,
-        "demo": "https://translate.nevatal.tech/"
+        "demo": "https://hira.nevatal.id/"
       },
-      "liveUrl": "https://translate.nevatal.tech/",
+      "liveUrl": "https://hira.nevatal.id/",
       "description": [
         "Developed a Japanese translation application that provides users with both romaji and translations by integrating the Gemini AI API, increasing translation accuracy with any japanese format.",
         "Utilized React with TypeScript for the frontend to create a dynamic and intuitive user interface,",
@@ -592,9 +592,9 @@ export const thirzaAhmadTsaqifEnglish = {
         "github": "https://github.com/thirza258/literal-storyboard",
         "devpost": "https://devpost.com/software/literal-storyboard"
       ,
-        "demo": "https://story.nevatal.tech/"
+        "demo": "https://story.nevatal.id/"
       },
-      "liveUrl": "https://story.nevatal.tech/",
+      "liveUrl": "https://story.nevatal.id/",
       "description": [
         "Created a game website that combines board game and story.",
         "Developed using Vite React Typescript and Tailwind CSS and utilizing Gemini API as the story generator and",
@@ -631,9 +631,9 @@ export const thirzaAhmadTsaqifEnglish = {
         "githubFrontend": "[Github Frontend]",
         "devpost": "[Devpost]"
       ,
-        "demo": "https://recommendica.nevatal.tech/"
+        "demo": "https://recommendica.nevatal.id/"
       },
-      "liveUrl": "https://recommendica.nevatal.tech/",
+      "liveUrl": "https://recommendica.nevatal.id/",
       "description": [
         "Developed a Research Recommendation RAG-based API using the ArXiv dataset, with FAISS for retrieval and OpenAI for AI processing and Langchain as the pipeline.",
         "Utilized OpenAPI for documentation and Built the API with Django REST Framework."
@@ -965,11 +965,11 @@ export const thirzaAhmadTsaqifIndonesia = {
     {
       "name": "RAGReader",
       "context": "Pengajuan Hackathon NextAI",
-      "liveUrl": "https://rag.nevatal.tech/",
+      "liveUrl": "https://rag.nevatal.id/",
       "links": {
         "github": "https://github.com/thirza258/RagReader",
         "devpost": "https://devpost.com/software/ragreader-kauodp?ref_content=user-portfolio&ref_feature=in_progress",
-        "demo": "https://rag.nevatal.tech/"
+        "demo": "https://rag.nevatal.id/"
       },
       "description": [
         "Membangun RAGReader, platform evaluasi untuk membandingkan dan mengidentifikasi pipeline Retrieval-Augmented Generation (RAG) paling efektif untuk koleksi dokumen khusus.",
@@ -988,9 +988,9 @@ export const thirzaAhmadTsaqifIndonesia = {
     {
       "name": "Multi Hop Corrective with Reranker RAG Pipeline",
       "context": "Tugas Akhir Kampus",
-      "liveUrl": "https://crag.nevatal.tech/",
+      "liveUrl": "https://crag.nevatal.id/",
       "links": {
-        "demo": "https://crag.nevatal.tech/"
+        "demo": "https://crag.nevatal.id/"
       },
       "description": [
         "Merancang dan mengimplementasikan pipeline Multi-Hop RAG yang menggabungkan Hybrid Retrieval (Dense + Sparse) dan model reranking untuk mendukung penalaran kompleks.",
@@ -1007,11 +1007,11 @@ export const thirzaAhmadTsaqifIndonesia = {
     {
       "name": "Nevatal",
       "context": "Pengajuan Google Chrome Built-in AI Challenge 2025",
-      "liveUrl": "https://chat.nevatal.tech/",
+      "liveUrl": "https://chat.nevatal.id/",
       "links": {
         "github": "https://github.com/thirza258/nevatal",
         "devpost": "https://devpost.com/software/chattywhole",
-        "demo": "https://chat.nevatal.tech/"
+        "demo": "https://chat.nevatal.id/"
       },
       "description": [
         "Mengembangkan platform AI full-stack yang mengintegrasikan pembuatan prompt bertenaga Gemini, utilitas teks, RAG dokumen, dan kemampuan pembuatan gambar.",
@@ -1027,9 +1027,9 @@ export const thirzaAhmadTsaqifIndonesia = {
     {
       "name": "Daily Task Wallpaper Generator with Genshin Impact Theme",
       "context": "Proyek Pribadi",
-      "liveUrl": "https://genshinwallpaper.nevatal.tech/",
+      "liveUrl": "https://genshinwallpaper.nevatal.id/",
       "links": {
-        "demo": "https://genshinwallpaper.nevatal.tech/"
+        "demo": "https://genshinwallpaper.nevatal.id/"
       },
       "description": [
         "Membuat generator wallpaper tugas harian dengan tema Genshin Impact, memberi pengguna wallpaper yang menarik secara visual dan dipersonalisasi untuk mengatur tugas sehari-hari.",
@@ -1045,10 +1045,10 @@ export const thirzaAhmadTsaqifIndonesia = {
     {
       "name": "URL Shortener",
       "organization": "Proyek Pribadi",
-      "liveUrl": "https://url.nevatal.tech/",
+      "liveUrl": "https://url.nevatal.id/",
       "links": {
         "github": "https://github.com/thirza258/freecodecamp_url_shortener",
-        "demo": "https://url.nevatal.tech/"
+        "demo": "https://url.nevatal.id/"
       },
       "description": [
         "Mengembangkan platform pemendek URL siap produksi menggunakan Django, PostgreSQL, dan Redis, memungkinkan tautan pendek kustom dan otomatis dengan pembuatan slug tahan benturan.",
@@ -1231,9 +1231,9 @@ export const thirzaAhmadTsaqifIndonesia = {
         "githubFrontend": "[Github Frontend]",
         "devpost": "[Devpost]"
       ,
-        "demo": "https://chatty.nevatal.tech/"
+        "demo": "https://chatty.nevatal.id/"
       },
-      "liveUrl": "https://chatty.nevatal.tech/",
+      "liveUrl": "https://chatty.nevatal.id/",
       "description": [
         "Mengembangkan aplikasi desktop lintas platform yang memungkinkan obrolan multi-LLM yang lancar yaitu Gemini, Claude, Open AI GPT, dan Mistral.",
         "Backend melibatkan perancangan dan penerapan API yang dapat diskalakan menggunakan Django REST Framework, Python, dan PostgreSQL, yang di-host di DigitalOcean.",
@@ -1292,11 +1292,11 @@ export const thirzaAhmadTsaqifIndonesia = {
     {
       "name": "Gemini Japanese",
       "context": "Pengajuan MLH GWH",
-      "liveUrl": "https://translate.nevatal.tech/",
+      "liveUrl": "https://hira.nevatal.id/",
       "links": {
         "github": "https://github.com/thirza258/gemini_japanese",
         "devpost": "https://devpost.com/software/gemini-japanese-translator",
-        "demo": "https://translate.nevatal.tech/"
+        "demo": "https://hira.nevatal.id/"
       },
       "description": [
         "Mengembangkan aplikasi terjemahan bahasa Jepang yang menyediakan pengguna dengan romaji dan terjemahan dengan mengintegrasikan Gemini AI API, meningkatkan akurasi terjemahan dengan format bahasa Jepang apa pun.",
@@ -1311,11 +1311,11 @@ export const thirzaAhmadTsaqifIndonesia = {
     {
       "name": "LiteralStoryboard",
       "context": "Pengajuan Hackathon AWS Game Builder",
-      "liveUrl": "https://story.nevatal.tech/",
+      "liveUrl": "https://story.nevatal.id/",
       "links": {
         "github": "https://github.com/thirza258/literal-storyboard",
         "devpost": "https://devpost.com/software/literal-storyboard",
-        "demo": "https://story.nevatal.tech/"
+        "demo": "https://story.nevatal.id/"
       },
       "description": [
         "Membuat situs web game yang menggabungkan permainan papan dan cerita.",
@@ -1353,9 +1353,9 @@ export const thirzaAhmadTsaqifIndonesia = {
         "githubFrontend": "[Github Frontend]",
         "devpost": "[Devpost]"
       ,
-        "demo": "https://recommendica.nevatal.tech/"
+        "demo": "https://recommendica.nevatal.id/"
       },
-      "liveUrl": "https://recommendica.nevatal.tech/",
+      "liveUrl": "https://recommendica.nevatal.id/",
       "description": [
         "Mengembangkan API berbasis RAG untuk Rekomendasi Penelitian menggunakan dataset ArXiv, dengan FAISS untuk pengambilan dan OpenAI untuk pemrosesan AI dan Langchain sebagai pipeline.",
         "Memanfaatkan OpenAPI untuk dokumentasi dan Membangun API dengan Django REST Framework."
@@ -1687,11 +1687,11 @@ export const thirzaAhmadTsaqifJapanese = {
     {
       "name": "RAGReader",
       "context": "NextAIハッカソン提出物",
-      "liveUrl": "https://rag.nevatal.tech/",
+      "liveUrl": "https://rag.nevatal.id/",
       "links": {
         "github": "https://github.com/thirza258/RagReader",
         "devpost": "https://devpost.com/software/ragreader-kauodp?ref_content=user-portfolio&ref_feature=in_progress",
-        "demo": "https://rag.nevatal.tech/"
+        "demo": "https://rag.nevatal.id/"
       },
       "description": [
         "カスタムドキュメントコレクションに最も効果的な検索拡張生成（RAG）パイプラインを比較および特定するための評価プラットフォームであるRAGReaderを構築しました。",
@@ -1710,9 +1710,9 @@ export const thirzaAhmadTsaqifJapanese = {
     {
       "name": "Multi Hop Corrective with Reranker RAG Pipeline",
       "context": "大学卒業プロジェクト",
-      "liveUrl": "https://crag.nevatal.tech/",
+      "liveUrl": "https://crag.nevatal.id/",
       "links": {
-        "demo": "https://crag.nevatal.tech/"
+        "demo": "https://crag.nevatal.id/"
       },
       "description": [
         "複雑な推論タスクをサポートするために、ハイブリッド検索（Dense + Sparse）とリランカーモデルを組み合わせたMulti-Hop RAGパイプラインを設計および実装しました。",
@@ -1729,11 +1729,11 @@ export const thirzaAhmadTsaqifJapanese = {
     {
       "name": "Nevatal",
       "context": "Google Chrome Built-in AI Challenge 2025 提出物",
-      "liveUrl": "https://chat.nevatal.tech/",
+      "liveUrl": "https://chat.nevatal.id/",
       "links": {
         "github": "https://github.com/thirza258/nevatal",
         "devpost": "https://devpost.com/software/chattywhole",
-        "demo": "https://chat.nevatal.tech/"
+        "demo": "https://chat.nevatal.id/"
       },
       "description": [
         "Geminiを活用したプロンプト生成、テキストユーティリティ、ドキュメントRAG、画像生成機能を統合したフルスタックAIプラットフォームを開発しました。",
@@ -1749,9 +1749,9 @@ export const thirzaAhmadTsaqifJapanese = {
     {
       "name": "Daily Task Wallpaper Generator with Genshin Impact Theme",
       "context": "個人プロジェクト",
-      "liveUrl": "https://genshinwallpaper.nevatal.tech/",
+      "liveUrl": "https://genshinwallpaper.nevatal.id/",
       "links": {
-        "demo": "https://genshinwallpaper.nevatal.tech/"
+        "demo": "https://genshinwallpaper.nevatal.id/"
       },
       "description": [
         "Genshin Impactをテーマにしたデイリータスク壁紙ジェネレーターを作成し、視覚的に魅力的でパーソナライズされた壁紙を提供してタスクを整理できるようにしました。",
@@ -1767,10 +1767,10 @@ export const thirzaAhmadTsaqifJapanese = {
     {
       "name": "URL Shortener",
       "organization": "個人プロジェクト",
-      "liveUrl": "https://url.nevatal.tech/",
+      "liveUrl": "https://url.nevatal.id/",
       "links": {
         "github": "https://github.com/thirza258/freecodecamp_url_shortener",
-        "demo": "https://url.nevatal.tech/"
+        "demo": "https://url.nevatal.id/"
       },
       "description": [
         "Django、PostgreSQL、Redisを使用して本番対応のURL短縮ツールプラットフォームを開発しました。",
@@ -1953,9 +1953,9 @@ export const thirzaAhmadTsaqifJapanese = {
         "githubFrontend": "[Githubフロントエンド]",
         "devpost": "[Devpost]"
       ,
-        "demo": "https://chatty.nevatal.tech/"
+        "demo": "https://chatty.nevatal.id/"
       },
-      "liveUrl": "https://chatty.nevatal.tech/",
+      "liveUrl": "https://chatty.nevatal.id/",
       "description": [
         "Gemini、Claude、OpenAI GPT、Mistralなどの複数のLLMとのシームレスなチャットを可能にするクロスプラットフォームデスクトップアプリケーションを開発しました。",
         "バックエンドでは、Django REST Framework、Python、PostgreSQLを使用してスケーラブルなAPIを設計・展開し、DigitalOceanでホストしました。",
@@ -2014,11 +2014,11 @@ export const thirzaAhmadTsaqifJapanese = {
     {
       "name": "Gemini Japanese",
       "context": "MLH GWH提出物",
-      "liveUrl": "https://translate.nevatal.tech/",
+      "liveUrl": "https://hira.nevatal.id/",
       "links": {
         "github": "https://github.com/thirza258/gemini_japanese",
         "devpost": "https://devpost.com/software/gemini-japanese-translator",
-        "demo": "https://translate.nevatal.tech/"
+        "demo": "https://hira.nevatal.id/"
       },
       "description": [
         "Gemini AI APIを統合することで、ユーザーにローマ字と翻訳の両方を提供する日本語翻訳アプリケーションを開発し、あらゆる日本語形式での翻訳精度を向上させました。",
@@ -2033,11 +2033,11 @@ export const thirzaAhmadTsaqifJapanese = {
     {
       "name": "LiteralStoryboard",
       "context": "AWSゲームビルダーハッカソン提出物",
-      "liveUrl": "https://story.nevatal.tech/",
+      "liveUrl": "https://story.nevatal.id/",
       "links": {
         "github": "https://github.com/thirza258/literal-storyboard",
         "devpost": "https://devpost.com/software/literal-storyboard",
-        "demo": "https://story.nevatal.tech/"
+        "demo": "https://story.nevatal.id/"
       },
       "description": [
         "ボードゲームとストーリーを組み合わせたゲームウェブサイトを作成しました。",
@@ -2075,9 +2075,9 @@ export const thirzaAhmadTsaqifJapanese = {
         "githubFrontend": "[Githubフロントエンド]",
         "devpost": "[Devpost]"
       ,
-        "demo": "https://recommendica.nevatal.tech/"
+        "demo": "https://recommendica.nevatal.id/"
       },
-      "liveUrl": "https://recommendica.nevatal.tech/",
+      "liveUrl": "https://recommendica.nevatal.id/",
       "description": [
         "ArXivデータセットを使用して、検索にFAISS、AI処理にOpenAI、パイプラインとしてLangChainを使用した研究推薦RAGベースのAPIを開発しました。",
         "ドキュメント作成にOpenAPIを利用し、Django REST FrameworkでAPIを構築しました。"

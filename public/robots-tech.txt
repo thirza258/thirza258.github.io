@@ -81,5 +81,5 @@ User-agent: Diffbot
 Allow: /
 
 # Sitemap and Host definition
-Sitemap: https://www.nevatal.tech/sitemap.xml
-Host: https://www.nevatal.tech
+Sitemap: https://www.nevatal.id/sitemap.xml
+Host: https://www.nevatal.id

@@ -413,7 +413,7 @@ function generateSitemapXml(baseUrl) {
 const publicDir = path.join(rootDir, 'public');
 
 const sitemapId = generateSitemapXml('https://www.nevatal.id');
-const sitemapTech = generateSitemapXml('https://www.nevatal.tech');
+const sitemapTech = generateSitemapXml('https://www.nevatal.id');
 const sitemapDefault = sitemapId; // nevatal.id is canonical
 
 fs.writeFileSync(path.join(publicDir, 'sitemap-id.xml'), sitemapId, 'utf-8');

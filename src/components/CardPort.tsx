@@ -123,17 +123,6 @@ const CardPort: React.FC = () => {
               </li>
               <li className="flex items-center justify-between">
                 <a
-                  href="https://nevatal.tech"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-medium hover:text-blue-400 transition-colors"
-                >
-                  nevatal.tech
-                </a>
-                <span className="text-xs text-gray-600">Active</span>
-              </li>
-              <li className="flex items-center justify-between">
-                <a
                   href="https://nevatal.dpdns.org"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -154,7 +143,7 @@ const CardPort: React.FC = () => {
             {/* Service buttons */}
             <div className="mt-5 grid grid-cols-1 sm:grid-cols-3 gap-2">
               <a
-                href="https://netdata.nevatal.tech"
+                href="https://netdata.nevatal.id"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-center text-sm font-medium px-3 py-2 rounded-lg bg-gray-900 text-white hover:bg-gray-800 transition"
@@ -172,7 +161,7 @@ const CardPort: React.FC = () => {
               </a>
 
               <a
-                href="https://chat.nevatal.tech"
+                href="https://chat.nevatal.id"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-center text-sm font-medium px-3 py-2 rounded-lg bg-gray-900 text-white hover:bg-gray-800 transition"
