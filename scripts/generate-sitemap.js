@@ -126,6 +126,16 @@ const CORE_PAGES = [
     priority: '0.70'
   },
   {
+    path: '/privacy',
+    changefreq: 'monthly',
+    priority: '0.50'
+  },
+  {
+    path: '/terms',
+    changefreq: 'monthly',
+    priority: '0.50'
+  },
+  {
     path: '/CV_ThirzaAhmadTsaqif.pdf',
     changefreq: 'monthly',
     priority: '0.85'

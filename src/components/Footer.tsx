@@ -1,8 +1,29 @@
 
 
+import { useState, useEffect } from "react";
+import LegalModal from "./LegalModal";
+
 const Footer = () => {
   // Making the year dynamic is a good practice.
   const currentYear = new Date().getFullYear();
+  const [legalModal, setLegalModal] = useState<{ open: boolean; tab: "privacy" | "terms" }>({
+    open: false,
+    tab: "privacy",
+  });
+
+  useEffect(() => {
+    const handleHash = () => {
+      const hash = window.location.hash.toLowerCase();
+      if (hash === "#privacy") {
+        setLegalModal({ open: true, tab: "privacy" });
+      } else if (hash === "#terms") {
+        setLegalModal({ open: true, tab: "terms" });
+      }
+    };
+    handleHash();
+    window.addEventListener("hashchange", handleHash);
+    return () => window.removeEventListener("hashchange", handleHash);
+  }, []);
 
   return (
     // Use a semantic <footer> tag for better SEO and accessibility.
@@ -16,14 +37,29 @@ const Footer = () => {
         */}
         <div className="flex flex-col sm:flex-row items-center justify-between">
 
-          {/* Copyright notice */}
-          {/*
-            - text-center on mobile, sm:text-left on larger screens.
-            - mb-4 for spacing on mobile, sm:mb-0 to remove it on larger screens.
-          */}
-          <p className="text-sm text-center sm:text-left mb-4 sm:mb-0">
-            © Copyright {currentYear}. All right reserved.
-          </p>
+          {/* Copyright notice and Legal Links */}
+          <div className="text-sm text-center sm:text-left mb-4 sm:mb-0 space-y-1">
+            <p>
+              © Copyright {currentYear}. All right reserved.
+            </p>
+            <div className="flex items-center justify-center sm:justify-start gap-2 text-xs text-gray-400">
+              <button
+                onClick={() => setLegalModal({ open: true, tab: "privacy" })}
+                className="hover:text-yellow-400 transition-colors underline"
+              >
+                Privacy Policy
+              </button>
+              <span>·</span>
+              <button
+                onClick={() => setLegalModal({ open: true, tab: "terms" })}
+                className="hover:text-yellow-400 transition-colors underline"
+              >
+                Terms of Service
+              </button>
+              <span>·</span>
+              <span className="text-gray-500">Fully Self-Hosted</span>
+            </div>
+          </div>
 
           {/* 
             Social media links container.
@@ -93,6 +129,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <LegalModal
+        isOpen={legalModal.open}
+        initialTab={legalModal.tab}
+        onClose={() => setLegalModal((prev) => ({ ...prev, open: false }))}
+      />
     </footer>
   );
 };

@@ -120,6 +120,18 @@
     <priority>0.70</priority>
   </url>
   <url>
+    <loc>https://www.nevatal.id/privacy</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://www.nevatal.id/terms</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+  <url>
     <loc>https://www.nevatal.id/CV_ThirzaAhmadTsaqif.pdf</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
