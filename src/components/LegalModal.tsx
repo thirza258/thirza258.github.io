@@ -140,6 +140,21 @@ export const LegalModal = ({
                   If you contact the author through the contact form, your name, email, and message are used solely to reply directly to your inquiry.
                 </p>
               </section>
+
+              <section>
+                <h3 className="text-base font-bold text-slate-900 dark:text-white mb-2">
+                  4. Privacy Inquiries &amp; Contact
+                </h3>
+                <p>
+                  For any privacy questions or data requests regarding this portfolio and self-hosted projects, please email{" "}
+                  <a
+                    href="mailto:nevatalapp@gmail.com"
+                    className="text-yellow-600 dark:text-yellow-400 underline font-medium hover:opacity-80"
+                  >
+                    nevatalapp@gmail.com
+                  </a>.
+                </p>
+              </section>
             </div>
           ) : (
             <div className="space-y-6">
@@ -176,6 +191,21 @@ export const LegalModal = ({
                 </h3>
                 <p>
                   This website and demonstrated software are provided &ldquo;as is&rdquo; without warranties of any kind regarding suitability for commercial deployment.
+                </p>
+              </section>
+
+              <section>
+                <h3 className="text-base font-bold text-slate-900 dark:text-white mb-2">
+                  5. Legal Notices &amp; Contact
+                </h3>
+                <p>
+                  For inquiries or legal notices regarding these terms, reach out to{" "}
+                  <a
+                    href="mailto:nevatalapp@gmail.com"
+                    className="text-yellow-600 dark:text-yellow-400 underline font-medium hover:opacity-80"
+                  >
+                    nevatalapp@gmail.com
+                  </a>.
                 </p>
               </section>
             </div>
