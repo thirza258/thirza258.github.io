@@ -57,7 +57,7 @@ const Footer = () => {
                 Terms of Service
               </button>
               <span>·</span>
-              <span className="text-gray-500">Fully Self-Hosted</span>
+              <span>This project is under <a href="https://nevatal.id" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 underline">nevatal.id</a> for educational purposes.</span>
             </div>
           </div>
 
