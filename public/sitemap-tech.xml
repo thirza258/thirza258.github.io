@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.nevatal.id/</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -19,7 +19,7 @@
   </url>
   <url>
     <loc>https://www.nevatal.id/portfolio</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -80,7 +80,7 @@
   </url>
   <url>
     <loc>https://www.nevatal.id/about</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -91,67 +91,67 @@
   </url>
   <url>
     <loc>https://www.nevatal.id/experiences</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.nevatal.id/writings</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.nevatal.id/skills</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.nevatal.id/education</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://www.nevatal.id/contact</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://www.nevatal.id/privacy</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.50</priority>
   </url>
   <url>
     <loc>https://www.nevatal.id/terms</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.50</priority>
   </url>
   <url>
     <loc>https://www.nevatal.id/CV_ThirzaAhmadTsaqif.pdf</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.nevatal.id/llms.txt</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.nevatal.id/llms-full.txt</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/ragreader</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -162,7 +162,7 @@
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/multi-hop-corrective-with-reranker-rag-pipeline</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -173,7 +173,7 @@
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/nevatal</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -184,7 +184,7 @@
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/integrated-information-systems-sit</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -195,7 +195,7 @@
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/ollie-chatbot</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -206,7 +206,7 @@
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/5s-ai-camera</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -217,7 +217,7 @@
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/5why-ai-application</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -228,25 +228,25 @@
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/kjri-new-york-chatbot-maleo-ai</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/pfn-chatbot</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/jne-self-kiosk-backend</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/pasal-voice-assistant</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -257,7 +257,7 @@
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/daily-task-wallpaper-generator-with-genshin-impact-theme</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -268,7 +268,7 @@
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/url-shortener</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -279,7 +279,7 @@
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/my-hearing</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -290,7 +290,7 @@
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/siinven</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -301,13 +301,13 @@
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/etl-university-project</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/open-recruitment-website-api</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -318,7 +318,7 @@
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/api-lpj-online</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -329,7 +329,7 @@
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/chattydesk</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -340,7 +340,7 @@
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/best-staff-voting-website-api</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -351,13 +351,13 @@
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/apap-medika</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/knowlxcircle-application</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -368,25 +368,25 @@
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/gemini-japanese</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/literalstoryboard</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/recipe-recommender</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/recommendica</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -397,7 +397,7 @@
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/ecofriendly-recipe-recommender</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -408,19 +408,19 @@
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/wikipedia-based-hybrid-rag</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/dosage-recommender</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.nevatal.id/projects/endorbit</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>

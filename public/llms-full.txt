@@ -2,8 +2,9 @@
 
 ## Personal Overview
 - **Full Name**: Thirza Ahmad Tsaqif
-- **Title**: AI Engineer, Full-Stack Software Developer, Information Systems Specialist
+- **Title**: Backend Engineer at Ternak Klip, AI Engineer, Full-Stack Software Developer
 - **Education**: Bachelor of Computer Science in Information Systems, Universitas Indonesia (2022 - Present)
+- **Current Role**: Backend Engineer at Ternak Klip (June 2026 - Present)
 - **Location**: Jakarta, Indonesia
 - **Contact Email**: thirzahmad@gmail.com
 - **Website**: https://www.nevatal.id/
@@ -120,16 +121,20 @@
 ---
 
 ## Experience & Internships
-1. **IR-NLP Lab, Faculty of Computer Science, Universitas Indonesia** (Web Developer Intern, Sept 2025 - Dec 2025)
+1. **Ternak Klip** (Backend Engineer, June 2026 - Present)
+   - Developing and maintaining core application backend services in Go for a platform serving over 500,000 active users.
+   - Ensuring high concurrency, microservice scalability, and database optimization with PostgreSQL and Redis.
+   - Architecting internal employee productivity tooling and workflow automation.
+2. **IR-NLP Lab, Faculty of Computer Science, Universitas Indonesia** (Web Developer Intern, Sept 2025 - Dec 2025)
    - Redeveloped lab portal using Django with dynamic admin dashboard.
    - Built automated ETL publication scraping pipeline to blob storage and database.
-2. **OPPO Manufacturing Indonesia** (Software Engineer Intern, June 2025 - Sept 2025)
+3. **OPPO Manufacturing Indonesia** (Software Engineer Intern, June 2025 - Sept 2025)
    - Built Ollie Voice Assistant, 5S AI Camera compliance system, and 5Why AI Root Cause Analysis platform.
-3. **Aether AI** (AI Engineer Intern)
+4. **Aether AI** (AI Engineer Intern)
    - Developed Maleo AI for KJRI New York and PFN Chatbot using FastAPI and RAG.
-4. **Avatar Digital** (Backend Developer Intern)
+5. **Avatar Digital** (Backend Developer Intern)
    - Developed Go Labstack Echo backend for JNE Self Kiosk parcel shipping.
-5. **BEM Universitas Indonesia & BEM Fasilkom UI**
+6. **BEM Universitas Indonesia & BEM Fasilkom UI**
    - Head developer and backend engineer for student enterprise platforms (SIT, LPJ Online, Oprec).
 
 ---

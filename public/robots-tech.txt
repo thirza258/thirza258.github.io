@@ -64,6 +64,20 @@ Allow: /
 User-agent: meta-externalagent
 Allow: /
 
+# DeepSeek Crawlers
+User-agent: DeepSeekBot
+Allow: /
+
+User-agent: DeepseekSpider
+Allow: /
+
+# Mistral & xAI Crawlers
+User-agent: MistralBot
+Allow: /
+
+User-agent: GrokBot
+Allow: /
+
 # Other AI & Training Crawlers
 User-agent: CCBot
 Allow: /
@@ -79,6 +93,10 @@ Allow: /
 
 User-agent: Diffbot
 Allow: /
+
+# AI Agent Documentation
+# LLM Context: https://www.nevatal.id/llms.txt
+# Detailed Context: https://www.nevatal.id/llms-full.txt
 
 # Sitemap and Host definition
 Sitemap: https://www.nevatal.id/sitemap.xml

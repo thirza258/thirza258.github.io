@@ -1,4 +1,4 @@
-import backendDevLogo from "../assets/backend_dev_logo.png";
+import ternakKlipLogo from "../assets/ternakklip_logo.png";
 import oppoLogo from "../assets/oppo-seeklogo.svg";
 import aetherLogo from "../assets/aetherai.jpeg";
 import avatarLogo from "../assets/avatar_digital_.jpeg";
@@ -86,7 +86,7 @@ export const thirzaAhmadTsaqifEnglish = {
       "company": "Ternak Klip",
       "startDate": "June 2026",
       "endDate": "Present",
-      "photo": backendDevLogo,
+      "photo": ternakKlipLogo,
       "responsibilities": [
         "Mainly developing and maintaining core application backend services with Go for a platform serving more than 500,000 users, ensuring high concurrency, scalability, and system reliability.",
         "Designing and developing internal applications and tools to streamline workflows and support internal employees."
@@ -839,7 +839,7 @@ export const thirzaAhmadTsaqifIndonesia = {
       "company": "Ternak Klip",
       "startDate": "Juni 2026",
       "endDate": "Sekarang",
-      "photo": backendDevLogo,
+      "photo": ternakKlipLogo,
       "responsibilities": [
         "Utamanya mengembangkan dan memelihara backend aplikasi menggunakan Go untuk platform dengan lebih dari 500.000 pengguna, memastikan performa tinggi, skalabilitas, dan keandalan sistem.",
         "Mengembangkan aplikasi internal untuk membantu efisiensi dan operasional kerja karyawan internal."
@@ -1561,7 +1561,7 @@ export const thirzaAhmadTsaqifJapanese = {
       "company": "Ternak Klip",
       "startDate": "2026年6月",
       "endDate": "現在",
-      "photo": backendDevLogo,
+      "photo": ternakKlipLogo,
       "responsibilities": [
         "50万人以上のユーザーを抱えるアプリケーション向けにGo言語を用いたバックエンド開発を主導し、高パフォーマンス、スケーラビリティ、システムの高信頼性を実現。",
         "社内従業員の業務効率化とオペレーション支援のための社内向けアプリケーションおよびツールの開発。"

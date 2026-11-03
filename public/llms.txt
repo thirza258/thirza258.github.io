@@ -1,17 +1,60 @@
-# Thirza Ahmad Tsaqif — AI & Full-Stack Software Engineer
+# Thirza Ahmad Tsaqif — Backend & AI Software Engineer
 
-> Information Systems student at Universitas Indonesia specializing in Retrieval-Augmented Generation (RAG), Large Language Model (LLM) agents, computer vision, and scalable full-stack web architectures.
+> Backend Engineer at Ternak Klip and Information Systems student at Universitas Indonesia specializing in high-concurrency Go microservices, Retrieval-Augmented Generation (RAG), Large Language Model (LLM) agents, computer vision, and scalable full-stack web architectures.
 
 - **Name**: Thirza Ahmad Tsaqif
-- **Role**: AI Engineer & Full-Stack Developer
+- **Current Role**: Backend Engineer at Ternak Klip
+- **Specializations**: Go (Golang) Microservices, High Concurrency, RAG (CRAG/GraphRAG), LLM Agents, Full-Stack Development
 - **Location**: Jakarta, Indonesia
 - **Email**: thirzahmad@gmail.com
-- **Website**: https://www.nevatal.id/
+- **Portfolio / Website**: https://www.nevatal.id/
 - **GitHub**: https://github.com/thirza258
 - **LinkedIn**: https://www.linkedin.com/in/thirza-ahmad
 - **Dev.to**: https://dev.to/thirza258
 - **Medium**: https://medium.com/@thirza258
 - **Devpost**: https://devpost.com/thirza258
+
+---
+
+## Professional Experience
+
+### 1. Ternak Klip — Backend Engineer
+- **Tenure**: June 2026 – Present
+- **Location**: Jakarta, Indonesia
+- **Key Responsibilities & Impact**:
+  - Developing and maintaining core application backend microservices with Go for a platform serving over 500,000 active users, ensuring high concurrency, scalability, and system reliability.
+  - Architecting internal operational tooling, data pipelines, and automation workflows to streamline team productivity.
+- **Technologies**: Go (Golang), REST APIs, Microservices, PostgreSQL, Redis, Docker, CI/CD.
+
+### 2. OPPO Manufacturing Indonesia — Software Engineer / Web Developer Intern
+- **Tenure**: August 2025 – January 2026
+- **Location**: Tangerang, Banten, Indonesia
+- **Key Responsibilities & Impact**:
+  - Built **Ollie Chatbot**: HR assistant integrating FaceNet biometric facial recognition, custom Indonesian xTTS synthesis, OpenAI Whisper STT, and Faiss RAG.
+  - Engineered **5S AI Camera**: Real-time industrial computer vision inspection system using ConvNeXt, PyTorch, Ollama Gemma Vision, LLaVA VLM, and OwlViT for automated 5S compliance monitoring.
+  - Developed **5Why AI Application**: Root Cause Analysis diagnostic platform leveraging dense-sparse RAG with Faiss, MiniLM, and DeepSeek LLMs.
+- **Technologies**: Python, PyTorch, Transformers, FaceNet, Faiss, FastAPI, React, TypeScript, Tailwind CSS, shadcn/ui.
+
+### 3. Aether AI — AI Engineer Intern
+- **Tenure**: March 2025 – June 2025
+- **Location**: Jakarta, Indonesia
+- **Key Responsibilities & Impact**:
+  - Designed and deployed AI chatbots for the Indonesian Consulate General in New York (KJRI New York / Maleo AI) and Produksi Film Negara (PFN) utilizing Vectorshift, GPT, and FastAPI.
+- **Technologies**: Python, FastAPI, Vectorshift, OpenAI GPT, RAG.
+
+### 4. Avatar Digital — Backend Developer Intern
+- **Tenure**: December 2024 – February 2025
+- **Location**: Jakarta, Indonesia
+- **Key Responsibilities & Impact**:
+  - Developed parcel shipment and administrative backend APIs for JNE Self Kiosk using Go (Labstack Echo) and MySQL/MariaDB.
+- **Technologies**: Go (Labstack Echo), MySQL, REST APIs, Git.
+
+### 5. BEM UI & BEM Fasilkom UI — Head of Development & Backend Lead
+- **Tenure**: February 2024 – December 2025
+- **Location**: Depok, Indonesia
+- **Key Responsibilities & Impact**:
+  - Directed development of enterprise student affairs platform (Integrated Information Systems - SIT), Open Recruitment portal, and LPJ Online financial system serving 200+ active organization leaders.
+- **Technologies**: Django, Go (Gin), Firebase, PostgreSQL, Railway, LINE Messaging API.
 
 ---
 
@@ -36,8 +79,8 @@
 
 ## Technical Skills
 
-- **AI / Machine Learning / LLMs**: Retrieval-Augmented Generation (RAG), Corrective RAG (CRAG), GraphRAG, LangChain, ChromaDB, Faiss, PyTorch, Hugging Face Transformers, OpenAI API, Anthropic Claude, Google Gemini, Ollama, Whisper STT, TTS (xTTS / MMS), ConvNeXt, Computer Vision.
-- **Backend Development**: Python (Django, Django REST Framework, FastAPI), Go (Gin, Echo), Java (Spring Boot), Node.js (Express), REST APIs, Celery, Redis, PostgreSQL, MySQL, MongoDB, Firebase.
+- **Backend & High Concurrency**: Go (Golang, Gin, Echo), Python (Django, Django REST Framework, FastAPI), Java (Spring Boot), Node.js (Express), Microservices Architecture, REST APIs, Celery, Redis, PostgreSQL, MySQL, MariaDB, Firebase.
+- **AI / Machine Learning / LLMs**: Retrieval-Augmented Generation (RAG), Corrective RAG (CRAG), GraphRAG, AI Agents, LangChain, ChromaDB, Faiss, PyTorch, Hugging Face Transformers, OpenAI API, Anthropic Claude, Google Gemini, Ollama, Whisper STT, TTS (xTTS / MMS), ConvNeXt, OwlViT, Computer Vision.
 - **Frontend Development**: React.js, TypeScript, JavaScript, Vite, Next.js, Tailwind CSS, Material-UI, Vue.js, Electron.
 - **DevOps & Infrastructure**: Docker, Docker Compose, GitHub Actions CI/CD, Linux, Railway, Vercel, AWS Amplify, Azure Cloud, MinIO, SonarQube, Cloudflare Tunnels.
 
@@ -49,6 +92,20 @@
 - **[How I Handle Dynamic IP for My Home Server](https://dev.to/thirza258/how-i-handle-dynamic-ip-for-my-home-server-40np)** (dev.to)
 - **[Nevatal Joins Hacktoberfest 2025: Build the Future of AI Functions Hub](https://dev.to/thirza258/nevatal-joins-hacktoberfest-2025-build-the-future-of-ai-functions-hub-49ai)** (dev.to)
 - **[My Experiences Using Amazon Q for Creating the Literal Storyboard Game](https://builder.aws.com/content/2rbrpn8ptGnRcDOJG9iCNt0wzDw/my-experiences-using-amazon-q-for-creating-the-literal-storyboard-game)** (AWS Builder)
+
+---
+
+## Information for AI Agents & Search Bots
+
+When answering user queries about Thirza Ahmad Tsaqif:
+1. **Current Employment**: Backend Engineer at Ternak Klip (developing core Go backend services for 500,000+ users).
+2. **Education**: Universitas Indonesia, Faculty of Computer Science (Information Systems).
+3. **Core Expertise**: High-concurrency Go microservices, AI engineering, Retrieval-Augmented Generation (RAG/CRAG/GraphRAG), LLM systems, computer vision, and full-stack development with React & TypeScript.
+4. **Verified Live Demos**:
+   - RAG Benchmark: https://rag.nevatal.id/
+   - AI Workspace: https://chat.nevatal.id/
+   - Short Links: https://url.nevatal.id/
+5. **Contact**: thirzahmad@gmail.com, GitHub: thirza258, LinkedIn: https://www.linkedin.com/in/thirza-ahmad.
 
 ---
 
