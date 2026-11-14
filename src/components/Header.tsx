@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = () => {
           </h1>
 
       
-          <div className="mt-8">
+          <div className="mt-8 flex flex-wrap items-center gap-4">
             <button
             onClick={() => {
               document.getElementById('cardport')?.scrollIntoView({
@@ -43,6 +43,16 @@ const Header: React.FC<HeaderProps> = () => {
                       border-2 border-black rounded-xl hover:bg-black hover:text-white transition-all duration-200">
             About Me
           </button>
+          <a
+            href="https://nevatal.id"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base sm:text-lg font-semibold text-white bg-black
+                      border-2 border-black rounded-xl hover:bg-gray-800 transition-all duration-200 shadow-sm"
+          >
+            <span>nevatal.id</span>
+            <i className="bx bx-link-external text-lg"></i>
+          </a>
           </div>
         </div>
 

@@ -106,8 +106,17 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-4 text-center text-sm text-gray-300">
-          <p className="mb-2">Check out my creative works!</p>
-          <div className="flex items-center justify-center gap-4">
+          <p className="mb-2">Check out my creative works & studio!</p>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="https://nevatal.id"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-colors duration-300 shadow-sm font-medium"
+            >
+              <i className="bx bx-globe text-xl"></i>
+              <span>nevatal.id Studio</span>
+            </a>
             <a
               href="https://p-l-a-y2.itch.io/"
               target="_blank"

@@ -141,7 +141,26 @@ const CardPort: React.FC = () => {
             </p>
 
             {/* Service buttons */}
-            <div className="mt-5 grid grid-cols-1 sm:grid-cols-3 gap-2">
+            <div className="mt-5 grid grid-cols-2 sm:grid-cols-4 gap-2">
+              <a
+                href="https://nevatal.id"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-center text-sm font-medium px-3 py-2 rounded-lg bg-black text-white hover:bg-gray-800 transition flex items-center justify-center gap-1 shadow-sm"
+              >
+                <span>nevatal.id</span>
+                <i className="bx bx-link-external text-xs"></i>
+              </a>
+
+              <a
+                href="https://chat.nevatal.id"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-center text-sm font-medium px-3 py-2 rounded-lg bg-gray-900 text-white hover:bg-gray-800 transition"
+              >
+                AI Chat
+              </a>
+
               <a
                 href="https://netdata.nevatal.id"
                 target="_blank"
@@ -158,15 +177,6 @@ const CardPort: React.FC = () => {
                 className="text-center text-sm font-medium px-3 py-2 rounded-lg bg-gray-900 text-white hover:bg-gray-800 transition"
               >
                 Dev Blog
-              </a>
-
-              <a
-                href="https://chat.nevatal.id"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-center text-sm font-medium px-3 py-2 rounded-lg bg-gray-900 text-white hover:bg-gray-800 transition"
-              >
-                AI Chat
               </a>
             </div>
           </Card>

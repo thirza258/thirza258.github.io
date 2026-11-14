@@ -49,11 +49,32 @@ const Navbar = () => {
                                     {link.label}
                                 </a>
                             ))}
+                            <a
+                                href="https://nevatal.id"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() => setIsMenuOpen(false)}
+                                className="text-blue-600 hover:text-blue-800 font-semibold md:hidden inline-flex items-center gap-1"
+                            >
+                                <span>nevatal.id Studio</span>
+                                <i className="bx bx-link-external text-sm"></i>
+                            </a>
                         </div>
                     </div>
 
-                    {/* Language toggle - always visible */}
-                    <div className="flex space-x-2 md:space-x-4">
+                    {/* nevatal.id badge & Language toggle - always visible */}
+                    <div className="flex items-center space-x-2 md:space-x-3">
+                        <a
+                            href="https://nevatal.id"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold rounded-full bg-black text-white hover:bg-gray-800 transition-colors shadow-sm"
+                            title="Visit nevatal.id Studio"
+                        >
+                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                            <span>nevatal.id</span>
+                            <i className="bx bx-link-external text-xs"></i>
+                        </a>
                         {(["ID", "EN"] as const).map((lang) => (
                             <button
                                 key={lang}

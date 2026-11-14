@@ -269,6 +269,7 @@ export const thirzaAhmadTsaqifEnglish = {
       "context": "Google Chrome Built-in AI Challenge 2025 Submission",
       "liveUrl": "https://chat.nevatal.id/",
       "links": {
+        "website": "https://nevatal.id",
         "github": "https://github.com/thirza258/nevatal",
         "devpost": "https://devpost.com/software/chattywhole",
         "demo":  "https://chat.nevatal.id/"
@@ -1009,6 +1010,7 @@ export const thirzaAhmadTsaqifIndonesia = {
       "context": "Pengajuan Google Chrome Built-in AI Challenge 2025",
       "liveUrl": "https://chat.nevatal.id/",
       "links": {
+        "website": "https://nevatal.id",
         "github": "https://github.com/thirza258/nevatal",
         "devpost": "https://devpost.com/software/chattywhole",
         "demo": "https://chat.nevatal.id/"
@@ -1731,6 +1733,7 @@ export const thirzaAhmadTsaqifJapanese = {
       "context": "Google Chrome Built-in AI Challenge 2025 提出物",
       "liveUrl": "https://chat.nevatal.id/",
       "links": {
+        "website": "https://nevatal.id",
         "github": "https://github.com/thirza258/nevatal",
         "devpost": "https://devpost.com/software/chattywhole",
         "demo": "https://chat.nevatal.id/"
