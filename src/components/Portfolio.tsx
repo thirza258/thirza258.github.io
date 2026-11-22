@@ -5,6 +5,7 @@ import { Project } from '../interface/interface';
 import { useLanguage } from '../context/LanguageContext';
 import LiveThumbnail from './LiveThumbnail';
 import { getProjectSlug, getProjectLiveUrl } from '../utils/projectUtils';
+import { nevatalUrl } from '../lib/nevatal';
 import { FaGlobe } from 'react-icons/fa';
 
 // ── Keyword pill ──────────────────────────────────────────────────────────────
@@ -51,23 +52,17 @@ type ProjectCardProps = {
 };
 
 const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
-  const liveUrl = getProjectLiveUrl(project);
+  const isNevatal = project.name.toLowerCase() === 'nevatal';
+  // The Nevatal card is a real link to the studio, so it must not embed an
+  // iframe: interactive content cannot live inside an anchor.
+  const liveUrl = isNevatal ? undefined : getProjectLiveUrl(project);
   const hasLiveUrl = Boolean(liveUrl);
 
-  return (
-    <article
-      role="button"
-      tabIndex={0}
-      onClick={onClick}
-      onKeyDown={(e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          onClick();
-        }
-      }}
-      className="group relative flex flex-col rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
-      aria-label={`View details for ${project.name}`}
-    >
+  const cardClassName =
+    'group relative flex flex-col rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900';
+
+  const body = (
+    <>
       {/* Live Thumbnail (interactive iframe if accessible, static photo fallback) */}
       <LiveThumbnail
         src={project.mainPhoto}
@@ -114,7 +109,45 @@ const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
             </span>
           )}
         </div>
+
+        {isNevatal && (
+          <p className="border-t border-gray-100 pt-3 text-xs font-semibold text-gray-500">
+            Also see: the full studio <span aria-hidden="true">→</span>
+          </p>
+        )}
       </div>
+    </>
+  );
+
+  if (isNevatal) {
+    return (
+      <a
+        href={nevatalUrl('project_card')}
+        target="_blank"
+        rel="noopener noreferrer me"
+        className={cardClassName}
+        aria-label="Open the Nevatal studio in a new tab"
+      >
+        {body}
+      </a>
+    );
+  }
+
+  return (
+    <article
+      role="button"
+      tabIndex={0}
+      onClick={onClick}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onClick();
+        }
+      }}
+      className={cardClassName}
+      aria-label={`View details for ${project.name}`}
+    >
+      {body}
     </article>
   );
 };

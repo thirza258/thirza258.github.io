@@ -96,9 +96,9 @@ User-agent: Diffbot
 Allow: /
 
 # AI Agent Documentation
-# LLM Context: https://www.nevatal.id/llms.txt
-# Detailed Context: https://www.nevatal.id/llms-full.txt
+# LLM Context: https://thirza258.github.io/llms.txt
+# Detailed Context: https://thirza258.github.io/llms-full.txt
 
 # Sitemap and Host definition
-Sitemap: https://www.nevatal.id/sitemap.xml
-Host: https://www.nevatal.id
+Sitemap: https://thirza258.github.io/sitemap.xml
+Host: https://thirza258.github.io

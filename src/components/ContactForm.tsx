@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { getIntent, onIntentChange } from "../lib/intent";
+import { nevatalUrl } from "../lib/nevatal";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -7,6 +9,9 @@ const ContactForm = () => {
     email: '',
     message: '',
   });
+  const [hiringIntent, setHiringIntent] = useState(() => getIntent() === 'hiring');
+
+  useEffect(() => onIntentChange((intent) => setHiringIntent(intent === 'hiring')), []);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submissionStatus, setSubmissionStatus] = useState('');
@@ -45,6 +50,17 @@ const ContactForm = () => {
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 md:py-20 bg-white">
+      {hiringIntent && (
+        <div className="mx-auto mb-10 max-w-3xl rounded-xl border-2 border-[#0069d6] bg-blue-50 px-5 py-4 text-center text-sm text-blue-950">
+          <p className="font-semibold">Hiring path selected.</p>
+          <p className="mt-1">
+            <a href="#nevatal" className="font-semibold underline underline-offset-2">
+              See the Nevatal case study
+            </a>{' '}
+            or send a message below.
+          </p>
+        </div>
+      )}
       <h2 className="text-center font-header text-4xl sm:text-5xl lg:text-6xl font-semibold uppercase text-primary">
         Here's a contact form
       </h2>
@@ -127,6 +143,17 @@ const ContactForm = () => {
 
         </div>
       </div>
+      <p className="mt-10 text-center text-sm text-gray-600">
+        Prefer the studio?{' '}
+        <a
+          href={nevatalUrl('footer')}
+          target="_blank"
+          rel="noopener noreferrer me"
+          className="font-semibold text-black underline underline-offset-2 hover:text-blue-700"
+        >
+          Visit nevatal.id →
+        </a>
+      </p>
     </div>
 
   )

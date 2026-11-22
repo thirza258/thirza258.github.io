@@ -419,12 +419,12 @@ function generateSitemapXml(baseUrl) {
   return lines.join('\n');
 }
 
-// Generate sitemaps for both domains and default
+// Generate sitemaps for the portfolio's canonical domain and default
 const publicDir = path.join(rootDir, 'public');
 
-const sitemapId = generateSitemapXml('https://www.nevatal.id');
-const sitemapTech = generateSitemapXml('https://www.nevatal.id');
-const sitemapDefault = sitemapId; // nevatal.id is canonical
+const sitemapId = generateSitemapXml('https://thirza258.github.io');
+const sitemapTech = generateSitemapXml('https://thirza258.github.io');
+const sitemapDefault = sitemapId; // thirza258.github.io is canonical
 
 fs.writeFileSync(path.join(publicDir, 'sitemap-id.xml'), sitemapId, 'utf-8');
 fs.writeFileSync(path.join(publicDir, 'sitemap-tech.xml'), sitemapTech, 'utf-8');

@@ -1,10 +1,26 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import devpost from '../assets/devpost.png';
+import { nevatalUrl } from '../lib/nevatal';
+import { trackEvent } from '../lib/analytics';
+import { scrollToSection, setIntent } from '../lib/intent';
 
 interface HeaderProps {}
 
 const Header: React.FC<HeaderProps> = () => {
+  const handleHiringClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    setIntent('hiring');
+    trackEvent('intent_selected', { intent: 'hiring' });
+    scrollToSection('career');
+    window.history.replaceState(null, '', '#career');
+  };
+
+  const handleStudioClick = () => {
+    setIntent('studio');
+    trackEvent('intent_selected', { intent: 'studio' });
+  };
+
   return (
     <div className="min-h-screen w-full p-6 sm:p-8 md:p-12 lg:p-16 flex flex-col justify-center">
       
@@ -30,29 +46,46 @@ const Header: React.FC<HeaderProps> = () => {
             />
           </h1>
 
-      
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-gray-600 sm:text-lg">
+            Backend &amp; AI engineer building production systems — and Nevatal, the studio where
+            they ship.
+          </p>
+
+          <div className="mt-6 flex flex-wrap items-center gap-3">
+            <span className="text-sm font-medium text-gray-500">Start here:</span>
+            <a
+              href="#career"
+              onClick={handleHiringClick}
+              aria-label="For hiring — jump to career highlights"
+              className="inline-flex items-center gap-2 rounded-lg border-2 border-black px-4 py-2 text-sm font-semibold text-black transition-colors duration-200 hover:bg-black hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            >
+              For Hiring <span aria-hidden="true">↓</span>
+            </a>
+            <a
+              href={nevatalUrl('hero_split')}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleStudioClick}
+              aria-label="For the studio — open nevatal.id in a new tab"
+              className="inline-flex items-center gap-2 rounded-lg border-2 border-black px-4 py-2 text-sm font-semibold text-black transition-colors duration-200 hover:bg-black hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            >
+              For the Studio <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <button
-            onClick={() => {
-              document.getElementById('cardport')?.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-              });
-            }}
-            className="inline-flex items-center justify-center px-6 py-3 text-base sm:text-lg font-semibold text-black
-                      border-2 border-black rounded-xl hover:bg-black hover:text-white transition-all duration-200">
-            About Me
-          </button>
-          <a
-            href="https://nevatal.id"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base sm:text-lg font-semibold text-white bg-black
-                      border-2 border-black rounded-xl hover:bg-gray-800 transition-all duration-200 shadow-sm"
-          >
-            <span>nevatal.id</span>
-            <i className="bx bx-link-external text-lg"></i>
-          </a>
+            <a
+              href="#cardport"
+              onClick={(event) => {
+                event.preventDefault();
+                scrollToSection('cardport');
+              }}
+              className="inline-flex items-center justify-center px-6 py-3 text-base sm:text-lg font-semibold text-black
+                        border-2 border-black rounded-xl hover:bg-black hover:text-white transition-all duration-200
+                        focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            >
+              About Me
+            </a>
           </div>
         </div>
 

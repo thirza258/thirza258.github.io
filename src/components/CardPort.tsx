@@ -7,6 +7,7 @@ import {
 } from "../cv/cv";
 import devpost from "../assets/devpost.png";
 import { useLanguage } from "../context/LanguageContext";
+import { nevatalLink, nevatalUrl } from "../lib/nevatal";
 
 // A small reusable component for the grid items
 const Card: React.FC<{ children: React.ReactNode; className?: string }> = ({
@@ -112,9 +113,9 @@ const CardPort: React.FC = () => {
             <ul className="mt-4 space-y-3 text-black">
               <li className="flex items-center justify-between">
                 <a
-                  href="https://nevatal.id"
+                  href={nevatalUrl('nav')}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer me"
                   className="font-medium hover:text-blue-400 transition-colors"
                 >
                   nevatal.id
@@ -143,17 +144,17 @@ const CardPort: React.FC = () => {
             {/* Service buttons */}
             <div className="mt-5 grid grid-cols-2 sm:grid-cols-4 gap-2">
               <a
-                href="https://nevatal.id"
+                href={nevatalUrl('nav')}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer me"
                 className="text-center text-sm font-medium px-3 py-2 rounded-lg bg-black text-white hover:bg-gray-800 transition flex items-center justify-center gap-1 shadow-sm"
               >
                 <span>nevatal.id</span>
-                <i className="bx bx-link-external text-xs"></i>
+                <i className="bx bx-link-external text-xs" aria-hidden="true"></i>
               </a>
 
               <a
-                href="https://chat.nevatal.id"
+                href={nevatalLink('https://chat.nevatal.id/', 'nav', 'ai_hub')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-center text-sm font-medium px-3 py-2 rounded-lg bg-gray-900 text-white hover:bg-gray-800 transition"

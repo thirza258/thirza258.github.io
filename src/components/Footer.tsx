@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import LegalModal from "./LegalModal";
+import { nevatalUrl } from "../lib/nevatal";
 
 const Footer = () => {
   // Making the year dynamic is a good practice.
@@ -57,7 +58,7 @@ const Footer = () => {
                 Terms of Service
               </button>
               <span>·</span>
-              <span>This project is under <a href="https://nevatal.id" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 underline">nevatal.id</a> for educational purposes.</span>
+              <span>This project is under <a href={nevatalUrl('footer')} target="_blank" rel="noopener noreferrer me" className="hover:text-yellow-400 underline">nevatal.id</a> for educational purposes.</span>
             </div>
           </div>
 
@@ -106,16 +107,16 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-4 text-center text-sm text-gray-300">
-          <p className="mb-2">Check out my creative works & studio!</p>
+          <p className="mb-2">Studio: nevatal.id</p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://nevatal.id"
+              href={nevatalUrl('footer')}
               target="_blank"
-              rel="noopener noreferrer"
-              className="text-white flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-colors duration-300 shadow-sm font-medium"
+              rel="noopener noreferrer me"
+              className="text-white flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-colors duration-300 shadow-sm font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
-              <i className="bx bx-globe text-xl"></i>
-              <span>nevatal.id Studio</span>
+              <i className="bx bx-globe text-xl" aria-hidden="true"></i>
+              <span>Studio: nevatal.id</span>
             </a>
             <a
               href="https://p-l-a-y2.itch.io/"

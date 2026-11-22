@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import Header from "./components/Header";
+import NevatalFeature from "./components/NevatalFeature";
 import CardPort from "./components/CardPort";
 import Portfolio from "./components/Portfolio";
 import Experiences from "./components/Experiences";
@@ -9,10 +10,12 @@ import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Writings from "./components/Writings";
+import { initAnalytics, initCrosslinkTracking } from "./lib/analytics";
 import "./index.css";
 
 const SECTION_IDS = [
   "header",
+  "nevatal",
   "cardport",
   "portfolio",
   "experiences",
@@ -27,6 +30,11 @@ function App() {
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const isUserScrollingRef = useRef(false);
+
+  useEffect(() => {
+    initAnalytics();
+    return initCrosslinkTracking();
+  }, []);
 
   useEffect(() => {
     const shouldAutoScroll =
@@ -120,10 +128,14 @@ function App() {
 
     const resolveTargetSection = () => {
       const path = window.location.pathname.toLowerCase();
-      const hash = window.location.hash.toLowerCase().replace('#', '');
+      const rawHash = window.location.hash.toLowerCase().replace('#', '');
+      const hash = rawHash.split('?')[0];
 
       if (hash && (SECTION_IDS as readonly string[]).includes(hash)) {
         return hash;
+      }
+      if (hash === 'career') {
+        return 'experiences';
       }
       if (path.startsWith('/projects') || path.startsWith('/portfolio')) {
         return 'portfolio';
@@ -218,6 +230,7 @@ function App() {
       <section id="header">
         <Header />
       </section>
+      <NevatalFeature />
       <section id="cardport">
         <CardPort />
       </section>
@@ -225,6 +238,7 @@ function App() {
         <Portfolio />
       </section>
       <section id="experiences">
+        <div id="career" className="scroll-mt-20" aria-hidden="true" />
         <Experiences />
       </section>
       <section id="education">
