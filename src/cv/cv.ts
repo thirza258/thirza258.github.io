@@ -54,6 +54,28 @@ import nevatalMainPhoto from "../assets/portfolio/nevatal/gallery (2).jpg";
 import nevatalHighlightPhoto1 from "../assets/portfolio/nevatal/gallery (1).jpg";
 import nevatalHighlightPhoto2 from "../assets/portfolio/nevatal/gallery.jpg";
 
+import noelleMainPhoto from "../assets/portfolio/noelle/main.png";
+import noelleHighlightPhoto1 from "../assets/portfolio/noelle/discover.png";
+import noelleHighlightPhoto2 from "../assets/portfolio/noelle/analysis.png";
+import noelleHighlightPhoto3 from "../assets/portfolio/noelle/mission.png";
+
+import divinityaiMainPhoto from "../assets/portfolio/divinityai/preview.jpg";
+import furinaMainPhoto from "../assets/portfolio/furina/preview.jpg";
+import mockInterviewMainPhoto from "../assets/portfolio/mock_interview/preview.jpg";
+import quantaMainPhoto from "../assets/portfolio/quanta/preview.jpg";
+import voltquestMainPhoto from "../assets/portfolio/voltquest/preview.jpg";
+import leetbugMainPhoto from "../assets/portfolio/leetbug/preview.jpg";
+import decaloveMainPhoto from "../assets/portfolio/decalove/preview.jpg";
+import englishPracticeMainPhoto from "../assets/portfolio/english_practice/preview.jpg";
+import adcontrolMainPhoto from "../assets/portfolio/adcontrol/preview.jpg";
+import nevatalCloudMainPhoto from "../assets/portfolio/nevatal_cloud/preview.jpg";
+import sdgMainPhoto from "../assets/portfolio/sdg/preview.jpg";
+import uptimeMedicsMainPhoto from "../assets/portfolio/uptime_medics/preview.jpg";
+import webisaurusMainPhoto from "../assets/portfolio/webisaurus/preview.jpg";
+import videotexMainPhoto from "../assets/portfolio/videotex/preview.jpg";
+import geminiJapaneseMainPhoto from "../assets/portfolio/gemini_japanese/preview.jpg";
+import literalStoryboardMainPhoto from "../assets/portfolio/literal_storyboard/preview.jpg";
+
 export const thirzaAhmadTsaqifEnglish = {
   "personalInfo": {
     "name": "Thirza Ahmad Tsaqif",
@@ -223,67 +245,344 @@ export const thirzaAhmadTsaqifEnglish = {
   "projects": [
     {
       "name": "RAGReader",
-      "context": "NextAI Hackathon Submission",
+      "context": "NextAI Hackathon / Nevatal AI Studio",
       "liveUrl": "https://rag.nevatal.id/",
       "links": {
         "github": "https://github.com/thirza258/RagReader",
         "devpost": "https://devpost.com/software/ragreader-kauodp?ref_content=user-portfolio&ref_feature=in_progress",
-        "demo":  "https://rag.nevatal.id/"
+        "demo": "https://rag.nevatal.id/"
       },
       "description": [
-        "Built RAGReader, an evaluation platform for comparing and identifying the most effective Retrieval-Augmented Generation (RAG) pipeline for custom document collections.",
-        "Developed the backend using Django REST Framework, Celery, and Docker to support scalable asynchronous document ingestion, embedding, retrieval, reranking, and evaluation workflows.",
-        "Implemented multiple dense retrieval pipelines using OpenAI embedding models via OpenRouter and OpenAI APIs, with LangChain for document chunking and text splitting.",
-        "Integrated reranking models including Cross-Encoder MiniLM-L2, alongside LLM providers such as Claude, Gemini, and OpenAI, to benchmark retrieval quality and answer generation performance.",
-        "Used Chroma as the vector database for embedding persistence, chunk storage, metadata management, and experiment tracking.",
-        "Designed an evaluation framework leveraging BERT-based metrics and LLM-as-a-judge methodologies to compare retrieval, reranking, and generation configurations.",
-        "Built the frontend using React, Vite, and Tailwind CSS to provide interactive experiment configuration and result visualization."
+        "Engineered RAGReader into a full end-to-end RAG evaluation and benchmarking platform that compares, scores, and diagnoses 9 independent retrieval and generation pipelines across custom document collections.",
+        "Implemented multi-method retrieval architectures combining Dense RAG (OpenAI vector embeddings), Sparse RAG (BM25 keyword search), and Hybrid RAG with Cross-Encoder MiniLM-L2 reranking and Reciprocal Rank Fusion (RRF).",
+        "Orchestrated multi-LLM consensus voting across OpenAI GPT-4o-mini, Anthropic Claude Haiku 4.5, and Google Gemini 3 Flash to ensure answer veracity and cross-model agreement.",
+        "Integrated an end-to-end evaluation suite utilizing Ragas (Factual Correctness, Faithfulness, Answer Relevancy), Precision@K, Recall@K, and LLM-as-a-judge scoring against pooled ground truth.",
+        "Architected asynchronous background orchestration using Django REST Framework, Celery, and Redis, streaming real-time stage progress over WebSockets into an interactive visual Analysis Flow inspector.",
+        "Authored a public learning portal with 6 structured courses and 28 hands-on lessons covering RAG fundamentals, module composition, and evaluation science."
       ],
       "mainPhoto": ragreaderMainPhoto,
       "highlightPhoto": [ragreaderHighlightPhoto1, ragreaderHighlightPhoto2, ragreaderHighlightPhoto3],
-      "Programming language used or technology used": ["Django REST Framework", "ChromaDB", "Github Actions", "RAG", "OpenRouter", "Vite", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Claude", "Mistral"],
-      "affiliation": "NextAI Hackathon Submission"
+      "Programming language used or technology used": ["Django REST Framework", "Celery", "Redis", "ChromaDB", "Ragas", "Cross-Encoder MiniLM", "RAG", "OpenAI GPT-4o-mini", "Claude Haiku 4.5", "Gemini 3 Flash", "WebSocket", "React", "TypeScript", "Tailwind CSS"],
+      "affiliation": "NextAI Hackathon / Nevatal AI Studio"
     },
     {
       "name": "Multi Hop Corrective with Reranker RAG Pipeline",
-      "context": "Campus Final Project",
+      "context": "Campus Final Project / Nevatal AI Studio",
       "liveUrl": "https://crag.nevatal.id/",
       "links": {
         "demo": "https://crag.nevatal.id/"
       },
-      
       "description": [
-        "Designed and implemented a Multi-Hop RAG pipeline combining Hybrid Retrieval (Dense + Sparse) and reranking models to support complex reasoning tasks.",
-        "Engineered a Corrective RAG (CRAG) framework that dynamically evaluates retrieved context, reducing retrieval noise and mitigating LLM hallucinations.",
-        "Benchmarked system performance using Hit Rate, MAP, MRR, RAGAS Faithfulness, Answer Relevancy, and BERTScore metrics.",
-        "Developed retrieval and generation backend services using Python, Django, LangChain, ChromaDB, PostgreSQL, and Redis.",
-        "Containerized and orchestrated the application stack with Docker to enable reproducible experimentation and deployment."
+        "Architected an end-to-end Multi-Hop Corrective RAG (CRAG) pipeline specifically engineered to solve complex multi-step reasoning queries over multi-document corpora (MultiHop-RAG).",
+        "Engineered Hybrid Retrieval fusing dense semantic vector embeddings and BM25 sparse keyword matching, routed through a Cross-Encoder neural reranker to filter low-confidence context.",
+        "Implemented an autonomous Corrective RAG self-grading loop that evaluates context relevancy and dynamically triggers query decomposition, web search fallback, or context refinement when retrieved evidence is ambiguous.",
+        "Benchmarked system performance using Hit Rate@K, Mean Average Precision (MAP), Mean Reciprocal Rank (MRR), Ragas Faithfulness, Answer Relevancy, and BERTScore metrics.",
+        "Built production backend microservices using Python, Django REST Framework, Celery, Redis, ChromaDB, PostgreSQL, and a React/TypeScript interface."
       ],
       "mainPhoto": cragHighlightPhoto1,
       "highlightPhoto": [cragHighlightPhoto1, cragHighlightPhoto2, cragHighlightPhoto3, cragHighlightPhoto4, cragHighlightPhoto5],
-      "Programming language used or technology used": ["Django REST Framework",  "ChromaDB", "PyTorch", "Hugging Face Transformers", "LLM", "RAGAs", "RAG", "OpenRouter", "Vite", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Deepseek LLMs", "ChromaDB", "PostgreSQL", "Redis", "Celery", "Transformers"],
-      "affiliation": "Campus Final Project"
+      "Programming language used or technology used": ["Django REST Framework", "ChromaDB", "PyTorch", "Hugging Face Transformers", "LLM", "RAGAs", "RAG", "OpenRouter", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Deepseek LLMs", "PostgreSQL", "Redis", "Celery"],
+      "affiliation": "Campus Final Project / Nevatal AI Studio"
     },
      {
       "name": "Nevatal",
-      "context": "Google Chrome Built-in AI Challenge 2025 Submission",
+      "context": "Google Chrome Built-in AI Challenge 2025 / Independent AI Studio",
       "liveUrl": "https://chat.nevatal.id/",
       "links": {
         "website": "https://nevatal.id",
         "github": "https://github.com/thirza258/nevatal",
         "devpost": "https://devpost.com/software/chattywhole",
-        "demo":  "https://chat.nevatal.id/"
+        "demo": "https://chat.nevatal.id/"
       },
       "description": [
-        "Developed a full-stack AI platform integrating Gemini-powered prompt generation, text utilities, document RAG, and image generation capabilities.",
-        "Built scalable backend services with Django REST Framework and PostgreSQL, alongside a React, TypeScript, Vite, and Tailwind CSS frontend.",
-        "Implemented RAG pipelines using Gemini embeddings and configurable model parameters to enhance contextual understanding and response quality.",
-        "Dockerized the complete application stack to support reproducible deployments and self-hosted usage with user-provided Gemini API credentials."
+        "Developed Nevatal, a full-stack AI Functions Hub and independent studio platform featuring 17 purpose-built AI tools spanning text generation, deep explainers, copywriting, document RAG, data analysis, image generation, and batch processing.",
+        "Engineered a privacy-focused Bring-Your-Own-Key (BYOK) architecture supporting Google Gemini, OpenAI, and OpenRouter's 400+ model catalogue with client-side credential management.",
+        "Implemented an intelligent Document AI module featuring token-aware chunking, vector embedding, and grounded conversational search over uploaded PDF documents.",
+        "Authored a public academy offering 6 structured, self-paced courses and 18 interactive lessons with practical prompt engineering exercises.",
+        "Containerized and deployed the complete stack using Docker Compose, Django REST Framework, PostgreSQL, React, TypeScript, and Vite."
       ],
       "mainPhoto": nevatalMainPhoto,
       "highlightPhoto": [nevatalHighlightPhoto1, nevatalHighlightPhoto2],
-      "Programming language used or technology used": ["Django REST Framework",  "LLM",  "RAG", "OpenRouter", "Vite", "React", "TypeScript", "Tailwind CSS", ],
-      "affiliation": "Google Chrome Built-in AI Challenge 2025 Submission"
+      "Programming language used or technology used": ["Django REST Framework", "LLM", "RAG", "OpenRouter", "Google Gemini", "OpenAI", "Vite", "React", "TypeScript", "Tailwind CSS", "Docker Compose"],
+      "affiliation": "Google Chrome Built-in AI Challenge 2025 / Independent AI Studio"
+    },
+
+    {
+      "name": "Noelle",
+      "context": "Nevatal Studio Product",
+      "liveUrl": "https://noelle.nevatal.id/",
+      "links": {
+        "demo": "https://noelle.nevatal.id/",
+        "github": "https://github.com/thirza258/NoelleApp"
+      },
+      "description": [
+        "Engineered Noelle, a local-first desktop AI workbench and small model lab for discovering, running, evaluating, and serving open-weight models from Hugging Face Hub.",
+        "Architected a dual-process system with a PySide6 GUI shell communicating via ZeroMQ IPC to an isolated inference engine, preventing UI freezes and safely containing GPU OOM faults.",
+        "Integrated llama.cpp and Transformers runtime engines with automatic 4-bit quantization (GGUF, AWQ, GPTQ, bitsandbytes NF4) and hardware-aware compatibility scoring.",
+        "Built an Evaluation Lab supporting deterministic benchmarks and RAG Studio with token-aware chunking, on-device embeddings, and sqlite-vec vector search.",
+        "Exposed local OpenAI-compatible APIs (/v1/chat/completions, /v1/embeddings) and Model Context Protocol (MCP) server for coding agent integration."
+      ],
+      "mainPhoto": noelleMainPhoto,
+      "highlightPhoto": [noelleHighlightPhoto1, noelleHighlightPhoto2, noelleHighlightPhoto3],
+      "Programming language used or technology used": ["PySide6", "Python", "llama.cpp", "Transformers", "FastAPI", "SQLite", "MCP", "ZeroMQ", "Hugging Face", "RAG"],
+      "affiliation": "Nevatal Studio Product"
+    },
+    {
+      "name": "DivinityAI",
+      "context": "Nevatal Studio Product",
+      "liveUrl": "https://muslim.nevatal.id/",
+      "links": {
+        "demo": "https://muslim.nevatal.id/",
+        "github": "https://github.com/thirza258/divinityai"
+      },
+      "description": [
+        "Developed DivinityAI, an Islamic knowledge retrieval system providing grounded, verifiable answers directly cited from the Quran and authenticated Hadith collections.",
+        "Implemented a strict citation-first RAG pipeline that explicitly refuses to hallucinate when queries fall outside the verified corpus.",
+        "Utilized Ollama for local LLM inference alongside vector embeddings and ChromaDB for semantic similarity search across classical Islamic texts.",
+        "Built a responsive and accessible frontend interface with React, TypeScript, and Tailwind CSS."
+      ],
+      "mainPhoto": divinityaiMainPhoto,
+      "highlightPhoto": [divinityaiMainPhoto],
+      "Programming language used or technology used": ["RAG", "Ollama", "Python", "FastAPI", "ChromaDB", "React", "TypeScript", "Tailwind CSS"],
+      "affiliation": "Nevatal Studio Product"
+    },
+    {
+      "name": "Furina ML",
+      "context": "Nevatal Studio Product",
+      "liveUrl": "https://furina.nevatal.id/",
+      "links": {
+        "demo": "https://furina.nevatal.id/",
+        "github": "https://github.com/thirza258/Furina-ML"
+      },
+      "description": [
+        "Created Furina ML, a no-code machine learning platform that democratizes model training and evaluation on tabular datasets without writing code.",
+        "Integrated automated CSV dataset profiling, missing value imputation, feature encoding, and outlier detection.",
+        "Supported training, cross-validation, and hyperparameter tuning across scikit-learn classification and regression models.",
+        "Engineered an interactive live-prediction sandbox with real-time confusion matrices, ROC-AUC curves, and feature importance rankings."
+      ],
+      "mainPhoto": furinaMainPhoto,
+      "highlightPhoto": [furinaMainPhoto],
+      "Programming language used or technology used": ["scikit-learn", "FastAPI", "React", "TypeScript", "Tailwind CSS", "Python", "AutoML"],
+      "affiliation": "Nevatal Studio Product"
+    },
+    {
+      "name": "My Mock Interview",
+      "context": "Nevatal Studio Product",
+      "liveUrl": "https://interview.nevatal.id/",
+      "links": {
+        "demo": "https://interview.nevatal.id/",
+        "github": "https://github.com/thirza258/Laycall-interviewer-agent"
+      },
+      "description": [
+        "Developed My Mock Interview, an AI-driven interview coaching platform that crafts tailored questions directly from a candidate's resume and target job description.",
+        "Engineered dual simulation modes: practice answering dynamically scored questions or reverse roles to conduct interviews against an AI candidate persona.",
+        "Integrated automated feedback scoring across communication clarity, technical depth, and STAR methodology alignment.",
+        "Provided an extensive 90-lesson structured curriculum covering behavioral questions, system design, and technical interviews."
+      ],
+      "mainPhoto": mockInterviewMainPhoto,
+      "highlightPhoto": [mockInterviewMainPhoto],
+      "Programming language used or technology used": ["React", "FastAPI", "LLM", "TypeScript", "Python", "Tailwind CSS", "AI Agent"],
+      "affiliation": "Nevatal Studio Product"
+    },
+    {
+      "name": "Quanta",
+      "context": "Nevatal Studio Product",
+      "liveUrl": "https://quant.nevatal.id/",
+      "links": {
+        "demo": "https://quant.nevatal.id/",
+        "github": "https://github.com/thirza258/quanta"
+      },
+      "description": [
+        "Built Quanta, a comprehensive investment learning workspace and financial engineering sandbox featuring 15 interactive courses.",
+        "Developed a real-time paper trading simulator and strategy backtesting lab supporting algorithmic trading bots in Python.",
+        "Implemented econometrics playgrounds with historical market data visualization, risk metrics (Sharpe ratio, max drawdown), and portfolio optimization.",
+        "Built the backend with Django and PostgreSQL, containerized with Docker for reliable multi-tenant execution."
+      ],
+      "mainPhoto": quantaMainPhoto,
+      "highlightPhoto": [quantaMainPhoto],
+      "Programming language used or technology used": ["Django", "Python", "PostgreSQL", "Docker", "Simulator", "Financial Engineering"],
+      "affiliation": "Nevatal Studio Product"
+    },
+    {
+      "name": "VoltQuest",
+      "context": "Nevatal Studio Product",
+      "liveUrl": "https://pcb.nevatal.id/",
+      "links": {
+        "demo": "https://pcb.nevatal.id/",
+        "github": "https://github.com/thirza258/voltquest"
+      },
+      "description": [
+        "Designed VoltQuest, a systems and computer engineering learning platform bridging logic gates, computer architecture, and desktop development.",
+        "Created interactive curricula covering digital electronics, x86/ARM assembly, C++, and modern desktop UI engineering with WinUI.",
+        "Engineered runnable browser tutorials, hands-on lab environments, automated exam assessments, and verifiable PDF certificates."
+      ],
+      "mainPhoto": voltquestMainPhoto,
+      "highlightPhoto": [voltquestMainPhoto],
+      "Programming language used or technology used": ["C++", "WinUI", "Computer Architecture", "Assembly", "Education", "Hardware Simulation"],
+      "affiliation": "Nevatal Studio Product"
+    },
+    {
+      "name": "LeetBug",
+      "context": "Nevatal Studio Product",
+      "liveUrl": "https://leetbug.nevatal.id/",
+      "links": {
+        "demo": "https://leetbug.nevatal.id/",
+        "github": "https://github.com/thirza258/leetbug"
+      },
+      "description": [
+        "Built LeetBug, an interactive debugging practice sandbox featuring hundreds of real-world bug case studies across Python, JavaScript, Go, C++, and Java.",
+        "Engineered a secure sandboxed code runner that executes test cases against user patches and evaluates the fix rather than simple output matching.",
+        "Implemented progressive hint tiers and hidden regression suites to cultivate realistic industrial troubleshooting skills."
+      ],
+      "mainPhoto": leetbugMainPhoto,
+      "highlightPhoto": [leetbugMainPhoto],
+      "Programming language used or technology used": ["FastAPI", "React", "TypeScript", "Docker", "Sandbox", "Python"],
+      "affiliation": "Nevatal Studio Product"
+    },
+    {
+      "name": "Decalove",
+      "context": "Nevatal Studio Product",
+      "liveUrl": "https://decalove.nevatal.id/",
+      "links": {
+        "demo": "https://decalove.nevatal.id/",
+        "github": "https://github.com/thirza258/decalove"
+      },
+      "description": [
+        "Developed Decalove, an AI-directed visual novel and narrative engine featuring persistent character memory and dynamic scenario generation.",
+        "Integrated an AI storytelling backend that generates consistent character dialogue, scene descriptions, and branch choices on the fly.",
+        "Built an authoring studio with rich-text narrative editing, story branching graphs, and integrated creative writing courses."
+      ],
+      "mainPhoto": decaloveMainPhoto,
+      "highlightPhoto": [decaloveMainPhoto],
+      "Programming language used or technology used": ["AI Storytelling", "Ren'Py", "React", "TypeScript", "LLM", "Tailwind CSS"],
+      "affiliation": "Nevatal Studio Product"
+    },
+    {
+      "name": "English & IELTS Practice",
+      "context": "Nevatal Studio Product",
+      "liveUrl": "https://english.nevatal.id/",
+      "links": {
+        "demo": "https://english.nevatal.id/",
+        "github": "https://github.com/thirza258/english-practice"
+      },
+      "description": [
+        "Created English & IELTS Practice, a diagnostic learning platform guiding users from foundational grammar to IELTS Band 8 proficiency.",
+        "Designed targeted practice modes for grammar concepts, vocabulary retention, reading comprehension, and IELTS-style academic writing.",
+        "Built a robust Django and PostgreSQL backend with automated progress tracking and explanatory feedback for every exercise."
+      ],
+      "mainPhoto": englishPracticeMainPhoto,
+      "highlightPhoto": [englishPracticeMainPhoto],
+      "Programming language used or technology used": ["Django", "Python", "PostgreSQL", "Tailwind CSS", "Education"],
+      "affiliation": "Nevatal Studio Product"
+    },
+    {
+      "name": "AdControl Learning",
+      "context": "Nevatal Studio Product",
+      "liveUrl": "https://marketing.nevatal.id/",
+      "links": {
+        "demo": "https://marketing.nevatal.id/",
+        "github": "https://github.com/thirza258/nevatal-ads"
+      },
+      "description": [
+        "Built AdControl Learning, a free educational portal offering comprehensive courses on digital marketing, SEO, GEO, and growth strategies.",
+        "Covered practical modules on Generative Engine Optimization (GEO), search engine indexing, affiliate attribution, and conversion rate optimization (CRO).",
+        "Developed an ultra-fast, responsive web interface built with React, TypeScript, and Tailwind CSS."
+      ],
+      "mainPhoto": adcontrolMainPhoto,
+      "highlightPhoto": [adcontrolMainPhoto],
+      "Programming language used or technology used": ["React", "TypeScript", "Tailwind CSS", "Marketing", "SEO", "Analytics"],
+      "affiliation": "Nevatal Studio Product"
+    },
+    {
+      "name": "Nevatal Cloud",
+      "context": "Nevatal Studio Product",
+      "liveUrl": "https://cloud.nevatal.id/",
+      "links": {
+        "demo": "https://cloud.nevatal.id/",
+        "preview": "https://demo.nevatal.id/",
+        "github": "https://github.com/thirza258/nevatal-cloud"
+      },
+      "description": [
+        "Engineered Nevatal Cloud, a high-performance bare-metal developer cloud running on Dell PowerEdge R640 nodes and Proxmox VE 8.",
+        "Configured automated provisioning for KVM Linux VPS instances, dedicated game servers (Minecraft & Terraria), and Waydroid Android containers.",
+        "Integrated an AI Cloud Agent for automated infrastructure administration, resource monitoring, and fast deployment."
+      ],
+      "mainPhoto": nevatalCloudMainPhoto,
+      "highlightPhoto": [nevatalCloudMainPhoto],
+      "Programming language used or technology used": ["Bare-Metal", "Proxmox VE", "KVM", "Linux VPS", "Game Servers", "Waydroid", "Networking"],
+      "affiliation": "Nevatal Studio Product"
+    },
+    {
+      "name": "SDG Country Profiles",
+      "context": "Nevatal Studio Product",
+      "liveUrl": "https://sdg.nevatal.id/",
+      "links": {
+        "demo": "https://sdg.nevatal.id/",
+        "github": "https://github.com/thirza258/Country-SDG"
+      },
+      "description": [
+        "Developed SDG Country Profiles, an interactive data visualization platform presenting progress scorecards across all 17 UN Sustainable Development Goals.",
+        "Integrated official Sustainable Development Report datasets with live World Bank indicator APIs, preserving provenance and measurement years.",
+        "Built with Django, PostgreSQL, and Tailwind CSS, featuring comparative country analytics and goal-by-goal trend rankings."
+      ],
+      "mainPhoto": sdgMainPhoto,
+      "highlightPhoto": [sdgMainPhoto],
+      "Programming language used or technology used": ["Django", "Python", "UN SDG", "World Bank API", "PostgreSQL", "Tailwind CSS"],
+      "affiliation": "Nevatal Studio Product"
+    },
+    {
+      "name": "Uptime Medics",
+      "context": "Nevatal Studio Product",
+      "liveUrl": "https://uptime.nevatal.id/",
+      "links": {
+        "demo": "https://uptime.nevatal.id/",
+        "github": "https://github.com/thirza258/Uptime-Medics"
+      },
+      "description": [
+        "Built Uptime Medics, a high-frequency, sub-second uptime monitoring system engineered with Rust and the Axum web framework.",
+        "Implemented concurrent HTTP and TCP probes with SQLite storage, latency percentile tracking, and configurable threshold policies.",
+        "Features real-time public status pages, incident timelines, and automated SMTP alert dispatching after consecutive failures."
+      ],
+      "mainPhoto": uptimeMedicsMainPhoto,
+      "highlightPhoto": [uptimeMedicsMainPhoto],
+      "Programming language used or technology used": ["Rust", "Axum", "SQLite", "SMTP", "Docker", "DevOps"],
+      "affiliation": "Nevatal Studio Product"
+    },
+    {
+      "name": "Webisaurus",
+      "context": "Nevatal Studio Product",
+      "liveUrl": "https://c.nevatal.id/",
+      "links": {
+        "demo": "https://c.nevatal.id/",
+        "github": "https://github.com/thirza258/webisaurus"
+      },
+      "description": [
+        "Created Webisaurus, an open-source programming syntax reference and multi-language comparative code analyzer.",
+        "Documents how 140 programming languages express 24 fundamental computing concepts, allowing instant side-by-side implementation comparisons.",
+        "Engineered as an ultra-fast zero-backend static web application served via Nginx with instant fuzzy searching and syntax highlighting."
+      ],
+      "mainPhoto": webisaurusMainPhoto,
+      "highlightPhoto": [webisaurusMainPhoto],
+      "Programming language used or technology used": ["Vanilla JS", "Static Site", "Nginx", "HTML5", "CSS3"],
+      "affiliation": "Nevatal Studio Product"
+    },
+    {
+      "name": "VideoTex",
+      "context": "Nevatal Studio Product",
+      "liveUrl": "https://video.nevatal.id/",
+      "links": {
+        "demo": "https://video.nevatal.id/",
+        "github": "https://github.com/thirza258/VideoTex"
+      },
+      "description": [
+        "Developed VideoTex, a self-hosted video publishing and streaming platform powered by Django and FFmpeg.",
+        "Engineered asynchronous background transcoding into multiple streaming resolutions with HTTP-206 byte-range seeking.",
+        "Implemented a crash-resilient leased task queue that persists across worker restarts, with comments, likes, and channel feeds."
+      ],
+      "mainPhoto": videotexMainPhoto,
+      "highlightPhoto": [videotexMainPhoto],
+      "Programming language used or technology used": ["Django", "Python", "FFmpeg", "PostgreSQL", "Docker", "Video Streaming"],
+      "affiliation": "Nevatal Studio Product"
     },
     {
       "name": "Integrated Information Systems (SIT)",
@@ -381,6 +680,9 @@ export const thirzaAhmadTsaqifEnglish = {
     {
       "name": "Pasal Voice Assistant",
       "context": "Personal Project",
+      "links": {
+        "github": "https://github.com/thirza258/PasalVA"
+      },
       "description": [
         "Create Fully self-hosted voice assistant deployed on Indonesian TTS and STT models, utilizing Ollama for LLM integration and RAG for contextual information retrieval, providing a privacy-focused alternative to mainstream voice assistants.",
         "Using Facebook-mms-tts-ind for TTS and Whisper with Indonesian Configuration for STT",
@@ -394,40 +696,41 @@ export const thirzaAhmadTsaqifEnglish = {
     },
     {
       "name": "Daily Task Wallpaper Generator with Genshin Impact Theme",
-      "context": "Personal Project",
+      "context": "Personal Project / Nevatal Studio Product",
       "liveUrl": "https://genshinwallpaper.nevatal.id/",
       "links": {
+        "github": "https://github.com/thirza258/GenshinWallGen",
         "demo": "https://genshinwallpaper.nevatal.id/"
       },
       "description": [
-        "Created a daily task wallpaper generator with a Genshin Impact theme, providing users with visually appealing and personalized wallpapers to organize their daily tasks.",
-        "Built the backend using FastAPI and Pillow for image processing, allowing users to input their tasks and generate customized wallpapers.",
-        "Dockerized the application for easy deployment and scalability, enabling users to run the generator on their local machines or cloud platforms.",
-        "Designed a frontend with React, Vite, and Tailwind CSS to provide an intuitive interface for task input and wallpaper generation."
+        "Evolved into GenshinWallCraft, a full-featured desktop wallpaper generator and creative pixel art workspace blending productivity and gaming aesthetics.",
+        "Generates high-resolution task-overlay desktop wallpapers with Google Calendar task synchronization in both anonymous quick-generate and authenticated modes with private history.",
+        "Built Pixel Studio, an embedded browser-based pixel art editor for drawing sprites, animating modular characters, and designing seamless tilesets and backgrounds.",
+        "Engineered the backend using FastAPI, Pillow, and MinIO for image rendering and asset storage, alongside a responsive React, Vite, and Tailwind CSS frontend."
       ],
       "mainPhoto": genshinImpactHighlightPhoto1,
       "highlightPhoto": [genshinImpactHighlightPhoto1, genshinImpactHighlightPhoto2],
-      "Programming language used or technology used": ["Tailwind CSS", "Vite", "React", "MinIO", "Javascript", "FastAPI", "Pillow"],
-      "affiliation": "Personal Project"
+      "Programming language used or technology used": ["FastAPI", "Pillow", "MinIO", "Pixel Art", "React", "Vite", "TypeScript", "Tailwind CSS"],
+      "affiliation": "Personal Project / Nevatal Studio Product"
     },
     {
       "name": "URL Shortener",
-      "organization": "Personal Project",
+      "organization": "Personal Project / Nevatal Studio Product",
       "liveUrl": "https://url.nevatal.id/",
       "links": {
         "github": "https://github.com/thirza258/freecodecamp_url_shortener",
-        "demo":  "https://url.nevatal.id/"
+        "demo": "https://url.nevatal.id/"
       },
       "description": [
-  "Developed a production-ready URL Shortener platform using Django, PostgreSQL, and Redis, enabling custom and auto-generated short links with collision-resistant slug generation and duplicate prevention.",
-  "Implemented Redis-backed rate limiting, URL validation, and security protections to mitigate abuse, ensure data integrity, and improve platform reliability.",
-  "Built analytics and tracking capabilities including click counts, referrer logging, user-agent monitoring, and access statistics for URL performance insights.",
-  "Containerized the application with Docker and Docker Compose, integrating PostgreSQL 16 and Redis to support scalable deployment and streamlined infrastructure management."
-],
+        "Developed a high-performance URL Shortener platform using Django, PostgreSQL 16, and Redis, enabling custom and collision-resistant short link generation with duplicate protection.",
+        "Implemented Redis-backed sliding-window rate limiting, domain validation, and proactive security measures against abuse and phishing redirects.",
+        "Built a deep analytics engine tracking click counts, referrer domains, geographic telemetry, user-agent device monitoring, and time-series click velocities.",
+        "Containerized the entire stack with Docker Compose and Nginx for production-grade reliability and low-latency redirections."
+      ],
       "mainPhoto": urlShortenerHighlightPhoto1,
       "highlightPhoto": [urlShortenerHighlightPhoto1],
-      "Programming language used or technology used": ["Django", "PostgreSQL", "Redis", "Docker", "Docker Compose"],
-      "affiliation": "Personal Project"
+      "Programming language used or technology used": ["Django", "PostgreSQL", "Redis", "Docker", "Docker Compose", "Analytics"],
+      "affiliation": "Personal Project / Nevatal Studio Product"
     },
     {
       "name": "My Hearing",
@@ -501,24 +804,23 @@ export const thirzaAhmadTsaqifEnglish = {
     },
     {
       "name": "ChattyDesk",
-      "context": "Dev Challenge Submission",
+      "context": "Dev Challenge Submission / Nevatal Studio Product",
       "links": {
-        "githubBackend": "[Github Backend]",
-        "githubFrontend": "[Github Frontend]",
-        "devpost": "[Devpost]"
-      ,
+        "githubBackend": "https://github.com/thirza258/chattydesk_backend",
+        "githubFrontend": "https://github.com/thirza258/chattydesk",
         "demo": "https://chatty.nevatal.id/"
       },
       "liveUrl": "https://chatty.nevatal.id/",
       "description": [
-        "Developed a cross-platform desktop application enabling seamless multi-LLM chat that is Gemini, Claude, Open AI GPT, and Mistral.",
-        "Backend involved designing and deploying a scalable API using Django REST Framework, Python, and PostgreSQL, hosted on DigitalOcean.",
-        "Desktop application was built with Electron, React, and TypeScript, ensuring a smooth user experience across different LLM models."
+        "Developed ChattyDesk, a unified multi-model AI desk available both as a cross-platform desktop application (Electron) and responsive web application.",
+        "Unified access to 400+ frontier and open-weight models via OpenRouter (Claude, GPT, Gemini, Mistral, Llama, DeepSeek) with dynamic model switching mid-conversation.",
+        "Built persistent multi-turn conversations with server-side chat history, JWT-based user accounts, token telemetry, and BYOK OpenRouter fallback keys.",
+        "Integrated free beginner AI courses with interactive prompt practice directly inside the web client."
       ],
       "mainPhoto": chattydeskMainPhoto,
       "highlightPhoto": [chattydeskHighlightPhoto1],
-      "Programming language used or technology used": ["Django REST Framework", "Python", "PostgreSQL", "DigitalOcean", "Electron", "React", "TypeScript", "Gemini", "Claude", "OpenAI", "Mistral"],
-      "affiliation": "Dev Challenge Submission"
+      "Programming language used or technology used": ["Django REST Framework", "Python", "PostgreSQL", "Electron", "React", "TypeScript", "Tailwind CSS", "OpenRouter", "Gemini", "Claude", "OpenAI"],
+      "affiliation": "Dev Challenge Submission / Nevatal Studio Product"
     },
     {
       "name": "Best Staff Voting Website API",
@@ -567,44 +869,41 @@ export const thirzaAhmadTsaqifEnglish = {
     },
     {
       "name": "Gemini Japanese",
-      "context": "MLH GWH Submission",
+      "context": "MLH GWH Submission / Nevatal Studio Product",
       "links": {
         "github": "https://github.com/thirza258/gemini_japanese",
-        "devpost": "https://devpost.com/software/gemini-japanese-translator"
-      ,
+        "devpost": "https://devpost.com/software/gemini-japanese-translator",
         "demo": "https://hira.nevatal.id/"
       },
       "liveUrl": "https://hira.nevatal.id/",
       "description": [
-        "Developed a Japanese translation application that provides users with both romaji and translations by integrating the Gemini AI API, increasing translation accuracy with any japanese format.",
-        "Utilized React with TypeScript for the frontend to create a dynamic and intuitive user interface,",
-        "Implemented the backend using a TypeScript server, ensuring efficient data processing. Utilizing AWS Amplify as a deployment platform."
+        "Engineered Gemini Japanese, a comprehensive Japanese study workspace featuring JLPT N5–N1 structured curricula, 200 interactive kanji flashcards, and grammar drills.",
+        "Integrated Google Gemini AI for contextual Japanese sentence translation, furigana generation, and romaji transliteration across complex sentence structures.",
+        "Crafted listening comprehension modules with native audio passages, wrapped in an adaptive Sakura-themed interface that responds to device color schemes."
       ],
-      "mainPhoto": "main_photo_url",
-      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
-      "Programming language used or technology used": ["Gemini", "React", "TypeScript", "AWS Amplify"],
-      "affiliation": "MLH GWH Submission"
+      "mainPhoto": geminiJapaneseMainPhoto,
+      "highlightPhoto": [geminiJapaneseMainPhoto],
+      "Programming language used or technology used": ["Gemini", "React", "TypeScript", "Tailwind CSS", "Education", "Node.js"],
+      "affiliation": "MLH GWH Submission / Nevatal Studio Product"
     },
     
     {
       "name": "LiteralStoryboard",
-      "context": "AWS Game Builder Hackathon Submission",
+      "context": "Hackathon Submission / Nevatal Studio Product",
+      "liveUrl": "https://story.nevatal.id/",
       "links": {
         "github": "https://github.com/thirza258/literal-storyboard",
-        "devpost": "https://devpost.com/software/literal-storyboard"
-      ,
         "demo": "https://story.nevatal.id/"
       },
-      "liveUrl": "https://story.nevatal.id/",
       "description": [
-        "Created a game website that combines board game and story.",
-        "Developed using Vite React Typescript and Tailwind CSS and utilizing Gemini API as the story generator and",
-        "Utilized AWS Amplify as deployment platform."
+        "Developed Literal Storyboard, an AI-directed procedural narrative engine that unfolds interactive story episodes across dynamic real-world city maps.",
+        "Engineered dynamic story beats, branching dilemmas, and painted scenery generation, routing all model inferences through OpenRouter for dynamic model swapping.",
+        "Built an interactive map interface with responsive choice-driven gameplay using React and Tailwind CSS."
       ],
-      "mainPhoto": "main_photo_url",
-      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
-      "Programming language used or technology used": ["Vite", "React", "TypeScript", "Tailwind CSS", "Gemini", "AWS Amplify"],
-      "affiliation": "AWS Game Builder Hackathon Submission"
+      "mainPhoto": literalStoryboardMainPhoto,
+      "highlightPhoto": [literalStoryboardMainPhoto],
+      "Programming language used or technology used": ["OpenRouter", "AI Storytelling", "React", "TypeScript", "Tailwind CSS", "Mapbox/Leaflet"],
+      "affiliation": "Hackathon Submission / Nevatal Studio Product"
     },
     {
       "name": "Recipe Recommender",
@@ -626,23 +925,22 @@ export const thirzaAhmadTsaqifEnglish = {
     },
     {
       "name": "Recommendica",
-      "context": "Global Hack Week AI/ML Submission",
+      "context": "Global Hack Week AI/ML / Nevatal Studio Product",
       "links": {
-        "githubBackend": "[Github Backend]",
-        "githubFrontend": "[Github Frontend]",
-        "devpost": "[Devpost]"
-      ,
+        "github": "https://github.com/thirza258/recommendica",
         "demo": "https://recommendica.nevatal.id/"
       },
       "liveUrl": "https://recommendica.nevatal.id/",
       "description": [
-        "Developed a Research Recommendation RAG-based API using the ArXiv dataset, with FAISS for retrieval and OpenAI for AI processing and Langchain as the pipeline.",
-        "Utilized OpenAPI for documentation and Built the API with Django REST Framework."
+        "Developed Recommendica, an academic research recommendation and paper discovery engine powered by adaptive Retrieval-Augmented Generation (RAG) over the ArXiv scholarly corpus.",
+        "Engineered an adaptive multi-step research flow that autonomously selects search steps from input queries and dynamically broadens literature retrieval when evidence coverage lacks depth.",
+        "Implemented dense vector indexing with FAISS and Chroma, OpenAI embeddings, and LangChain pipelines to deliver structured summaries with verifiable DOI/ArXiv citations.",
+        "Structured as a clean monorepo with a Django REST Framework API, streaming prompt endpoints, React/Vite interface, and Docker Compose orchestration."
       ],
       "mainPhoto": researchMainPhoto,
-      "highlightPhoto": [researchMainPhoto, "highlight_photo_2_url"],
-      "Programming language used or technology used": ["RAG", "FAISS", "OpenAI", "LangChain", "OpenAPI", "Django REST Framework"],
-      "affiliation": "Global Hack Week AI/ML Submission"
+      "highlightPhoto": [researchMainPhoto],
+      "Programming language used or technology used": ["RAG", "FAISS", "ChromaDB", "OpenAI", "LangChain", "OpenAPI", "Django REST Framework", "React", "TypeScript", "Tailwind CSS", "Docker"],
+      "affiliation": "Global Hack Week AI/ML / Nevatal Studio Product"
     },
     {
       "name": "Ecofriendly Recipe Recommender",
@@ -965,7 +1263,7 @@ export const thirzaAhmadTsaqifIndonesia = {
   "projects": [
     {
       "name": "RAGReader",
-      "context": "Pengajuan Hackathon NextAI",
+      "context": "Pengajuan Hackathon NextAI / Nevatal AI Studio",
       "liveUrl": "https://rag.nevatal.id/",
       "links": {
         "github": "https://github.com/thirza258/RagReader",
@@ -973,41 +1271,40 @@ export const thirzaAhmadTsaqifIndonesia = {
         "demo": "https://rag.nevatal.id/"
       },
       "description": [
-        "Membangun RAGReader, platform evaluasi untuk membandingkan dan mengidentifikasi pipeline Retrieval-Augmented Generation (RAG) paling efektif untuk koleksi dokumen khusus.",
-        "Mengembangkan backend menggunakan Django REST Framework, Celery, dan Docker untuk mendukung penyerapan dokumen asinkron yang dapat diskalakan, embedding, pengambilan, reranking, dan alur kerja evaluasi.",
-        "Mengimplementasikan beberapa pipeline pengambilan padat menggunakan model embedding OpenAI melalui OpenRouter dan API OpenAI, dengan LangChain untuk chunking dokumen dan pemisahan teks.",
-        "Mengintegrasikan model reranking termasuk Cross-Encoder MiniLM-L2, bersama penyedia LLM seperti Claude, Gemini, dan OpenAI, untuk mengukur kualitas pengambilan dan kinerja pembuatan jawaban.",
-        "Menggunakan Chroma sebagai database vektor untuk persistensi embedding, penyimpanan potongan, manajemen metadata, dan pelacakan eksperimen.",
-        "Merancang kerangka kerja evaluasi yang memanfaatkan metrik berbasis BERT dan metodologi LLM-as-a-judge untuk membandingkan konfigurasi pengambilan, reranking, dan generasi.",
-        "Membangun frontend menggunakan React, Vite, dan Tailwind CSS untuk menyediakan konfigurasi eksperimen interaktif dan visualisasi hasil."
+        "Mengembangkan RAGReader menjadi platform evaluasi dan benchmarking RAG end-to-end lengkap yang membandingkan, menilai, dan mendiagnosis 9 pipeline retrieval dan generasi independen pada koleksi dokumen kustom.",
+        "Mengimplementasikan arsitektur multi-metode retrieval yang menggabungkan Dense RAG (embedding vektor OpenAI), Sparse RAG (pencarian kata kunci BM25), dan Hybrid RAG dengan reranking neural Cross-Encoder MiniLM-L2 serta Reciprocal Rank Fusion (RRF).",
+        "Mengorkestrasi pemungutan suara konsensus multi-LLM antara OpenAI GPT-4o-mini, Anthropic Claude Haiku 4.5, dan Google Gemini 3 Flash untuk menjamin keakuratan jawaban dan kesepakatan lintas model.",
+        "Mengintegrasikan kerangka evaluasi komprehensif menggunakan metrik Ragas (Factual Correctness, Faithfulness, Answer Relevancy), Precision@K, Recall@K, dan penilaian LLM-as-a-judge terhadap ground truth terpadu.",
+        "Membangun orkestrasi asinkron dengan Django REST Framework, Celery, dan Redis, menyiarkan progres tahapan waktu nyata melalui WebSocket ke panel visualisasi Analysis Flow interaktif.",
+        "Menyediakan portal pembelajaran publik dengan 6 kursus terstruktur dan 28 pelajaran interaktif seputar dasar-dasar RAG, komposisi modul, dan sains evaluasi."
       ],
       "mainPhoto": ragreaderMainPhoto,
       "highlightPhoto": [ragreaderHighlightPhoto1, ragreaderHighlightPhoto2, ragreaderHighlightPhoto3],
-      "Programming language used or technology used": ["Django REST Framework", "ChromaDB", "Github Actions", "RAG", "OpenRouter", "Vite", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Claude", "Mistral"],
-      "affiliation": "Pengajuan Hackathon NextAI"
+      "Programming language used or technology used": ["Django REST Framework", "Celery", "Redis", "ChromaDB", "Ragas", "Cross-Encoder MiniLM", "RAG", "OpenAI GPT-4o-mini", "Claude Haiku 4.5", "Gemini 3 Flash", "WebSocket", "React", "TypeScript", "Tailwind CSS"],
+      "affiliation": "Pengajuan Hackathon NextAI / Nevatal AI Studio"
     },
     {
       "name": "Multi Hop Corrective with Reranker RAG Pipeline",
-      "context": "Tugas Akhir Kampus",
+      "context": "Tugas Akhir Kampus / Nevatal AI Studio",
       "liveUrl": "https://crag.nevatal.id/",
       "links": {
         "demo": "https://crag.nevatal.id/"
       },
       "description": [
-        "Merancang dan mengimplementasikan pipeline Multi-Hop RAG yang menggabungkan Hybrid Retrieval (Dense + Sparse) dan model reranking untuk mendukung penalaran kompleks.",
-        "Mengembangkan framework Corrective RAG (CRAG) yang secara dinamis mengevaluasi konteks yang diambil, mengurangi noise pengambilan dan memitigasi halusinasi LLM.",
-        "Menguji performa sistem menggunakan metrik Hit Rate, MAP, MRR, RAGAS Faithfulness, Answer Relevancy, dan BERTScore.",
-        "Mengembangkan layanan backend pengambilan dan pembuatan menggunakan Python, Django, LangChain, ChromaDB, PostgreSQL, dan Redis.",
-        "Mengontainerisasi tumpukan aplikasi dengan Docker untuk eksperimentasi dan deployment yang dapat direproduksi."
+        "Merancang pipeline Multi-Hop Corrective RAG (CRAG) end-to-end yang dirancang khusus untuk menyelesaikan query penalaran multi-tahap kompleks pada korpus multi-dokumen (MultiHop-RAG).",
+        "Mengembangkan Hybrid Retrieval yang memadukan embedding vektor semantik padat dan pencarian kata kunci jarang BM25, disaring melalui neural reranker Cross-Encoder untuk menyaring konteks berkeyakinan rendah.",
+        "Mengimplementasikan loop evaluasi mandiri Corrective RAG yang menilai relevansi konteks dan secara dinamis memicu dekomposisi query, fallback pencarian web, atau penyempurnaan dokumen jika bukti yang ditemukan kurang memadai.",
+        "Mengukur kinerja sistem secara mendalam menggunakan metrik Hit Rate@K, Mean Average Precision (MAP), Mean Reciprocal Rank (MRR), Ragas Faithfulness, Answer Relevancy, dan BERTScore.",
+        "Membangun layanan backend produksi menggunakan Python, Django REST Framework, Celery, Redis, ChromaDB, PostgreSQL, dan antarmuka React/TypeScript."
       ],
       "mainPhoto": cragHighlightPhoto1,
       "highlightPhoto": [cragHighlightPhoto1, cragHighlightPhoto2, cragHighlightPhoto3, cragHighlightPhoto4, cragHighlightPhoto5],
-      "Programming language used or technology used": ["Django REST Framework", "ChromaDB", "PyTorch", "Hugging Face Transformers", "LLM", "RAGAs", "RAG", "OpenRouter", "Vite", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Deepseek LLMs", "ChromaDB", "PostgreSQL", "Redis", "Celery", "Transformers"],
-      "affiliation": "Tugas Akhir Kampus"
+      "Programming language used or technology used": ["Django REST Framework", "ChromaDB", "PyTorch", "Hugging Face Transformers", "LLM", "RAGAs", "RAG", "OpenRouter", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Deepseek LLMs", "PostgreSQL", "Redis", "Celery"],
+      "affiliation": "Tugas Akhir Kampus / Nevatal AI Studio"
     },
     {
       "name": "Nevatal",
-      "context": "Pengajuan Google Chrome Built-in AI Challenge 2025",
+      "context": "Pengajuan Google Chrome Built-in AI Challenge 2025 / Studio AI Mandiri",
       "liveUrl": "https://chat.nevatal.id/",
       "links": {
         "website": "https://nevatal.id",
@@ -1016,52 +1313,349 @@ export const thirzaAhmadTsaqifIndonesia = {
         "demo": "https://chat.nevatal.id/"
       },
       "description": [
-        "Mengembangkan platform AI full-stack yang mengintegrasikan pembuatan prompt bertenaga Gemini, utilitas teks, RAG dokumen, dan kemampuan pembuatan gambar.",
-        "Membangun layanan backend yang dapat diskalakan dengan Django REST Framework dan PostgreSQL, bersama dengan frontend React, TypeScript, Vite, dan Tailwind CSS.",
-        "Mengimplementasikan pipeline RAG menggunakan embedding Gemini dan parameter model yang dapat dikonfigurasi untuk meningkatkan pemahaman kontekstual dan kualitas respons.",
-        "Mendockerisasi tumpukan aplikasi lengkap untuk mendukung penerapan yang dapat direproduksi dan penggunaan yang di-host sendiri dengan kredensial API Gemini pengguna."
+        "Mengembangkan Nevatal, AI Functions Hub full-stack dan studio mandiri yang menghadirkan 17 alat AI khusus mencakup pembuatan teks, explainer, copywriting, RAG dokumen, analisis data, pembuatan gambar, dan pemrosesan batch.",
+        "Merancang arsitektur Bring-Your-Own-Key (BYOK) yang mengutamakan privasi, mendukung Google Gemini, OpenAI, dan katalog 400+ model OpenRouter dengan manajemen kredensial di sisi klien.",
+        "Mengimplementasikan modul Document AI cerdas dengan chunking peka-token, embedding vektor, dan pencarian percakapan yang berlandaskan isi dokumen PDF.",
+        "Menyediakan akademi publik mandiri dengan 6 kursus terstruktur dan 18 pelajaran interaktif beserta latihan rekayasa prompt praktis.",
+        "Mengemas dan menerapkan seluruh tumpukan aplikasi menggunakan Docker Compose, Django REST Framework, PostgreSQL, React, TypeScript, dan Vite."
       ],
       "mainPhoto": nevatalMainPhoto,
       "highlightPhoto": [nevatalHighlightPhoto1, nevatalHighlightPhoto2],
-      "Programming language used or technology used": ["Django REST Framework", "LLM", "RAG", "OpenRouter", "Vite", "React", "TypeScript", "Tailwind CSS"],
-      "affiliation": "Pengajuan Google Chrome Built-in AI Challenge 2025"
+      "Programming language used or technology used": ["Django REST Framework", "LLM", "RAG", "OpenRouter", "Google Gemini", "OpenAI", "Vite", "React", "TypeScript", "Tailwind CSS", "Docker Compose"],
+      "affiliation": "Pengajuan Google Chrome Built-in AI Challenge 2025 / Studio AI Mandiri"
     },
+
     {
-      "name": "Daily Task Wallpaper Generator with Genshin Impact Theme",
-      "context": "Proyek Pribadi",
-      "liveUrl": "https://genshinwallpaper.nevatal.id/",
+      "name": "Noelle",
+      "context": "Produk Nevatal Studio",
+      "liveUrl": "https://noelle.nevatal.id/",
       "links": {
-        "demo": "https://genshinwallpaper.nevatal.id/"
+        "demo": "https://noelle.nevatal.id/",
+        "github": "https://github.com/thirza258/NoelleApp"
       },
       "description": [
-        "Membuat generator wallpaper tugas harian dengan tema Genshin Impact, memberi pengguna wallpaper yang menarik secara visual dan dipersonalisasi untuk mengatur tugas sehari-hari.",
-        "Membangun backend menggunakan FastAPI dan Pillow untuk pemrosesan gambar, memungkinkan pengguna memasukkan tugas dan menghasilkan wallpaper khusus.",
-        "Mengontainerisasi aplikasi dengan Docker untuk penerapan dan skalabilitas yang mudah.",
-        "Merancang antarmuka frontend dengan React, Vite, dan Tailwind CSS untuk memberikan antarmuka yang intuitif."
+        "Mengembangkan Noelle, studio AI desktop lokal dan laboratorium model mandiri untuk menemukan, menjalankan, mengevaluasi, dan menyajikan model open-weight dari Hugging Face Hub.",
+        "Merancang arsitektur sistem dual-proses dengan antarmuka PySide6 yang berkomunikasi melalui ZeroMQ IPC ke engine inferensi terisolasi, mencegah UI membeku dan mengisolasi kegagalan GPU OOM secara aman.",
+        "Mengintegrasikan engine llama.cpp dan Transformers dengan kuantisasi 4-bit otomatis (GGUF, AWQ, GPTQ, bitsandbytes NF4) serta penilaian kompatibilitas berbasis perangkat keras.",
+        "Membangun Evaluation Lab untuk pengujian deterministik dan RAG Studio dengan chunking cerdas, embedding lokal, dan pencarian vektor sqlite-vec.",
+        "Menyediakan API lokal yang kompatibel dengan format OpenAI (/v1/chat/completions, /v1/embeddings) dan server Model Context Protocol (MCP) untuk integrasi coding agent."
       ],
-      "mainPhoto": genshinImpactHighlightPhoto1,
-      "highlightPhoto": [genshinImpactHighlightPhoto1, genshinImpactHighlightPhoto2],
-      "Programming language used or technology used": ["Tailwind CSS", "Vite", "React", "MinIO", "Javascript", "FastAPI", "Pillow"],
+      "mainPhoto": noelleMainPhoto,
+      "highlightPhoto": [noelleHighlightPhoto1, noelleHighlightPhoto2, noelleHighlightPhoto3],
+      "Programming language used or technology used": ["PySide6", "Python", "llama.cpp", "Transformers", "FastAPI", "SQLite", "MCP", "ZeroMQ", "Hugging Face", "RAG"],
+      "affiliation": "Produk Nevatal Studio"
+    },
+    {
+      "name": "DivinityAI",
+      "context": "Produk Nevatal Studio",
+      "liveUrl": "https://muslim.nevatal.id/",
+      "links": {
+        "demo": "https://muslim.nevatal.id/",
+        "github": "https://github.com/thirza258/divinityai"
+      },
+      "description": [
+        "Mengembangkan DivinityAI, sistem temu balik pengetahuan Islam yang memberikan jawaban terverifikasi dan berlandaskan sitasi langsung dari Al-Qur'an dan kumpulan Hadis shahih.",
+        "Mengimplementasikan pipeline RAG berbasis sitasi ketat yang menolak berhalusinasi apabila pertanyaan berada di luar korpus data terotentikasi.",
+        "Memanfaatkan Ollama untuk inferensi LLM lokal, didukung embedding vektor dan ChromaDB untuk pencarian kemiripan semantik pada teks-teks Islam klasik.",
+        "Membangun antarmuka web yang responsif dan mudah diakses menggunakan React, TypeScript, dan Tailwind CSS."
+      ],
+      "mainPhoto": divinityaiMainPhoto,
+      "highlightPhoto": [divinityaiMainPhoto],
+      "Programming language used or technology used": ["RAG", "Ollama", "Python", "FastAPI", "ChromaDB", "React", "TypeScript", "Tailwind CSS"],
+      "affiliation": "Produk Nevatal Studio"
+    },
+    {
+      "name": "Furina ML",
+      "context": "Produk Nevatal Studio",
+      "liveUrl": "https://furina.nevatal.id/",
+      "links": {
+        "demo": "https://furina.nevatal.id/",
+        "github": "https://github.com/thirza258/Furina-ML"
+      },
+      "description": [
+        "Membangun Furina ML, platform machine learning tanpa kode yang mempermudah pelatihan dan evaluasi model pada dataset tabular tanpa perlu menulis kode.",
+        "Mengintegrasikan pemprofilan dataset CSV otomatis, imputasi nilai hilang, encoding fitur, dan deteksi pencilan (outliers).",
+        "Mendukung pelatihan model, validasi silang (cross-validation), dan penyetelan hiperparameter untuk algoritma klasifikasi dan regresi scikit-learn.",
+        "Merancang ruang uji prediksi langsung interaktif dengan matriks konfusi waktu nyata, kurva ROC-AUC, dan pemeringkatan kepentingan fitur."
+      ],
+      "mainPhoto": furinaMainPhoto,
+      "highlightPhoto": [furinaMainPhoto],
+      "Programming language used or technology used": ["scikit-learn", "FastAPI", "React", "TypeScript", "Tailwind CSS", "Python", "AutoML"],
+      "affiliation": "Produk Nevatal Studio"
+    },
+    {
+      "name": "My Mock Interview",
+      "context": "Produk Nevatal Studio",
+      "liveUrl": "https://interview.nevatal.id/",
+      "links": {
+        "demo": "https://interview.nevatal.id/",
+        "github": "https://github.com/thirza258/Laycall-interviewer-agent"
+      },
+      "description": [
+        "Mengembangkan My Mock Interview, platform simulasi wawancara kerja berbasis AI yang merancang pertanyaan spesifik dari resume kandidat dan deskripsi pekerjaan sasaran.",
+        "Merancang dua mode simulasi: berlatih menjawab pertanyaan dengan penilaian dinamis atau membalik peran untuk mewawancarai persona kandidat AI.",
+        "Mengintegrasikan penilaian umpan balik otomatis yang mencakup kejelasan komunikasi, kedalaman teknis, dan kesesuaian metode STAR.",
+        "Menyediakan kurikulum komprehensif 90 pelajaran yang mencakup pertanyaan perilaku (behavioral), perancangan sistem, dan wawancara teknis."
+      ],
+      "mainPhoto": mockInterviewMainPhoto,
+      "highlightPhoto": [mockInterviewMainPhoto],
+      "Programming language used or technology used": ["React", "FastAPI", "LLM", "TypeScript", "Python", "Tailwind CSS", "AI Agent"],
+      "affiliation": "Produk Nevatal Studio"
+    },
+    {
+      "name": "Quanta",
+      "context": "Produk Nevatal Studio",
+      "liveUrl": "https://quant.nevatal.id/",
+      "links": {
+        "demo": "https://quant.nevatal.id/",
+        "github": "https://github.com/thirza258/quanta"
+      },
+      "description": [
+        "Membangun Quanta, lingkungan belajar investasi komprehensif dan laboratorium rekayasa keuangan yang menghadirkan 15 modul interaktif.",
+        "Mengembangkan simulator paper trading waktu nyata dan laboratorium backtesting strategi yang mendukung bot perdagangan algoritmik berbasis Python.",
+        "Mengimplementasikan area ekonometrika dengan visualisasi data pasar historis, metrik risiko (Sharpe ratio, max drawdown), dan optimasi portofolio.",
+        "Membangun backend menggunakan Django dan PostgreSQL, dikemas dalam kontainer Docker untuk performa multi-tenant yang andal."
+      ],
+      "mainPhoto": quantaMainPhoto,
+      "highlightPhoto": [quantaMainPhoto],
+      "Programming language used or technology used": ["Django", "Python", "PostgreSQL", "Docker", "Simulator", "Financial Engineering"],
+      "affiliation": "Produk Nevatal Studio"
+    },
+    {
+      "name": "VoltQuest",
+      "context": "Produk Nevatal Studio",
+      "liveUrl": "https://pcb.nevatal.id/",
+      "links": {
+        "demo": "https://pcb.nevatal.id/",
+        "github": "https://github.com/thirza258/voltquest"
+      },
+      "description": [
+        "Merancang VoltQuest, platform pembelajaran teknik komputer dan sistem yang menjembatani gerbang logika, arsitektur komputer, dan pengembangan aplikasi desktop.",
+        "Menyusun kurikulum interaktif seputar elektronika digital, assembly x86/ARM, C++, dan rekayasa UI desktop modern menggunakan WinUI.",
+        "Mengembangkan tutorial interaktif berbasis peramban, lingkungan lab praktik, evaluasi ujian otomatis, dan penerbitan sertifikat PDF terverifikasi."
+      ],
+      "mainPhoto": voltquestMainPhoto,
+      "highlightPhoto": [voltquestMainPhoto],
+      "Programming language used or technology used": ["C++", "WinUI", "Computer Architecture", "Assembly", "Education", "Hardware Simulation"],
+      "affiliation": "Produk Nevatal Studio"
+    },
+    {
+      "name": "LeetBug",
+      "context": "Produk Nevatal Studio",
+      "liveUrl": "https://leetbug.nevatal.id/",
+      "links": {
+        "demo": "https://leetbug.nevatal.id/",
+        "github": "https://github.com/thirza258/leetbug"
+      },
+      "description": [
+        "Membangun LeetBug, ruang simulasi debugging interaktif yang menyajikan ratusan studi kasus bug dunia nyata dalam Python, JavaScript, Go, C++, dan Java.",
+        "Merancang runner kode terisolasi yang aman untuk menguji patch pengguna terhadap rangkaian pengujian dan mengevaluasi kualitas perbaikan kode secara menyeluruh.",
+        "Mengimplementasikan petunjuk bertingkat dan rangkaian uji regresi tersembunyi untuk melatih keterampilan troubleshooting yang relevan dengan industri."
+      ],
+      "mainPhoto": leetbugMainPhoto,
+      "highlightPhoto": [leetbugMainPhoto],
+      "Programming language used or technology used": ["FastAPI", "React", "TypeScript", "Docker", "Sandbox", "Python"],
+      "affiliation": "Produk Nevatal Studio"
+    },
+    {
+      "name": "Decalove",
+      "context": "Produk Nevatal Studio",
+      "liveUrl": "https://decalove.nevatal.id/",
+      "links": {
+        "demo": "https://decalove.nevatal.id/",
+        "github": "https://github.com/thirza258/decalove"
+      },
+      "description": [
+        "Mengembangkan Decalove, novel visual dan engine naratif interaktif berbasis AI dengan memori karakter yang konsisten dan pembuatan skenario dinamis.",
+        "Mengintegrasikan backend penceritaan AI yang menghasilkan dialog karakter, deskripsi suasana, dan pilihan alur cerita secara adaptif.",
+        "Membangun studio penulisan dengan penyunting cerita rich-text, grafik percabangan alur, dan modul kursus penulisan kreatif terpadu."
+      ],
+      "mainPhoto": decaloveMainPhoto,
+      "highlightPhoto": [decaloveMainPhoto],
+      "Programming language used or technology used": ["AI Storytelling", "Ren'Py", "React", "TypeScript", "LLM", "Tailwind CSS"],
+      "affiliation": "Produk Nevatal Studio"
+    },
+    {
+      "name": "English & IELTS Practice",
+      "context": "Produk Nevatal Studio",
+      "liveUrl": "https://english.nevatal.id/",
+      "links": {
+        "demo": "https://english.nevatal.id/",
+        "github": "https://github.com/thirza258/english-practice"
+      },
+      "description": [
+        "Membangun English & IELTS Practice, platform pembelajaran diagnostik yang memandu pengguna dari pemahaman tata bahasa dasar hingga kemahiran IELTS Band 8.",
+        "Merancang modul latihan terarah untuk tata bahasa, penguasaan kosakata, pemahaman bacaan, dan tugas menulis akademik ala IELTS.",
+        "Membangun backend Django dan PostgreSQL yang tangguh dengan pelacakan kemajuan belajar otomatis serta penjelasan komprehensif di setiap latihan."
+      ],
+      "mainPhoto": englishPracticeMainPhoto,
+      "highlightPhoto": [englishPracticeMainPhoto],
+      "Programming language used or technology used": ["Django", "Python", "PostgreSQL", "Tailwind CSS", "Education"],
+      "affiliation": "Produk Nevatal Studio"
+    },
+    {
+      "name": "AdControl Learning",
+      "context": "Produk Nevatal Studio",
+      "liveUrl": "https://marketing.nevatal.id/",
+      "links": {
+        "demo": "https://marketing.nevatal.id/",
+        "github": "https://github.com/thirza258/nevatal-ads"
+      },
+      "description": [
+        "Membangun AdControl Learning, portal edukasi terbuka yang menyediakan kursus praktis seputar pemasaran digital, SEO, GEO, dan strategi pertumbuhan.",
+        "Menyusun modul seputar Generative Engine Optimization (GEO), pengindeksan mesin pencari, atribusi afiliasi, dan optimasi tingkat konversi (CRO).",
+        "Mengembangkan antarmuka web responsif dan berkinerja tinggi menggunakan React, TypeScript, dan Tailwind CSS."
+      ],
+      "mainPhoto": adcontrolMainPhoto,
+      "highlightPhoto": [adcontrolMainPhoto],
+      "Programming language used or technology used": ["React", "TypeScript", "Tailwind CSS", "Marketing", "SEO", "Analytics"],
+      "affiliation": "Produk Nevatal Studio"
+    },
+    {
+      "name": "Nevatal Cloud",
+      "context": "Produk Nevatal Studio",
+      "liveUrl": "https://cloud.nevatal.id/",
+      "links": {
+        "demo": "https://cloud.nevatal.id/",
+        "preview": "https://demo.nevatal.id/",
+        "github": "https://github.com/thirza258/nevatal-cloud"
+      },
+      "description": [
+        "Merancang Nevatal Cloud, infrastruktur komputasi awan bare-metal berkinerja tinggi yang ditenagai server Dell PowerEdge R640 dan Proxmox VE 8.",
+        "Mengonfigurasi provisi otomatis untuk VPS Linux KVM, server game dedicated (Minecraft & Terraria), serta kontainer Android Waydroid.",
+        "Mengintegrasikan AI Cloud Agent untuk administrasi infrastruktur cerdas, pemantauan utilisasi sumber daya, dan deployment cepat."
+      ],
+      "mainPhoto": nevatalCloudMainPhoto,
+      "highlightPhoto": [nevatalCloudMainPhoto],
+      "Programming language used or technology used": ["Bare-Metal", "Proxmox VE", "KVM", "Linux VPS", "Game Servers", "Waydroid", "Networking"],
+      "affiliation": "Produk Nevatal Studio"
+    },
+    {
+      "name": "SDG Country Profiles",
+      "context": "Produk Nevatal Studio",
+      "liveUrl": "https://sdg.nevatal.id/",
+      "links": {
+        "demo": "https://sdg.nevatal.id/",
+        "github": "https://github.com/thirza258/Country-SDG"
+      },
+      "description": [
+        "Mengembangkan SDG Country Profiles, platform visualisasi data interaktif yang menampilkan kartu skor capaian 17 Tujuan Pembangunan Berkelanjutan (SDG) PBB.",
+        "Mengintegrasikan dataset resmi Sustainable Development Report dengan API indikator Bank Dunia secara langsung dengan pelacakan asal data yang akurat.",
+        "Dibangun menggunakan Django, PostgreSQL, dan Tailwind CSS, menghadirkan analisis perbandingan antarnegara dan peringkat tren capaian per tujuan."
+      ],
+      "mainPhoto": sdgMainPhoto,
+      "highlightPhoto": [sdgMainPhoto],
+      "Programming language used or technology used": ["Django", "Python", "UN SDG", "World Bank API", "PostgreSQL", "Tailwind CSS"],
+      "affiliation": "Produk Nevatal Studio"
+    },
+    {
+      "name": "Uptime Medics",
+      "context": "Produk Nevatal Studio",
+      "liveUrl": "https://uptime.nevatal.id/",
+      "links": {
+        "demo": "https://uptime.nevatal.id/",
+        "github": "https://github.com/thirza258/Uptime-Medics"
+      },
+      "description": [
+        "Membangun Uptime Medics, sistem pemantauan uptime dan kesehatan layanan berkecepatan tinggi yang dikembangkan dengan Rust dan framework Axum.",
+        "Mengimplementasikan probe HTTP dan TCP konkruen dengan penyimpanan SQLite, pelacakan persentil latensi, dan kebijakan ambang batas fleksibel.",
+        "Menyediakan halaman status publik waktu nyata, riwayat insiden, dan pengiriman peringatan SMTP otomatis saat terjadi kegagalan beruntun."
+      ],
+      "mainPhoto": uptimeMedicsMainPhoto,
+      "highlightPhoto": [uptimeMedicsMainPhoto],
+      "Programming language used or technology used": ["Rust", "Axum", "SQLite", "SMTP", "Docker", "DevOps"],
+      "affiliation": "Produk Nevatal Studio"
+    },
+    {
+      "name": "Webisaurus",
+      "context": "Produk Nevatal Studio",
+      "liveUrl": "https://c.nevatal.id/",
+      "links": {
+        "demo": "https://c.nevatal.id/",
+        "github": "https://github.com/thirza258/webisaurus"
+      },
+      "description": [
+        "Menciptakan Webisaurus, referensi sintaksis pemrograman sumber terbuka dan penganalisis kode komparatif multi-bahasa.",
+        "Mendokumentasikan bagaimana 140 bahasa pemrograman mengekspresikan 24 konsep dasar ilmu komputer secara bersisian (side-by-side).",
+        "Dirancang sebagai aplikasi web statis tanpa backend yang sangat cepat, disajikan melalui Nginx dengan pencarian instan dan penyorotan sintaksis."
+      ],
+      "mainPhoto": webisaurusMainPhoto,
+      "highlightPhoto": [webisaurusMainPhoto],
+      "Programming language used or technology used": ["Vanilla JS", "Static Site", "Nginx", "HTML5", "CSS3"],
+      "affiliation": "Produk Nevatal Studio"
+    },
+    {
+      "name": "VideoTex",
+      "context": "Produk Nevatal Studio",
+      "liveUrl": "https://video.nevatal.id/",
+      "links": {
+        "demo": "https://video.nevatal.id/",
+        "github": "https://github.com/thirza258/VideoTex"
+      },
+      "description": [
+        "Mengembangkan VideoTex, platform publikasi dan streaming video mandiri (self-hosted) yang ditenagai oleh Django dan FFmpeg.",
+        "Merancang transcoding latar belakang asinkron ke berbagai resolusi video dengan dukungan streaming rentang byte HTTP-206.",
+        "Mengimplementasikan antrean tugas leased yang tahan terhadap crash dan tetap tersimpan meski worker dimulai ulang, dilengkapi fitur komentar dan feed saluran."
+      ],
+      "mainPhoto": videotexMainPhoto,
+      "highlightPhoto": [videotexMainPhoto],
+      "Programming language used or technology used": ["Django", "Python", "FFmpeg", "PostgreSQL", "Docker", "Video Streaming"],
+      "affiliation": "Produk Nevatal Studio"
+    },
+    {
+      "name": "Pasal Voice Assistant",
+      "context": "Proyek Pribadi",
+      "links": {
+        "github": "https://github.com/thirza258/PasalVA"
+      },
+      "description": [
+        "Mengembangkan asisten suara berbahasa Indonesia yang sepenuhnya self-hosted menggunakan model TTS dan STT lokal, memanfaatkan Ollama untuk integrasi LLM dan RAG untuk penelusuran informasi kontekstual yang menjaga privasi.",
+        "Menggunakan Facebook-mms-tts-ind untuk TTS dan Whisper dengan konfigurasi bahasa Indonesia untuk STT.",
+        "Menggunakan Ollama GemmaEmbedding dan Gemma 3 untuk pemrosesan RAG dan LLM secara lokal tanpa ketergantungan pada API eksternal.",
+        "Menggunakan ChromaDB berbasis Docker untuk penyimpanan vektor dan pengambilan data kontekstual yang aman dan efisien."
+      ],
+      "mainPhoto": pasalMainPhoto,
+      "highlightPhoto": [pasalMainPhoto],
+      "Programming language used or technology used": ["Ollama", "RAG", "Voice Assistant", "STT", "TTS", "OpenAI Whisper", "Transformers", "PyTorch", "Gemma", "ChromaDB"],
       "affiliation": "Proyek Pribadi"
     },
     {
+      "name": "Daily Task Wallpaper Generator with Genshin Impact Theme",
+      "context": "Proyek Pribadi / Produk Nevatal Studio",
+      "liveUrl": "https://genshinwallpaper.nevatal.id/",
+      "links": {
+        "github": "https://github.com/thirza258/GenshinWallGen",
+        "demo": "https://genshinwallpaper.nevatal.id/"
+      },
+      "description": [
+        "Berkembang menjadi GenshinWallCraft, generator wallpaper desktop kaya fitur dan ruang kerja seni piksel kreatif yang memadukan produktivitas dan estetika game.",
+        "Menghasilkan wallpaper desktop resolusi tinggi dengan hamparan daftar tugas dan sinkronisasi Google Calendar dalam mode cepat anonim maupun terotentikasi dengan riwayat pribadi.",
+        "Membangun Pixel Studio, editor seni piksel berbasis peramban untuk menggambar sprite, menganimasikan karakter modular, dan merancang tileset serta latar belakang mulus.",
+        "Mengembangkan backend menggunakan FastAPI, Pillow, dan MinIO untuk rendering gambar dan penyimpanan aset, didukung frontend responsif dengan React, Vite, dan Tailwind CSS."
+      ],
+      "mainPhoto": genshinImpactHighlightPhoto1,
+      "highlightPhoto": [genshinImpactHighlightPhoto1, genshinImpactHighlightPhoto2],
+      "Programming language used or technology used": ["FastAPI", "Pillow", "MinIO", "Pixel Art", "React", "Vite", "TypeScript", "Tailwind CSS"],
+      "affiliation": "Proyek Pribadi / Produk Nevatal Studio"
+    },
+    {
       "name": "URL Shortener",
-      "organization": "Proyek Pribadi",
+      "organization": "Proyek Pribadi / Produk Nevatal Studio",
       "liveUrl": "https://url.nevatal.id/",
       "links": {
         "github": "https://github.com/thirza258/freecodecamp_url_shortener",
         "demo": "https://url.nevatal.id/"
       },
       "description": [
-        "Mengembangkan platform pemendek URL siap produksi menggunakan Django, PostgreSQL, dan Redis, memungkinkan tautan pendek kustom dan otomatis dengan pembuatan slug tahan benturan.",
-        "Menerapkan pembatasan laju dengan Redis, validasi URL, dan perlindungan keamanan untuk mengurangi penyalahgunaan dan meningkatkan keandalan.",
-        "Membangun analitik dan pelacakan termasuk jumlah klik, log perujuk, pemantauan agen pengguna, dan statistik akses.",
-        "Mengontainerisasi aplikasi dengan Docker dan Docker Compose, mengintegrasikan PostgreSQL 16 dan Redis."
+        "Mengembangkan platform pemendek URL berkinerja tinggi menggunakan Django, PostgreSQL 16, dan Redis, mendukung pembuatan tautan pendek kustom yang tahan tabrakan dan anti-duplikasi.",
+        "Mengimplementasikan pembatasan laju (rate limiting) berbasis Redis, validasi domain, dan proteksi keamanan proaktif terhadap penyalahgunaan dan phishing.",
+        "Membangun mesin analitik mendalam yang melacak jumlah klik, domain perujuk, telemetri geografis, perangkat user-agent, dan grafik kecepatan klik deret waktu.",
+        "Mengemas seluruh tumpukan aplikasi dengan Docker Compose dan Nginx untuk keandalan tingkat produksi dan pengalihan berlatensi rendah."
       ],
       "mainPhoto": urlShortenerHighlightPhoto1,
       "highlightPhoto": [urlShortenerHighlightPhoto1],
-      "Programming language used or technology used": ["Django", "PostgreSQL", "Redis", "Docker", "Docker Compose"],
-      "affiliation": "Proyek Pribadi"
+      "Programming language used or technology used": ["Django", "PostgreSQL", "Redis", "Docker", "Docker Compose", "Analytics"],
+      "affiliation": "Proyek Pribadi / Produk Nevatal Studio"
     },
     {
       "name": "My Hearing",
@@ -1227,24 +1821,23 @@ export const thirzaAhmadTsaqifIndonesia = {
     },
     {
       "name": "ChattyDesk",
-      "context": "Pengajuan Dev Challenge",
+      "context": "Pengajuan Dev Challenge / Produk Nevatal Studio",
       "links": {
-        "githubBackend": "[Github Backend]",
-        "githubFrontend": "[Github Frontend]",
-        "devpost": "[Devpost]"
-      ,
+        "githubBackend": "https://github.com/thirza258/chattydesk_backend",
+        "githubFrontend": "https://github.com/thirza258/chattydesk",
         "demo": "https://chatty.nevatal.id/"
       },
       "liveUrl": "https://chatty.nevatal.id/",
       "description": [
-        "Mengembangkan aplikasi desktop lintas platform yang memungkinkan obrolan multi-LLM yang lancar yaitu Gemini, Claude, Open AI GPT, dan Mistral.",
-        "Backend melibatkan perancangan dan penerapan API yang dapat diskalakan menggunakan Django REST Framework, Python, dan PostgreSQL, yang di-host di DigitalOcean.",
-        "Aplikasi desktop dibangun dengan Electron, React, dan TypeScript, memastikan pengalaman pengguna yang lancar di berbagai model LLM."
+        "Mengembangkan ChattyDesk, meja kerja AI multi-model terpadu yang tersedia sebagai aplikasi desktop lintas platform (Electron) maupun aplikasi web responsif.",
+        "Menyediakan akses terpadu ke 400+ model terkemuka dan open-weight melalui OpenRouter (Claude, GPT, Gemini, Mistral, Llama, DeepSeek) dengan kemampuan beralih model di tengah percakapan.",
+        "Membangun percakapan multi-turn persisten dengan riwayat obrolan di sisi server, autentikasi akun berbasis JWT, telemetri token, dan kunci cadangan BYOK OpenRouter.",
+        "Mengintegrasikan kursus pengenalan AI gratis dengan latihan prompt interaktif langsung di dalam aplikasi web."
       ],
       "mainPhoto": chattydeskMainPhoto,
-      "highlightPhoto": ["chattydeskHighlightPhoto1"],
-      "Programming language used or technology used": ["Django REST Framework", "Python", "PostgreSQL", "DigitalOcean", "Electron", "React", "TypeScript", "Gemini", "Claude", "OpenAI", "Mistral"],
-      "affiliation": "Pengajuan Dev Challenge"
+      "highlightPhoto": [chattydeskHighlightPhoto1],
+      "Programming language used or technology used": ["Django REST Framework", "Python", "PostgreSQL", "Electron", "React", "TypeScript", "Tailwind CSS", "OpenRouter", "Gemini", "Claude", "OpenAI"],
+      "affiliation": "Pengajuan Dev Challenge / Produk Nevatal Studio"
     },
     {
       "name": "API Situs Web Pemilihan Staf Terbaik",
@@ -1293,41 +1886,40 @@ export const thirzaAhmadTsaqifIndonesia = {
     },
     {
       "name": "Gemini Japanese",
-      "context": "Pengajuan MLH GWH",
-      "liveUrl": "https://hira.nevatal.id/",
+      "context": "Pengajuan MLH GWH / Produk Nevatal Studio",
       "links": {
         "github": "https://github.com/thirza258/gemini_japanese",
         "devpost": "https://devpost.com/software/gemini-japanese-translator",
         "demo": "https://hira.nevatal.id/"
       },
+      "liveUrl": "https://hira.nevatal.id/",
       "description": [
-        "Mengembangkan aplikasi terjemahan bahasa Jepang yang menyediakan pengguna dengan romaji dan terjemahan dengan mengintegrasikan Gemini AI API, meningkatkan akurasi terjemahan dengan format bahasa Jepang apa pun.",
-        "Memanfaatkan React dengan TypeScript untuk frontend untuk menciptakan antarmuka pengguna yang dinamis dan intuitif,",
-        "Mengimplementasikan backend menggunakan server TypeScript, memastikan pemrosesan data yang efisien. Memanfaatkan AWS Amplify sebagai platform penyebaran."
+        "Mengembangkan Gemini Japanese, ruang belajar bahasa Jepang komprehensif yang menghadirkan kurikulum terstruktur JLPT N5–N1, 200 kartu kanji interaktif, dan latihan tata bahasa.",
+        "Mengintegrasikan AI Google Gemini untuk penerjemahan kontekstual, pembuatan furigana, dan transliterasi romaji pada berbagai struktur kalimat kompleks.",
+        "Membangun modul pemahaman menyimak (choukai) dengan audio asli, dibalut antarmuka bertema Sakura adaptif yang mengikuti preferensi tema perangkat pengguna."
       ],
-      "mainPhoto": "main_photo_url",
-      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
-      "Programming language used or technology used": ["Gemini", "React", "TypeScript", "AWS Amplify"],
-      "affiliation": "Pengajuan MLH GWH"
+      "mainPhoto": geminiJapaneseMainPhoto,
+      "highlightPhoto": [geminiJapaneseMainPhoto],
+      "Programming language used or technology used": ["Gemini", "React", "TypeScript", "Tailwind CSS", "Education", "Node.js"],
+      "affiliation": "Pengajuan MLH GWH / Produk Nevatal Studio"
     },
     {
       "name": "LiteralStoryboard",
-      "context": "Pengajuan Hackathon AWS Game Builder",
+      "context": "Pengajuan Hackathon / Produk Nevatal Studio",
       "liveUrl": "https://story.nevatal.id/",
       "links": {
         "github": "https://github.com/thirza258/literal-storyboard",
-        "devpost": "https://devpost.com/software/literal-storyboard",
         "demo": "https://story.nevatal.id/"
       },
       "description": [
-        "Membuat situs web game yang menggabungkan permainan papan dan cerita.",
-        "Dikembangkan menggunakan Vite React Typescript dan Tailwind CSS dan memanfaatkan Gemini API sebagai generator cerita.",
-        "Memanfaatkan AWS Amplify sebagai platform penyebaran."
+        "Mengembangkan Literal Storyboard, engine narasi prosedural berbasis AI yang menyajikan kisah interaktif di atas peta kota dunia nyata yang dinamis.",
+        "Merancang alur cerita dinamis, pilihan percabangan naratif, dan pembuatan lukisan pemandangan dengan mengarahkan seluruh inferensi model melalui OpenRouter agar pencerita AI dapat ditukar secara fleksibel.",
+        "Membangun antarmuka peta interaktif dengan alur permainan berbasis pilihan menggunakan React dan Tailwind CSS."
       ],
-      "mainPhoto": "main_photo_url",
-      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
-      "Programming language used or technology used": ["Vite", "React", "TypeScript", "Tailwind CSS", "Gemini", "AWS Amplify"],
-      "affiliation": "Pengajuan Hackathon AWS Game Builder"
+      "mainPhoto": literalStoryboardMainPhoto,
+      "highlightPhoto": [literalStoryboardMainPhoto],
+      "Programming language used or technology used": ["OpenRouter", "AI Storytelling", "React", "TypeScript", "Tailwind CSS", "Mapbox/Leaflet"],
+      "affiliation": "Pengajuan Hackathon / Produk Nevatal Studio"
     },
     {
       "name": "Recipe Recommender",
@@ -1349,23 +1941,22 @@ export const thirzaAhmadTsaqifIndonesia = {
     },
     {
       "name": "Recommendica",
-      "context": "Pengajuan Global Hack Week AI/ML",
+      "context": "Global Hack Week AI/ML / Produk Nevatal Studio",
       "links": {
-        "githubBackend": "[Github Backend]",
-        "githubFrontend": "[Github Frontend]",
-        "devpost": "[Devpost]"
-      ,
+        "github": "https://github.com/thirza258/recommendica",
         "demo": "https://recommendica.nevatal.id/"
       },
       "liveUrl": "https://recommendica.nevatal.id/",
       "description": [
-        "Mengembangkan API berbasis RAG untuk Rekomendasi Penelitian menggunakan dataset ArXiv, dengan FAISS untuk pengambilan dan OpenAI untuk pemrosesan AI dan Langchain sebagai pipeline.",
-        "Memanfaatkan OpenAPI untuk dokumentasi dan Membangun API dengan Django REST Framework."
+        "Mengembangkan Recommendica, mesin penemuan dan rekomendasi makalah penelitian akademis yang ditenagai oleh Retrieval-Augmented Generation (RAG) adaptif pada korpus ilmiah ArXiv.",
+        "Merancang alur penelitian adaptif multi-tahap yang secara mandiri menentukan langkah pencarian dari query dan memperluas cakupan literatur saat bukti kurang memadai.",
+        "Mengimplementasikan pengindeksan vektor padat dengan FAISS dan Chroma, embedding OpenAI, dan pipeline LangChain untuk menghasilkan ringkasan terstruktur dengan sitasi DOI/ArXiv yang dapat diverifikasi.",
+        "Disusun dalam monorepo bersih dengan API Django REST Framework, endpoint streaming prompt, antarmuka React/Vite, dan orkestrasi Docker Compose."
       ],
-      "mainPhoto": "researchMainPhoto",
-      "highlightPhoto": ["researchMainPhoto", "highlight_photo_2_url"],
-      "Programming language used or technology used": ["RAG", "FAISS", "OpenAI", "LangChain", "OpenAPI", "Django REST Framework"],
-      "affiliation": "Pengajuan Global Hack Week AI/ML"
+      "mainPhoto": researchMainPhoto,
+      "highlightPhoto": [researchMainPhoto],
+      "Programming language used or technology used": ["RAG", "FAISS", "ChromaDB", "OpenAI", "LangChain", "OpenAPI", "Django REST Framework", "React", "TypeScript", "Tailwind CSS", "Docker"],
+      "affiliation": "Global Hack Week AI/ML / Produk Nevatal Studio"
     },
     {
       "name": "Ecofriendly Recipe Recommender",
@@ -1688,7 +2279,7 @@ export const thirzaAhmadTsaqifJapanese = {
   "projects": [
     {
       "name": "RAGReader",
-      "context": "NextAIハッカソン提出物",
+      "context": "NextAIハッカソン提出物 / Nevatal AI Studio",
       "liveUrl": "https://rag.nevatal.id/",
       "links": {
         "github": "https://github.com/thirza258/RagReader",
@@ -1696,41 +2287,40 @@ export const thirzaAhmadTsaqifJapanese = {
         "demo": "https://rag.nevatal.id/"
       },
       "description": [
-        "カスタムドキュメントコレクションに最も効果的な検索拡張生成（RAG）パイプラインを比較および特定するための評価プラットフォームであるRAGReaderを構築しました。",
-        "スケーラブルな非同期ドキュメント取り込み、埋め込み、検索、再ランク付け、および評価ワークフローをサポートするために、Django REST Framework、Celery、およびDockerを使用してバックエンドを開発しました。",
-        "OpenRouterおよびOpenAI APIを介したOpenAI埋め込みモデルを使用し、ドキュメントのチャンク化とテキスト分割にLangChainを使用して、複数の密検索パイプラインを実装しました。",
-        "検索品質と回答生成パフォーマンスをベンチマークするために、Cross-Encoder MiniLM-L2を含む再ランク付けモデルを、Claude、Gemini、OpenAIなどのLLMプロバイダーとともに統合しました。",
-        "埋め込みの永続化、チャンクストレージ、メタデータ管理、および実験追跡のためのベクトルデータベースとしてChromaを使用しました。",
-        "BERTベースのメトリクスとLLM-as-a-judge手法を活用した評価フレームワークを設計し、検索、再ランク付け、および生成構成を比較しました。",
-        "インタラクティブな実験構成と結果の視覚化を提供するために、React、Vite、およびTailwind CSSを使用してフロントエンドを構築しました。"
+        "RAGReaderを、カスタムドキュメントコレクションにおける9つの独立した検索・生成パイプラインを比較・評価・診断するフルエンドツーエンドのRAG評価・ベンチマークプラットフォームへと発展させました。",
+        "Dense RAG（OpenAIベクトル埋め込み）、Sparse RAG（BM25キーワード検索）、およびCross-Encoder MiniLM-L2再ランク付けとReciprocal Rank Fusion（RRF）を組み合わせたHybrid RAGのマルチメソッド検索アーキテクチャを実装しました。",
+        "回答の正確性とモデル間合意を確保するため、OpenAI GPT-4o-mini、Anthropic Claude Haiku 4.5、Google Gemini 3 Flashの主要3モデルによるマルチLLMコンセンサス合議制をオーケストレーションしました。",
+        "プールされたグラウンドトゥルースに対して、Ragasメトリクス（Factual Correctness、Faithfulness、Answer Relevancy）、Precision@K、Recall@K、LLM-as-a-judgeスコアリングを活用した包括的なエンドツーエンド評価スイートを統合しました。",
+        "Django REST Framework、Celery、Redisを用いた非同期パイプラインを構築し、WebSocket経由でリアルタイムな処理工程をインタラクティブなAnalysis Flowパネルにストリーミング配信しました。",
+        "RAGの基礎、モジュール構成、評価手法を網羅する6コース・28レッスンの公開型学習カリキュラムを搭載しました。"
       ],
       "mainPhoto": ragreaderMainPhoto,
       "highlightPhoto": [ragreaderHighlightPhoto1, ragreaderHighlightPhoto2, ragreaderHighlightPhoto3],
-      "Programming language used or technology used": ["Django REST Framework", "ChromaDB", "Github Actions", "RAG", "OpenRouter", "Vite", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Claude", "Mistral"],
-      "affiliation": "NextAIハッカソン提出物"
+      "Programming language used or technology used": ["Django REST Framework", "Celery", "Redis", "ChromaDB", "Ragas", "Cross-Encoder MiniLM", "RAG", "OpenAI GPT-4o-mini", "Claude Haiku 4.5", "Gemini 3 Flash", "WebSocket", "React", "TypeScript", "Tailwind CSS"],
+      "affiliation": "NextAIハッカソン提出物 / Nevatal AI Studio"
     },
     {
       "name": "Multi Hop Corrective with Reranker RAG Pipeline",
-      "context": "大学卒業プロジェクト",
+      "context": "大学卒業プロジェクト / Nevatal AI Studio",
       "liveUrl": "https://crag.nevatal.id/",
       "links": {
         "demo": "https://crag.nevatal.id/"
       },
       "description": [
-        "複雑な推論タスクをサポートするために、ハイブリッド検索（Dense + Sparse）とリランカーモデルを組み合わせたMulti-Hop RAGパイプラインを設計および実装しました。",
-        "取得したコンテキストを動的に評価し、検索ノイズを削減してLLMの幻覚を軽減するCorrective RAG（CRAG）フレームワークを開発しました。",
-        "Hit Rate、MAP、MRR、RAGAS Faithfulness、Answer Relevancy、およびBERTScoreメトリクスを使用してシステムパフォーマンスをベンチマークしました。",
-        "Python、Django、LangChain、ChromaDB、PostgreSQL、およびRedisを使用して、検索および生成バックエンドサービスを開発しました。",
-        "再現可能な実験と展開を可能にするために、Dockerでアプリケーションスタックをコンテナ化しました。"
+        "複数ドキュメントにまたがる複雑なマルチステップ推論クエリ（MultiHop-RAG）を解決するために特別に設計された、エンドツーエンドのMulti-Hop Corrective RAG（CRAG）パイプラインを設計・実装しました。",
+        "密なセマンティックベクトル埋め込みとBM25疎なキーワード検索を融合し、Cross-Encoderニューラルリランカーを通して信頼度の低いコンテキストを排除するハイブリッド検索を構築しました。",
+        "取得された証拠が曖昧な場合にコンテキストの関連性を自己評価し、クエリ分解、Web検索フォールバック、またはコンテキスト洗練を自律的にトリガーするCorrective RAG修正ループを実装しました。",
+        "Hit Rate@K、MAP、MRR、Ragas Faithfulness、Answer Relevancy、BERTScoreなどの主要指標を用いてシステム性能を厳格にベンチマークしました。",
+        "Python、Django REST Framework、Celery、Redis、ChromaDB、PostgreSQL、およびReact/TypeScriptインターフェースで運用バックエンドを構築しました。"
       ],
       "mainPhoto": cragHighlightPhoto1,
       "highlightPhoto": [cragHighlightPhoto1, cragHighlightPhoto2, cragHighlightPhoto3, cragHighlightPhoto4, cragHighlightPhoto5],
-      "Programming language used or technology used": ["Django REST Framework", "ChromaDB", "PyTorch", "Hugging Face Transformers", "LLM", "RAGAs", "RAG", "OpenRouter", "Vite", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Deepseek LLMs", "ChromaDB", "PostgreSQL", "Redis", "Celery", "Transformers"],
-      "affiliation": "大学卒業プロジェクト"
+      "Programming language used or technology used": ["Django REST Framework", "ChromaDB", "PyTorch", "Hugging Face Transformers", "LLM", "RAGAs", "RAG", "OpenRouter", "React", "TypeScript", "Tailwind CSS", "LangChain", "OpenAI", "Deepseek LLMs", "PostgreSQL", "Redis", "Celery"],
+      "affiliation": "大学卒業プロジェクト / Nevatal AI Studio"
     },
     {
       "name": "Nevatal",
-      "context": "Google Chrome Built-in AI Challenge 2025 提出物",
+      "context": "Google Chrome Built-in AI Challenge 2025 提出物 / 独立系AIスタジオ",
       "liveUrl": "https://chat.nevatal.id/",
       "links": {
         "website": "https://nevatal.id",
@@ -1739,52 +2329,349 @@ export const thirzaAhmadTsaqifJapanese = {
         "demo": "https://chat.nevatal.id/"
       },
       "description": [
-        "Geminiを活用したプロンプト生成、テキストユーティリティ、ドキュメントRAG、画像生成機能を統合したフルスタックAIプラットフォームを開発しました。",
-        "Django REST FrameworkとPostgreSQLを使用したスケーラブルなバックエンドサービスと、React、TypeScript、Vite、Tailwind CSSフロントエンドを構築しました。",
-        "文脈の理解と応答品質を向上させるために、Gemini埋め込みと構成可能なモデルパラメータを使用してRAGパイプラインを実装しました。",
-        "再現可能なデプロイとユーザー提供のGemini API資格情報を使用したセルフホストでの利用をサポートするために、完全なアプリケーションスタックをDocker化しました。"
+        "テキスト生成、概念解説、コピーライティング、ドキュメントRAG、データ分析、画像生成、バッチ実行を網羅する17の特化型AIツールを備えたフルスタックAI機能ハブ「Nevatal」を開発しました。",
+        "Google Gemini、OpenAI、およびOpenRouterの400以上のモデルカタログに対応した、クライアント側認証情報管理によるプライバシー重視のBring-Your-Own-Key（BYOK）アーキテクチャを設計しました。",
+        "アップロードされたPDFに対してトークン対応チャンク分割、ベクトル埋め込み、根拠付き対話検索を行うインテリジェントなDocument AIモジュールを実装しました。",
+        "プロンプトエンジニアリングの実践演習を備えた6コース・18レッスンの公開型セルフペース学習アカデミーを構築しました。",
+        "Docker Compose、Django REST Framework、PostgreSQL、React、TypeScript、Viteを用いてスタック全体をコンテナ化し本番環境へデプロイしました。"
       ],
       "mainPhoto": nevatalMainPhoto,
       "highlightPhoto": [nevatalHighlightPhoto1, nevatalHighlightPhoto2],
-      "Programming language used or technology used": ["Django REST Framework", "LLM", "RAG", "OpenRouter", "Vite", "React", "TypeScript", "Tailwind CSS"],
-      "affiliation": "Google Chrome Built-in AI Challenge 2025 提出物"
+      "Programming language used or technology used": ["Django REST Framework", "LLM", "RAG", "OpenRouter", "Google Gemini", "OpenAI", "Vite", "React", "TypeScript", "Tailwind CSS", "Docker Compose"],
+      "affiliation": "Google Chrome Built-in AI Challenge 2025 提出物 / 独立系AIスタジオ"
     },
+
     {
-      "name": "Daily Task Wallpaper Generator with Genshin Impact Theme",
-      "context": "個人プロジェクト",
-      "liveUrl": "https://genshinwallpaper.nevatal.id/",
+      "name": "Noelle",
+      "context": "Nevatal Studioプロダクト",
+      "liveUrl": "https://noelle.nevatal.id/",
       "links": {
-        "demo": "https://genshinwallpaper.nevatal.id/"
+        "demo": "https://noelle.nevatal.id/",
+        "github": "https://github.com/thirza258/NoelleApp"
       },
       "description": [
-        "Genshin Impactをテーマにしたデイリータスク壁紙ジェネレーターを作成し、視覚的に魅力的でパーソナライズされた壁紙を提供してタスクを整理できるようにしました。",
-        "画像処理のためにFastAPIとPillowを使用してバックエンドを構築しました。",
-        "簡単なデプロイとスケーラビリティのためにDockerでコンテナ化しました。",
-        "React、Vite、Tailwind CSSでフロントエンドを設計しました。"
+        "Hugging Face Hubのオープンウェイトモデルをローカル環境で発見、実行、評価、提供するためのローカルファーストのデスクトップAIワークベンチ「Noelle」を開発しました。",
+        "PySide6のGUIシェルと分離された推論エンジン間をZeroMQ IPCで通信させるデュアルプロセス構成を採用し、UIのフリーズ防止とGPU OOM障害の安全な隔離を実現しました。",
+        "llama.cppおよびTransformersエンジン、自動4ビット量子化（GGUF、AWQ、GPTQ、bitsandbytes NF4）、ハードウェア互換性スコアリングを統合しました。",
+        "決定論的ベンチマークに対応したEvaluation Labと、トークン対応チャンク分割・ローカル埋め込み・sqlite-vec検索を備えたRAG Studioを構築しました。",
+        "コーディングエージェント統合向けにローカルOpenAI互換API（/v1/chat/completions、/v1/embeddings）およびModel Context Protocol（MCP）サーバーを提供しました。"
       ],
-      "mainPhoto": genshinImpactHighlightPhoto1,
-      "highlightPhoto": [genshinImpactHighlightPhoto1, genshinImpactHighlightPhoto2],
-      "Programming language used or technology used": ["Tailwind CSS", "Vite", "React", "MinIO", "Javascript", "FastAPI", "Pillow"],
+      "mainPhoto": noelleMainPhoto,
+      "highlightPhoto": [noelleHighlightPhoto1, noelleHighlightPhoto2, noelleHighlightPhoto3],
+      "Programming language used or technology used": ["PySide6", "Python", "llama.cpp", "Transformers", "FastAPI", "SQLite", "MCP", "ZeroMQ", "Hugging Face", "RAG"],
+      "affiliation": "Nevatal Studioプロダクト"
+    },
+    {
+      "name": "DivinityAI",
+      "context": "Nevatal Studioプロダクト",
+      "liveUrl": "https://muslim.nevatal.id/",
+      "links": {
+        "demo": "https://muslim.nevatal.id/",
+        "github": "https://github.com/thirza258/divinityai"
+      },
+      "description": [
+        "クルアーンおよび真正なハディース集から直接引用された検証可能な回答を提供するイスラム知識検索システム「DivinityAI」を開発しました。",
+        "検証済みコーパス外のクエリに対しては幻覚（ハルシネーション）を抑止し回答不能を明示する、厳密な引用優先RAGパイプラインを実装しました。",
+        "Ollamaを用いたローカルLLM推論とChromaDBによるセマンティック類似度検索を古典イスラム文献全体に適用しました。",
+        "React、TypeScript、Tailwind CSSを用いて、レスポンシブでアクセシブルなUIを構築しました。"
+      ],
+      "mainPhoto": divinityaiMainPhoto,
+      "highlightPhoto": [divinityaiMainPhoto],
+      "Programming language used or technology used": ["RAG", "Ollama", "Python", "FastAPI", "ChromaDB", "React", "TypeScript", "Tailwind CSS"],
+      "affiliation": "Nevatal Studioプロダクト"
+    },
+    {
+      "name": "Furina ML",
+      "context": "Nevatal Studioプロダクト",
+      "liveUrl": "https://furina.nevatal.id/",
+      "links": {
+        "demo": "https://furina.nevatal.id/",
+        "github": "https://github.com/thirza258/Furina-ML"
+      },
+      "description": [
+        "コードを書くことなく表形式データセットのモデルトレーニングと評価を行えるノーコード機械学習プラットフォーム「Furina ML」を構築しました。",
+        "自動CSVデータプロファイリング、欠損値補完、特徴量エンコーディング、外れ値検出機能を統合しました。",
+        "scikit-learnベースの分類・回帰モデルに対する交差検証とハイパーパラメータ調整をサポートしました。",
+        "リアルタイム混同行列、ROC-AUC曲線、特徴量重要度ランキングを備えたインタラクティブな推論サンドボックスを実装しました。"
+      ],
+      "mainPhoto": furinaMainPhoto,
+      "highlightPhoto": [furinaMainPhoto],
+      "Programming language used or technology used": ["scikit-learn", "FastAPI", "React", "TypeScript", "Tailwind CSS", "Python", "AutoML"],
+      "affiliation": "Nevatal Studioプロダクト"
+    },
+    {
+      "name": "My Mock Interview",
+      "context": "Nevatal Studioプロダクト",
+      "liveUrl": "https://interview.nevatal.id/",
+      "links": {
+        "demo": "https://interview.nevatal.id/",
+        "github": "https://github.com/thirza258/Laycall-interviewer-agent"
+      },
+      "description": [
+        "応募者の履歴書と募集要項から個別の面接質問を自動生成するAI面接対策プラットフォーム「My Mock Interview」を開発しました。",
+        "動的採点付きの回答練習モードと、AI応募者を相手に面接官役を体験できるロール反転モードのデュアルシミュレーションを実装しました。",
+        "コミュニケーションの明瞭さ、技術的深度、STARメソッドへの適合性を多角的に採点するフィードバック機能を統合しました。",
+        "行動面接、システム設計、技術面接を網羅する90レッスンの体系的な面接アカデミーカリキュラムを搭載しました。"
+      ],
+      "mainPhoto": mockInterviewMainPhoto,
+      "highlightPhoto": [mockInterviewMainPhoto],
+      "Programming language used or technology used": ["React", "FastAPI", "LLM", "TypeScript", "Python", "Tailwind CSS", "AI Agent"],
+      "affiliation": "Nevatal Studioプロダクト"
+    },
+    {
+      "name": "Quanta",
+      "context": "Nevatal Studioプロダクト",
+      "liveUrl": "https://quant.nevatal.id/",
+      "links": {
+        "demo": "https://quant.nevatal.id/",
+        "github": "https://github.com/thirza258/quanta"
+      },
+      "description": [
+        "15のコースを備えた投資学習ワークスペースおよび金融工学サンドボックス「Quanta」を構築しました。",
+        "Pythonアルゴリズム取引ボットに対応したリアルタイムペーパートレードシミュレーターと戦略バックテスト環境を開発しました。",
+        "過去の市場データ可視化、リスク指標（シャープレシオ、最大ドローダウン）、ポートフォリオ最適化を備えた計量経済学プレイグラウンドを実装しました。",
+        "DjangoとPostgreSQLでバックエンドを構築し、Dockerコンテナ化により安定した運用環境を実現しました。"
+      ],
+      "mainPhoto": quantaMainPhoto,
+      "highlightPhoto": [quantaMainPhoto],
+      "Programming language used or technology used": ["Django", "Python", "PostgreSQL", "Docker", "Simulator", "Financial Engineering"],
+      "affiliation": "Nevatal Studioプロダクト"
+    },
+    {
+      "name": "VoltQuest",
+      "context": "Nevatal Studioプロダクト",
+      "liveUrl": "https://pcb.nevatal.id/",
+      "links": {
+        "demo": "https://pcb.nevatal.id/",
+        "github": "https://github.com/thirza258/voltquest"
+      },
+      "description": [
+        "論理ゲートからコンピュータアーキテクチャ、デスクトップ開発までを体系的に学べるシステム工学学習プラットフォーム「VoltQuest」を設計しました。",
+        "デジタル電子工学、x86/ARMアセンブリ、C++、WinUIによるモダンデスクトップUI開発をカバーするカリキュラムを構築しました。",
+        "ブラウザ上で直接実行可能なハンズオンラボ環境、自動採点テスト、検証可能なPDF修了証書発行機能を実装しました。"
+      ],
+      "mainPhoto": voltquestMainPhoto,
+      "highlightPhoto": [voltquestMainPhoto],
+      "Programming language used or technology used": ["C++", "WinUI", "Computer Architecture", "Assembly", "Education", "Hardware Simulation"],
+      "affiliation": "Nevatal Studioプロダクト"
+    },
+    {
+      "name": "LeetBug",
+      "context": "Nevatal Studioプロダクト",
+      "liveUrl": "https://leetbug.nevatal.id/",
+      "links": {
+        "demo": "https://leetbug.nevatal.id/",
+        "github": "https://github.com/thirza258/leetbug"
+      },
+      "description": [
+        "Python、JavaScript、Go、C++、Javaの5言語にわたる数百の実践的バグ事例を収録したインタラクティブデバッグ練習サンドボックス「LeetBug」を構築しました。",
+        "ユーザーが提出した修正パッチに対してテストスイートを実行し、単なる出力一致ではなく修正自体の妥当性を検証する安全なサンドボックス実行エンジンを開発しました。",
+        "段階的なヒント提供と隠しリグレッションテストにより、実践的なトラブルシューティング能力を養う学習体験を提供しました。"
+      ],
+      "mainPhoto": leetbugMainPhoto,
+      "highlightPhoto": [leetbugMainPhoto],
+      "Programming language used or technology used": ["FastAPI", "React", "TypeScript", "Docker", "Sandbox", "Python"],
+      "affiliation": "Nevatal Studioプロダクト"
+    },
+    {
+      "name": "Decalove",
+      "context": "Nevatal Studioプロダクト",
+      "liveUrl": "https://decalove.nevatal.id/",
+      "links": {
+        "demo": "https://decalove.nevatal.id/",
+        "github": "https://github.com/thirza258/decalove"
+      },
+      "description": [
+        "キャラクターの一貫した記憶保持と動的シナリオ生成を備えたAI主導のビジュアルノベルおよびストーリーエンジン「Decalove」を開発しました。",
+        "自然な対話生成、場面描写、ストーリー分岐の選択肢をリアルタイムに生成するAIストーリーテリングバックエンドを統合しました。",
+        "リッチテキスト編集、分岐グラフ可視化、クリエイティブライティングコースを備えたオーサリングスタジオを構築しました。"
+      ],
+      "mainPhoto": decaloveMainPhoto,
+      "highlightPhoto": [decaloveMainPhoto],
+      "Programming language used or technology used": ["AI Storytelling", "Ren'Py", "React", "TypeScript", "LLM", "Tailwind CSS"],
+      "affiliation": "Nevatal Studioプロダクト"
+    },
+    {
+      "name": "English & IELTS Practice",
+      "context": "Nevatal Studioプロダクト",
+      "liveUrl": "https://english.nevatal.id/",
+      "links": {
+        "demo": "https://english.nevatal.id/",
+        "github": "https://github.com/thirza258/english-practice"
+      },
+      "description": [
+        "基礎英文法からIELTS Band 8レベルまでを網羅する診断型英語学習・試験対策プラットフォーム「English & IELTS Practice」を開発しました。",
+        "文法ルール、語彙定着、読解力、IELTS形式のアカデミックライティングに向けた個別強化モードを設計しました。",
+        "DjangoとPostgreSQLによる堅牢なバックエンドを構築し、進捗自動追跡と各設問への詳細な解説フィードバックを提供しました。"
+      ],
+      "mainPhoto": englishPracticeMainPhoto,
+      "highlightPhoto": [englishPracticeMainPhoto],
+      "Programming language used or technology used": ["Django", "Python", "PostgreSQL", "Tailwind CSS", "Education"],
+      "affiliation": "Nevatal Studioプロダクト"
+    },
+    {
+      "name": "AdControl Learning",
+      "context": "Nevatal Studioプロダクト",
+      "liveUrl": "https://marketing.nevatal.id/",
+      "links": {
+        "demo": "https://marketing.nevatal.id/",
+        "github": "https://github.com/thirza258/nevatal-ads"
+      },
+      "description": [
+        "デジタルマーケティング、SEO、生成エンジン最適化（GEO）、グロース戦略に関する実践的な無料学習ポータル「AdControl Learning」を構築しました。",
+        "GEO、検索インデックスの最適化、アフィリエイト計測、コンバージョン率最適化（CRO）をカバーするカリキュラムを提供しました。",
+        "React、TypeScript、Tailwind CSSによる高速で快適なレスポンシブWebフロントエンドを開発しました。"
+      ],
+      "mainPhoto": adcontrolMainPhoto,
+      "highlightPhoto": [adcontrolMainPhoto],
+      "Programming language used or technology used": ["React", "TypeScript", "Tailwind CSS", "Marketing", "SEO", "Analytics"],
+      "affiliation": "Nevatal Studioプロダクト"
+    },
+    {
+      "name": "Nevatal Cloud",
+      "context": "Nevatal Studioプロダクト",
+      "liveUrl": "https://cloud.nevatal.id/",
+      "links": {
+        "demo": "https://cloud.nevatal.id/",
+        "preview": "https://demo.nevatal.id/",
+        "github": "https://github.com/thirza258/nevatal-cloud"
+      },
+      "description": [
+        "Dell PowerEdge R640ベアメタルノードおよびProxmox VE 8上で稼働する高性能開発者向けプライベートクラウド「Nevatal Cloud」を構築しました。",
+        "KVM Linux VPSインスタンス、専用ゲームサーバー（Minecraft・Terraria）、Waydroid Androidコンテナの迅速な自動プロビジョニングを実現しました。",
+        "インフラ管理、リソース監視、高速デプロイを自動化するAIクラウドエージェントを統合しました。"
+      ],
+      "mainPhoto": nevatalCloudMainPhoto,
+      "highlightPhoto": [nevatalCloudMainPhoto],
+      "Programming language used or technology used": ["Bare-Metal", "Proxmox VE", "KVM", "Linux VPS", "Game Servers", "Waydroid", "Networking"],
+      "affiliation": "Nevatal Studioプロダクト"
+    },
+    {
+      "name": "SDG Country Profiles",
+      "context": "Nevatal Studioプロダクト",
+      "liveUrl": "https://sdg.nevatal.id/",
+      "links": {
+        "demo": "https://sdg.nevatal.id/",
+        "github": "https://github.com/thirza258/Country-SDG"
+      },
+      "description": [
+        "国連の持続可能な開発目標（SDGs）17目標に関する各国の達成度スコアカードを提供するインタラクティブデータ可視化ツール「SDG Country Profiles」を開発しました。",
+        "公式Sustainable Development Reportデータセットと世界銀行の最新API指標を統合し、データの出所と計測年度の透明性を確保しました。",
+        "Django、PostgreSQL、Tailwind CSSを用いて構築し、国別比較分析や目標別トレンドランキング機能を搭載しました。"
+      ],
+      "mainPhoto": sdgMainPhoto,
+      "highlightPhoto": [sdgMainPhoto],
+      "Programming language used or technology used": ["Django", "Python", "UN SDG", "World Bank API", "PostgreSQL", "Tailwind CSS"],
+      "affiliation": "Nevatal Studioプロダクト"
+    },
+    {
+      "name": "Uptime Medics",
+      "context": "Nevatal Studioプロダクト",
+      "liveUrl": "https://uptime.nevatal.id/",
+      "links": {
+        "demo": "https://uptime.nevatal.id/",
+        "github": "https://github.com/thirza258/Uptime-Medics"
+      },
+      "description": [
+        "Rust言語とAxumフレームワークで開発された、ミリ秒単位の高頻度死活監視・アップタイムモニター「Uptime Medics」を構築しました。",
+        "並行HTTP/TCPプローブ、SQLiteによる高速データ永続化、レイテンシパーセンタイル追跡、柔軟なアラート閾値設定を実装しました。",
+        "リアルタイム公開ステータスページ、障害タイムライン、連続検知時の自動SMTPアラート通知機能を搭載しました。"
+      ],
+      "mainPhoto": uptimeMedicsMainPhoto,
+      "highlightPhoto": [uptimeMedicsMainPhoto],
+      "Programming language used or technology used": ["Rust", "Axum", "SQLite", "SMTP", "Docker", "DevOps"],
+      "affiliation": "Nevatal Studioプロダクト"
+    },
+    {
+      "name": "Webisaurus",
+      "context": "Nevatal Studioプロダクト",
+      "liveUrl": "https://c.nevatal.id/",
+      "links": {
+        "demo": "https://c.nevatal.id/",
+        "github": "https://github.com/thirza258/webisaurus"
+      },
+      "description": [
+        "140のプログラミング言語が24の基本概念をどのように表現するかを比較・閲覧できる構文リファレンス「Webisaurus」を開発しました。",
+        "複数のプログラミング言語による実装を横並びで即座に比較検討できるインターフェースを提供しました。",
+        "Nginxで配信されるバックエンド不要の超軽量静的Webアプリケーションとして設計し、高速あいまい検索とシンタックスハイライトを備えました。"
+      ],
+      "mainPhoto": webisaurusMainPhoto,
+      "highlightPhoto": [webisaurusMainPhoto],
+      "Programming language used or technology used": ["Vanilla JS", "Static Site", "Nginx", "HTML5", "CSS3"],
+      "affiliation": "Nevatal Studioプロダクト"
+    },
+    {
+      "name": "VideoTex",
+      "context": "Nevatal Studioプロダクト",
+      "liveUrl": "https://video.nevatal.id/",
+      "links": {
+        "demo": "https://video.nevatal.id/",
+        "github": "https://github.com/thirza258/VideoTex"
+      },
+      "description": [
+        "DjangoとFFmpegを活用したセルフホスト型動画投稿・ストリーミングプラットフォーム「VideoTex」を開発しました。",
+        "複数解像度への非同期バックグラウンド変換とHTTP-206バイトレンジシークによるスムーズな動画再生を実現しました。",
+        "ワーカーの再起動時にもタスクを維持する耐障害性に優れたリース型タスクキュー、コメント、いいね、チャンネルフィードを実装しました。"
+      ],
+      "mainPhoto": videotexMainPhoto,
+      "highlightPhoto": [videotexMainPhoto],
+      "Programming language used or technology used": ["Django", "Python", "FFmpeg", "PostgreSQL", "Docker", "Video Streaming"],
+      "affiliation": "Nevatal Studioプロダクト"
+    },
+    {
+      "name": "Pasal Voice Assistant",
+      "context": "個人プロジェクト",
+      "links": {
+        "github": "https://github.com/thirza258/PasalVA"
+      },
+      "description": [
+        "インドネシア語のTTSおよびSTTモデルを用いた完全セルフホスト型音声アシスタントを開発し、OllamaとRAGを統合してプライバシーを重視した文脈情報検索を実現しました。",
+        "TTSにFacebook-mms-tts-ind、STTにインドネシア語設定のOpenAI Whisperを採用しました。",
+        "外部APIに依存せずローカルでデータを処理するため、Ollama GemmaEmbeddingおよびGemma 3をRAGとLLM推論に活用しました。",
+        "安全かつ効率的な文脈データ管理のために、Docker化されたChromaDBをベクトルストレージとして使用しました。"
+      ],
+      "mainPhoto": pasalMainPhoto,
+      "highlightPhoto": [pasalMainPhoto],
+      "Programming language used or technology used": ["Ollama", "RAG", "Voice Assistant", "STT", "TTS", "OpenAI Whisper", "Transformers", "PyTorch", "Gemma", "ChromaDB"],
       "affiliation": "個人プロジェクト"
     },
     {
+      "name": "Daily Task Wallpaper Generator with Genshin Impact Theme",
+      "context": "個人プロジェクト / Nevatal Studioプロダクト",
+      "liveUrl": "https://genshinwallpaper.nevatal.id/",
+      "links": {
+        "github": "https://github.com/thirza258/GenshinWallGen",
+        "demo": "https://genshinwallpaper.nevatal.id/"
+      },
+      "description": [
+        "生産性とゲームの美学を融合させた高機能デスクトップ壁紙ジェネレーターおよびピクセルアート制作環境「GenshinWallCraft」へと発展させました。",
+        "Googleカレンダー同期に対応したタスクオーバーレイ付き高解像度壁紙を、手軽な匿名モードおよび履歴保持付きの認証モードの双方で生成可能です。",
+        "スプライト描画、モジュラーキャラクターのアニメーション、シームレスなタイルセットや背景の作成が可能なブラウザ完結型「Pixel Studio」を開発・搭載しました。",
+        "画像レンダリングとアセット管理にFastAPI、Pillow、MinIOを採用し、React、Vite、Tailwind CSSによるレスポンシブなフロントエンドを構築しました。"
+      ],
+      "mainPhoto": genshinImpactHighlightPhoto1,
+      "highlightPhoto": [genshinImpactHighlightPhoto1, genshinImpactHighlightPhoto2],
+      "Programming language used or technology used": ["FastAPI", "Pillow", "MinIO", "Pixel Art", "React", "Vite", "TypeScript", "Tailwind CSS"],
+      "affiliation": "個人プロジェクト / Nevatal Studioプロダクト"
+    },
+    {
       "name": "URL Shortener",
-      "organization": "個人プロジェクト",
+      "organization": "個人プロジェクト / Nevatal Studioプロダクト",
       "liveUrl": "https://url.nevatal.id/",
       "links": {
         "github": "https://github.com/thirza258/freecodecamp_url_shortener",
         "demo": "https://url.nevatal.id/"
       },
       "description": [
-        "Django、PostgreSQL、Redisを使用して本番対応のURL短縮ツールプラットフォームを開発しました。",
-        "Redisを使用したレート制限、URL検証、セキュリティ保護を実装しました。",
-        "クリック数、リファラーログ、ユーザーエージェント監視、アクセス統計などの分析機能を構築しました。",
-        "DockerおよびDocker Composeでコンテナ化しました。"
+        "Django、PostgreSQL 16、Redisを用いて、衝突耐性のあるカスタム短縮リンク生成と重複防止を備えた高パフォーマンスURL短縮プラットフォームを開発しました。",
+        "Redisによるスライディングウィンドウ型レートリミット、ドメイン検証、不正リダイレクト防止のセキュリティ対策を実装しました。",
+        "クリック数、参照元ドメイン、地域別テレメトリ、ユーザーエージェント機器情報、時系列クリック速度を可視化する詳細アナリティクスエンジンを構築しました。",
+        "低遅延なリダイレクト処理と実運用レベルの信頼性を確保するため、Docker ComposeとNginxでスタック全体をコンテナ化しました。"
       ],
       "mainPhoto": urlShortenerHighlightPhoto1,
       "highlightPhoto": [urlShortenerHighlightPhoto1],
-      "Programming language used or technology used": ["Django", "PostgreSQL", "Redis", "Docker", "Docker Compose"],
-      "affiliation": "個人プロジェクト"
+      "Programming language used or technology used": ["Django", "PostgreSQL", "Redis", "Docker", "Docker Compose", "Analytics"],
+      "affiliation": "個人プロジェクト / Nevatal Studioプロダクト"
     },
     {
       "name": "My Hearing",
@@ -1950,24 +2837,23 @@ export const thirzaAhmadTsaqifJapanese = {
     },
     {
       "name": "ChattyDesk",
-      "context": "Dev Challenge提出物",
+      "context": "Dev Challenge提出物 / Nevatal Studioプロダクト",
       "links": {
-        "githubBackend": "[Githubバックエンド]",
-        "githubFrontend": "[Githubフロントエンド]",
-        "devpost": "[Devpost]"
-      ,
+        "githubBackend": "https://github.com/thirza258/chattydesk_backend",
+        "githubFrontend": "https://github.com/thirza258/chattydesk",
         "demo": "https://chatty.nevatal.id/"
       },
       "liveUrl": "https://chatty.nevatal.id/",
       "description": [
-        "Gemini、Claude、OpenAI GPT、Mistralなどの複数のLLMとのシームレスなチャットを可能にするクロスプラットフォームデスクトップアプリケーションを開発しました。",
-        "バックエンドでは、Django REST Framework、Python、PostgreSQLを使用してスケーラブルなAPIを設計・展開し、DigitalOceanでホストしました。",
-        "デスクトップアプリケーションはElectron、React、TypeScriptで構築され、さまざまなLLMモデルでスムーズなユーザーエクスペリエンスを保証しました。"
+        "クロスプラットフォームのデスクトップアプリ（Electron）およびレスポンシブWebアプリとして利用可能な統合型マルチモデルAIデスク「ChattyDesk」を開発しました。",
+        "OpenRouter経由でClaude、GPT、Gemini、Mistral、Llama、DeepSeekなど400以上の主要モデルへ統一アクセスを提供し、会話途中の動的なモデル切り替えを可能にしました。",
+        "サーバーサイドの対話履歴保持、JWTベースのアカウント認証、トークン使用量テレメトリ、BYOK OpenRouterフォールバックキーを備えたマルチターン会話を実現しました。",
+        "Webクライアント内に直接アクセスできる対話型プロンプト練習付きの無料初級AI学習コースを統合しました。"
       ],
       "mainPhoto": chattydeskMainPhoto,
-      "highlightPhoto": ["chattydeskHighlightPhoto1"],
-      "Programming language used or technology used": ["Django REST Framework", "Python", "PostgreSQL", "DigitalOcean", "Electron", "React", "TypeScript", "Gemini", "Claude", "OpenAI", "Mistral"],
-      "affiliation": "Dev Challenge提出物"
+      "highlightPhoto": [chattydeskHighlightPhoto1],
+      "Programming language used or technology used": ["Django REST Framework", "Python", "PostgreSQL", "Electron", "React", "TypeScript", "Tailwind CSS", "OpenRouter", "Gemini", "Claude", "OpenAI"],
+      "affiliation": "Dev Challenge提出物 / Nevatal Studioプロダクト"
     },
     {
       "name": "ベストスタッフ投票ウェブサイトAPI",
@@ -2016,41 +2902,40 @@ export const thirzaAhmadTsaqifJapanese = {
     },
     {
       "name": "Gemini Japanese",
-      "context": "MLH GWH提出物",
-      "liveUrl": "https://hira.nevatal.id/",
+      "context": "MLH GWH 提出物 / Nevatal Studioプロダクト",
       "links": {
         "github": "https://github.com/thirza258/gemini_japanese",
         "devpost": "https://devpost.com/software/gemini-japanese-translator",
         "demo": "https://hira.nevatal.id/"
       },
+      "liveUrl": "https://hira.nevatal.id/",
       "description": [
-        "Gemini AI APIを統合することで、ユーザーにローマ字と翻訳の両方を提供する日本語翻訳アプリケーションを開発し、あらゆる日本語形式での翻訳精度を向上させました。",
-        "フロントエンドにReactとTypeScriptを利用して、ダイナミックで直感的なユーザーインターフェースを作成しました。",
-        "バックエンドをTypeScriptサーバーで実装し、効率的なデータ処理を保証しました。展開プラットフォームとしてAWS Amplifyを利用しました。"
+        "JLPT N5〜N1の体系的カリキュラム、200のインタラクティブ漢字カード、文法ドリルを備えた総合日本語学習ワークスペース「Gemini Japanese」を開発しました。",
+        "Google Gemini AIを統合し、複雑な文章構造に対する文脈を捉えた高精度な翻訳、ふりがな生成、ローマ字表記を提供しました。",
+        "ネイティブ音声付きの聴解トレーニングモジュールを搭載し、デバイスの外観モードに追従する桜テーマのモダンUIを構築しました。"
       ],
-      "mainPhoto": "main_photo_url",
-      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
-      "Programming language used or technology used": ["Gemini", "React", "TypeScript", "AWS Amplify"],
-      "affiliation": "MLH GWH提出物"
+      "mainPhoto": geminiJapaneseMainPhoto,
+      "highlightPhoto": [geminiJapaneseMainPhoto],
+      "Programming language used or technology used": ["Gemini", "React", "TypeScript", "Tailwind CSS", "Education", "Node.js"],
+      "affiliation": "MLH GWH 提出物 / Nevatal Studioプロダクト"
     },
     {
       "name": "LiteralStoryboard",
-      "context": "AWSゲームビルダーハッカソン提出物",
+      "context": "ハッカソン提出物 / Nevatal Studioプロダクト",
       "liveUrl": "https://story.nevatal.id/",
       "links": {
         "github": "https://github.com/thirza258/literal-storyboard",
-        "devpost": "https://devpost.com/software/literal-storyboard",
         "demo": "https://story.nevatal.id/"
       },
       "description": [
-        "ボードゲームとストーリーを組み合わせたゲームウェブサイトを作成しました。",
-        "Vite、React、TypeScript、Tailwind CSSを使用して開発し、ストーリージェネレーターとしてGemini APIを利用しました。",
-        "展開プラットフォームとしてAWS Amplifyを利用しました。"
+        "実世界の都市マップ上でインタラクティブなストーリーエピソードが展開する、AI主導のプロシージャルナラティブエンジン「Literal Storyboard」を開発しました。",
+        "OpenRouter経由でLLMを柔軟に切り替えながら、動的なストーリー展開、分岐の選択肢、生成風景イラストをリアルタイムに構築するシステムを設計しました。",
+        "ReactとTailwind CSSを用いて、選択肢によって物語が変化するインタラクティブなマップUIを構築しました。"
       ],
-      "mainPhoto": "main_photo_url",
-      "highlightPhoto": ["highlight_photo_1_url", "highlight_photo_2_url"],
-      "Programming language used or technology used": ["Vite", "React", "TypeScript", "Tailwind CSS", "Gemini", "AWS Amplify"],
-      "affiliation": "AWSゲームビルダーハッカソン提出物"
+      "mainPhoto": literalStoryboardMainPhoto,
+      "highlightPhoto": [literalStoryboardMainPhoto],
+      "Programming language used or technology used": ["OpenRouter", "AI Storytelling", "React", "TypeScript", "Tailwind CSS", "Mapbox/Leaflet"],
+      "affiliation": "ハッカソン提出物 / Nevatal Studioプロダクト"
     },
     {
       "name": "レシピ推薦",
@@ -2072,23 +2957,22 @@ export const thirzaAhmadTsaqifJapanese = {
     },
     {
       "name": "Recommendica",
-      "context": "グローバルハックウィークAI/ML提出物",
+      "context": "Global Hack Week AI/ML / Nevatal Studioプロダクト",
       "links": {
-        "githubBackend": "[Githubバックエンド]",
-        "githubFrontend": "[Githubフロントエンド]",
-        "devpost": "[Devpost]"
-      ,
+        "github": "https://github.com/thirza258/recommendica",
         "demo": "https://recommendica.nevatal.id/"
       },
       "liveUrl": "https://recommendica.nevatal.id/",
       "description": [
-        "ArXivデータセットを使用して、検索にFAISS、AI処理にOpenAI、パイプラインとしてLangChainを使用した研究推薦RAGベースのAPIを開発しました。",
-        "ドキュメント作成にOpenAPIを利用し、Django REST FrameworkでAPIを構築しました。"
+        "ArXiv学術論文コーパスを対象とした適応型検索拡張生成（RAG）による論文推薦・探索エンジン「Recommendica」を開発しました。",
+        "入力クエリから検索ステップを自律的に選定し、取得証拠の網羅性が不十分な場合に文献検索を動的に拡張する適応型マルチステップリサーチフローを設計しました。",
+        "FAISSおよびChromaによる密ベクトルインデックス、OpenAI埋め込み、LangChainパイプラインを実装し、検証可能なDOI/ArXiv引用付きの構造化された要約を提供しました。",
+        "Django REST Framework API、ストリーミングプロンプトエンドポイント、React/Viteインターフェース、Docker Composeによるクリーンなモノレポ構成で構築しました。"
       ],
       "mainPhoto": researchMainPhoto,
-      "highlightPhoto": [researchMainPhoto, "highlight_photo_2_url"],
-      "Programming language used or technology used": ["RAG", "FAISS", "OpenAI", "LangChain", "OpenAPI", "Django REST Framework"],
-      "affiliation": "グローバルハックウィークAI/ML提出物"
+      "highlightPhoto": [researchMainPhoto],
+      "Programming language used or technology used": ["RAG", "FAISS", "ChromaDB", "OpenAI", "LangChain", "OpenAPI", "Django REST Framework", "React", "TypeScript", "Tailwind CSS", "Docker"],
+      "affiliation": "Global Hack Week AI/ML / Nevatal Studioプロダクト"
     },
     {
       "name": "エコフレンドリーレシピ推薦",

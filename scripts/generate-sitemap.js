@@ -155,24 +155,129 @@ const CORE_PAGES = [
 const PROJECTS = [
   {
     slug: 'ragreader',
-    title: 'RAGReader - Benchmarking & Evaluation Platform for RAG',
-    caption: 'Evaluation platform for benchmarking and identifying the most effective Retrieval-Augmented Generation pipeline configurations',
+    title: 'RAGReader - End-to-End RAG Evaluation & Benchmarking Platform',
+    caption: 'End-to-end evaluation platform comparing 9 RAG pipelines across Dense, Sparse, and Hybrid retrieval with multi-LLM consensus and Ragas',
     priority: '0.85',
     image: '/images/projects/ragreader.png'
   },
   {
     slug: 'multi-hop-corrective-with-reranker-rag-pipeline',
     title: 'Multi Hop Corrective with Reranker RAG Pipeline (CRAG)',
-    caption: 'Multi-Hop RAG pipeline combining Hybrid Retrieval with Corrective RAG dynamic context evaluation to eliminate hallucinations',
+    caption: 'Multi-Hop Corrective RAG pipeline combining Hybrid Retrieval, Cross-Encoder reranking, and dynamic self-grading evaluation',
     priority: '0.85',
     image: '/images/projects/crag.png'
   },
   {
     slug: 'nevatal',
-    title: 'Nevatal - Full-Stack AI Functions Platform',
-    caption: 'Full-stack AI platform developed for Google Chrome Built-in AI Challenge 2025 integrating Gemini and document RAG',
+    title: 'Nevatal - Full-Stack AI Functions Platform & Studio',
+    caption: '17-tool AI workspace with Document AI, batch runs, 6 public interactive courses, and BYOK integration for Gemini, OpenAI, and OpenRouter',
     priority: '0.85',
     image: '/images/projects/nevatal.jpg'
+  },
+  {
+    slug: 'noelle',
+    title: 'Noelle - Local-First Desktop AI Studio & Model Lab',
+    caption: 'Desktop AI workbench for running open-weight models from Hugging Face Hub with llama.cpp, RAG Studio, evaluation, and MCP server',
+    priority: '0.85',
+    image: '/images/projects/noelle.png'
+  },
+  {
+    slug: 'divinityai',
+    title: 'DivinityAI - Grounded Islamic Knowledge Retrieval System',
+    caption: 'Verifiable Islamic question-answering system citing Quran and authenticated Hadith collections with strict hallucination controls',
+    priority: '0.85',
+    image: '/images/projects/divinityai.jpg'
+  },
+  {
+    slug: 'furina-ml',
+    title: 'Furina ML - No-Code Machine Learning Platform',
+    caption: 'No-code scikit-learn AutoML platform with automated data profiling, feature encoding, hyperparameter tuning, and live prediction sandbox',
+    priority: '0.85',
+    image: '/images/projects/furina-ml.jpg'
+  },
+  {
+    slug: 'my-mock-interview',
+    title: 'My Mock Interview - Resume-Tailored AI Interview Coach',
+    caption: 'AI interview simulation platform generating tailored questions from candidate CVs, with role-reversal mode and 90-lesson curriculum',
+    priority: '0.85',
+    image: '/images/projects/mock-interview.jpg'
+  },
+  {
+    slug: 'quanta',
+    title: 'Quanta - Quantitative Finance & Investment Learning Workspace',
+    caption: 'Interactive investment learning platform with paper trading simulator, Python algorithmic trading bots, and econometrics lab',
+    priority: '0.85',
+    image: '/images/projects/quanta.jpg'
+  },
+  {
+    slug: 'voltquest',
+    title: 'VoltQuest - Computer Architecture & Systems Engineering Lab',
+    caption: 'Systems learning platform covering logic gates, assembly, C++, and WinUI with runnable browser labs and verifiable certificates',
+    priority: '0.85',
+    image: '/images/projects/voltquest.jpg'
+  },
+  {
+    slug: 'leetbug',
+    title: 'LeetBug - Interactive Industrial Debugging Sandbox',
+    caption: 'Sandboxed software debugging training platform featuring hundreds of real-world bug case studies across five programming languages',
+    priority: '0.85',
+    image: '/images/projects/leetbug.jpg'
+  },
+  {
+    slug: 'decalove',
+    title: 'Decalove - AI-Directed Interactive Visual Novel Engine',
+    caption: 'Interactive visual novel engine with persistent character memory, dynamic branching narratives, and rich-text authoring studio',
+    priority: '0.85',
+    image: '/images/projects/decalove.jpg'
+  },
+  {
+    slug: 'english-ielts-practice',
+    title: 'English & IELTS Practice - Diagnostic Learning Platform',
+    caption: 'Structured English diagnostic test preparation platform covering grammar mastery, reading comprehension, and IELTS Band 8 writing',
+    priority: '0.85',
+    image: '/images/projects/english-practice.jpg'
+  },
+  {
+    slug: 'adcontrol-learning',
+    title: 'AdControl Learning - Digital Marketing & SEO/GEO Academy',
+    caption: 'Free educational courses on digital marketing, Search Engine Optimization, Generative Engine Optimization, and conversion tracking',
+    priority: '0.85',
+    image: '/images/projects/adcontrol-learning.jpg'
+  },
+  {
+    slug: 'nevatal-cloud',
+    title: 'Nevatal Cloud - Bare-Metal Private Cloud & VPS Infrastructure',
+    caption: 'High-performance developer cloud running on Dell PowerEdge R640 nodes and Proxmox VE 8 for Linux VPS, game servers, and Waydroid',
+    priority: '0.85',
+    image: '/images/projects/nevatal-cloud.jpg'
+  },
+  {
+    slug: 'sdg-country-profiles',
+    title: 'SDG Country Profiles - UN Sustainable Development Scorecards',
+    caption: 'Interactive socio-economic data analytics dashboard tracking progress across all 17 UN Sustainable Development Goals and World Bank metrics',
+    priority: '0.85',
+    image: '/images/projects/sdg-country-profiles.jpg'
+  },
+  {
+    slug: 'uptime-medics',
+    title: 'Uptime Medics - Sub-Second Rust & Axum Health Monitor',
+    caption: 'Lightweight high-frequency uptime monitoring system built in Rust and Axum with public status pages and automated SMTP alerts',
+    priority: '0.85',
+    image: '/images/projects/uptime-medics.jpg'
+  },
+  {
+    slug: 'webisaurus',
+    title: 'Webisaurus - 140-Language Syntax Reference & Code Comparator',
+    caption: 'Zero-backend syntax reference and comparative programming language analyzer documenting 24 core concepts across 140 languages',
+    priority: '0.85',
+    image: '/images/projects/webisaurus.jpg'
+  },
+  {
+    slug: 'videotex',
+    title: 'VideoTex - Self-Hosted Video Streaming Platform',
+    caption: 'Self-hosted video publishing platform built with Django and FFmpeg featuring byte-range chunk streaming and persistent leased task queue',
+    priority: '0.85',
+    image: '/images/projects/videotex.jpg'
   },
   {
     slug: 'integrated-information-systems-sit',
@@ -304,15 +409,17 @@ const PROJECTS = [
   },
   {
     slug: 'gemini-japanese',
-    title: 'Gemini Japanese - AI-Powered Language Learning',
-    caption: 'Japanese language learning application leveraging Google Gemini for nuanced translation and grammar guidance',
-    priority: '0.80'
+    title: 'Gemini Japanese - AI-Powered Japanese Study Workspace',
+    caption: 'Comprehensive Japanese study workspace featuring JLPT N5–N1 curricula, 200 kanji cards, grammar drills, and Gemini AI translation',
+    priority: '0.80',
+    image: '/images/projects/gemini-japanese.jpg'
   },
   {
     slug: 'literalstoryboard',
-    title: 'LiteralStoryboard - AI Board Game & Narrative Engine',
-    caption: 'Interactive board game and procedural story generator created with Amazon Q AI assistance',
-    priority: '0.80'
+    title: 'LiteralStoryboard - AI Procedural Map Narrative Engine',
+    caption: 'Interactive procedural story generator and city map exploration game routed through OpenRouter',
+    priority: '0.80',
+    image: '/images/projects/literal-storyboard.jpg'
   },
   {
     slug: 'recipe-recommender',
